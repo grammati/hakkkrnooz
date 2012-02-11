@@ -16,7 +16,7 @@
   ($ ^Elements [e ^String q] (Selector/select q e)))
 
 (defn $1 ^Element [elt selector]
-  (first ($ elt selector)))
+  (.first ($ elt selector)))
 
 (def HN "http://news.ycombinator.com")
 
@@ -38,11 +38,13 @@
   ;;  - the first is a spacer, where the width of an image determines the nesting
   ;;  - the second contains the upvote button
   ;;  - the third contains everything else - specifically, it contains:
-  ;;    - first, a div containing:
-  ;;      - the author's handle
-  ;;      - the text "<N> hours ago |"
-  ;;      - a link (which gives us the comment-id)
-  ;;    - then there is a br (which seems to compentate for the -10px
+  ;;    - first, a div containing a span containing either:
+  ;;      - all three of:
+  ;;        - the author's handle, and
+  ;;        - the text "<N> hours ago |", and
+  ;;        - a link (which gives us the comment-id)
+  ;;      - or - nothing, if the comment has been deleted
+  ;;    - then there is a br (which seems to compensate for the -10px
   ;;      bottom-margin on the div above :/)
   ;;    - then, there are two possibilities:
   ;;      1) For a single-paragraph comment, there is a span containing a font
@@ -52,7 +54,7 @@
   ;;         out of the end of the font tag to become a child of the span, and
   ;;         the reply-link gets sucked into the span. Someone seems to have
   ;;         worked around the first of these oddities by wrapping another font
-  ;;         tag around the text of the spat-out paragrapsh to get the color
+  ;;         tag around the text of the spat-out paragraph to get the color
   ;;         right. Furthermore, the first paragraph under the font tag is not
   ;;         wrapped in a p tag, but all the rest are. And yes, in case you are
   ;;         wondering, the span that contains all these paragraphs is an inline
@@ -63,18 +65,21 @@
                   ($1 "> td:eq(0) > img")
                   (.attr "width")
                   Long/valueOf)
-        header ($ tr "> td:eq(2) > div:eq(0) > span")
-        user   (-> header
-                   ($1 "> a:eq(0)")
-                   .text)
-        age    nil ;FIXME
-        id     (-> header
-                   ($ "> a")
-                   (.eq 1)
-                   (.attr "href")
-                   (.substring (count "item?id=")))
-        main ($1 tr "> td:eq(2) > span")
-        paras (filter #(not= "reply" %) (all-text main))]
+        header ($1 tr "> td:eq(2) > div:eq(0) > span")
+        del    (not (.hasText header))
+        user   (if-not del
+                 (-> header
+                     ($1 "> a:eq(0)")
+                     .text))
+        age    nil                      ;FIXME
+        id     (if-not del
+                 (-> header
+                     ($ "> a")
+                     (.get 1)
+                     (.attr "href")
+                     (.substring (count "item?id="))))
+        main   ($1 tr "> td:eq(2) > span")
+        paras  (filter #(not= "reply" %) (all-text main))]
     {:depth depth
      :user  user
      :id    id
@@ -89,10 +94,14 @@
             c (assoc c :replies (nest-comments desc))]
         (recur others (conj tlc c))))))
 
-(defn- left [^String s n]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; debugging stuff
+
+(defn left [^String s n]
   (.substring s 0 (min n (count s))))
 
-(defn- print-summary
+(defn print-summary
   "for testing that I got it right"
   [cs]
   (letfn [(p [c ind]
@@ -117,6 +126,10 @@
   ([x form & more]
      `(-tap-> (-tap-> ~x ~form) ~@more)))
 
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 (defn comments
   "Given an item id, return the comments as nested maps."
   [id]
@@ -129,11 +142,11 @@
                 ;; comments-section, footer. Extract them and just keep the
                 ;; third.
                 ($ "> center > table > tbody > tr")
-                (.eq 2)
+                (.get 2)
                 ;; The tr of interest further contains two tables: the
                 ;; new-comment-form, and the comments.  We just want the latter.
                 ($ "> td > table")
-                (.eq 1)
+                (.get 1)
                 ;; Each row of this table contains a single comment, wrapped in
                 ;; yet-another table, which itself has only one row.
                 ($ "> tbody > tr > td > table > tbody > tr"))]
