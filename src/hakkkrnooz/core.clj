@@ -1,15 +1,21 @@
 (ns hakkkrnooz.core
   (:import (org.jsoup Jsoup)
-           (org.jsoup.nodes TextNode Element)
-           (org.jsoup.select Selector)
+           (org.jsoup.nodes Node Element TextNode)
+           (org.jsoup.select Selector Elements)
            (java.net URL)))
 
 (set! *warn-on-reflection* true)
 
-(defn $ [elt ^String selector]
-  (Selector/select selector elt))
+(defprotocol Searchable
+  ($ ^Elements [e q]))
 
-(defn $1 [elt selector]
+(extend-protocol Searchable
+  Element
+  ($ ^Elements [e ^String q] (Selector/select q e))
+  Iterable
+  ($ ^Elements [e ^String q] (Selector/select q e)))
+
+(defn $1 ^Element [elt selector]
   (first ($ elt selector)))
 
 (def HN "http://news.ycombinator.com")
@@ -17,21 +23,21 @@
 (defn comment-page-url [id]
   (str HN "/item?id=" id))
 
-(defn all-text [e]
+(defn all-text [^Element e]
   (->> e
       .getAllElements
-      (map #(.ownText %))
-      (filter #(pos? (.length %)))))
+      (map #(.ownText ^Element %))
+      (filter #(pos? (count %)))))
 
 (defn parse-comment
   "Parse the data out of the markup for a single comment on HN."
-  [tr]
+  [^Element tr]
   ;; The markup on the HN comments page is rather bizarre, but easy
   ;; enough to extract the data from.
   ;; tr is a row with 3 cells
   ;;  - the first is a spacer, where the width of an image determines the nesting
   ;;  - the second contains the upvote button
-  ;;  - the third contains everyhting else - specifically, this td contains:
+  ;;  - the third contains everything else - specifically, it contains:
   ;;    - first, a div containing:
   ;;      - the author's handle
   ;;      - the text "<N> hours ago |"
@@ -53,19 +59,18 @@
   ;;         element, and it's full of block elements. Good thing browsers are
   ;;         forgiving :)
   ;; Note: pg will probably change HN tomorrow and break this whole fucking thing :/
-  (let [tr (first ($ t "tr"))
-        depth (-> tr
-                  ($ "> td:eq(0) > img")
+  (let [depth (-> tr
+                  ($1 "> td:eq(0) > img")
                   (.attr "width")
                   Long/valueOf)
         header ($ tr "> td:eq(2) > div:eq(0) > span")
         user   (-> header
-                   ($ "> a:eq(0)")
+                   ($1 "> a:eq(0)")
                    .text)
         age    nil ;FIXME
         id     (-> header
                    ($ "> a")
-                   second
+                   (.eq 1)
                    (.attr "href")
                    (.substring (count "item?id=")))
         main ($1 tr "> td:eq(2) > span")
