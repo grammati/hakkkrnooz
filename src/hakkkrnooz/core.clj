@@ -23,11 +23,41 @@
 (defn comment-page-url [id]
   (str HN "/item?id=" id))
 
-(defn all-text [^Element e]
-  (->> e
-      .getAllElements
-      (map #(.ownText ^Element %))
-      (filter #(pos? (count %)))))
+(defn block? [n]
+  (and (instance? Element n)
+       (.isBlock ^Element n)))
+
+(defn inline? [n]
+  (not (block? n)))
+
+(defn comment-text [^Element span]
+  ;; see the explanation of parse-comment, below. Briefly, span can be:
+  ;; 1) -span
+  ;;      -font
+  ;;        - single text node  (note: reply-link is not in here)
+  ;; or:
+  ;; 2) -span
+  ;;      -font
+  ;;        -text node (usually?)
+  ;;        -p or pre or text or ...? (0..n)
+  ;;      - second-to-last p
+  ;;      - reply-link
+  (println "Extracting text from:")
+  (println (str span))
+  (println)
+  (let [[font extra-p] (seq (.childNodes span))
+        items (if (instance? Element font)
+                (concat (.childNodes font) (if extra-p (list extra-p)))
+                (list font)             ;"deleted" comment
+                )]
+    (loop [[item & items :as all] items
+           blocks []]
+      (if-not item
+        blocks
+        (if (block? item)
+          (recur items (conj blocks (str item)))
+          (let [[inl more] (split-with inline? all)]
+            (recur more (conj blocks (apply str inl)))))))))
 
 (defn parse-comment
   "Parse the data out of the markup for a single comment on HN."
@@ -79,11 +109,11 @@
                      (.attr "href")
                      (.substring (count "item?id="))))
         main   ($1 tr "> td:eq(2) > span")
-        paras  (filter #(not= "reply" %) (all-text main))]
-    {:depth depth
-     :user  user
-     :id    id
-     :comment (vec paras)}))
+        paras  (comment-text main)]
+    {:depth   depth
+     :user    user
+     :id      id
+     :comment paras}))
 
 (defn nest-comments [cs]
   (loop [[c & cs] (seq cs)
@@ -103,13 +133,14 @@
 
 (defn print-summary
   "for testing that I got it right"
-  [cs]
-  (letfn [(p [c ind]
-            (println (apply str (repeat ind "  "))
-                     (:user c) " -> " (left (first (:comment c)) 40) "...")
-            (doseq [c (:replies c)]
-              (p c (inc ind))))]
-    (doseq [c cs] (p c 0))))
+  ([cs] (print-summary cs 40))
+  ([cs n]
+     (letfn [(p [c ind]
+               (println (apply str (repeat ind "  "))
+                        (:user c) " -> " (left (first (:comment c)) n) "...")
+               (doseq [c (:replies c)]
+                 (p c (inc ind))))]
+       (doseq [c cs] (p c 0)))))
 
 (defmacro tap [x]
   `(let [tap# ~x]
