@@ -80,6 +80,43 @@
      :id    id
      :comment (vec paras)}))
 
+(defn nest-comments [cs]
+  (loop [[c & cs] (seq cs)
+         tlc []]                        ;top-level-comments
+    (if (nil? c)
+      tlc
+      (let [[desc others] (split-with #(> (:depth %) (:depth c)) cs)
+            c (assoc c :replies (nest-comments desc))]
+        (recur others (conj tlc c))))))
+
+(defn- left [^String s n]
+  (.substring s 0 (min n (count s))))
+
+(defn- print-summary
+  "for testing that I got it right"
+  [cs]
+  (letfn [(p [c ind]
+            (println (apply str (repeat ind "  "))
+                     (:user c) " -> " (left (first (:comment c)) 40) "...")
+            (doseq [c (:replies c)]
+              (p c (inc ind))))]
+    (doseq [c cs] (p c 0))))
+
+(defmacro tap [x]
+  `(let [tap# ~x]
+     (println "tap: " '~x " : " tap#)
+     tap#))
+
+(defmacro -tap->
+  "Debug that shit"
+  ([x] x)
+  ([x form]
+     (if (seq? form)
+       (list `tap (with-meta `(~(first form) ~x ~@(next form)) (meta form)))
+       `(tap (~form ~x))))
+  ([x form & more]
+     `(-tap-> (-tap-> ~x ~form) ~@more)))
+
 (defn comments
   "Given an item id, return the comments as nested maps."
   [id]
@@ -99,9 +136,10 @@
                 (.eq 1)
                 ;; Each row of this table contains a single comment, wrapped in
                 ;; yet-another table, which itself has only one row.
-                ($ "> tbody > tr > td > table > tr"))]
+                ($ "> tbody > tr > td > table > tbody > tr"))]
     (->> trs
-         (map parse-comment trs))
-    comments))
+         (map parse-comment)
+         nest-comments
+         )))
 
 
