@@ -1,5 +1,5 @@
 (ns hakkkrnooz.test.core
-  (:use [hakkkrnooz.core])
+  (:require [hakkkrnooz [core :as hn]])
   (:use [clojure.test]))
 
 (deftest replace-me ;; FIXME: write

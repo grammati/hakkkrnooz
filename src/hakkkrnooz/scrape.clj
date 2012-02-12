@@ -1,8 +1,8 @@
-(ns hakkkrnooz.core
+(ns hakkkrnooz.scrape
   (:import (org.jsoup Jsoup)
-           (org.jsoup.nodes Node Element TextNode)
-           (org.jsoup.select Selector Elements)
-           (java.net URL)))
+           (org.jsoup.nodes Node Document Element TextNode)
+           (org.jsoup.select Selector Elements)))
+
 
 (set! *warn-on-reflection* true)
 
@@ -17,11 +17,6 @@
 
 (defn $1 ^Element [elt selector]
   (.first ($ elt selector)))
-
-(def HN "http://news.ycombinator.com")
-
-(defn comment-page-url [id]
-  (str HN "/item?id=" id))
 
 (defn block? [n]
   (and (instance? Element n)
@@ -42,12 +37,9 @@
   ;;        -p or pre or text or ...? (0..n)
   ;;      - second-to-last p
   ;;      - reply-link
-  (println "Extracting text from:")
-  (println (str span))
-  (println)
   (let [[font extra-p] (seq (.childNodes span))
         items (if (instance? Element font)
-                (concat (.childNodes font) (if extra-p (list extra-p)))
+                (concat (.childNodes ^Element font) (if extra-p (list extra-p)))
                 (list font)             ;"deleted" comment
                 )]
     (loop [[item & items :as all] items
@@ -124,7 +116,6 @@
             c (assoc c :replies (nest-comments desc))]
         (recur others (conj tlc c))))))
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; debugging stuff
 
@@ -161,29 +152,24 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-(defn comments
-  "Given an item id, return the comments as nested maps."
-  [id]
-  (let [trs (-> id
-                comment-page-url
-                URL.
-                (Jsoup/parse 5000)
-                .body
-                ;; There are four "top-level" parts (tr's): toolbar, spacer,
-                ;; comments-section, footer. Extract them and just keep the
-                ;; third.
-                ($ "> center > table > tbody > tr")
-                (.get 2)
-                ;; The tr of interest further contains two tables: the
-                ;; new-comment-form, and the comments.  We just want the latter.
-                ($ "> td > table")
-                (.get 1)
-                ;; Each row of this table contains a single comment, wrapped in
-                ;; yet-another table, which itself has only one row.
-                ($ "> tbody > tr > td > table > tbody > tr"))]
-    (->> trs
-         (map parse-comment)
-         nest-comments
-         )))
-
-
+(defn parse-comments
+  "Extract the comments from the HTML, as a Jsoup Document. "
+  ([^Document doc]
+     (let [trs (-> doc                   
+                   .body
+                   ;; There are four "top-level" parts (tr's): toolbar, spacer,
+                   ;; comments-section, footer. Extract them and just keep the
+                   ;; third.
+                   ($ "> center > table > tbody > tr")
+                   (.get 2)
+                   ;; The tr of interest further contains two tables: the
+                   ;; new-comment-form, and the comments.  We just want the latter.
+                   ($ "> td > table")
+                   (.get 1)
+                   ;; Each row of this table contains a single comment, wrapped in
+                   ;; yet-another table, which itself has only one row.
+                   ($ "> tbody > tr > td > table > tbody > tr"))]
+       (->> trs
+            (map parse-comment)
+            nest-comments
+            ))))
