@@ -11,6 +11,7 @@
 
                  ;[ring "1.0.2"]
                  [compojure "1.0.1"]
+                 [hiccup "0.3.8"]
 
                  ;; TODO - choose one:
                  [cheshire "2.2.0"]
