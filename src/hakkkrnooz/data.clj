@@ -11,6 +11,9 @@
 (defn comments-url [id]
   (str HN "/item?id=" id))
 
+(defn stories-url []
+  (str HN "/news"))
+
 (defn load-comments
   "Load the HN comments page for the given thread id and scrape the data."
   [id]

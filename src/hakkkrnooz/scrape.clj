@@ -1,7 +1,8 @@
 (ns hakkkrnooz.scrape
   (:import (org.jsoup Jsoup)
            (org.jsoup.nodes Node Document Element TextNode)
-           (org.jsoup.select Selector Elements)))
+           (org.jsoup.select Selector Elements))
+  (:require (clojure [string :as s])))
 
 
 (set! *warn-on-reflection* true)
@@ -152,24 +153,68 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
+(defn- main-section
+  [^Document doc]
+  (-> doc
+      .body
+      ;; There are four "top-level" parts (tr's): toolbar, spacer,
+      ;; comments-section, footer. Extract them and just keep the
+      ;; third.
+      ($ "> center > table > tbody > tr")
+      (.get 2)))
+
+(defn parse-story
+  "Given the two tr elements that make up a story on HN, returns the data."
+  [title-row info-row]
+  (let [link ($1 title-row "> td.title > a")
+        info ($1 info-row "> td.subtext")
+        info (if info (.childNodes info))
+        item {:title (.text link)
+              :href (.attr link "href")}]
+    (condp = (count info)
+      5 (let [[pt-span _ user age comment-link] info]
+          (assoc item
+            :type :story
+            :points (->> pt-span .text (re-find #"(\d+) points") second Long/valueOf)
+            :user (.text user)
+            :age (->> age .text s/trim )
+            :id (->> (.attr comment-link "href") (re-matches #"item\?id=(\d+)") second Long/valueOf)
+            :comment-count (->> comment-link .text (re-matches #"(\d+) comments") second)
+            ))
+      1 (assoc item
+          :type :job-ad
+          :age (->> info first .text s/trim)))))
+
+(defn try-parse-story [title-row info-row]
+  (try
+    (parse-story title-row info-row)
+    (catch Exception e
+      {:type :parse-error
+       :details e})))
+
+(defn parse-stories
+  "Extract the stories from the HN main page."
+  [^Document doc]
+  (let [trs (-> doc
+                main-section
+                ;; On this page, the main section contains a table in which each
+                ;; group of 3 rows is a story.
+                ($ "> td > table > tbody > tr"))]
+    (for [[title-row info-row _] (partition 3 trs)]
+      (try-parse-story title-row info-row))))
+
 (defn parse-comments
-  "Extract the comments from the HTML, as a Jsoup Document. "
-  ([^Document doc]
-     (let [trs (-> doc                   
-                   .body
-                   ;; There are four "top-level" parts (tr's): toolbar, spacer,
-                   ;; comments-section, footer. Extract them and just keep the
-                   ;; third.
-                   ($ "> center > table > tbody > tr")
-                   (.get 2)
-                   ;; The tr of interest further contains two tables: the
-                   ;; new-comment-form, and the comments.  We just want the latter.
-                   ($ "> td > table")
-                   (.get 1)
-                   ;; Each row of this table contains a single comment, wrapped in
-                   ;; yet-another table, which itself has only one row.
-                   ($ "> tbody > tr > td > table > tbody > tr"))]
-       (->> trs
-            (map parse-comment)
-            nest-comments
-            ))))
+  "Extract the comments from an HN comment page."
+  [^Document doc]
+  (let [trs (-> doc
+                main-section
+                ;; On the comments page, the main tr further contains two tables: the
+                ;; new-comment-form, and the comments.  We just want the latter.
+                ($ "> td > table")
+                (.get 1)
+                ;; Each row of this table contains a single comment, wrapped in
+                ;; yet-another table, which itself has only one row.
+                ($ "> tbody > tr > td > table > tbody > tr"))]
+    (->> trs
+         (map parse-comment)
+         nest-comments)))
