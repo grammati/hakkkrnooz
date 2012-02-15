@@ -14,13 +14,17 @@
     (include-css "/css/reset.css"
                  "/css/hakkkrnooz.css")
     (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+                "/js/ejs.js"
                 "/js/hakkkrnooz.js")]
    [:body.theme-1
     [:div.header
      [:h1 "Hakkkrnooz"]]
     [:div.content
-     (link-to "/comments/3579847" "/comments/3579847")
+     [:div#stories.stories]
      [:div#comments.comments]]]))
+
+(defn stories []
+  (data/stories-json))
 
 (defn comments [id]
   (if-let [resp (data/comments-json id)]
@@ -38,6 +42,7 @@
 (defroutes app-routes
   (GET "/" [] (main-page))
   (route/resources "/")
+  (GET "/stories" [] (stories))
   (GET "/comments/:id" [id] (comments id)))
 
 (defn -main [port]

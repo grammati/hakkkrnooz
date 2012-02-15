@@ -14,6 +14,12 @@
 (defn stories-url []
   (str HN "/news"))
 
+(defn load-stories []
+  (-> (stories-url)
+      URL.
+      (Jsoup/parse 5000)
+      scrape/parse-stories))
+
 (defn load-comments
   "Load the HN comments page for the given thread id and scrape the data."
   [id]
@@ -23,13 +29,32 @@
       (Jsoup/parse 5000)               ; timeout
       scrape/parse-comments))
 
+
+(defn stories
+  "Return a data structure representing the top stories on HN."
+  []
+  ;; TODO - caching
+  (load-stories))
+
 (defn comments
   "Return a data structure representing the comments for the HN thread with the given id."
   [id]
   ;; TODO - caching
   (load-comments id))
 
+(defn to-json [o]
+  (ches/generate-string o))
 
+(defn stories-json []
+  (to-json (stories)))
+
+(defn comments-json [id]
+  (to-json (comments id)))
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; This doesn't friggin' work
 (defn gzipped-json [obj]
   (let [baos (java.io.ByteArrayOutputStream.)
         gzos (java.util.zip.GZIPOutputStream. baos)
@@ -41,9 +66,5 @@
     (.flush gzos)
     (java.io.ByteArrayInputStream. (.toByteArray baos))))
 
-(defn comments-json
-  ""
-  [id]
-  (ches/generate-string (comments id))
-  ;;(gzipped-json (comments id))
-  )
+
+

@@ -179,7 +179,7 @@
             :user (.text user)
             :age (->> age .text s/trim )
             :id (->> (.attr comment-link "href") (re-matches #"item\?id=(\d+)") second Long/valueOf)
-            :comment-count (->> comment-link .text (re-matches #"(\d+) comments") second)
+            :cc (->> comment-link .text (re-matches #"(\d+) comments") second)
             ))
       1 (assoc item
           :type :job-ad
