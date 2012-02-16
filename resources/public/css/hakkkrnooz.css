@@ -4,6 +4,7 @@
 .stories {
     width: 50%;
     float: left;
+    border: 1px sunken gray;
     }
 .comments {
     float: right;

@@ -183,7 +183,9 @@
             ))
       1 (assoc item
           :type :job-ad
-          :age (->> info first .text s/trim)))))
+          :age (->> info first .text s/trim))
+      (assoc item
+        :type :unknown))))
 
 (defn try-parse-story [title-row info-row]
   (try

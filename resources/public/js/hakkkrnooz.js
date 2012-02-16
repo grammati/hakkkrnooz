@@ -1,8 +1,14 @@
 (function() {
-  var htmlFor, showStories;
+  var hookup, htmlFor, showStories;
   $(function() {
-    hookup;    return showStories;
+    hookup();
+    return showStories();
   });
+  hookup = function() {
+    return $(document).on('keypress', 'div.story', function(e) {
+      return $('#comments').html(e.target.id);
+    });
+  };
   showStories = function(stories) {
     return $.getJSON("/stories", function(stories) {
       var story, _i, _len, _results;
@@ -17,7 +23,8 @@
   htmlFor = function(story) {
     return $('<div/>', {
       id: story.id,
-      "class": 'story'
+      "class": 'story',
+      tabindex: 1
     }).append($('<a/>', {
       href: story.href
     }).text(story.title)).append($('<span/>', {

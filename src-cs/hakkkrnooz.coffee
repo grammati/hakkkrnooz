@@ -1,6 +1,11 @@
 $ () ->
-    hookup
-    showStories
+    hookup()
+    showStories()
+
+hookup = () ->
+    $(document)
+    .on 'keypress', 'div.story', (e) ->
+        $('#comments').html(e.target.id)
 
 showStories = (stories) ->
     $.getJSON "/stories", (stories) ->
@@ -11,6 +16,7 @@ htmlFor = (story) ->
     $ '<div/>',
         id: story.id
         class: 'story'
+        tabindex: 1
     .append(
         $ '<a/>',
             href: story.href
