@@ -2,17 +2,51 @@ $ () ->
     hookup()
     showStories()
 
+K =
+    Enter: 13
+    Esc:   27
+    Space: 32
+    Left:  37
+    Up:    38
+    Right: 39
+    Down:  40
+
 hookup = () ->
     $(document)
-    .on 'keypress', 'div.story', (e) ->
-        $('#comments').html(e.target.id)
+    .on 'keydown', 'div.story', (e) ->
+        story = $(e.target)
+        id = story?.attr 'id'
+        switch e.which
+            when K.Enter, K.Right then showComments(id) if id
+            when K.Down
+                e.preventDefault()
+                story.next?().focus()
+
 
 showStories = (stories) ->
     $.getJSON "/stories", (stories) ->
+        div = $('#stories')
         for story in stories
-            $('#stories').append htmlFor(story)
+            div.append htmlFor(story)
 
-htmlFor = (story) ->
+showComments = (id) ->
+    return if not /^\d+$/.exec(id)
+    div = $('#comments')
+    div.empty()
+    $.getJSON "/comments/" + id, (comments) ->
+        for c in comments
+            div.append htmlFor(c)
+
+
+htmlFor = (obj) ->
+    switch obj?.type
+        when 'story' then storyHtml(obj)
+        when 'comment' then commentHtml(obj)
+        else $('<div/>').html('??????')
+
+# TODO - get a temlate engine - this is messy
+
+storyHtml = (story) ->
     $ '<div/>',
         id: story.id
         class: 'story'
@@ -26,4 +60,11 @@ htmlFor = (story) ->
             class: 'cc'
         .text story.cc
     )
+
+commentHtml = (comment) ->
+    $ '<div/>',
+        id: comment.id
+        class: 'comment'
+        tabindex: 1
+    .html(comment.comment.join('\n'))
 

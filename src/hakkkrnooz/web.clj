@@ -14,7 +14,6 @@
     (include-css "/css/reset.css"
                  "/css/hakkkrnooz.css")
     (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-                "/js/ejs.js"
                 "/js/hakkkrnooz.js")]
    [:body.theme-1
     [:div.header

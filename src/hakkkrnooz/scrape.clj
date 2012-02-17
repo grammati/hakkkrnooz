@@ -7,6 +7,8 @@
 
 (set! *warn-on-reflection* true)
 
+;; Protocol - exists so that Jsoup's Selector/select can be used
+;; without reflection.
 (defprotocol Searchable
   ($ ^Elements [e q]))
 
@@ -103,7 +105,8 @@
                      (.substring (count "item?id="))))
         main   ($1 tr "> td:eq(2) > span")
         paras  (comment-text main)]
-    {:depth   depth
+    {:type    :comment
+     :depth   depth
      :user    user
      :id      id
      :comment paras}))
@@ -172,13 +175,13 @@
         item {:title (.text link)
               :href (.attr link "href")}]
     (condp = (count info)
-      5 (let [[pt-span _ user age comment-link] info]
+      5 (let [[^Element pt-span _ ^Element user ^TextNode age ^Element comment-link] info]
           (assoc item
             :type :story
-            :points (->> pt-span .text (re-find #"(\d+) points") second Long/valueOf)
+            :points (->> pt-span .text (re-find #"(\d+) points") second)
             :user (.text user)
             :age (->> age .text s/trim )
-            :id (->> (.attr comment-link "href") (re-matches #"item\?id=(\d+)") second Long/valueOf)
+            :id (->> (.attr comment-link "href") (re-matches #"item\?id=(\d+)") second)
             :cc (->> comment-link .text (re-matches #"(\d+) comments") second)
             ))
       1 (assoc item
@@ -192,7 +195,7 @@
     (parse-story title-row info-row)
     (catch Exception e
       {:type :parse-error
-       :details e})))
+       :details (str e)})))
 
 (defn parse-stories
   "Extract the stories from the HN main page."
