@@ -79,10 +79,11 @@
       "class": 'story',
       tabindex: 1
     }).append($('<a/>', {
-      href: story.href
+      href: story.href,
+      "class": 'story-link'
     }).text(story.title)).append($('<span/>', {
       "class": 'cc'
-    }).text(story.cc));
+    }).text(story.cc || 'No comments'));
   };
   commentHtml = function(comment) {
     return $('<div/>', {

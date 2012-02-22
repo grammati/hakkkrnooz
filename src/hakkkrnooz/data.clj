@@ -38,17 +38,36 @@
       c)))
 
 
+(def cache (atom nil))
+(def cache-ttl (* 1000 60 3))
+
+(defn get-cached* [key delayed-value & [force]]
+  @(locking cache
+     (let [{:keys [t v]} (get @cache key)]
+       (if (and v (not force) (< (System/currentTimeMillis) (+ t cache-ttl)))
+         v
+         (-> cache
+             (swap! assoc key {:t (System/currentTimeMillis)
+                               :v delayed-value})
+             (get key)
+             (get :v))))))
+
+(defmacro get-cached [key & body]
+  `(get-cached* ~key (delay ~@body)))
+
+(defmacro force-get [key & body]
+  `(get-cached* ~key (delay ~@body) true))
+
+
 (defn stories
   "Return a data structure representing the top stories on HN."
   []
-  ;; TODO - caching
-  (load-stories))
+  (get-cached 0 (load-stories)))
 
 (defn comments
   "Return a data structure representing the comments for the HN thread with the given id."
   [id]
-  ;; TODO - caching
-  (load-comments id))
+  (get-cached id (load-comments id)))
 
 (defn to-json [o]
   (ches/generate-string o))

@@ -57,11 +57,12 @@ storyHtml = (story) ->
     .append(
         $ '<a/>',
             href: story.href
+            class: 'story-link'
         .text story.title
     ).append(
         $ '<span/>',
             class: 'cc'
-        .text story.cc
+        .text story.cc or 'No comments'
     )
 
 commentHtml = (comment) ->
