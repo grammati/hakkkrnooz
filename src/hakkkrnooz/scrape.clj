@@ -16,7 +16,9 @@
   Element
   ($ ^Elements [e ^String q] (Selector/select q e))
   Iterable
-  ($ ^Elements [e ^String q] (Selector/select q e)))
+  ($ ^Elements [e ^String q] (Selector/select q e))
+  nil
+  ($ [_ _] nil))
 
 (defn $1 ^Element [elt selector]
   (.first ($ elt selector)))
@@ -213,13 +215,23 @@
   [^Document doc]
   (let [trs (-> doc
                 main-section
-                ;; On the comments page, the main tr further contains two tables: the
-                ;; new-comment-form, and the comments.  We just want the latter.
+                ;; On the main comments page, the main tr further contains two
+                ;; tables: the new-comment-form, and the comments. However, on
+                ;; page 2+ of comments, the new-comment form is not there. So to
+                ;; get the comments, we just take the last table.
                 ($ "> td > table")
-                (.get 1)
-                ;; Each row of this table contains a single comment, wrapped in
-                ;; yet-another table, which itself has only one row.
-                ($ "> tbody > tr > td > table > tbody > tr"))]
-    (->> trs
-         (map parse-comment)
-         nest-comments)))
+                last
+                ;; Each row of this table contains a single comment, except
+                ;; possibly the last, which may contain a "More" link.
+                ($ "> tbody > tr"))
+        ;; Each comment-row single comment, wrapped in yet-another table, which
+        ;; itself has only one row.
+        comment-rows ($ trs " > td > table > tbody > tr")
+        ;; And find the "More" link, if present.
+        more-link (let [link ($ (last trs) "> td > a")]
+                    (if (and link (= "More" (.text link)))
+                      (.attr link "href")))
+        comments (nest-comments (map parse-comment comment-rows))
+        ]
+    {:comments comments
+     :more more-link}))

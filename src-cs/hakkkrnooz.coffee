@@ -20,7 +20,10 @@ hookup = () ->
             when K.Enter, K.Right then showComments(id) if id
             when K.Down
                 e.preventDefault()
-                story.next?().focus()
+                story.next()?.focus()
+            when K.Up
+                e.preventDefault()
+                story.prev()?.focus()
 
 
 showStories = (stories) ->

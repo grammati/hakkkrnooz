@@ -13,9 +13,7 @@
                  [compojure "1.0.1"]
                  [hiccup "0.3.8"]
 
-                 ;; TODO - choose one:
                  [cheshire "2.2.0"]
-                 [org.clojure/data.json "0.1.2"]
 
                  ]
   :ring {:handler hakkkrnooz.web/app-routes}

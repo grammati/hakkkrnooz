@@ -15,7 +15,7 @@
   };
   hookup = function() {
     return $(document).on('keydown', 'div.story', function(e) {
-      var id, story;
+      var id, story, _ref, _ref2;
       story = $(e.target);
       id = story != null ? story.attr('id') : void 0;
       switch (e.which) {
@@ -27,7 +27,10 @@
           break;
         case K.Down:
           e.preventDefault();
-          return typeof story.next === "function" ? story.next().focus() : void 0;
+          return (_ref = story.next()) != null ? _ref.focus() : void 0;
+        case K.Up:
+          e.preventDefault();
+          return (_ref2 = story.prev()) != null ? _ref2.focus() : void 0;
       }
     });
   };

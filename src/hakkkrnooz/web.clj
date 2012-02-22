@@ -1,19 +1,25 @@
 (ns hakkkrnooz.web
   (:use (ring.adapter [jetty :only  [run-jetty]])
         (compojure [core :only [defroutes GET]])
-        (hiccup [core :only [html]]
-                [page-helpers :only [include-js include-css link-to]]))
+        (hiccup [core :only [html resolve-uri]]
+                [page-helpers :only [html5 include-js include-css link-to]]))
   (:require (compojure [route :as route])
             (hakkkrnooz [data :as data])))
+
+
+(defn include-less [& styles]
+  (for [style styles]
+    [:link {:type "text/css", :href (resolve-uri style), :rel "stylesheet/less"}]))
 
 (defn main-page []
   (html
    {:mode :html}
    [:head
     [:title "Hakkkrnooz"]
-    (include-css "/css/reset.css"
-                 "/css/hakkkrnooz.css")
+    (include-css "/css/reset.css")
+    (include-less "/css/hakkkrnooz.less")
     (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+                "http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js"
                 "/js/hakkkrnooz.js")]
    [:body.theme-1
     [:div.header
