@@ -39,6 +39,7 @@ showComments = (id) ->
     $.getJSON "/comments/" + id, (comments) ->
         for c in comments
             div.append htmlFor(c)
+        $('.comment:first-child', div).focus()
 
 
 htmlFor = (obj) ->

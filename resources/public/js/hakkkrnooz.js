@@ -54,13 +54,12 @@
     div = $('#comments');
     div.empty();
     return $.getJSON("/comments/" + id, function(comments) {
-      var c, _i, _len, _results;
-      _results = [];
+      var c, _i, _len;
       for (_i = 0, _len = comments.length; _i < _len; _i++) {
         c = comments[_i];
-        _results.push(div.append(htmlFor(c)));
+        div.append(htmlFor(c));
       }
-      return _results;
+      return $('.comment:first-child', div).focus();
     });
   };
   htmlFor = function(obj) {
