@@ -1,21 +1,67 @@
 /* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@orange: #ff6600; /* possibly a trademarked color ;) */
+
+.rounded(@radius: 5px) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+body {
+    font-family: 'Verdana';
+}
+
+.header {
+    width: 100%;
+    background: @orange;
+    padding: 2px;
+    h1 {
+        font: 150% bold Verdana;
+    }
+}
 
 .stories {
-    width: 50%;
-    float: left;
-    border: 1px solid orange;
-    }
-.comments {
-    float: right;
-    width: 50%;
-    border: 1px solid black;
-    }
-.story {
-    padding: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 38px;
+    width: 550px;
 }
-.comment {
-    padding: 2px;
-    margin: 2px;
+
+.comments {
+    position: absolute;
+    top: 0;
+    left: 550px;
+    width: 550px;
+    margin-top: 38px;
+}
+
+.item {
+    .rounded;
     border: 1px solid gray;
+    padding: 4px 4px 4px 12px;
+    margin: 3px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.item:focus {
+    outline: none;
+    border: 2px solid orange;
+    padding: 3px 3px 3px 11px;
+}
+
+.story .cc {
+    display: block;
+    float: right;
+}
+
+.comment {
 }

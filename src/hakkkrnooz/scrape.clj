@@ -119,7 +119,9 @@
     (if (nil? c)
       tlc
       (let [[desc others] (split-with #(> (:depth %) (:depth c)) cs)
-            c (assoc c :replies (nest-comments desc))]
+            c (-> c
+                  (assoc :replies (nest-comments desc))
+                  (dissoc :depth))]
         (recur others (conj tlc c))))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -163,8 +165,7 @@
   (-> doc
       .body
       ;; There are four "top-level" parts (tr's): toolbar, spacer,
-      ;; comments-section, footer. Extract them and just keep the
-      ;; third.
+      ;; main-section, footer. Extract them and just keep the third.
       ($ "> center > table > tbody > tr")
       (.get 2)))
 

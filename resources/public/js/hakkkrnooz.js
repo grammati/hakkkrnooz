@@ -1,5 +1,5 @@
 (function() {
-  var K, commentHtml, hookup, htmlFor, showComments, showStories, storyHtml;
+  var K, commentHtml, focusParent, hookup, htmlFor, jobAdHtml, showChildren, showComments, showReplies, showStories, storyHtml;
   $(function() {
     hookup();
     return showStories();
@@ -14,40 +14,49 @@
     Down: 40
   };
   hookup = function() {
-    return $(document).on('keydown', 'div.story', function(e) {
-      var id, story, _ref, _ref2;
-      story = $(e.target);
-      id = story != null ? story.attr('id') : void 0;
+    return $(document).on('keydown', 'div.item', function(e) {
+      var div, item, _ref, _ref2;
+      div = $(e.target);
+      item = div.attr('data');
       switch (e.which) {
         case K.Enter:
         case K.Right:
-          if (id) {
-            return showComments(id);
-          }
-          break;
+          e.preventDefault();
+          return showChildren(item);
+        case K.Left:
+          e.preventDefault();
+          return focusParent(item);
         case K.Down:
           e.preventDefault();
-          return (_ref = story.next()) != null ? _ref.focus() : void 0;
+          return (_ref = div.next()) != null ? _ref.focus() : void 0;
         case K.Up:
           e.preventDefault();
-          return (_ref2 = story.prev()) != null ? _ref2.focus() : void 0;
+          return (_ref2 = div.prev()) != null ? _ref2.focus() : void 0;
       }
     });
   };
   showStories = function(stories) {
     return $.getJSON("/stories", function(stories) {
-      var div, story, _i, _len, _results;
+      var div, story, _i, _len;
       div = $('#stories');
-      _results = [];
       for (_i = 0, _len = stories.length; _i < _len; _i++) {
         story = stories[_i];
-        _results.push(div.append(htmlFor(story)));
+        div.append(htmlFor(story));
       }
-      return _results;
+      return $('.story:first-child', div).focus();
     });
   };
-  showComments = function(id) {
-    var div;
+  showChildren = function(item) {
+    switch (item != null ? item.type : void 0) {
+      case 'story':
+        return showStories(item);
+      case 'comment':
+        return showReplies(item);
+    }
+  };
+  showComments = function(story) {
+    var div, id;
+    id = story != null ? story.id : void 0;
     if (!/^\d+$/.exec(id)) {
       return;
     }
@@ -57,38 +66,59 @@
       var c, _i, _len;
       for (_i = 0, _len = comments.length; _i < _len; _i++) {
         c = comments[_i];
+        c.parent = story;
         div.append(htmlFor(c));
       }
       return $('.comment:first-child', div).focus();
     });
   };
+  showReplies = function(comment) {
+    return "FIXME";
+  };
+  focusParent = function(item) {
+    return $('#' + item.id).focus();
+  };
   htmlFor = function(obj) {
-    switch (obj != null ? obj.type : void 0) {
-      case 'story':
-        return storyHtml(obj);
-      case 'comment':
-        return commentHtml(obj);
-      default:
-        return $('<div/>').html('??????');
-    }
+    var e;
+    e = (function() {
+      switch (obj != null ? obj.type : void 0) {
+        case 'story':
+          return storyHtml(obj);
+        case 'job-ad':
+          return jobAdHtml(obj);
+        case 'comment':
+          return commentHtml(obj);
+        default:
+          return $('<div/>').html('??????');
+      }
+    })();
+    e.data = obj;
+    return e;
   };
   storyHtml = function(story) {
     return $('<div/>', {
       id: story.id,
-      "class": 'story',
+      "class": 'item story',
       tabindex: 1
     }).append($('<a/>', {
       href: story.href,
       "class": 'story-link'
     }).text(story.title)).append($('<span/>', {
       "class": 'cc'
-    }).text(story.cc || 'No comments'));
+    }).text(story.cc));
+  };
+  jobAdHtml = function(ad) {
+    return storyHtml(ad);
   };
   commentHtml = function(comment) {
     return $('<div/>', {
       id: comment.id,
-      "class": 'comment',
+      "class": 'item comment',
       tabindex: 1
-    }).html(comment.comment.join('\n'));
+    }).append($('<div/>', {
+      "class": 'comment-text'
+    }).html(comment.comment.join('\n'))).append($('<div/>', {
+      "class": 'comment-children'
+    }));
   };
 }).call(this);

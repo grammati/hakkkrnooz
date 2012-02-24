@@ -45,7 +45,7 @@
   @(locking cache
      (let [{:keys [t v]} (get @cache key)]
        (if (and v (not force) (< (System/currentTimeMillis) (+ t cache-ttl)))
-         v
+         (do (println "Returning cached value for key " key) v)
          (-> cache
              (swap! assoc key {:t (System/currentTimeMillis)
                                :v delayed-value})

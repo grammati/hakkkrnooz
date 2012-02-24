@@ -13,17 +13,22 @@ K =
 
 hookup = () ->
     $(document)
-    .on 'keydown', 'div.story', (e) ->
-        story = $(e.target)
-        id = story?.attr 'id'
+    .on 'keydown', 'div.item', (e) ->
+        div = $(e.target)
+        item = div.attr 'data'
         switch e.which
-            when K.Enter, K.Right then showComments(id) if id
+            when K.Enter, K.Right
+                e.preventDefault()
+                showChildren(item)
+            when K.Left
+                e.preventDefault()
+                focusParent(item)
             when K.Down
                 e.preventDefault()
-                story.next()?.focus()
+                div.next()?.focus()
             when K.Up
                 e.preventDefault()
-                story.prev()?.focus()
+                div.prev()?.focus()
 
 
 showStories = (stories) ->
@@ -31,29 +36,45 @@ showStories = (stories) ->
         div = $('#stories')
         for story in stories
             div.append htmlFor(story)
+        $('.story:first-child', div).focus()
 
-showComments = (id) ->
+showChildren = (item) ->
+    switch item?.type
+        when 'story' then showStories(item)
+        when 'comment' then showReplies(item)
+
+showComments = (story) ->
+    id = story?.id
     return if not /^\d+$/.exec(id)
     div = $('#comments')
     div.empty()
     $.getJSON "/comments/" + id, (comments) ->
         for c in comments
+            c.parent = story
             div.append htmlFor(c)
         $('.comment:first-child', div).focus()
 
+showReplies = (comment) ->
+    "FIXME"
+
+focusParent = (item) ->
+    $('#' + item.id).focus()
 
 htmlFor = (obj) ->
-    switch obj?.type
+    e = switch obj?.type
         when 'story' then storyHtml(obj)
+        when 'job-ad' then jobAdHtml(obj)
         when 'comment' then commentHtml(obj)
         else $('<div/>').html('??????')
+    e.data = obj
+    e
 
-# TODO - get a temlate engine - this is messy
+# TODO - get a template engine - this is messy
 
 storyHtml = (story) ->
     $ '<div/>',
         id: story.id
-        class: 'story'
+        class: 'item story'
         tabindex: 1
     .append(
         $ '<a/>',
@@ -63,13 +84,22 @@ storyHtml = (story) ->
     ).append(
         $ '<span/>',
             class: 'cc'
-        .text story.cc or 'No comments'
+        .text story.cc
     )
+
+jobAdHtml = (ad) ->
+    storyHtml(ad)
 
 commentHtml = (comment) ->
     $ '<div/>',
         id: comment.id
-        class: 'comment'
+        class: 'item comment'
         tabindex: 1
-    .html(comment.comment.join('\n'))
-
+    .append(
+        $ '<div/>',
+            class: 'comment-text'
+        .html(comment.comment.join('\n'))
+    ).append(
+        $ '<div/>',
+            class: 'comment-children'
+    )
