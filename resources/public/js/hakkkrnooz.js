@@ -1,9 +1,11 @@
 (function() {
-  var K, Kmap, KmapVim, commentHtml, focusNext, focusPrev, htmlFor, initEvents, jobAdHtml, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
+  var K, Kmap, KmapVim, commentHtml, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
+
   $(function() {
     showStories();
     return initEvents();
   });
+
   K = {
     Enter: 13,
     Esc: 27,
@@ -17,6 +19,7 @@
     K: 75,
     L: 76
   };
+
   Kmap = function(key) {
     switch (key) {
       case K.Enter:
@@ -30,6 +33,7 @@
         return focusPrev;
     }
   };
+
   KmapVim = function(key) {
     switch (key) {
       case K.L:
@@ -44,6 +48,7 @@
         return Kmap(key);
     }
   };
+
   initEvents = function() {
     return $(document).on('keydown', 'div.item', function(e) {
       var fn;
@@ -54,14 +59,17 @@
       }
     });
   };
+
   focusNext = function(e) {
     var _ref;
     return (_ref = e.next()) != null ? _ref.focus() : void 0;
   };
+
   focusPrev = function(e) {
     var _ref;
     return (_ref = e.prev()) != null ? _ref.focus() : void 0;
   };
+
   showStories = function() {
     return $.getJSON("/stories", function(stories) {
       var div, story, _i, _len;
@@ -73,6 +81,7 @@
       return $('.story:first-child', div).focus();
     });
   };
+
   showChildren = function(item) {
     switch (item != null ? item.attr('type') : void 0) {
       case 'story':
@@ -81,31 +90,40 @@
         return showReplies(item);
     }
   };
+
   showComments = function(story) {
     var div, id;
     id = story != null ? story.attr('id') : void 0;
-    if (!/^\d+$/.exec(id)) {
-      return;
-    }
+    if (!/^\d+$/.exec(id)) return;
     div = $('#comments');
     div.empty();
     return $.getJSON("/comments/" + id, function(comments) {
-      var c, _i, _len;
+      var c, e, _i, _len;
       for (_i = 0, _len = comments.length; _i < _len; _i++) {
         c = comments[_i];
-        c.parent = story;
-        div.append(htmlFor(c));
+        e = htmlFor(c);
+        e.attr('parentid', id);
+        div.append(e);
       }
       return $('.comment:first-child', div).focus();
     });
   };
+
   showReplies = function(comment) {
     return "FIXME";
   };
+
+  getParent = function(item) {
+    var parentid;
+    parentid = item.attr('parentid');
+    if (parentid) return $('#' + parentid);
+  };
+
   upToParent = function(item) {
     var _ref;
-    return (_ref = item.parent) != null ? _ref.focus() : void 0;
+    return (_ref = getParent(item)) != null ? _ref.focus() : void 0;
   };
+
   htmlFor = function(obj) {
     var e;
     e = (function() {
@@ -123,6 +141,7 @@
     e.attr('type', obj.type);
     return e;
   };
+
   storyHtml = function(story) {
     return $('<div/>', {
       id: story.id,
@@ -135,9 +154,11 @@
       "class": 'cc'
     }).text(story.cc));
   };
+
   jobAdHtml = function(ad) {
     return storyHtml(ad);
   };
+
   commentHtml = function(comment) {
     return $('<div/>', {
       id: comment.id,
@@ -149,4 +170,5 @@
       "class": 'comment-children'
     }));
   };
+
 }).call(this);

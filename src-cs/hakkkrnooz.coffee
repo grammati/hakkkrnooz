@@ -64,15 +64,20 @@ showComments = (story) ->
     div.empty()
     $.getJSON "/comments/" + id, (comments) ->
         for c in comments
-            c.parent = story
-            div.append htmlFor(c)
+            e = htmlFor(c)
+            e.attr('parentid', id)
+            div.append e
         $('.comment:first-child', div).focus()
 
 showReplies = (comment) ->
     "FIXME"
 
+getParent = (item) ->
+    parentid = item.attr('parentid')
+    $('#' + parentid) if parentid
+
 upToParent = (item) ->
-    item.parent?.focus()
+    getParent(item)?.focus()
 
 htmlFor = (obj) ->
     e = switch obj?.type
