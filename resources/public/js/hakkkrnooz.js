@@ -1,8 +1,8 @@
 (function() {
-  var K, commentHtml, focusParent, hookup, htmlFor, jobAdHtml, showChildren, showComments, showReplies, showStories, storyHtml;
+  var K, Kmap, KmapVim, commentHtml, focusNext, focusPrev, htmlFor, initEvents, jobAdHtml, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
   $(function() {
-    hookup();
-    return showStories();
+    showStories();
+    return initEvents();
   });
   K = {
     Enter: 13,
@@ -11,31 +11,58 @@
     Left: 37,
     Up: 38,
     Right: 39,
-    Down: 40
+    Down: 40,
+    H: 72,
+    J: 74,
+    K: 75,
+    L: 76
   };
-  hookup = function() {
+  Kmap = function(key) {
+    switch (key) {
+      case K.Enter:
+      case K.Right:
+        return showChildren;
+      case K.Left:
+        return upToParent;
+      case K.Down:
+        return focusNext;
+      case K.Up:
+        return focusPrev;
+    }
+  };
+  KmapVim = function(key) {
+    switch (key) {
+      case K.L:
+        return showChildren;
+      case K.H:
+        return upToParent;
+      case K.J:
+        return focusNext;
+      case K.K:
+        return focusPrev;
+      default:
+        return Kmap(key);
+    }
+  };
+  initEvents = function() {
     return $(document).on('keydown', 'div.item', function(e) {
-      var div, item, _ref, _ref2;
-      div = $(e.target);
-      item = div.attr('data');
-      switch (e.which) {
-        case K.Enter:
-        case K.Right:
-          e.preventDefault();
-          return showChildren(item);
-        case K.Left:
-          e.preventDefault();
-          return focusParent(item);
-        case K.Down:
-          e.preventDefault();
-          return (_ref = div.next()) != null ? _ref.focus() : void 0;
-        case K.Up:
-          e.preventDefault();
-          return (_ref2 = div.prev()) != null ? _ref2.focus() : void 0;
+      var fn;
+      fn = KmapVim(e.which);
+      if (fn) {
+        fn($(e.target));
+        return e.preventDefault();
       }
     });
   };
-  showStories = function(stories) {
+  focusNext = function(e) {
+    var _ref;
+    return (_ref = e.next()) != null ? _ref.focus() : void 0;
+  };
+  focusPrev = function(e) {
+    var _ref;
+    return (_ref = e.prev()) != null ? _ref.focus() : void 0;
+  };
+  showStories = function() {
     return $.getJSON("/stories", function(stories) {
       var div, story, _i, _len;
       div = $('#stories');
@@ -47,16 +74,16 @@
     });
   };
   showChildren = function(item) {
-    switch (item != null ? item.type : void 0) {
+    switch (item != null ? item.attr('type') : void 0) {
       case 'story':
-        return showStories(item);
+        return showComments(item);
       case 'comment':
         return showReplies(item);
     }
   };
   showComments = function(story) {
     var div, id;
-    id = story != null ? story.id : void 0;
+    id = story != null ? story.attr('id') : void 0;
     if (!/^\d+$/.exec(id)) {
       return;
     }
@@ -75,8 +102,9 @@
   showReplies = function(comment) {
     return "FIXME";
   };
-  focusParent = function(item) {
-    return $('#' + item.id).focus();
+  upToParent = function(item) {
+    var _ref;
+    return (_ref = item.parent) != null ? _ref.focus() : void 0;
   };
   htmlFor = function(obj) {
     var e;
@@ -92,7 +120,7 @@
           return $('<div/>').html('??????');
       }
     })();
-    e.data = obj;
+    e.attr('type', obj.type);
     return e;
   };
   storyHtml = function(story) {

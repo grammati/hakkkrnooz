@@ -1,7 +1,8 @@
 $ () ->
-    hookup()
     showStories()
+    initEvents()
 
+# Keyboard event handling
 K =
     Enter: 13
     Esc:   27
@@ -10,28 +11,41 @@ K =
     Up:    38
     Right: 39
     Down:  40
+    H:     72
+    J:     74
+    K:     75
+    L:     76
 
-hookup = () ->
+Kmap = (key) ->
+    switch key
+        when K.Enter, K.Right then showChildren
+        when K.Left then upToParent
+        when K.Down then focusNext
+        when K.Up then focusPrev
+
+KmapVim = (key) ->
+    switch key
+        when K.L then showChildren
+        when K.H then upToParent
+        when K.J then focusNext
+        when K.K then focusPrev
+        else Kmap(key)
+
+initEvents = () ->
     $(document)
     .on 'keydown', 'div.item', (e) ->
-        div = $(e.target)
-        item = div.attr 'data'
-        switch e.which
-            when K.Enter, K.Right
-                e.preventDefault()
-                showChildren(item)
-            when K.Left
-                e.preventDefault()
-                focusParent(item)
-            when K.Down
-                e.preventDefault()
-                div.next()?.focus()
-            when K.Up
-                e.preventDefault()
-                div.prev()?.focus()
+        fn = KmapVim(e.which)
+        if fn
+            fn $(e.target)
+            e.preventDefault()
 
+focusNext = (e) ->
+    e.next()?.focus()
 
-showStories = (stories) ->
+focusPrev = (e) ->
+    e.prev()?.focus()
+
+showStories = () ->
     $.getJSON "/stories", (stories) ->
         div = $('#stories')
         for story in stories
@@ -39,12 +53,12 @@ showStories = (stories) ->
         $('.story:first-child', div).focus()
 
 showChildren = (item) ->
-    switch item?.type
-        when 'story' then showStories(item)
+    switch item?.attr('type')
+        when 'story' then showComments(item)
         when 'comment' then showReplies(item)
 
 showComments = (story) ->
-    id = story?.id
+    id = story?.attr('id')
     return if not /^\d+$/.exec(id)
     div = $('#comments')
     div.empty()
@@ -57,8 +71,8 @@ showComments = (story) ->
 showReplies = (comment) ->
     "FIXME"
 
-focusParent = (item) ->
-    $('#' + item.id).focus()
+upToParent = (item) ->
+    item.parent?.focus()
 
 htmlFor = (obj) ->
     e = switch obj?.type
@@ -66,7 +80,7 @@ htmlFor = (obj) ->
         when 'job-ad' then jobAdHtml(obj)
         when 'comment' then commentHtml(obj)
         else $('<div/>').html('??????')
-    e.data = obj
+    e.attr('type', obj.type)
     e
 
 # TODO - get a template engine - this is messy
