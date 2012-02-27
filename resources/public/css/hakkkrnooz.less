@@ -22,24 +22,28 @@ body {
     background: @orange;
     padding: 2px;
     h1 {
-        font: 150% bold Verdana;
+        font: 140% bold Verdana;
     }
 }
 
-.stories {
+.stories, .comments {
     position: absolute;
     top: 0;
-    left: 0;
     margin-top: 38px;
     width: 550px;
 }
 
+.stories {
+    left: 0;
+}
+
 .comments {
-    position: absolute;
-    top: 0;
     left: 550px;
-    width: 550px;
-    margin-top: 38px;
+}
+
+.loading {
+    background: url(/images/loading.gif) no-repeat center center;
+    height: 200px;
 }
 
 .item {
@@ -54,7 +58,12 @@ body {
 }
 .item:focus {
     outline: none;
-    border: 2px solid orange;
+    border: 2px solid @orange;
+    padding: 3px 3px 3px 11px;
+}
+
+.active-parent {
+    border: 2px solid darken(@orange, 25%);
     padding: 3px 3px 3px 11px;
 }
 

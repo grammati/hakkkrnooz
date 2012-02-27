@@ -71,9 +71,12 @@
   };
 
   showStories = function() {
+    var div;
+    div = $('#stories');
+    div.addClass('loading');
     return $.getJSON("/stories", function(stories) {
-      var div, story, _i, _len;
-      div = $('#stories');
+      var story, _i, _len;
+      div.removeClass('loading');
       for (_i = 0, _len = stories.length; _i < _len; _i++) {
         story = stories[_i];
         div.append(htmlFor(story));
@@ -97,14 +100,17 @@
     if (!/^\d+$/.exec(id)) return;
     div = $('#comments');
     div.empty();
+    div.addClass('loading');
     return $.getJSON("/comments/" + id, function(comments) {
       var c, e, _i, _len;
+      div.removeClass('loading');
       for (_i = 0, _len = comments.length; _i < _len; _i++) {
         c = comments[_i];
         e = htmlFor(c);
         e.attr('parentid', id);
         div.append(e);
       }
+      story.addClass('active-parent');
       return $('.comment:first-child', div).focus();
     });
   };
@@ -120,8 +126,13 @@
   };
 
   upToParent = function(item) {
-    var _ref;
-    return (_ref = getParent(item)) != null ? _ref.focus() : void 0;
+    var parent, _ref;
+    if ((_ref = item.parent()) != null) _ref.empty();
+    parent = getParent(item);
+    if (parent) {
+      parent.focus();
+      return parent.removeClass('active-parent');
+    }
   };
 
   htmlFor = function(obj) {

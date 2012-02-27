@@ -46,8 +46,10 @@ focusPrev = (e) ->
     e.prev()?.focus()
 
 showStories = () ->
+    div = $('#stories')
+    div.addClass('loading')
     $.getJSON "/stories", (stories) ->
-        div = $('#stories')
+        div.removeClass('loading')
         for story in stories
             div.append htmlFor(story)
         $('.story:first-child', div).focus()
@@ -62,11 +64,14 @@ showComments = (story) ->
     return if not /^\d+$/.exec(id)
     div = $('#comments')
     div.empty()
+    div.addClass('loading')
     $.getJSON "/comments/" + id, (comments) ->
+        div.removeClass('loading')
         for c in comments
             e = htmlFor(c)
             e.attr('parentid', id)
             div.append e
+        story.addClass('active-parent')
         $('.comment:first-child', div).focus()
 
 showReplies = (comment) ->
@@ -77,7 +82,13 @@ getParent = (item) ->
     $('#' + parentid) if parentid
 
 upToParent = (item) ->
-    getParent(item)?.focus()
+    # Remove this level of comments by clearing its DOM parent.
+    item.parent()?.empty()
+    # Get the parent comment or story (not DOM parent, as above - confusing, I know)
+    parent = getParent(item)
+    if parent
+        parent.focus()
+        parent.removeClass('active-parent')
 
 htmlFor = (obj) ->
     e = switch obj?.type
