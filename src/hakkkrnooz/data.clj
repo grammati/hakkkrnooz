@@ -1,6 +1,5 @@
 (ns hakkkrnooz.data
   (:require (hakkkrnooz [scrape :as scrape])
-            (clojure.core [memoize :as mem])
             (cheshire [core :as ches]))
   (:import (org.jsoup Jsoup)
            (java.net URL)))
