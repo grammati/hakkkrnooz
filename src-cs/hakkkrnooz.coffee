@@ -1,3 +1,6 @@
+
+columnWidth = 550;
+
 $ () ->
     showStories()
     initEvents()
@@ -48,6 +51,8 @@ focusPrev = (e) ->
 
 showStories = () ->
     div = $('#stories')
+    div.css('width', columnWidth)
+    div.attr('data-column-number', 1)
     div.addClass('loading')
     $.getJSON "/stories", (stories) ->
         div.removeClass('loading')
@@ -65,15 +70,31 @@ showChildren = (item) ->
         when 'story' then showComments(item)
         when 'comment' then showReplies(item)
 
+addColumn = () ->
+    columns = $('#content > div.column')
+    ncols = columns.length
+    newCol = $('div').addClass('column').css('left', ncols * columnWidth).attr('data-column-number', 1 + ncols)
+    $('#content').append(newCol)
+    newCol
+
+removeLastColumn = () ->
+    cols = $('#content > div.column')
+    if cols.length > 1
+        cols.last().remove()
+
+# yeah, it's global variable - but it's OK, it's coffeescript :)
+commentCache = {}
+
 showComments = (story) ->
     id = story?.attr('id')
     return if not /^\d+$/.exec(id)
-    div = $('#comments')
-    div.empty()
+    div = addColumn()
     div.addClass('loading')
+    # todo - don't reload every time?
     $.getJSON "/comments/" + id, (comments) ->
         div.removeClass('loading')
         for c in comments
+            commentCache[c.id] = c
             e = htmlFor(c)
             e.attr('parentid', id)
             div.append e
@@ -92,7 +113,7 @@ getParent = (item) ->
 upToParent = (item) ->
     return if item.attr('type') != 'comment'
     # Remove this level of comments by clearing its DOM parent.
-    item.parent()?.empty()
+    item.parent()?.remove()
     # Get the parent comment or story (not DOM parent, as above - confusing, I know)
     parent = getParent(item)
     if parent
@@ -130,11 +151,6 @@ jobAdHtml = (ad) ->
     storyHtml(ad)
 
 commentHtml = (comment) ->
-    replies = $ '<div/>',
-        class: 'comment-children'
-    for reply in comment.replies
-        replies.append commentHtml(reply)
-
     $ '<div/>',
         id: comment.id
         class: 'item comment'
@@ -143,6 +159,4 @@ commentHtml = (comment) ->
         $ '<div/>',
             class: 'comment-text'
         .html(comment.comment.join('\n'))
-    ).append(
-        replies
     )

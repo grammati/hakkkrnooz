@@ -35,9 +35,8 @@
    [:body.theme-1
     [:div.header
      [:h1 "Hakkkrnooz"]]
-    [:div.content
-     [:div#stories.stories]
-     [:div#comments.comments]]]))
+    [:div#content.content
+     [:div#stories.stories.column]]]))
 
 (defn stories []
   (data/stories-json))
