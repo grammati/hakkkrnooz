@@ -82,7 +82,8 @@ showComments = (story) ->
 
 showReplies = (comment) ->
     $('.comment-children', $(comment).parent()).hide()
-    $('.comment-children', comment) .show()
+    $('.comment-children', comment).show()
+    $('.comment:first-child', comment).first().focus()
 
 getParent = (item) ->
     parentid = item.attr('parentid')

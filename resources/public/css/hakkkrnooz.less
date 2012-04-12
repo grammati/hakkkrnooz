@@ -27,8 +27,14 @@ pre {
 
 .header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: @orange;
-    padding: 2px;
+    padding: 2px 10px;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: darken(@orange, 25%);
     h1 {
         font: 140% bold Verdana;
     }
@@ -39,8 +45,8 @@ pre {
     top: 0;
     margin-top: 38px;
     width: 550px;
-    overflow-y: hidden;
-    overflow-x: visible;
+    /*overflow-y: hidden;
+    overflow-x: visible;*/
 }
 
 .stories {
