@@ -8,7 +8,7 @@
 
 
 ;; serve from files in test/offline instead of scraping the real HN
-(def ^:dynamic *offline* true)
+(def ^:dynamic *offline* false)
 
 
 (defn include-less [& styles]

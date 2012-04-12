@@ -14,7 +14,10 @@
   (str HN "/news"))
 
 (defn load-and-soupify [url]
-  (Jsoup/parse (URL. url) 5000))
+  (let [url (if (.startsWith url HN)
+              url
+              (str HN url))]
+    (Jsoup/parse (URL. url) 5000)))
 
 (defn load-stories []
   (-> (stories-url)
