@@ -1,0 +1,30 @@
+<html><head><link rel="stylesheet" type="text/css" href="http://ycombinator.com/news.css">
+<link rel="shortcut icon" href="http://ycombinator.com/favicon.ico">
+<script>
+function byId(id) {
+  return document.getElementById(id);
+}
+
+function vote(node) {
+  var v = node.id.split(/_/);   // {'up', '123'}
+  var item = v[1]; 
+
+  // hide arrows
+  byId('up_'   + item).style.visibility = 'hidden';
+  byId('down_' + item).style.visibility = 'hidden';
+
+  // ping server
+  var ping = new Image();
+  ping.src = node.href;
+
+  return false; // cancel browser nav
+} </script><title>Expanding the Cloud – Introducing Amazon CloudSearch | Hacker News</title></head><body><center><table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef><tr><td bgcolor=#ff6600><table border=0 cellpadding=0 cellspacing=0 width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://ycombinator.com"><img src="http://ycombinator.com/images/y18.gif" width=18 height=18 style="border:1px #ffffff solid;"></img></a></td><td style="line-height:12pt; height:10px;"><span class="pagetop"><b><a href="news">Hacker News</a></b><img src="http://ycombinator.com/images/s.gif" height=1 width=10><a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a></span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop"><a href="newslogin?whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36">login</a></span></td></tr></table></td></tr><tr style="height:10px"></tr><tr><td><table border=0><tr><td><center><a id=up_3831346 href="vote?for=3831346&dir=up&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36"><img src="http://ycombinator.com/images/grayarrow.gif" border=0 vspace=3 hspace=2></a><span id=down_3831346></span></center></td><td class="title"><a href="http://www.allthingsdistributed.com/2012/04/amazon-cloudsearch.html">Expanding the Cloud – Introducing Amazon CloudSearch</a><span class="comhead"> (allthingsdistributed.com) </span></td></tr><tr><td colspan=1></td><td class="subtext"><span id=score_3831346>26 points</span> by <a href="user?id=werner">werner</a> 3 hours ago  | <a href="item?id=3831346">3 comments</a></td></tr><tr style="height:10px"></tr><tr><td></td><td><form method=post action="/r"><input type=hidden name="fnid" value="XUp5Aa6mFH"><textarea name="text" rows=6 cols=60></textarea><br><br>
+<input type=submit value="add comment"></form></td></tr></table><br><br>
+<table border=0><tr><td><table border=0><tr><td><img src="http://ycombinator.com/images/s.gif" height=1 width=0></td><td valign=top><center><a id=up_3831420 href="vote?for=3831420&dir=up&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36"><img src="http://ycombinator.com/images/grayarrow.gif" border=0 vspace=3 hspace=2></a><span id=down_3831420></span></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead"><a href="user?id=pan69">pan69</a> 3 hours ago  | <a href="item?id=3831420">link</a></span></div><br>
+<span class="comment"><font color=#000000>Does anyone know what technology they are using to power this? Solr?</font></span><p><font size=1><u><a href="reply?id=3831420&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36">reply</a></u></font></td></tr></table></td></tr><tr><td><table border=0><tr><td><img src="http://ycombinator.com/images/s.gif" height=1 width=40></td><td valign=top><center><a id=up_3831508 href="vote?for=3831508&dir=up&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36"><img src="http://ycombinator.com/images/grayarrow.gif" border=0 vspace=3 hspace=2></a><span id=down_3831508></span></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead"><a href="user?id=simonw">simonw</a> 2 hours ago  | <a href="item?id=3831508">link</a></span></div><br>
+<span class="comment"><font color=#000000>It's Amazon's in-house search stack, related to the A9 project.</font></span><p><font size=1><u><a href="reply?id=3831508&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36">reply</a></u></font></td></tr></table></td></tr><tr><td><table border=0><tr><td><img src="http://ycombinator.com/images/s.gif" height=1 width=0></td><td valign=top><center><a id=up_3831382 href="vote?for=3831382&dir=up&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36"><img src="http://ycombinator.com/images/grayarrow.gif" border=0 vspace=3 hspace=2></a><span id=down_3831382></span></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead"><a href="user?id=sandieman">sandieman</a> 3 hours ago  | <a href="item?id=3831382">link</a></span></div><br>
+<span class="comment"><font color=#737373>Why is this awesome?</font></span><p><font size=1><u><a href="reply?id=3831382&whence=%69%74%65%6d%3f%69%64%3d%33%38%33%31%33%34%36">reply</a></u></font></td></tr></table></td></tr></table><br><br>
+</td></tr><tr><td><img src="http://ycombinator.com/images/s.gif" height=10 width=0><table width="100%" cellspacing=0 cellpadding=1><tr><td bgcolor=#ff6600></td></tr></table><br>
+<center><span class="yclinks"><a href="lists">Lists</a> | <a href="rss">RSS</a> | <a href="http://ycombinator.com/bookmarklet.html">Bookmarklet</a> | <a href="http://ycombinator.com/newsguidelines.html">Guidelines</a> | <a href="http://ycombinator.com/newsfaq.html">FAQ</a> | <a href="http://ycombinator.com/newsnews.html">News News</a> | <a href="item?id=363">Feature Requests</a> | <a href="http://ycombinator.com">Y Combinator</a> | <a href="http://ycombinator.com/apply.html">Apply</a> | <a href="http://ycombinator.com/lib.html">Library</a></span><br><br>
+<form method=get action="http://www.hnsearch.com/search#request/all">Search: <input type=text name="q" value="" size=17></form><br>
+</center></td></tr></table></center></body></html>

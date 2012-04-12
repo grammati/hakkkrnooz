@@ -7,9 +7,20 @@
             (hakkkrnooz [data :as data])))
 
 
+;; serve from files in test/offline instead of scraping the real HN
+(def ^:dynamic *offline* true)
+
+
 (defn include-less [& styles]
   (for [style styles]
     [:link {:type "text/css", :href (resolve-uri style), :rel "stylesheet/less"}]))
+
+(defn- url-for [name]
+  ({:jquery (if *offline* "js/jquery.js"
+                "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+    :less   (if *offline* "js/less.js"
+                "http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js")
+    } name))
 
 (defn main-page []
   (html
@@ -18,8 +29,8 @@
     [:title "Hakkkrnooz"]
     (include-css "/css/reset.css")
     (include-less "/css/hakkkrnooz.less")
-    (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-                "http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js"
+    (include-js (url-for :jquery)
+                (url-for :less)
                 "/js/hakkkrnooz.js")]
    [:body.theme-1
     [:div.header

@@ -1,5 +1,5 @@
 (function() {
-  var K, Kmap, KmapVim, commentHtml, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
+  var K, Kmap, KmapVim, commentHtml, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, openCurrent, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
 
   $(function() {
     showStories();
@@ -23,6 +23,7 @@
   Kmap = function(key) {
     switch (key) {
       case K.Enter:
+        return openCurrent;
       case K.Right:
         return showChildren;
       case K.Left:
@@ -85,6 +86,15 @@
     });
   };
 
+  openCurrent = function(item) {
+    switch (item != null ? item.attr('type') : void 0) {
+      case 'story':
+        return window.open(item.data('story').href);
+      case 'comment':
+        return expandComment;
+    }
+  };
+
   showChildren = function(item) {
     switch (item != null ? item.attr('type') : void 0) {
       case 'story':
@@ -116,7 +126,8 @@
   };
 
   showReplies = function(comment) {
-    return "FIXME";
+    $('.comment-children', $(comment).parent()).hide();
+    return $('.comment-children', comment).show();
   };
 
   getParent = function(item) {
@@ -127,6 +138,7 @@
 
   upToParent = function(item) {
     var parent, _ref;
+    if (item.attr('type') !== 'comment') return;
     if ((_ref = item.parent()) != null) _ref.empty();
     parent = getParent(item);
     if (parent) {
@@ -163,7 +175,7 @@
       "class": 'story-link'
     }).text(story.title)).append($('<span/>', {
       "class": 'cc'
-    }).text(story.cc));
+    }).text(story.cc)).data('story', story);
   };
 
   jobAdHtml = function(ad) {
@@ -171,15 +183,22 @@
   };
 
   commentHtml = function(comment) {
+    var replies, reply, _i, _len, _ref;
+    replies = $('<div/>', {
+      "class": 'comment-children'
+    });
+    _ref = comment.replies;
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      reply = _ref[_i];
+      replies.append(commentHtml(reply));
+    }
     return $('<div/>', {
       id: comment.id,
       "class": 'item comment',
       tabindex: 1
     }).append($('<div/>', {
       "class": 'comment-text'
-    }).html(comment.comment.join('\n'))).append($('<div/>', {
-      "class": 'comment-children'
-    }));
+    }).html(comment.comment.join('\n'))).append(replies);
   };
 
 }).call(this);

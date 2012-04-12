@@ -54,7 +54,7 @@
         (if (block? item)
           (recur items (conj blocks (str item)))
           (let [[inl more] (split-with inline? all)]
-            (recur more (conj blocks (apply str inl)))))))))
+            (recur more (conj blocks (str "<p>" (apply str inl) "</p>")))))))))
 
 (defn parse-comment
   "Parse the data out of the markup for a single comment on HN."

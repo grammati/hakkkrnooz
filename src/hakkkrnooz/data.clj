@@ -13,16 +13,12 @@
 (defn stories-url []
   (str HN "/news"))
 
-(defn get-hn-page [url]
-  (let [url (if (.startsWith url HN)
-              url
-              (str HN url))]
-    (Jsoup/parse (URL. url) 5000)))
+(defn load-and-soupify [url]
+  (Jsoup/parse (URL. url) 5000))
 
 (defn load-stories []
   (-> (stories-url)
-      URL.
-      (Jsoup/parse 5000)
+      load-and-soupify
       scrape/parse-stories))
 
 (defn load-comments
@@ -31,7 +27,7 @@
   (loop [c nil
          url (comments-url id)]
     (if url
-      (let [{:keys [comments more]} (scrape/parse-comments (get-hn-page url))]
+      (let [{:keys [comments more]} (scrape/parse-comments (load-and-soupify url))]
         (println "loaded: " url)
         (recur (concat c comments) more))
       c)))

@@ -12,9 +12,17 @@
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
 }
+.highlight(@color) {
+    border: 2px solid @color;
+    padding: 3px 3px 3px 11px;
+}
 
 body {
     font-family: 'Verdana';
+}
+
+pre {
+    font-family: monospace;
 }
 
 .header {
@@ -31,6 +39,8 @@ body {
     top: 0;
     margin-top: 38px;
     width: 550px;
+    overflow-y: hidden;
+    overflow-x: visible;
 }
 
 .stories {
@@ -52,25 +62,37 @@ body {
     padding: 4px 4px 4px 12px;
     margin: 3px;
     a {
-        text-decoration: none;
         color: black;
+    }
+    p, pre {
+        margin: 0.5em 0em;
     }
 }
 .item:focus {
     outline: none;
-    border: 2px solid @orange;
-    padding: 3px 3px 3px 11px;
+    .highlight(@orange);
 }
 
 .active-parent {
-    border: 2px solid darken(@orange, 25%);
-    padding: 3px 3px 3px 11px;
+    .highlight(darken(@orange, 25%));
 }
 
-.story .cc {
-    display: block;
-    float: right;
+.story {
+    a {
+        text-decoration: none;
+    }
+    .cc {
+        display: block;
+        float: right;
+    }
 }
 
 .comment {
+    .comment-children {
+        position: absolute;
+        top: 0;
+        left: 550px;
+        width: 550px;
+        display: none;
+    }
 }

@@ -18,7 +18,8 @@ K =
 
 Kmap = (key) ->
     switch key
-        when K.Enter, K.Right then showChildren
+        when K.Enter then openCurrent
+        when K.Right then showChildren
         when K.Left then upToParent
         when K.Down then focusNext
         when K.Up then focusPrev
@@ -54,6 +55,11 @@ showStories = () ->
             div.append htmlFor(story)
         $('.story:first-child', div).focus()
 
+openCurrent = (item) ->
+    switch item?.attr('type')
+        when 'story' then window.open(item.data('story').href)
+        when 'comment' then expandComment
+
 showChildren = (item) ->
     switch item?.attr('type')
         when 'story' then showComments(item)
@@ -75,13 +81,15 @@ showComments = (story) ->
         $('.comment:first-child', div).focus()
 
 showReplies = (comment) ->
-    "FIXME"
+    $('.comment-children', $(comment).parent()).hide()
+    $('.comment-children', comment) .show()
 
 getParent = (item) ->
     parentid = item.attr('parentid')
     $('#' + parentid) if parentid
 
 upToParent = (item) ->
+    return if item.attr('type') != 'comment'
     # Remove this level of comments by clearing its DOM parent.
     item.parent()?.empty()
     # Get the parent comment or story (not DOM parent, as above - confusing, I know)
@@ -115,12 +123,17 @@ storyHtml = (story) ->
         $ '<span/>',
             class: 'cc'
         .text story.cc
-    )
+    ).data('story', story)
 
 jobAdHtml = (ad) ->
     storyHtml(ad)
 
 commentHtml = (comment) ->
+    replies = $ '<div/>',
+        class: 'comment-children'
+    for reply in comment.replies
+        replies.append commentHtml(reply)
+
     $ '<div/>',
         id: comment.id
         class: 'item comment'
@@ -130,6 +143,5 @@ commentHtml = (comment) ->
             class: 'comment-text'
         .html(comment.comment.join('\n'))
     ).append(
-        $ '<div/>',
-            class: 'comment-children'
+        replies
     )
