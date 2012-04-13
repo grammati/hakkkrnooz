@@ -8,6 +8,7 @@
 
                  [cheshire "2.2.0"]
 
+                 [ring/ring-jetty-adapter "1.1.0-RC1"]
                  ]
   :ring {:handler hakkkrnooz.web/app-routes}
   )
