@@ -1,3 +1,11 @@
+# hakkkrnooz.coffee
+
+_.templateSettings = {
+  interpolate : /\{\{(.+?)\}\}/g
+}
+
+storyTemplate = _.template($('#story-template').text())
+commentTemplate = _.template($('#comment-template').text())
 
 columnWidth = 550;
 
@@ -118,10 +126,7 @@ appendComments = (comments, div, parentid) ->
         e = htmlFor(c)
         e.attr('parentid', parentid)
         div.append e
-    div.animate({
-        top:   0, #div.position().top,
-        width: columnWidth
-    }, 250)
+    div.fadeIn('fast')
 
 scrollH = () ->
     overWidth = $(document).width() - $(window).width()
@@ -153,31 +158,12 @@ htmlFor = (obj) ->
 # TODO - get a template engine - this is messy
 
 storyHtml = (story) ->
-    $ '<div/>',
-        id: story.id
-        class: 'item story'
-        tabindex: 1
-    .append(
-        $ '<a/>',
-            href: story.href
-            class: 'story-link'
-        .text story.title
-    ).append(
-        $ '<span/>',
-            class: 'cc'
-        .text story.cc
-    ).data('story', story)
+    data = $.extend({id: '-1', href: '#', title: '???', cc: 0}, story)
+    return $(storyTemplate(data)).data('story', story)
 
 jobAdHtml = (ad) ->
     storyHtml(ad)
 
 commentHtml = (comment) ->
-    $ '<div/>',
-        id: comment.id
-        class: 'item comment'
-        tabindex: 1
-    .append(
-        $ '<div/>',
-            class: 'comment-text'
-        .html(comment.comment.join('\n'))
-    )
+    data = $.extend({id: '-1', comment: []}, comment)
+    return $(commentTemplate(data))

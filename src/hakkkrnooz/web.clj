@@ -20,7 +20,22 @@
                 "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
     :less   (if *offline* "js/less.js"
                 "http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js")
+    :underscore (if *offline* "js/underscore.js"
+                    "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js")
     } name))
+
+(defn story-template []
+  [:script {:type "text/template" :id "story-template"}
+   [:div.item.story {:id "{{ id }}" :tabindex 1}
+    [:a.story-link {:href "{{ href }}"}
+     "{{ title }}"]
+    [:span.cc "{{ cc }}"]]])
+
+(defn comment-template []
+  [:script {:type "text/template" :id "comment-template"}
+   [:div.item.comment {:id "{{ id }}" :tabindex 1}
+    [:div.comment-text
+     "{{ comment }}"]]])
 
 (defn main-page []
   (html
@@ -29,7 +44,10 @@
     [:title "Hakkkrnooz"]
     (include-css "/css/reset.css")
     (include-less "/css/hakkkrnooz.less")
+    (story-template)
+    (comment-template)
     (include-js (url-for :jquery)
+                (url-for :underscore)
                 (url-for :less)
                 "/js/hakkkrnooz.js")]
    [:body.theme-1

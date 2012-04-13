@@ -1,5 +1,13 @@
 (function() {
-  var K, Kmap, KmapVim, addColumn, appendComments, columnWidth, commentCache, commentHtml, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, openCurrent, removeLastColumn, scrollH, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
+  var K, Kmap, KmapVim, addColumn, appendComments, columnWidth, commentCache, commentHtml, commentTemplate, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, openCurrent, removeLastColumn, scrollH, showChildren, showComments, showReplies, showStories, storyHtml, storyTemplate, upToParent;
+
+  _.templateSettings = {
+    interpolate: /\{\{(.+?)\}\}/g
+  };
+
+  storyTemplate = _.template($('#story-template').text());
+
+  commentTemplate = _.template($('#comment-template').text());
 
   columnWidth = 550;
 
@@ -161,10 +169,7 @@
       e.attr('parentid', parentid);
       div.append(e);
     }
-    return div.animate({
-      top: 0,
-      width: columnWidth
-    }, 250);
+    return div.fadeIn('fast');
   };
 
   scrollH = function() {
@@ -209,16 +214,14 @@
   };
 
   storyHtml = function(story) {
-    return $('<div/>', {
-      id: story.id,
-      "class": 'item story',
-      tabindex: 1
-    }).append($('<a/>', {
-      href: story.href,
-      "class": 'story-link'
-    }).text(story.title)).append($('<span/>', {
-      "class": 'cc'
-    }).text(story.cc)).data('story', story);
+    var data;
+    data = $.extend({
+      id: '-1',
+      href: '#',
+      title: '???',
+      cc: 0
+    }, story);
+    return $(storyTemplate(data)).data('story', story);
   };
 
   jobAdHtml = function(ad) {
@@ -226,13 +229,12 @@
   };
 
   commentHtml = function(comment) {
-    return $('<div/>', {
-      id: comment.id,
-      "class": 'item comment',
-      tabindex: 1
-    }).append($('<div/>', {
-      "class": 'comment-text'
-    }).html(comment.comment.join('\n')));
+    var data;
+    data = $.extend({
+      id: '-1',
+      comment: []
+    }, comment);
+    return $(commentTemplate(data));
   };
 
 }).call(this);
