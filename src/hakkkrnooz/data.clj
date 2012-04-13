@@ -6,6 +6,7 @@
 
 
 (def HN "http://news.ycombinator.com")
+(def UA "	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/20100101 Firefox/11.0")
 
 (defn comments-url [id]
   (str HN "/item?id=" id))
@@ -13,11 +14,19 @@
 (defn stories-url []
   (str HN "/news"))
 
+(defn jsoup-get [url]
+  (-> url
+      Jsoup/connect
+      (.referrer HN)
+      (.userAgent UA)
+      (.timeout 5000)
+      (.get)))
+
 (defn load-and-soupify [url]
   (let [url (if (.startsWith url HN)
               url
               (str HN url))]
-    (Jsoup/parse (URL. url) 5000)))
+    (jsoup-get url)))
 
 (defn load-stories []
   (-> (stories-url)

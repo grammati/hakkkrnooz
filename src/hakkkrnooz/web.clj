@@ -29,7 +29,11 @@
    [:div.item.story {:id "{{ id }}" :tabindex 1}
     [:a.story-link {:href "{{ href }}"}
      "{{ title }}"]
-    [:span.cc "{{ cc }}"]]])
+    [:table.story-info
+     [:tr
+      [:td.points "{{ points }} points"]
+      [:td.user "by {{ user }}"]
+      [:td.cc "{{ cc }}"]]]]])
 
 (defn comment-template []
   [:script {:type "text/template" :id "comment-template"}
