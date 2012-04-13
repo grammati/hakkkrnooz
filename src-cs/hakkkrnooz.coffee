@@ -73,7 +73,10 @@ showChildren = (item) ->
 addColumn = () ->
     columns = $('#content > div.column')
     ncols = columns.length
-    newCol = $('div').addClass('column').css('left', ncols * columnWidth).attr('data-column-number', 1 + ncols)
+    newCol = $('<div/>').addClass('column')
+                        .css('left', ncols * columnWidth)
+                        #.css('width', 0)
+                        .attr('data-column-number', 1 + ncols)
     $('#content').append(newCol)
     newCol
 
@@ -93,18 +96,36 @@ showComments = (story) ->
     # todo - don't reload every time?
     $.getJSON "/comments/" + id, (comments) ->
         div.removeClass('loading')
-        for c in comments
-            commentCache[c.id] = c
-            e = htmlFor(c)
-            e.attr('parentid', id)
-            div.append e
+        appendComments(comments, div, id)
         story.addClass('active-parent')
         $('.comment:first-child', div).focus()
 
-showReplies = (comment) ->
-    $('.comment-children', $(comment).parent()).hide()
-    $('.comment-children', comment).show()
-    $('.comment:first-child', comment).first().focus()
+showReplies = (commentDiv) ->
+    id = $(commentDiv).attr('id')
+    comment = commentCache[id]
+    replies = comment?.replies
+    if not comment or replies.length == 0
+        return
+    div = addColumn()
+    appendComments(replies, div, id)
+    commentDiv.addClass('active-parent')
+    $('.comment:first-child', div).focus()
+    scrollH()
+
+appendComments = (comments, div, parentid) ->
+    for c in comments
+        commentCache[c.id] = c
+        e = htmlFor(c)
+        e.attr('parentid', parentid)
+        div.append e
+    div.animate({
+        top:   0, #div.position().top,
+        width: columnWidth
+    }, 250)
+
+scrollH = () ->
+    overWidth = $(document).width() - $(window).width()
+    window.scroll(Math.max(0, overWidth), window.scrollY)
 
 getParent = (item) ->
     parentid = item.attr('parentid')

@@ -1,5 +1,7 @@
 (function() {
-  var K, Kmap, KmapVim, commentHtml, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, openCurrent, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
+  var K, Kmap, KmapVim, addColumn, appendComments, columnWidth, commentCache, commentHtml, focusNext, focusPrev, getParent, htmlFor, initEvents, jobAdHtml, openCurrent, removeLastColumn, scrollH, showChildren, showComments, showReplies, showStories, storyHtml, upToParent;
+
+  columnWidth = 550;
 
   $(function() {
     showStories();
@@ -74,6 +76,8 @@
   showStories = function() {
     var div;
     div = $('#stories');
+    div.css('width', columnWidth);
+    div.attr('data-column-number', 1);
     div.addClass('loading');
     return $.getJSON("/stories", function(stories) {
       var story, _i, _len;
@@ -104,30 +108,69 @@
     }
   };
 
+  addColumn = function() {
+    var columns, ncols, newCol;
+    columns = $('#content > div.column');
+    ncols = columns.length;
+    newCol = $('<div/>').addClass('column').css('left', ncols * columnWidth).attr('data-column-number', 1 + ncols);
+    $('#content').append(newCol);
+    return newCol;
+  };
+
+  removeLastColumn = function() {
+    var cols;
+    cols = $('#content > div.column');
+    if (cols.length > 1) return cols.last().remove();
+  };
+
+  commentCache = {};
+
   showComments = function(story) {
     var div, id;
     id = story != null ? story.attr('id') : void 0;
     if (!/^\d+$/.exec(id)) return;
-    div = $('#comments');
-    div.empty();
+    div = addColumn();
     div.addClass('loading');
     return $.getJSON("/comments/" + id, function(comments) {
-      var c, e, _i, _len;
       div.removeClass('loading');
-      for (_i = 0, _len = comments.length; _i < _len; _i++) {
-        c = comments[_i];
-        e = htmlFor(c);
-        e.attr('parentid', id);
-        div.append(e);
-      }
+      appendComments(comments, div, id);
       story.addClass('active-parent');
       return $('.comment:first-child', div).focus();
     });
   };
 
-  showReplies = function(comment) {
-    $('.comment-children', $(comment).parent()).hide();
-    return $('.comment-children', comment).show();
+  showReplies = function(commentDiv) {
+    var comment, div, id, replies;
+    id = $(commentDiv).attr('id');
+    comment = commentCache[id];
+    replies = comment != null ? comment.replies : void 0;
+    if (!comment || replies.length === 0) return;
+    div = addColumn();
+    appendComments(replies, div, id);
+    commentDiv.addClass('active-parent');
+    $('.comment:first-child', div).focus();
+    return scrollH();
+  };
+
+  appendComments = function(comments, div, parentid) {
+    var c, e, _i, _len;
+    for (_i = 0, _len = comments.length; _i < _len; _i++) {
+      c = comments[_i];
+      commentCache[c.id] = c;
+      e = htmlFor(c);
+      e.attr('parentid', parentid);
+      div.append(e);
+    }
+    return div.animate({
+      top: 0,
+      width: columnWidth
+    }, 250);
+  };
+
+  scrollH = function() {
+    var overWidth;
+    overWidth = $(document).width() - $(window).width();
+    return window.scroll(Math.max(0, overWidth), window.scrollY);
   };
 
   getParent = function(item) {
@@ -139,7 +182,7 @@
   upToParent = function(item) {
     var parent, _ref;
     if (item.attr('type') !== 'comment') return;
-    if ((_ref = item.parent()) != null) _ref.empty();
+    if ((_ref = item.parent()) != null) _ref.remove();
     parent = getParent(item);
     if (parent) {
       parent.focus();
@@ -183,22 +226,13 @@
   };
 
   commentHtml = function(comment) {
-    var replies, reply, _i, _len, _ref;
-    replies = $('<div/>', {
-      "class": 'comment-children'
-    });
-    _ref = comment.replies;
-    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-      reply = _ref[_i];
-      replies.append(commentHtml(reply));
-    }
     return $('<div/>', {
       id: comment.id,
       "class": 'item comment',
       tabindex: 1
     }).append($('<div/>', {
       "class": 'comment-text'
-    }).html(comment.comment.join('\n'))).append(replies);
+    }).html(comment.comment.join('\n')));
   };
 
 }).call(this);
