@@ -26,24 +26,24 @@
 
 (defn story-template []
   [:script {:type "text/template" :id "story-template"}
-   [:div.item.story {:id "{{ id }}" :tabindex 1}
-    [:a.story-link {:href "{{ href }}"}
-     "{{ title }}"]
+   [:div.item.story {:id "{{ s.id }}" :tabindex 1}
+    [:a.story-link {:href "{{ s.href }}"}
+     "{{ s.title }}"]
     [:table.info
      [:tr
-      [:td.points "{{ points }} points"]
-      [:td.user "by {{ user }}"]
-      [:td.cc "comments: {{ cc || 0 }}"]]]]])
+      [:td.points "{{ s.points }} points"]
+      [:td.user "by {{ s.user }}"]
+      [:td.cc "comments: {{ s.cc || 0 }}"]]]]])
 
 (defn comment-template []
   [:script {:type "text/template" :id "comment-template"}
-   [:div.item.comment {:id "{{ id }}" :tabindex 1}
+   [:div.item.comment {:id "{{ c.id }}" :tabindex 1}
     [:table.info
      [:tr
-      [:td.user "{{ user }}"]
-      [:td.cc "replies: {{ replies.length }}"]]]
+      [:td.user "{{ c.user }}"]
+      [:td.cc "replies: {{ c.replies.length }}"]]]
     [:div.comment-text
-     "{{ comment }}"]]])
+     "{{ c.comment }}"]]])
 
 (defn main-page []
   (html

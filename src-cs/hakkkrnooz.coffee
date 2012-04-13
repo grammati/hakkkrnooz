@@ -156,15 +156,15 @@ htmlFor = (obj) ->
     e.attr('type', obj.type)
     e
 
-# TODO - get a template engine - this is messy
+# Templates
 
 storyHtml = (story) ->
     data = $.extend({id: '-1', href: '#', title: '???', cc: 0}, story)
-    return $(storyTemplate(data)).data('story', story)
+    return $(storyTemplate({s: data})).data('story', story)
 
 jobAdHtml = (ad) ->
     storyHtml(ad)
 
 commentHtml = (comment) ->
-    data = $.extend({id: '-1', comment: ''}, comment)
-    return $(commentTemplate(data))
+    data = $.extend({id: '-1', user: '', replies: [], comment: ''}, comment)
+    return $(commentTemplate({c: data}))

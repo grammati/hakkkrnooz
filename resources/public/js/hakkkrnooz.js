@@ -222,7 +222,9 @@
       title: '???',
       cc: 0
     }, story);
-    return $(storyTemplate(data)).data('story', story);
+    return $(storyTemplate({
+      s: data
+    })).data('story', story);
   };
 
   jobAdHtml = function(ad) {
@@ -233,9 +235,13 @@
     var data;
     data = $.extend({
       id: '-1',
+      user: '',
+      replies: [],
       comment: ''
     }, comment);
-    return $(commentTemplate(data));
+    return $(commentTemplate({
+      c: data
+    }));
   };
 
 }).call(this);
