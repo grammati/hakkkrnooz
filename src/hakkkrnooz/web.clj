@@ -29,15 +29,19 @@
    [:div.item.story {:id "{{ id }}" :tabindex 1}
     [:a.story-link {:href "{{ href }}"}
      "{{ title }}"]
-    [:table.story-info
+    [:table.info
      [:tr
       [:td.points "{{ points }} points"]
       [:td.user "by {{ user }}"]
-      [:td.cc "{{ cc }}"]]]]])
+      [:td.cc "comments: {{ cc || 0 }}"]]]]])
 
 (defn comment-template []
   [:script {:type "text/template" :id "comment-template"}
    [:div.item.comment {:id "{{ id }}" :tabindex 1}
+    [:table.info
+     [:tr
+      [:td.user "{{ user }}"]
+      [:td.cc "replies: {{ replies.length }}"]]]
     [:div.comment-text
      "{{ comment }}"]]])
 

@@ -143,7 +143,8 @@
       div.removeClass('loading');
       appendComments(comments, div, id);
       story.addClass('active-parent');
-      return $('.comment:first-child', div).focus();
+      $('.comment:first-child', div).focus();
+      return scrollH();
     });
   };
 

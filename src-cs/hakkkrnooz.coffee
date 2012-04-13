@@ -107,6 +107,7 @@ showComments = (story) ->
         appendComments(comments, div, id)
         story.addClass('active-parent')
         $('.comment:first-child', div).focus()
+        scrollH()
 
 showReplies = (commentDiv) ->
     id = $(commentDiv).attr('id')
