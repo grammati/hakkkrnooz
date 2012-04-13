@@ -106,12 +106,13 @@
                      (.attr "href")
                      (.substring (count "item?id="))))
         main   ($1 tr "> td:eq(2) > span")
-        paras  (comment-text main)]
+        paras  (comment-text main)
+        full-comment (apply str paras)]
     {:type    :comment
      :depth   depth
      :user    user
      :id      id
-     :comment paras}))
+     :comment full-comment}))
 
 (defn nest-comments [cs]
   (loop [[c & cs] (seq cs)
@@ -136,7 +137,7 @@
   ([cs n]
      (letfn [(p [c ind]
                (println (apply str (repeat ind "  "))
-                        (:user c) " -> " (left (first (:comment c)) n) "...")
+                        (:user c) " -> " (left (:comment c) n) "...")
                (doseq [c (:replies c)]
                  (p c (inc ind))))]
        (doseq [c cs] (p c 0)))))

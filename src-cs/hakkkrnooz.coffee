@@ -166,5 +166,5 @@ jobAdHtml = (ad) ->
     storyHtml(ad)
 
 commentHtml = (comment) ->
-    data = $.extend({id: '-1', comment: []}, comment)
+    data = $.extend({id: '-1', comment: ''}, comment)
     return $(commentTemplate(data))

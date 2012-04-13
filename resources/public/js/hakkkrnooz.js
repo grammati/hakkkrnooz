@@ -233,7 +233,7 @@
     var data;
     data = $.extend({
       id: '-1',
-      comment: []
+      comment: ''
     }, comment);
     return $(commentTemplate(data));
   };
