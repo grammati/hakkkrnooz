@@ -1,13 +1,41 @@
 # hakkkrnooz
 
-FIXME: write description
+Alternative interface to Hacker News.
 
-## Usage
+Live at [http://hakkkrnooz.herokuapp.com](http://hakkkrnooz.herokuapp.com)
 
-FIXME: write
+I made this so that I could read Hacker News comments:
+a) Breadth-first, if I choose, rather than depth-first.
+b) Using the keyboard.
+
+Navigate stories and comments with the arrow keys (or h-j-k-l, if you roll that way).
+Comments are a tree that expands out to the right.
+Press enter on story to open it in a new tab.
+That's about all there is too it. Enjoy.
+
+## TODO
+
+* Make columns scroll individually, so that the active comment is lined up with its parent.
+* Handle too-fast keying - double-right, etc.
+* Handle timeouts when scraping HN.
+* Stop the header from overlapping comments.
+* Add "About" - basic help.
+* Handle mouse clicks.
+* Show age, domain, link usernames to profiles.
+* Show user images?
+* Set cache-control headers - take advantage of varnish on heroku.
+* Keep track of read/unread. Use localStorage.
+* Configurable - allow some per-user configuration?
+* Use show already-read comments - collapsed, dimmed?
+* Allow posting of comments?
+* Live updates - insert new comments as they arrive.
+* Bug: horizontal scrollbar on some comment blocks
+* Keep data on the server - historical points, rankings, ...
+* Show trend for stories - page-position over time, points over time, ...
+* Mobile - touch-friendly version?
 
 ## License
 
-Copyright (C) 2012 FIXME
+Copyright (C) 2012 Chris Perkins
 
-Distributed under the Eclipse Public License, the same as Clojure.
+Distributed under the MIT license.
