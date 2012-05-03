@@ -57,8 +57,9 @@
     (include-js (url-for :jquery)
                 (url-for :underscore)
                 (url-for :less)
+                "/js/jquery.cookie.js"
                 "/js/hakkkrnooz.js")]
-   [:body.theme-1
+   [:body.whitey
     [:div.header
      [:h1 "Hakkkrnooz"]]
     [:div#content.content

@@ -45,17 +45,28 @@ KmapVim = (key) ->
 
 initEvents = () ->
     $(document)
-    .on 'keydown', 'div.item', (e) ->
-        fn = KmapVim(e.which)
+    .on 'keydown', 'div.item', (evt) ->
+        return if evt.ctrlKey or evt.altKey or evt.shiftKey
+        fn = KmapVim(evt.which)
         if fn
-            fn $(e.target)
-            e.preventDefault()
+            fn $(evt.target)
+            evt.preventDefault()
+    .on 'focus', 'div.item', (evt) ->
+        positionItem(evt.target)
 
-focusNext = (e) ->
-    e.next()?.focus()
+focusNext = (elt) ->
+    elt.next()?.focus()
 
-focusPrev = (e) ->
-    e.prev()?.focus()
+focusPrev = (elt) ->
+    elt.prev()?.focus()
+
+positionItem = (elt) ->
+    elt = $(elt)
+    pos = elt.position()
+    column = $(elt.parent())
+    targetTop = 50 - pos.top
+    column.animate({'top': targetTop})
+
 
 showStories = () ->
     div = $('#stories')

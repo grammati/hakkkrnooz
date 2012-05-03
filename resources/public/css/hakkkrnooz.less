@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Verdana';
+    font-family: 'Helvetica';
 }
 
 pre {
@@ -64,9 +64,6 @@ pre {
     border: 1px solid gray;
     padding: 4px 4px 4px 12px;
     margin: 3px;
-    a {
-        color: black;
-    }
     p, pre {
         margin: 0.5em 0em;
     }
@@ -107,4 +104,32 @@ pre {
 
 .comment-text {
     border-top: 1px solid #dddddd;
+}
+
+
+// Themes
+@whitey-bg: white;
+@whitey-text: black;
+
+.theme(@bg, @text) {
+    background-color: @bg;
+    color: @text;
+    .item {
+        a {
+            color: @text;
+        }
+    }
+}
+
+.whitey {
+    .theme(white, black);
+}
+.blackboard {
+    .theme(#0C1021, #F8F8F8);
+}
+.solarized-light {
+    .theme(#FDF6E3, #657B83);
+}
+.solarized-dark {
+    .theme(#657B83, #FDF6E3);
 }
