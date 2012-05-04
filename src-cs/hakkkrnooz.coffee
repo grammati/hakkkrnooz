@@ -64,9 +64,8 @@ positionItem = (elt) ->
     elt = $(elt)
     pos = elt.position()
     column = $(elt.parent())
-    targetTop = 50 - pos.top
-    column.animate({'top': targetTop})
-
+    targetTop = 5 - pos.top
+    column.animate({'top': targetTop}, 'fast')
 
 showStories = () ->
     div = $('#stories')
@@ -102,7 +101,9 @@ addColumn = () ->
 removeLastColumn = () ->
     cols = $('#content > div.column')
     if cols.length > 1
-        cols.last().remove()
+        cols.last()
+        .css('overflow', 'hidden')
+        .animate {width: 0}, 'fast', '', () -> $(this).remove()
 
 # yeah, it's global variable - but it's OK, it's coffeescript :)
 commentCache = {}
@@ -151,7 +152,7 @@ getParent = (item) ->
 upToParent = (item) ->
     return if item.attr('type') != 'comment'
     # Remove this level of comments by clearing its DOM parent.
-    item.parent()?.remove()
+    removeLastColumn() #item.parent()?.remove()
     # Get the parent comment or story (not DOM parent, as above - confusing, I know)
     parent = getParent(item)
     if parent

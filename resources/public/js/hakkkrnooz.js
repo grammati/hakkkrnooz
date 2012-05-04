@@ -92,10 +92,10 @@
     elt = $(elt);
     pos = elt.position();
     column = $(elt.parent());
-    targetTop = 50 - pos.top;
+    targetTop = 5 - pos.top;
     return column.animate({
       'top': targetTop
-    });
+    }, 'fast');
   };
 
   showStories = function() {
@@ -146,7 +146,11 @@
     var cols;
     cols = $('#content > div.column');
     if (cols.length > 1) {
-      return cols.last().remove();
+      return cols.last().css('overflow', 'hidden').animate({
+        width: 0
+      }, 'fast', '', function() {
+        return $(this).remove();
+      });
     }
   };
 
@@ -211,13 +215,11 @@
   };
 
   upToParent = function(item) {
-    var parent, _ref;
+    var parent;
     if (item.attr('type') !== 'comment') {
       return;
     }
-    if ((_ref = item.parent()) != null) {
-      _ref.remove();
-    }
+    removeLastColumn();
     parent = getParent(item);
     if (parent) {
       parent.focus();
