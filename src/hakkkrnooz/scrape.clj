@@ -2,7 +2,9 @@
   (:import (org.jsoup Jsoup)
            (org.jsoup.nodes Node Document Element TextNode)
            (org.jsoup.select Selector Elements))
-  (:require (clojure [string :as s])))
+  (:require (clojure [string :as s]))
+  (:use     (hakkkrnooz [core :only [HN]]))
+  )
 
 
 (set! *warn-on-reflection* true)
@@ -176,8 +178,12 @@
   (let [link ($1 title-row "> td.title > a")
         info ($1 info-row "> td.subtext")
         info (if info (.childNodes info))
+        href (.attr link "href")
+        href (if (.contains href "://") ; not sure if there's a more robust what to detect non-abs urls
+               href
+               (str HN "/" href))
         item {:title (.text link)
-              :href (.attr link "href")}]
+              :href href}]
     (condp = (count info)
       5 (let [[^Element pt-span _ ^Element user ^TextNode age ^Element comment-link] info]
           (assoc item

@@ -1,12 +1,12 @@
 (ns hakkkrnooz.data
   (:require (hakkkrnooz [scrape :as scrape])
             (cheshire [core :as ches]))
+  (:use     (hakkkrnooz [core :only [HN]]))
   (:import (org.jsoup Jsoup)
            (java.net URL)))
 
 
-(def HN "http://news.ycombinator.com")
-(def UA "	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/20100101 Firefox/11.0")
+(def UA "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/20100101 Firefox/11.0")
 
 (defn comments-url [id]
   (str HN "/item?id=" id))

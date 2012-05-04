@@ -52,7 +52,7 @@ initEvents = () ->
             fn $(evt.target)
             evt.preventDefault()
     .on 'focus', 'div.item', (evt) ->
-        positionItem(evt.target)
+        onItemFocus(evt.target)
 
 focusNext = (elt) ->
     elt.next()?.focus()
@@ -60,12 +60,18 @@ focusNext = (elt) ->
 focusPrev = (elt) ->
     elt.prev()?.focus()
 
+onItemFocus = (elt) ->
+    positionItem(elt)
+    removeFollowingColumns(elt)
+
 positionItem = (elt) ->
     elt = $(elt)
     pos = elt.position()
     column = $(elt.parent())
-    targetTop = 5 - pos.top
-    column.animate({'top': targetTop}, 'fast')
+    isFirst = elt.prev().size() == 0
+    targetTop = (isFirst ? 0 : 25) - pos.top
+    column.stop().animate({'top': targetTop}, 'fast')
+
 
 showStories = () ->
     div = $('#stories')
@@ -93,33 +99,45 @@ addColumn = () ->
     ncols = columns.length
     newCol = $('<div/>').addClass('column')
                         .css('left', ncols * columnWidth)
-                        #.css('width', 0)
                         .attr('data-column-number', 1 + ncols)
     $('#content').append(newCol)
     newCol
 
-removeLastColumn = () ->
-    cols = $('#content > div.column')
-    if cols.length > 1
-        cols.last()
-        .css('overflow', 'hidden')
+removeFollowingColumns = (elt) ->
+    $(elt).parent().nextAll('.column')
+        .stop()
         .animate {width: 0}, 'fast', '', () -> $(this).remove()
 
 # yeah, it's global variable - but it's OK, it's coffeescript :)
 commentCache = {}
 
+scrollH = () ->
+    overWidth = $(document).width() - $(window).width()
+    window.scroll(Math.max(0, overWidth), window.scrollY)
+
+# Keep track of which story's comments we are loading
+loading = null
+
 showComments = (story) ->
     id = story?.attr('id')
     return if not /^\d+$/.exec(id)
+    return if loading == id # already loading it
+    loading = id
     div = addColumn()
     div.addClass('loading')
     # todo - don't reload every time?
-    $.getJSON "/comments/" + id, (comments) ->
-        div.removeClass('loading')
-        appendComments(comments, div, id)
-        story.addClass('active-parent')
-        $('.comment:first-child', div).focus()
-        scrollH()
+    $.ajax
+        url: "/comments/" + id,
+        dataType: 'json',
+        success: (comments) ->
+            return if loading != id
+            div.removeClass('loading')
+            appendComments(comments, div, id)
+            story.addClass('active-parent')
+            $('.comment:first-child', div).focus()
+            scrollH()
+        error: () ->
+            loading = null if loading == id
 
 showReplies = (commentDiv) ->
     id = $(commentDiv).attr('id')
@@ -132,6 +150,7 @@ showReplies = (commentDiv) ->
     commentDiv.addClass('active-parent')
     $('.comment:first-child', div).focus()
     scrollH()
+    div.animate({width: ['0px', '550px']}, 'fast', null, scrollH);
 
 appendComments = (comments, div, parentid) ->
     for c in comments
@@ -139,11 +158,6 @@ appendComments = (comments, div, parentid) ->
         e = htmlFor(c)
         e.attr('parentid', parentid)
         div.append e
-    div.fadeIn('fast')
-
-scrollH = () ->
-    overWidth = $(document).width() - $(window).width()
-    window.scroll(Math.max(0, overWidth), window.scrollY)
 
 getParent = (item) ->
     parentid = item.attr('parentid')
@@ -151,13 +165,11 @@ getParent = (item) ->
 
 upToParent = (item) ->
     return if item.attr('type') != 'comment'
-    # Remove this level of comments by clearing its DOM parent.
-    removeLastColumn() #item.parent()?.remove()
-    # Get the parent comment or story (not DOM parent, as above - confusing, I know)
+    # Get the parent comment or story (not DOM parent)
     parent = getParent(item)
     if parent
-        parent.focus()
         parent.removeClass('active-parent')
+        parent.focus()
 
 htmlFor = (obj) ->
     e = switch obj?.type

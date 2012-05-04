@@ -27,8 +27,9 @@
 (defn story-template []
   [:script {:type "text/template" :id "story-template"}
    [:div.item.story {:id "{{ s.id }}" :tabindex 1}
-    [:a.story-link {:href "{{ s.href }}"}
-     "{{ s.title }}"]
+    [:div.story-header
+     [:a.story-link {:href "{{ s.href }}"}
+      "{{ s.title }}"]]
     [:table.info
      [:tr
       [:td.points "{{ s.points }} points"]
@@ -38,12 +39,13 @@
 (defn comment-template []
   [:script {:type "text/template" :id "comment-template"}
    [:div.item.comment {:id "{{ c.id }}" :tabindex 1}
-    [:table.info
-     [:tr
-      [:td.user "{{ c.user }}"]
-      [:td.cc "replies: {{ c.replies.length }}"]]]
-    [:div.comment-text
-     "{{ c.comment }}"]]])
+    [:div.comment-inner
+     [:table.info
+      [:tr
+       [:td.user "{{ c.user }}"]
+       [:td.cc "replies: {{ c.replies.length }}"]]]
+     [:div.comment-text
+      "{{ c.comment }}"]]]])
 
 (defn main-page []
   (html
