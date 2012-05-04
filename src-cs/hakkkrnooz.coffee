@@ -106,14 +106,14 @@ addColumn = () ->
 removeFollowingColumns = (elt) ->
     $(elt).parent().nextAll('.column')
         .stop()
-        .animate {width: 0}, 'fast', '', () -> $(this).remove()
+        .animate {width: 0}, 'fast', () -> $(this).remove()
 
 # yeah, it's global variable - but it's OK, it's coffeescript :)
 commentCache = {}
 
 scrollH = () ->
     overWidth = $(document).width() - $(window).width()
-    window.scroll(Math.max(0, overWidth), window.scrollY)
+    $('body').animate({scrollLeft: Math.max(0, overWidth)})
 
 # Keep track of which story's comments we are loading
 loading = null
@@ -150,7 +150,7 @@ showReplies = (commentDiv) ->
     commentDiv.addClass('active-parent')
     $('.comment:first-child', div).focus()
     scrollH()
-    div.animate({width: ['0px', '550px']}, 'fast', null, scrollH);
+    div.animate({width: ['0px', '550px']}, 'fast');
 
 appendComments = (comments, div, parentid) ->
     for c in comments

@@ -150,7 +150,7 @@
   removeFollowingColumns = function(elt) {
     return $(elt).parent().nextAll('.column').stop().animate({
       width: 0
-    }, 'fast', '', function() {
+    }, 'fast', function() {
       return $(this).remove();
     });
   };
@@ -160,7 +160,9 @@
   scrollH = function() {
     var overWidth;
     overWidth = $(document).width() - $(window).width();
-    return window.scroll(Math.max(0, overWidth), window.scrollY);
+    return $('body').animate({
+      scrollLeft: Math.max(0, overWidth)
+    });
   };
 
   loading = null;
@@ -203,7 +205,7 @@
     scrollH();
     return div.animate({
       width: ['0px', '550px']
-    }, 'fast', null, scrollH);
+    }, 'fast');
   };
 
   appendComments = function(comments, div, parentid) {
