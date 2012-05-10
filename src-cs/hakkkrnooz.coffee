@@ -10,8 +10,13 @@ commentTemplate = _.template($('#comment-template').text())
 columnWidth = 550;
 
 $ () ->
-    showStories()
     initEvents()
+    initStyles()
+    showStories()
+
+initStyles = () ->
+    $('body').addClass($.cookie('theme') or 'whitey')
+    columnWidth = $.cookie('column-width') or 550
 
 # Keyboard event handling
 K =
@@ -27,27 +32,24 @@ K =
     K:     75
     L:     76
 
-Kmap = (key) ->
+keyMap = (key) ->
     switch key
-        when K.Enter then openCurrent
-        when K.Right then showChildren
-        when K.Left then upToParent
-        when K.Down then focusNext
-        when K.Up then focusPrev
-
-KmapVim = (key) ->
-    switch key
-        when K.L then showChildren
-        when K.H then upToParent
-        when K.J then focusNext
-        when K.K then focusPrev
-        else Kmap(key)
+        when K.Enter
+            openCurrent
+        when K.Right, K.L
+            showChildren
+        when K.Left, K.H
+            upToParent
+        when K.Down, K.J
+            focusNext
+        when K.Up, K.K
+            focusPrev
 
 initEvents = () ->
     $(document)
     .on 'keydown', 'div.item', (evt) ->
         return if evt.ctrlKey or evt.altKey or evt.shiftKey
-        fn = KmapVim(evt.which)
+        fn = keyMap(evt.which)
         if fn
             fn $(evt.target)
             evt.preventDefault()
@@ -61,10 +63,12 @@ focusPrev = (elt) ->
     elt.prev()?.focus()
 
 onItemFocus = (elt) ->
-    positionItem(elt)
+    scrollColumn(elt)
     removeFollowingColumns(elt)
 
-positionItem = (elt) ->
+scrollColumn = (elt) ->
+    # Slide the column containing the given element up or down so that
+    # the element where we want it.
     elt = $(elt)
     pos = elt.position()
     column = $(elt.parent())
@@ -76,8 +80,8 @@ positionItem = (elt) ->
 showStories = () ->
     div = $('#stories')
     div.css('width', columnWidth)
-    div.attr('data-column-number', 1)
-    div.addClass('loading')
+        .attr('data-column-number', 1)
+        .addClass('loading')
     $.getJSON "/stories", (stories) ->
         div.removeClass('loading')
         for story in stories
@@ -112,11 +116,14 @@ removeFollowingColumns = (elt) ->
 commentCache = {}
 
 scrollH = () ->
+    # Scroll all the way to the right
     overWidth = $(document).width() - $(window).width()
-    $('body').animate({scrollLeft: Math.max(0, overWidth)})
+    $('body').animate({scrollLeft: Math.max(0, overWidth)}, 'fast')
 
 # Keep track of which story's comments we are loading
 loading = null
+
+
 
 showComments = (story) ->
     id = story?.attr('id')
@@ -150,7 +157,7 @@ showReplies = (commentDiv) ->
     commentDiv.addClass('active-parent')
     $('.comment:first-child', div).focus()
     scrollH()
-    div.animate({width: ['0px', '550px']}, 'fast');
+    div.animate({width: ['0px', columnWidth + 'px']}, 'fast');
 
 appendComments = (comments, div, parentid) ->
     for c in comments

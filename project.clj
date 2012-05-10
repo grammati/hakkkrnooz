@@ -3,12 +3,12 @@
   :dependencies [[org.clojure/clojure "1.3.0"]
                  [org.jsoup/jsoup "1.6.1"]
 
-                 [compojure "1.0.1"]
-                 [hiccup "0.3.8"]
+                 [compojure "1.0.4"]
+                 [hiccup "1.0.0"]
 
-                 [cheshire "2.2.0"]
+                 [cheshire "4.0.0"]
 
-                 [ring/ring-jetty-adapter "1.1.0-RC1"]
+                 [ring/ring-jetty-adapter "1.1.0"]
                  ]
   :ring {:handler hakkkrnooz.web/app-routes}
   )

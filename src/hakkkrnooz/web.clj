@@ -1,8 +1,10 @@
 (ns hakkkrnooz.web
   (:use (ring.adapter [jetty :only  [run-jetty]])
         (compojure [core :only [defroutes GET]])
-        (hiccup [core :only [html resolve-uri]]
-                [page-helpers :only [html5 include-js include-css link-to]]))
+        (hiccup [core :only [html]]
+                [util :only [to-uri]]
+                [element :only [link-to]]
+                [page :only [html5 include-js include-css]]))
   (:require (compojure [route :as route])
             (hakkkrnooz [data :as data])))
 
@@ -13,7 +15,7 @@
 
 (defn include-less [& styles]
   (for [style styles]
-    [:link {:type "text/css", :href (resolve-uri style), :rel "stylesheet/less"}]))
+    [:link {:type "text/css", :href (to-uri style), :rel "stylesheet/less"}]))
 
 (defn- url-for [name]
   ({:jquery (if *offline* "js/jquery.js"
@@ -23,6 +25,11 @@
     :underscore (if *offline* "js/underscore.js"
                     "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js")
     } name))
+
+(defn column-template []
+  [:script {:type "text/template" :id "column-template"}
+   [:div.column
+    [:div.column-inner]]])
 
 (defn story-template []
   [:script {:type "text/template" :id "story-template"}
@@ -54,6 +61,7 @@
     [:title "Hakkkrnooz"]
     (include-css "/css/reset.css")
     (include-less "/css/hakkkrnooz.less")
+    (column-template)
     (story-template)
     (comment-template)
     (include-js (url-for :jquery)
@@ -61,11 +69,10 @@
                 (url-for :less)
                 "/js/jquery.cookie.js"
                 "/js/hakkkrnooz.js")]
-   [:body.whitey
+   [:body
     [:div.header
      [:h1 "Hakkkrnooz"]]
-    [:div#content.content
-     [:div#stories.stories.column]]]))
+    [:div#content.content]]))
 
 (defn stories []
   (data/stories-json))
