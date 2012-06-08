@@ -6,7 +6,8 @@
                 [element :only [link-to]]
                 [page :only [html5 include-js include-css]]))
   (:require (compojure [route :as route])
-            (hakkkrnooz [data :as data])))
+            (hakkkrnooz [data :as data]
+                        [core :as hn])))
 
 
 ;; serve from files in test/offline instead of scraping the real HN
@@ -31,6 +32,10 @@
    [:div.column
     [:div.column-inner]]])
 
+(defn user-link [username]
+  [:a {:href (str hn/HN "/user?id=" username)}
+   username])
+
 (defn story-template []
   [:script {:type "text/template" :id "story-template"}
    [:div.item.story {:id "{{ s.id }}" :tabindex 1}
@@ -40,7 +45,9 @@
     [:table.info
      [:tr
       [:td.points "{{ s.points }} points"]
-      [:td.user "by {{ s.user }}"]
+      [:td.user "by "
+       [:a {:href (str hn/HN "/user?id={{ s.user }}")}
+        "{{ s.user }}"]]
       [:td.cc "comments: {{ s.cc || 0 }}"]]]]])
 
 (defn comment-template []
@@ -49,7 +56,9 @@
     [:div.comment-inner
      [:table.info
       [:tr
-       [:td.user "{{ c.user }}"]
+       [:td.user
+        [:a {:href (str hn/HN "/user?id={{ s.user }}")}
+         "{{ s.user }}"]]
        [:td.cc "replies: {{ c.replies.length }}"]]]
      [:div.comment-text
       "{{ c.comment }}"]]]])
