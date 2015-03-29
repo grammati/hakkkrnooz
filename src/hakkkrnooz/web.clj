@@ -1,13 +1,10 @@
 (ns hakkkrnooz.web
   (:use (ring.adapter [jetty :only  [run-jetty]])
         (compojure [core :only [defroutes GET]])
-        (hiccup [core :only [html]]
-                [util :only [to-uri]]
-                [element :only [link-to]]
-                [page :only [html5 include-js include-css]]))
+        (hiccup [core :only [html resolve-uri]]
+                [page-helpers :only [html5 include-js include-css link-to]]))
   (:require (compojure [route :as route])
-            (hakkkrnooz [data :as data]
-                        [core :as hn])))
+            (hakkkrnooz [data :as data])))
 
 
 ;; serve from files in test/offline instead of scraping the real HN
@@ -16,7 +13,7 @@
 
 (defn include-less [& styles]
   (for [style styles]
-    [:link {:type "text/css", :href (to-uri style), :rel "stylesheet/less"}]))
+    [:link {:type "text/css", :href (resolve-uri style), :rel "stylesheet/less"}]))
 
 (defn- url-for [name]
   ({:jquery (if *offline* "js/jquery.js"
@@ -27,15 +24,6 @@
                     "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js")
     } name))
 
-(defn column-template []
-  [:script {:type "text/template" :id "column-template"}
-   [:div.column
-    [:div.column-inner]]])
-
-(defn user-link [username]
-  [:a {:href (str hn/HN "/user?id=" username)}
-   username])
-
 (defn story-template []
   [:script {:type "text/template" :id "story-template"}
    [:div.item.story {:id "{{ s.id }}" :tabindex 1}
@@ -45,9 +33,7 @@
     [:table.info
      [:tr
       [:td.points "{{ s.points }} points"]
-      [:td.user "by "
-       [:a {:href (str hn/HN "/user?id={{ s.user }}")}
-        "{{ s.user }}"]]
+      [:td.user "by {{ s.user }}"]
       [:td.cc "comments: {{ s.cc || 0 }}"]]]]])
 
 (defn comment-template []
@@ -56,9 +42,7 @@
     [:div.comment-inner
      [:table.info
       [:tr
-       [:td.user
-        [:a {:href (str hn/HN "/user?id={{ s.user }}")}
-         "{{ s.user }}"]]
+       [:td.user "{{ c.user }}"]
        [:td.cc "replies: {{ c.replies.length }}"]]]
      [:div.comment-text
       "{{ c.comment }}"]]]])
@@ -70,7 +54,6 @@
     [:title "Hakkkrnooz"]
     (include-css "/css/reset.css")
     (include-less "/css/hakkkrnooz.less")
-    (column-template)
     (story-template)
     (comment-template)
     (include-js (url-for :jquery)
@@ -78,10 +61,11 @@
                 (url-for :less)
                 "/js/jquery.cookie.js"
                 "/js/hakkkrnooz.js")]
-   [:body
+   [:body.whitey
     [:div.header
      [:h1 "Hakkkrnooz"]]
-    [:div#content.content]]))
+    [:div#content.content
+     [:div#stories.stories.column]]]))
 
 (defn stories []
   (data/stories-json))
