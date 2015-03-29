@@ -185,7 +185,7 @@
         item {:title (.text link)
               :href href}]
     (condp = (count info)
-      5 (let [[^Element pt-span _ ^Element user ^TextNode age ^Element comment-link] info]
+      7 (let [[^Element pt-span _ ^Element user _ ^Element age _ ^Element comment-link] info]
           (assoc item
             :type :story
             :points (->> pt-span .text (re-find #"(\d+) points") second)

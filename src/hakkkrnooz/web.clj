@@ -89,6 +89,10 @@
   (GET "/stories" [] (stories))
   (GET "/comments/:id" [id] (comments id)))
 
-(defn -main [port]
-  (run-jetty app-routes {:port (Integer. port)}))
+(defn -main []
+  (run-jetty app-routes
+             {:port (Integer. (or (System/getenv "PORT")
+                                  (System/getProperty "PORT")
+                                  "8080"))
+              :join? false}))
 
