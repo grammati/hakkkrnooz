@@ -32,6 +32,12 @@
 (defn inline? [n]
   (not (block? n)))
 
+(defn text [^TextNode node]
+  (.text node))
+
+(defn- empty-text-node? [node]
+  (and (instance? TextNode node) (empty? (s/trim (.text ^TextNode node)))))
+
 (defn comment-text [^Element span]
   ;; see the explanation of parse-comment, below. Briefly, span can be:
   ;; 1) -span
@@ -44,7 +50,7 @@
   ;;        -p or pre or text or ...? (0..n)
   ;;      - second-to-last p
   ;;      - reply-link
-  (let [[font extra-p] (seq (.childNodes span))
+  (let [[font extra-p] (remove empty-text-node? (.childNodes span))
         items (if (instance? Element font)
                 (concat (.childNodes ^Element font) (if extra-p (list extra-p)))
                 (list font)             ;"deleted" comment
@@ -178,6 +184,7 @@
   (let [link ($1 title-row "> td.title > a")
         info ($1 info-row "> td.subtext")
         info (if info (.childNodes info))
+        info (remove empty-text-node? info)
         href (.attr link "href")
         href (if (.contains href "://") ; not sure if there's a more robust what to detect non-abs urls
                href
@@ -185,7 +192,12 @@
         item {:title (.text link)
               :href href}]
     (condp = (count info)
-      7 (let [[^Element pt-span _ ^Element user _ ^Element age _ ^Element comment-link] info]
+      6 (let [[^Element pt-span
+               _
+               ^Element user
+               ^Element age
+               _
+               ^Element comment-link] info]
           (assoc item
             :type :story
             :points (->> pt-span .text (re-find #"(\d+) points") second)
@@ -196,7 +208,7 @@
             ))
       1 (assoc item
           :type :job-ad
-          :age (->> info first .text s/trim))
+          :age (->> info first text s/trim))
       (assoc item
         :type :unknown))))
 
