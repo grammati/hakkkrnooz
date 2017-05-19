@@ -1,0 +1,425 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?fyxv2vIgGFuCYQwrlukp">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Badger – A fast key-value store written natively in Go | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D14335931">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table border="0">
+        <tr class='athing' id='14335931'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_14335931' href='vote?id=14335931&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://open.dgraph.io/post/badger/" class="storylink">Badger – A fast key-value store written natively in Go</a><span class="sitebit comhead"> (<a href="from?site=dgraph.io"><span class="sitestr">dgraph.io</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_14335931">139 points</span> by <a href="user?id=michaelangerman" class="hnuser">michaelangerman</a> <span class="age"><a href="item?id=14335931">5 hours ago</a></span> <span id="unv_14335931"></span> | <a href="hide?id=14335931&amp;goto=item%3Fid%3D14335931">hide</a> | <a href="https://hn.algolia.com/?query=Badger%20%E2%80%93%20A%20fast%20key-value%20store%20written%20natively%20in%20Go&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Badger%20%E2%80%93%20A%20fast%20key-value%20store%20written%20natively%20in%20Go">web</a> | <a href="item?id=14335931">39&nbsp;comments</a> | <a href="fave?id=14335931&amp;auth=bed970f4354fd564b71690aff914a7361d3ecaa1">favorite</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="14335931"><input type="hidden" name="goto" value="item?id=14335931"><input type="hidden" name="hmac" value="973cbec7afc70a3d388fba856ab5ca4ec40a8ecf"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='14337498'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337498' href='vote?id=14337498&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mirekrusin" class="hnuser">mirekrusin</a> <span class="age"><a href="item?id=14337498">4 minutes ago</a></span> <span id="unv_14337498"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337498)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Silly question - if SSDs or even motherboard had persistent storage of (couple of) 4 KB blocks where you&#x27;d be able to fsync &lt; 4 KB (unfinished&#x2F;non-yet-full pages) of data fast (DRAM + battery) - would that setup speed up writes in databases?<p>It seems that databases often want to persist&#x2F;flush data in unfinished (4KB or 8KB) pages when they&#x27;re being built, once they are full, they don&#x27;t change much - once full they could be normally persisted. Another kind of pages are those that change very frequently - ie. single &quot;root&quot; page which keeps counters or other stuff in single, root page.<p>It seems a bit wasteful that multiple &quot;checkpoints&quot; (flushes&#x2F;fsyncs) on partial blocks are triggering on hardware whole block rewrites. Similarly with &quot;root&quot;&#x2F;&quot;meta&quot; pages that keep track of just few bytes frequently changing are triggering similar whole page rewrites.<p>To be honest even some kind of PCI card with little battery and slot for DDR4 would probably do the trick, no? The rest could be implemented in software - as long as you&#x27;d have access to fast flushing with battery backed memory that survives hard crash - it should be fine.<p>Is this silly idea?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337498&amp;goto=item%3Fid%3D14335931%2314337498">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337509'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337509' href='vote?id=14337509&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=monocasa" class="hnuser">monocasa</a> <span class="age"><a href="item?id=14337509">1 minute ago</a></span> <span id="unv_14337509"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337509)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">A lot of higher end HBAs have battery backed DRAM write buffers for this reason.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337509&amp;goto=item%3Fid%3D14335931%2314337509">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14336735'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336735' href='vote?id=14336735&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=blaisio" class="hnuser">blaisio</a> <span class="age"><a href="item?id=14336735">2 hours ago</a></span> <span id="unv_14336735"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336735)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There is so much negativity in these comments! This project is really cool!<p>I really appreciate the trend to rewrite C&#x2F;C++ libraries in Go. It has always been really frustrating that hacky library wrappers for other languages leave performance and features on the table because they&#x27;re either incomplete or just too hard to implement in the host language. For most of the languages out there, it is always better to have a native implemention.<p>There are now a number of great embedded key&#x2F;value stores for Go, which make it really easy to create simple, high performance stateful services that don&#x27;t need the features provided by SQL.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336735&amp;goto=item%3Fid%3D14335931%2314336735">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337506'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337506' href='vote?id=14337506&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dkarapetyan" class="hnuser">dkarapetyan</a> <span class="age"><a href="item?id=14337506">1 minute ago</a></span> <span id="unv_14337506"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337506)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Was with you until you said you don&#x27;t need SQL.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337506&amp;goto=item%3Fid%3D14335931%2314337506">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14337254'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337254' href='vote?id=14337254&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mjaniczek" class="hnuser">mjaniczek</a> <span class="age"><a href="item?id=14337254">59 minutes ago</a></span> <span id="unv_14337254"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337254)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Now let somebody run a QuickCheck on it, like they did with LevelDB: <a href="http:&#x2F;&#x2F;htmlpreview.github.io&#x2F;?https:&#x2F;&#x2F;raw.github.com&#x2F;strangeloop&#x2F;lambdajam2013&#x2F;master&#x2F;slides&#x2F;Norton-QuickCheck.html" rel="nofollow">http:&#x2F;&#x2F;htmlpreview.github.io&#x2F;?https:&#x2F;&#x2F;raw.github.com&#x2F;strange...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337254&amp;goto=item%3Fid%3D14335931%2314337254">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336973'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336973' href='vote?id=14336973&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=reacharavindh" class="hnuser">reacharavindh</a> <span class="age"><a href="item?id=14336973">1 hour ago</a></span> <span id="unv_14336973"></span><span class="par"></span> <a class="togg" n="7" href="javascript:void(0)" onclick="return toggle(event, 14336973)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Probably a naive question, but how does it compare to Redis? 
+When would someone look for a K-V store written in X instead of the already mature Redis?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336973&amp;goto=item%3Fid%3D14335931%2314336973">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337034'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337034' href='vote?id=14337034&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=KAdot" class="hnuser">KAdot</a> <span class="age"><a href="item?id=14337034">1 hour ago</a></span> <span id="unv_14337034"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337034)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Badger is designed to store data on disk (like RocksDB or LevelDB), while Redis is an in-memory storage which can&#x27;t store data sets larger than memory.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337034&amp;goto=item%3Fid%3D14335931%2314337034">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337382'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337382' href='vote?id=14337382&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=laumars" class="hnuser">laumars</a> <span class="age"><a href="item?id=14337382">28 minutes ago</a></span> <span id="unv_14337382"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337382)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You can store Redis on disk too. Not that you gain anything from doing so as persistence can be better achieved by clustering and I&#x27;ve never ran into issues where memory was a limiting factor, even with millions of records in Redis. Frankly if memory was a limiting factor then you&#x27;d probably want your KV store separate from your application anyway rather than the embedded approach that Badger takes.<p>I think the real advantage of Badger is that it&#x27;s not as sophisticated as Redis. ie you can have Redis-like functionality compiled into your application so less faffing about setting up another daemon &#x2F; cloud micro-service inside your NAT &#x2F; VPC &#x2F; whatever.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337382&amp;goto=item%3Fid%3D14335931%2314337382">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='14337195'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337195' href='vote?id=14337195&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tschellenbach" class="hnuser">tschellenbach</a> <span class="age"><a href="item?id=14337195">1 hour ago</a></span> <span id="unv_14337195"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337195)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes this is more comparable to level, rocks or at a higher level Cassandra, ScyllaDB, DynamoDB etc.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337195&amp;goto=item%3Fid%3D14335931%2314337195">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14337041'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337041' href='vote?id=14337041&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=LaFolle" class="hnuser">LaFolle</a> <span class="age"><a href="item?id=14337041">1 hour ago</a></span> <span id="unv_14337041"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14337041)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">redis is not an embedded database,  while rocksdb&#x2F;boltdb&#x2F;badger are.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337041&amp;goto=item%3Fid%3D14335931%2314337041">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337232'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337232' href='vote?id=14337232&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bogomipz" class="hnuser">bogomipz</a> <span class="age"><a href="item?id=14337232">1 hour ago</a></span> <span id="unv_14337232"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337232)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Can you say what exactly is an &quot;embedded workload&quot;? I have seen this a few times now and tried googling but only ever come up with references to embedded systems and I&#x27;m guessing that this is not the same context.<p>I know rocksdb is LSM-based and was built by FB to address write amplification on SSDs.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337232&amp;goto=item%3Fid%3D14335931%2314337232">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337246'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14337246' href='vote?id=14337246&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=detaro" class="hnuser">detaro</a> <span class="age"><a href="item?id=14337246">1 hour ago</a></span> <span id="unv_14337246"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337246)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It has no server that runs independently and applications connect to, instead you integrate (<i>embed</i>) it into your program as a library.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337246&amp;goto=item%3Fid%3D14335931%2314337246">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='14336742'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336742' href='vote?id=14336742&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=libeclipse" class="hnuser">libeclipse</a> <span class="age"><a href="item?id=14336742">2 hours ago</a></span> <span id="unv_14336742"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14336742)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This could not have come at a better time, I&#x27;ve been looking for a fast, simple, pure Go key-value store.<p>Few questions:<p>- Does this have a log file? If so, what does it log and can it be disabled?<p>- How is the data stored? (Single file, multiple files, etc.)<p>- How is the RAM usage?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336742&amp;goto=item%3Fid%3D14335931%2314336742">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336873'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336873' href='vote?id=14336873&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mtrn" class="hnuser">mtrn</a> <span class="age"><a href="item?id=14336873">2 hours ago</a></span> <span id="unv_14336873"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336873)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; I&#x27;ve been looking for a fast, simple, pure Go key-value store.<p>Shameless plug: If you have write-once (or seldom) and read-often kind of access pattern for JSON documents, I wrote a simple (619 LOC), pure Go key-value store, that supports this use case: microblob[1]. It logs in common format, uses a single file backend and scales up and down with RAM..<p>[1] <a href="https:&#x2F;&#x2F;github.com&#x2F;miku&#x2F;microblob" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;miku&#x2F;microblob</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336873&amp;goto=item%3Fid%3D14335931%2314336873">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336888'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14336888' href='vote?id=14336888&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=libeclipse" class="hnuser">libeclipse</a> <span class="age"><a href="item?id=14336888">2 hours ago</a></span> <span id="unv_14336888"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336888)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Not for this particular project, but I&#x27;ll keep it in mind for if&#x2F;when I ever need it!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336888&amp;goto=item%3Fid%3D14335931%2314336888">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='14336739'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336739' href='vote?id=14336739&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=skyde" class="hnuser">skyde</a> <span class="age"><a href="item?id=14336739">2 hours ago</a></span> <span id="unv_14336739"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336739)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Range iteration latency is very important and might be limited by concurrency. I think you can only get 100K IOPS on Amazon’s i3.large when the disk Request queue is full.<p>fio [1] can easily do this because it spawn a number of threads<p>While working with Rocksdb we also found that Range iteration latency was very bad compared to a B+-tree and that RocksDB get good read performance mostly from random read because it&#x27;s using bloomfilters.<p>Does anyone know if this got fixed somehow recently?<p>[1] <a href="https:&#x2F;&#x2F;linux.die.net&#x2F;man&#x2F;1&#x2F;fio" rel="nofollow">https:&#x2F;&#x2F;linux.die.net&#x2F;man&#x2F;1&#x2F;fio</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336739&amp;goto=item%3Fid%3D14335931%2314336739">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14337391'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337391' href='vote?id=14337391&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=didip" class="hnuser">didip</a> <span class="age"><a href="item?id=14337391">26 minutes ago</a></span> <span id="unv_14337391"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337391)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is pretty exciting. I would love to see comparisons between badger and goleveldb<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337391&amp;goto=item%3Fid%3D14335931%2314337391">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14337344'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337344' href='vote?id=14337344&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=faragon" class="hnuser">faragon</a> <span class="age"><a href="item?id=14337344">38 minutes ago</a></span> <span id="unv_14337344"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337344)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Figures per minute? Same-process key-value should give millions <i>per second</i> operations (using one thread). And accessing via network, e.g. a la Redis, should be hundreds of thousands <i>per second</i> [1].<p>[1] <a href="https:&#x2F;&#x2F;redis.io&#x2F;topics&#x2F;benchmarks" rel="nofollow">https:&#x2F;&#x2F;redis.io&#x2F;topics&#x2F;benchmarks</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337344&amp;goto=item%3Fid%3D14335931%2314337344">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336625'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336625' href='vote?id=14336625&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=fortytw2" class="hnuser">fortytw2</a> <span class="age"><a href="item?id=14336625">3 hours ago</a></span> <span id="unv_14336625"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 14336625)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">off topic: flipping through the dgraph code, I noticed their licensing switch from Apache 2 to AGPLv3, anyone involved around to comment? Adding a draconic open source license is an unwise decision for an early stage database product imo<p>(<a href="https:&#x2F;&#x2F;open.dgraph.io&#x2F;licensing" rel="nofollow">https:&#x2F;&#x2F;open.dgraph.io&#x2F;licensing</a> is a dead link)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336625&amp;goto=item%3Fid%3D14335931%2314336625">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336778'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336778' href='vote?id=14336778&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=AsyncAwait" class="hnuser">AsyncAwait</a> <span class="age"><a href="item?id=14336778">2 hours ago</a></span> <span id="unv_14336778"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336778)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Adding a draconic open source license is an unwise decision<p>AGPLv3 is just a license, it is not &quot;draconic&quot;, nor &quot;cancer&quot;, (despite what Ballmer wants you to believe), it simply represents an ethical&#x2F;moral agreement with the ideology of software freedom and since it is their code, they are free to express what they believe via the appropriate license. Nobody is making them do it, nobody is forcing you to use it and nobody is demanding you agree with it, it was a free choice and is therefore as far from &quot;draconic&quot; as one can possibly be, unless you believe that everybody who doesn&#x27;t subscribe to your worldview is &quot;draconic&quot; by definition.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336778&amp;goto=item%3Fid%3D14335931%2314336778">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337000'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337000' href='vote?id=14337000&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tpush" class="hnuser">tpush</a> <span class="age"><a href="item?id=14337000">1 hour ago</a></span> <span id="unv_14337000"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337000)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think what fortytw2 was trying to say is that the AGPL is not a wise choice for software that wants to gain the most popularity and usage as possible since usage of AGPL licensed software is categorically banned (even more so than GPLV3) by a some of companies.<p>As an aside, one can certainly describe something as draconic(or whatever else) if one views it as such; it&#x27;s just an opinion.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337000&amp;goto=item%3Fid%3D14335931%2314337000">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='14337009'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337009' href='vote?id=14337009&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=timClicks" class="hnuser">timClicks</a> <span class="age"><a href="item?id=14337009">1 hour ago</a></span> <span id="unv_14337009"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337009)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The AGPL for database products isn&#x27;t unheard of. See also Neo4J.<p>It makes sense from the host business&#x27;s point of view. If you are the sole contributor, then you&#x27;re entitled to do what you like. Moreover, you&#x27;re also free to charge for commercial licences.<p>This licencing model wouldn&#x27;t be appropriate for a community-centric database, such as PostgreSQL. With many contributors to core, no one would be able to arbitrage the situation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337009&amp;goto=item%3Fid%3D14335931%2314337009">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                          <tr class='athing comtr ' id='14336617'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336617' href='vote?id=14336617&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=marcrosoft" class="hnuser">marcrosoft</a> <span class="age"><a href="item?id=14336617">3 hours ago</a></span> <span id="unv_14336617"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 14336617)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why not boltdb?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336617&amp;goto=item%3Fid%3D14335931%2314336617">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336771'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336771' href='vote?id=14336771&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=libeclipse" class="hnuser">libeclipse</a> <span class="age"><a href="item?id=14336771">2 hours ago</a></span> <span id="unv_14336771"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336771)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">They&#x27;re based on different technologies. Bolt uses B-Trees and Badger&#x2F;Rocks&#x2F;Leveldb use LSM trees.<p>Bolt also uses insane amounts of RAM and writes get slower and slower as the size of the database increases. (Personal experience, don&#x27;t have benchmarks. Take this at face value.)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336771&amp;goto=item%3Fid%3D14335931%2314336771">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336809'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14336809' href='vote?id=14336809&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nemo1618" class="hnuser">nemo1618</a> <span class="age"><a href="item?id=14336809">2 hours ago</a></span> <span id="unv_14336809"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336809)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We&#x27;ve experienced these downsides as well, although it seems that boltdb&#x27;s memory usage can be deceptive due to mmap&#x27;ing the db file.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336809&amp;goto=item%3Fid%3D14335931%2314336809">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='14336676'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336676' href='vote?id=14336676&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=renke1" class="hnuser">renke1</a> <span class="age"><a href="item?id=14336676">2 hours ago</a></span> <span id="unv_14336676"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336676)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I was wondering too, but Badger doesn&#x27;t offer transactions and stuff like that (on purpose). It seems to be more low-level in some regards.<p><a href="https:&#x2F;&#x2F;github.com&#x2F;boltdb&#x2F;bolt" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;boltdb&#x2F;bolt</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336676&amp;goto=item%3Fid%3D14335931%2314336676">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14336574'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336574' href='vote?id=14336574&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dkarapetyan" class="hnuser">dkarapetyan</a> <span class="age"><a href="item?id=14336574">3 hours ago</a></span> <span id="unv_14336574"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14336574)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There&#x27;s that word again, natively. Should just say written in Go. The native part is redundant.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336574&amp;goto=item%3Fid%3D14335931%2314336574">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336584'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336584' href='vote?id=14336584&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=slimsag" class="hnuser">slimsag</a> <span class="age"><a href="item?id=14336584">3 hours ago</a></span> <span id="unv_14336584"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336584)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I believe the author is using the term &#x27;natively&#x27; here to describe the project being written purely in Go, rather than using CGO (i.e. being a wrapper to some database written in C).<p>I agree &#x27;written purely in Go&#x27; would have been a better choice of words, though.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336584&amp;goto=item%3Fid%3D14335931%2314336584">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336618'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14336618' href='vote?id=14336618&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=infogulch" class="hnuser">infogulch</a> <span class="age"><a href="item?id=14336618">3 hours ago</a></span> <span id="unv_14336618"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336618)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Or even &quot;written in pure Go&quot;<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336618&amp;goto=item%3Fid%3D14335931%2314336618">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='14336389'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336389' href='vote?id=14336389&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zie" class="hnuser">zie</a> <span class="age"><a href="item?id=14336389">3 hours ago</a></span> <span id="unv_14336389"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 14336389)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">How do I use it? there is zero docs on how to even get started, what the API is like(is there even one?) This could be worth all the peanuts in the world, but if the only way to learn how to use it, is read the Go source, very few people will bother.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336389&amp;goto=item%3Fid%3D14335931%2314336389">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336399'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336399' href='vote?id=14336399&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wiiittttt" class="hnuser">wiiittttt</a> <span class="age"><a href="item?id=14336399">3 hours ago</a></span> <span id="unv_14336399"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336399)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There is a link to the docs on the github page.<p><a href="https:&#x2F;&#x2F;godoc.org&#x2F;github.com&#x2F;dgraph-io&#x2F;badger" rel="nofollow">https:&#x2F;&#x2F;godoc.org&#x2F;github.com&#x2F;dgraph-io&#x2F;badger</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336399&amp;goto=item%3Fid%3D14335931%2314336399">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14336534'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336534' href='vote?id=14336534&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=lumost" class="hnuser">lumost</a> <span class="age"><a href="item?id=14336534">3 hours ago</a></span> <span id="unv_14336534"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336534)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Go projects typically use godoc to autogenerate documentation from comments, this has the added benefit that a single service can maintain updated docs for every open source go package in existence ex. <a href="https:&#x2F;&#x2F;godoc.org&#x2F;" rel="nofollow">https:&#x2F;&#x2F;godoc.org&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336534&amp;goto=item%3Fid%3D14335931%2314336534">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14336537'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336537' href='vote?id=14336537&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=eternalban" class="hnuser">eternalban</a> <span class="age"><a href="item?id=14336537">3 hours ago</a></span> <span id="unv_14336537"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336537)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><a href="https:&#x2F;&#x2F;godoc.org&#x2F;github.com&#x2F;dgraph-io&#x2F;badger&#x2F;badger#example-package" rel="nofollow">https:&#x2F;&#x2F;godoc.org&#x2F;github.com&#x2F;dgraph-io&#x2F;badger&#x2F;badger#example...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336537&amp;goto=item%3Fid%3D14335931%2314336537">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336592'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14336592' href='vote?id=14336592&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zie" class="hnuser">zie</a> <span class="age"><a href="item?id=14336592">3 hours ago</a></span> <span id="unv_14336592"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336592)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">AH! I was looking in the docs&#x2F; dir, and found them to be completely missing.  Thanks :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336592&amp;goto=item%3Fid%3D14335931%2314336592">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='14337008'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337008' href='vote?id=14337008&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Asmod4n" class="hnuser">Asmod4n</a> <span class="age"><a href="item?id=14337008">1 hour ago</a></span> <span id="unv_14337008"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337008)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">How does it compare to LMDB?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337008&amp;goto=item%3Fid%3D14335931%2314337008">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336681'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336681' href='vote?id=14336681&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=usegolang" class="hnuser">usegolang</a> <span class="age"><a href="item?id=14336681">2 hours ago</a></span> <span id="unv_14336681"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336681)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">How does this compare to boltdb?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336681&amp;goto=item%3Fid%3D14335931%2314336681">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336773'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336773' href='vote?id=14336773&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=libeclipse" class="hnuser">libeclipse</a> <span class="age"><a href="item?id=14336773">2 hours ago</a></span> <span id="unv_14336773"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336773)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">See <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=14336771" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=14336771</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336773&amp;goto=item%3Fid%3D14335931%2314336773">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14336929'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336929' href='vote?id=14336929&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=thedatamonger" class="hnuser">thedatamonger</a> <span class="age"><a href="item?id=14336929">2 hours ago</a></span> <span id="unv_14336929"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336929)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">nobody has said it so I must.  Badgers?  We don&#x27;t need no stinking badgers!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336929&amp;goto=item%3Fid%3D14335931%2314336929">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336949'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336949' href='vote?id=14336949&amp;how=up&amp;goto=item%3Fid%3D14335931'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=lucasmullens" class="hnuser">lucasmullens</a> <span class="age"><a href="item?id=14336949">2 hours ago</a></span> <span id="unv_14336949"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336949)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Worth noting Badger here is a reference to the Wisconsin Badgers, since it&#x27;s based on a paper from UW-Madison.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336949&amp;goto=item%3Fid%3D14335931%2314336949">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?fyxv2vIgGFuCYQwrlukp'></script></html>

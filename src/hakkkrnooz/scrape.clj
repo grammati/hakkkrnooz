@@ -1,11 +1,10 @@
 (ns hakkkrnooz.scrape
-  (:import (org.jsoup Jsoup)
-           (org.jsoup.nodes Node Document Element TextNode)
-           (org.jsoup.select Selector Elements))
-  (:require (clojure [string :as s]))
-  (:use     (hakkkrnooz [core :only [HN]]))
-  )
-
+  (:require [clojure.string :as s]
+            [hakkkrnooz.config :refer [HN]]
+            [clojure.string :as str])
+  (:import clojure.lang.ExceptionInfo
+           [org.jsoup.nodes Document Element TextNode]
+           [org.jsoup.select Elements Selector]))
 
 (set! *warn-on-reflection* true)
 
@@ -32,8 +31,11 @@
 (defn inline? [n]
   (not (block? n)))
 
-(defn text [^TextNode node]
+(defn text [^Element node]
   (.text node))
+
+(defn attr ^String [^Element node ^String attr-name]
+  (.attr node attr-name))
 
 (defn- empty-text-node? [node]
   (and (instance? TextNode node) (empty? (s/trim (.text ^TextNode node)))))
@@ -71,7 +73,7 @@
   ;; enough to extract the data from.
   ;; tr is a row with 3 cells
   ;;  - the first is a spacer, where the width of an image determines the nesting
-  ;;  - the second contains the upvote button
+  ;;  - the second contains the upvote button w
   ;;  - the third contains everything else - specifically, it contains:
   ;;    - first, a div containing a span containing either:
   ;;      - all three of:
@@ -110,10 +112,11 @@
         id     (if-not del
                  (-> header
                      ($ "> a")
-                     (.get 1)
-                     (.attr "href")
-                     (.substring (count "item?id="))))
-        main   ($1 tr "> td:eq(2) > span")
+                     (->> (filter #(.startsWith (or (attr % "href") "") "item?id=")))
+                     first
+                     (or "xxxxxxxx")
+                     (subs #=(count "item?id="))))
+        main   ($1 tr "> td:eq(2) > div.comment > span")
         paras  (comment-text main)
         full-comment (apply str paras)]
     {:type    :comment
@@ -190,34 +193,36 @@
                href
                (str HN "/" href))
         item {:title (.text link)
-              :href href}]
-    (condp = (count info)
-      6 (let [[^Element pt-span
+              :href  href}]
+    (case (count info)
+      ;; Job add: [<span>3 hours ago</span>, "|", <a ...>hide</a>]
+      3 (assoc item
+               :type :job-ad
+               :age (-> info first text s/trim))
+      ;; Story: [points, "by", user, age, empty-span, "|", hide-link, "|", comments-link]
+      9 (let [[^Element pt-span
                _
                ^Element user
                ^Element age
-               _
+               _ _ _ _
                ^Element comment-link] info]
           (assoc item
-            :type :story
-            :points (->> pt-span .text (re-find #"(\d+) points") second)
-            :user (.text user)
-            :age (->> age .text s/trim )
-            :id (->> (.attr comment-link "href") (re-matches #"item\?id=(\d+)") second)
-            :cc (->> comment-link .text (re-matches #"(\d+) comments") second)
-            ))
-      1 (assoc item
-          :type :job-ad
-          :age (->> info first text s/trim))
-      (assoc item
-        :type :unknown))))
+                 :type :story
+                 :points (->> pt-span .text (re-find #"(\d+) points") second)
+                 :user (.text user)
+                 :age (->> age .text s/trim )
+                 :id (->> (.attr comment-link "href") (re-matches #"item\?id=(\d+)") second)
+                 :cc (->> comment-link .text (re-matches #"(\d+).+comments") second)))
+      (throw (ex-info "Could not parse story"
+                      {:title-row      title-row
+                       :info-row       info-row
+                       :extracted-info info})))))
 
 (defn try-parse-story [title-row info-row]
   (try
     (parse-story title-row info-row)
-    (catch Exception e
-      {:type :parse-error
-       :details (str e)})))
+    (catch ExceptionInfo e
+      (assoc (ex-data e) :type :parse-error))))
 
 (defn parse-stories
   "Extract the stories from the HN main page."

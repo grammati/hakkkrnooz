@@ -1,0 +1,124 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?fyxv2vIgGFuCYQwrlukp">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>The Collector&#x27;s Fallacy | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D14335194">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table border="0">
+        <tr class='athing' id='14335194'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_14335194' href='vote?id=14335194&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://medium.com/the-polymath-project/the-collectors-fallacy-why-we-gather-things-we-don-t-need-9a55ef9979ef" class="storylink">The Collector's Fallacy</a><span class="sitebit comhead"> (<a href="from?site=medium.com"><span class="sitestr">medium.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_14335194">25 points</span> by <a href="user?id=_chu" class="hnuser">_chu</a> <span class="age"><a href="item?id=14335194">6 hours ago</a></span> <span id="unv_14335194"></span> | <a href="hide?id=14335194&amp;goto=item%3Fid%3D14335194">hide</a> | <a href="https://hn.algolia.com/?query=The%20Collector's%20Fallacy&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=The%20Collector's%20Fallacy">web</a> | <a href="item?id=14335194">9&nbsp;comments</a> | <a href="fave?id=14335194&amp;auth=897a34e94dea047e3b88edddfd0b544c362b09e6">favorite</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="14335194"><input type="hidden" name="goto" value="item?id=14335194"><input type="hidden" name="hmac" value="cb37d96c280e32e84314e03eac2e71f8845df978"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='14336711'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336711' href='vote?id=14336711&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jasode" class="hnuser">jasode</a> <span class="age"><a href="item?id=14336711">2 hours ago</a></span> <span id="unv_14336711"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336711)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><i>&gt;Put simply, Eco is telling us to finish what is on our plates before we get up for more. Make sure you master what you have before moving on.</i><p>Everybody has their own angle on how to handle information overload.  That said,  I&#x27;ll offer a different mental model of managing the never-ending reading list.  The &quot;reading list&quot; includes the 50+ open webbrowser tabs of &quot;stuff to read later&quot;, the digital magazines on iPad, the printouts of pdf files (tech whitepapers), and of course, a pile of traditional books.<p>For me, finishing what you already collected before starting on new ones is not optimal.  I don&#x27;t think of a reading TODO as &quot;food&quot; such that you <i>should</i> eat the old food before the new food.  (The old food will expire so it makes sense to consume that first.)<p>Instead, I think of reading as a Priority Queue[1].  I let go of the idea that the various reading piles must be finished in the order I added them to the list.  Many times, a more interesting article or book will go to the top of the queue pushing back a bunch of stuff I added weeks or months ago.  The priority queue is in a perpetual state of being <i>unfinished and constantly adjusted</i>.  That&#x27;s ok.  It&#x27;s the same idea as a priority queue for leisure traveling.  Even if I owned a $75 million Gulfstream private jet, I still couldn&#x27;t travel to all the places I wanted to in my lifetime.  There is no sense of being &quot;done&quot; with my &quot;travel destinations collecting&quot; and I apply that perspective to reading.<p>The above doesn&#x27;t apply to work email inboxes.  I do get anxious if there are unread items there.<p>[1] <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Priority_queue" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Priority_queue</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336711&amp;goto=item%3Fid%3D14335194%2314336711">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337274'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337274' href='vote?id=14337274&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=scryder" class="hnuser">scryder</a> <span class="age"><a href="item?id=14337274">55 minutes ago</a></span> <span id="unv_14337274"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337274)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;I don&#x27;t think of a reading TODO as &quot;food&quot; such that you should eat the old food before the new food. (The old food will expire so it makes sense to consume that first.)<p>Based on this explanation, maybe you should. News and information often decrease in usefulness and relevance the longer you wait to digest it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337274&amp;goto=item%3Fid%3D14335194%2314337274">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14337102'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337102' href='vote?id=14337102&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=deanCommie" class="hnuser">deanCommie</a> <span class="age"><a href="item?id=14337102">1 hour ago</a></span> <span id="unv_14337102"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337102)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">As someone with significant attention problems, apps like Instapaper and later Pocket were a LIFESAVER and probably saved my career from mediocrity.<p>My brain craves constant stimulation and distraction. Do 30 mins of coding? Okay you&#x27;ve earned 5 mins of hacker news. The problem is those 5 minutes are never 5 minutes when you come across a bunch of really interesting articles that your brain is dying to consume instead of getting back to work.<p>In the old days, I&#x27;d use del.icio.us, but that got out of hand. So, more often than not, I simply would take the time to read the posts, and my 5 minute breaks would become 20 minutes.  I was a young hotshot developer and I could still manage to get my work done in half the day - truly.  But I didn&#x27;t grow.<p>So, first, I got older (and slower). Second, web articles got longer. And my model no longer was sustainable.<p>Now, what do I do? I just skim the article, note if it&#x27;s something i should read, and add it to my pocket.<p>Do I then get the collector&#x27;s fallacy side effect? Absolutely. But it&#x27;s the lesser of two evils.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337102&amp;goto=item%3Fid%3D14335194%2314337102">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337467'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337467' href='vote?id=14337467&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=djhworld" class="hnuser">djhworld</a> <span class="age"><a href="item?id=14337467">11 minutes ago</a></span> <span id="unv_14337467"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337467)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I like pocket too, but I think it suffers from the same issues as what the article is describing.<p>Well, Pocket is not at fault, it&#x27;s more me and how I use it, but I&#x27;ve got a growing list of links that I&#x27;ve either read and enjoyed, or just saved and not got round to reading yet.<p>I tend to read my pocket articles on the train via my phone, and sometimes forget what I have and haven&#x27;t read, or what the article was even about.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337467&amp;goto=item%3Fid%3D14335194%2314337467">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14337272'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337272' href='vote?id=14337272&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nikanj" class="hnuser">nikanj</a> <span class="age"><a href="item?id=14337272">55 minutes ago</a></span> <span id="unv_14337272"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337272)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Me buying books ensures books are going to be written. Even if I don&#x27;t read them, I&#x27;ve still supported the art.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337272&amp;goto=item%3Fid%3D14335194%2314337272">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336519'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336519' href='vote?id=14336519&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Kenji" class="hnuser">Kenji</a> <span class="age"><a href="item?id=14336519">3 hours ago</a></span> <span id="unv_14336519"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 14336519)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think the author neglects one point: Deciding what to keep and what to throw away is a <i>really difficult</i> problem. Why is that so? Because to do it 100% correctly, you would have to know the <i>future</i>. Because only then you can know for certain what is worth keeping. You don&#x27;t know the future so you will err. Now, in times where data storage is almost free, it makes sense to keep an ever growing but well-ordered set of files or bookmarks. It has saved me lots of time, just searching my bookmarks &quot;I remember this article I once skimmed, and it contains exactly what I need&quot; or even &quot;I remember this book I downloaded, I&#x27;m sure the answer is in there&quot;.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336519&amp;goto=item%3Fid%3D14335194%2314336519">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337470'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337470' href='vote?id=14337470&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=blincoln" class="hnuser">blincoln</a> <span class="age"><a href="item?id=14337470">10 minutes ago</a></span> <span id="unv_14337470"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337470)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Additionally, so much of the internet is ephemeral, compared to the content that students or researchers would have been photocopying when Umberto Eco wrote the piece that&#x27;s quoted in the article. For this reason, if I find an interesting article&#x2F;page&#x2F;whatever, I tend to save a local copy even if I don&#x27;t know when or if I&#x27;ll read it. It might not be online anymore when it turns out to be useful.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337470&amp;goto=item%3Fid%3D14335194%2314337470">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14336643'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336643' href='vote?id=14336643&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gnodar" class="hnuser">gnodar</a> <span class="age"><a href="item?id=14336643">2 hours ago</a></span> <span id="unv_14336643"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336643)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That&#x27;s essentially what my bookmarks are. An index of self-curated articles, tutorials, tools, books, etc. of things I&#x27;m generally interested in. Before I put something in my bookmarks I do a quick skim and decide if has value, even if it&#x27;s not relevant right now. So that in the future instead of a Google search, where I&#x27;d have to browse through a pile of results to identify the gold nuggets, I can instead search through my bookmarks knowing that whatever pops up is going to be immediately useful because I&#x27;ve already screened for it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336643&amp;goto=item%3Fid%3D14335194%2314336643">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336670'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14336670' href='vote?id=14336670&amp;how=up&amp;goto=item%3Fid%3D14335194'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Kenji" class="hnuser">Kenji</a> <span class="age"><a href="item?id=14336670">2 hours ago</a></span> <span id="unv_14336670"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336670)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">What you are doing is essentially using your computer as a memex (as described in &quot;as we may think&quot;), like it is intended.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336670&amp;goto=item%3Fid%3D14335194%2314336670">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                          </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?fyxv2vIgGFuCYQwrlukp'></script></html>

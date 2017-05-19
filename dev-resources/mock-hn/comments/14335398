@@ -1,0 +1,142 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?fyxv2vIgGFuCYQwrlukp">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>HypheNN-De: German Hyphenation with Neural Networks | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D14335398">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table border="0">
+        <tr class='athing' id='14335398'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_14335398' href='vote?id=14335398&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://blog.m-siemens.de/hyphenn-de-german-hyphenation-with-neural-networks/" class="storylink">HypheNN-De: German Hyphenation with Neural Networks</a><span class="sitebit comhead"> (<a href="from?site=m-siemens.de"><span class="sitestr">m-siemens.de</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_14335398">32 points</span> by <a href="user?id=msiemens" class="hnuser">msiemens</a> <span class="age"><a href="item?id=14335398">8 hours ago</a></span> <span id="unv_14335398"></span> | <a href="hide?id=14335398&amp;goto=item%3Fid%3D14335398">hide</a> | <a href="https://hn.algolia.com/?query=HypheNN-De%3A%20German%20Hyphenation%20with%20Neural%20Networks&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=HypheNN-De%3A%20German%20Hyphenation%20with%20Neural%20Networks">web</a> | <a href="item?id=14335398">10&nbsp;comments</a> | <a href="fave?id=14335398&amp;auth=feea2b7ea15cc5e82d901b3a086e3de96216fec3">favorite</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="14335398"><input type="hidden" name="goto" value="item?id=14335398"><input type="hidden" name="hmac" value="fddfc12a08de3736578557d51c4dd12a5b83930a"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='14336290'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336290' href='vote?id=14336290&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Ciantic" class="hnuser">Ciantic</a> <span class="age"><a href="item?id=14336290">4 hours ago</a></span> <span id="unv_14336290"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336290)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">If you love spelling and hyphenation, you should star this issue in Chrome(ium):<p><a href="https:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;chromium&#x2F;issues&#x2F;detail?id=20667" rel="nofollow">https:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;chromium&#x2F;issues&#x2F;detail?id=20667</a><p>There are a lots of spelling and hyphenation libraries e.g. for Finnish language, but it is not possible to get them to working in Chrome cause there is no extension capability for it. It&#x27;s really shame, since these odd languages probably never get support by Chrome team itself.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336290&amp;goto=item%3Fid%3D14335398%2314336290">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336394'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336394' href='vote?id=14336394&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=lindig" class="hnuser">lindig</a> <span class="age"><a href="item?id=14336394">3 hours ago</a></span> <span id="unv_14336394"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 14336394)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">TeX implements a very good spelling engine that that is driven by patterns [1]. I would expect it very difficult to improve on this and as far as I can see, the article doesn&#x27;t include a comparison.<p>[1]: <a href="https:&#x2F;&#x2F;tex.stackexchange.com&#x2F;questions&#x2F;262588&#x2F;how-are-hyphenation-patterns-written" rel="nofollow">https:&#x2F;&#x2F;tex.stackexchange.com&#x2F;questions&#x2F;262588&#x2F;how-are-hyphe...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336394&amp;goto=item%3Fid%3D14335398%2314336394">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336467'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336467' href='vote?id=14336467&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Semaphor" class="hnuser">Semaphor</a> <span class="age"><a href="item?id=14336467">3 hours ago</a></span> <span id="unv_14336467"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 14336467)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">He talks about exactly about pattern matching and mentions latex using it in the second section. Also that this approach doesn&#x27;t work as well with German compound words which is the whole premise.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336467&amp;goto=item%3Fid%3D14335398%2314336467">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336529'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14336529' href='vote?id=14336529&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=lindig" class="hnuser">lindig</a> <span class="age"><a href="item?id=14336529">3 hours ago</a></span> <span id="unv_14336529"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14336529)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Giving one example is not an evaluation that would convince me that NN are better. The German LaTeX community is one of the largest and I haven&#x27;t heard much about it being unhappy with TeX&#x27;s hyphenation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336529&amp;goto=item%3Fid%3D14335398%2314336529">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337284'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14337284' href='vote?id=14337284&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=msiemens" class="hnuser">msiemens</a> <span class="age"><a href="item?id=14337284">52 minutes ago</a></span> <span id="unv_14337284"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337284)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That word would be <i>Nahrungsmittelunverträglichkeit</i> again. I just tested it and LaTeX (with `\usepackage[ngerman]{babel}`) does the same mistake as pyphen in the article (it hyphenates the word as <i>Nah-rung-smit-telun-ver-träg-lichkeit</i>).<p>To be fair, in day-to-day use problems like these will be corner cases as to my knowledge LaTeX tries to avoid hyphenation and even if it has to split a word, it has a good chance of getting it right. Also, to me this project&#x27;s focus was more on learning about neural networks than creating a better hyphenator.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337284&amp;goto=item%3Fid%3D14335398%2314337284">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14337201'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14337201' href='vote?id=14337201&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=microcolonel" class="hnuser">microcolonel</a> <span class="age"><a href="item?id=14337201">1 hour ago</a></span> <span id="unv_14337201"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337201)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think that it&#x27;s probably &quot;good enough&quot;, I don&#x27;t think it&#x27;s a given that this NN is worse, and it&#x27;s possible that it could feasibly be translated to machine code which runs faster than TeX&#x27;s handbuilt algorithm, and also possible that it produces better results in most cases.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337201&amp;goto=item%3Fid%3D14335398%2314337201">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='14336058'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336058' href='vote?id=14336058&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tinyrick2" class="hnuser">tinyrick2</a> <span class="age"><a href="item?id=14336058">5 hours ago</a></span> <span id="unv_14336058"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336058)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This blog inspired me to hunt for some obscure machine learning papers from 80s and 90s that I may replicate and 
+improve. Any idea where to start?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336058&amp;goto=item%3Fid%3D14335398%2314336058">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336142'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336142' href='vote?id=14336142&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=logicallee" class="hnuser">logicallee</a> <span class="age"><a href="item?id=14336142">4 hours ago</a></span> <span id="unv_14336142"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336142)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">(serious reply.) A university library.  (So you can find old papers.)<p>I assume you know some modern techniques.  If not then I would start with a modern textbook (like, the assigned textbook from a machine learning class) and then see if you can use the same exercises to see if you can improve classic paper results.  It would make an interesting blog post.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336142&amp;goto=item%3Fid%3D14335398%2314336142">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14336987'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336987' href='vote?id=14336987&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=microcolonel" class="hnuser">microcolonel</a> <span class="age"><a href="item?id=14336987">1 hour ago</a></span> <span id="unv_14336987"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336987)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Did you consider putting the &quot;center&quot; of the detector somewhere other than in the middle of the vector? what would happen if you had 6 before, and 2 after, or 5 before, and 3 after?<p>Another thought I had: for performance reasons, it might be nice to have something more compact than a one-hot vector for each letter. Have you looked at determining sets of characters which have a similar impact on hyphenation, and encoding them together?<p>PS: do you have the extracted list of wiktionary hyphenations sitting in a text file somewhere that you could put up? I&#x27;m fixin&#x27; to quickly compare the accuracy to TeX&#x27;s German hyphenation (once the 30+GiB TeXLive repository finishes downloading).<p>PPS: You could improve the display of code blocks in your site on desktop by adding<p><pre><code>    display: block;
+    max-width: 710px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+</code></pre>
+to your `.post-content pre code` rule. Or maybe slightly indent it by reducing the max width a small amount below that of the body text.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336987&amp;goto=item%3Fid%3D14335398%2314336987">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337422'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337422' href='vote?id=14337422&amp;how=up&amp;goto=item%3Fid%3D14335398'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=msiemens" class="hnuser">msiemens</a> <span class="age"><a href="item?id=14337422">17 minutes ago</a></span> <span id="unv_14337422"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337422)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><i>Did you consider putting the &quot;center&quot; of the detector somewhere other than in the middle of the vector? what would happen if you had 6 before, and 2 after, or 5 before, and 3 after?</i>
+<i>Another thought I had: for performance reasons, it might be nice to have something more compact than a one-hot vector for each letter. Have you looked at determining sets of characters which have a similar impact on hyphenation, and encoding them together?</i><p>These are interesting suggestions! It sure would be interesting to do actual research on how to optimize the hyphenation even more. It also would be interesting to play with the hyperparameters and network architecture to see what impact they have on the hyphenation accuracy. Alas, I&#x27;m a student so time is rather scarce.<p><i>PS: do you have the extracted list of wiktionary hyphenations sitting in a text file somewhere that you could put up? I&#x27;m fixin&#x27; to quickly compare the accuracy to TeX&#x27;s German hyphenation (once the 30+GiB TeXLive repository finishes downloading).</i><p>Sure! The GitHub repository actually contains a Rust program to process a Wiktionary XML dump into a word list for training, but if you want to skip straight ahead, I&#x27;ve uploaded the dataset I used to <a href="https:&#x2F;&#x2F;gist.githubusercontent.com&#x2F;msiemens&#x2F;2aac63cf8d1b88c48d33c9c82f8f8e15&#x2F;raw&#x2F;d078a9dcad5e63afd8a5976184d973a02c5f591f&#x2F;wordlist.txt" rel="nofollow">https:&#x2F;&#x2F;gist.githubusercontent.com&#x2F;msiemens&#x2F;2aac63cf8d1b88c4...</a> [6 MB, licensed under CC BY-SA 3.0].<p><i>PPS: You could improve the display of code blocks in your site on desktop by adding [...]</i><p>Thanks for the suggestion, I&#x27;ll look into it!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337422&amp;goto=item%3Fid%3D14335398%2314337422">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?fyxv2vIgGFuCYQwrlukp'></script></html>

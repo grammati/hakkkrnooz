@@ -1,0 +1,291 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?fyxv2vIgGFuCYQwrlukp">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Eigentechno – Principal Component Analysis applied to electronic music | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D14336093">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table border="0">
+        <tr class='athing' id='14336093'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_14336093' href='vote?id=14336093&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://www.math.uci.edu/~isik/posts/Eigentechno.html" class="storylink">Eigentechno – Principal Component Analysis applied to electronic music</a><span class="sitebit comhead"> (<a href="from?site=uci.edu"><span class="sitestr">uci.edu</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_14336093">129 points</span> by <a href="user?id=umutisik" class="hnuser">umutisik</a> <span class="age"><a href="item?id=14336093">4 hours ago</a></span> <span id="unv_14336093"></span> | <a href="hide?id=14336093&amp;goto=item%3Fid%3D14336093">hide</a> | <a href="https://hn.algolia.com/?query=Eigentechno%20%E2%80%93%20Principal%20Component%20Analysis%20applied%20to%20electronic%20music&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Eigentechno%20%E2%80%93%20Principal%20Component%20Analysis%20applied%20to%20electronic%20music">web</a> | <a href="item?id=14336093">25&nbsp;comments</a> | <a href="fave?id=14336093&amp;auth=56dd0538a374487ddc8f88d808e3b761d7cf72b4">favorite</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="14336093"><input type="hidden" name="goto" value="item?id=14336093"><input type="hidden" name="hmac" value="1719c2ef68727c2f3d0e771202364faf767a733f"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='14337152'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14337152' href='vote?id=14337152&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=highd" class="hnuser">highd</a> <span class="age"><a href="item?id=14337152">1 hour ago</a></span> <span id="unv_14337152"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337152)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is really, really awesome. Some other ideas that would be really cool:<p>1) Do key detection and pitch-shift all the loops to a common key before processing. That might make more of the melodies come through the eigenvectors.<p>2) Visualize the loop point cloud - maybe with like 10-50 dimensions of PCA followed by 2 or 3 dimensions T-SNE.<p>3) Maybe some form of earlier dimensionality reduction? I.e. you could do a short-time fourier transform and then threshold and bin frequencies - then invert the transform to reduce the sounds to their basic characteristics. That make make it so not all of the first 20 or so eigenvectors all have slightly different kick drums. For example, if you have kick drums with fundamentals at 21Hz, 22Hz, 23Hz, 24Hz etc. those will each require two eigenvectors to represent the sine or cosine phases of the signal - but if you could &quot;project&quot; every kick drum sound so they were close to linearly related then PCA could isolate them with fewer eigenvectors.<p>I would love to play with some sort of live music generation system based on this - really, really interesting ideas. And goes to show what can be built with traditional data analysis techniques and a clever idea!<p>EDIT: Also if you uploaded your preprocessed data I think that would be really amazing.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337152&amp;goto=item%3Fid%3D14336093%2314337152">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336759'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336759' href='vote?id=14336759&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=umutisik" class="hnuser">umutisik</a> <span class="age"><a href="item?id=14336759">2 hours ago</a></span> <span id="unv_14336759"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336759)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Hi, I am the author of the article. I would appreciate any comments&#x2F;questions&#x2F;suggestions.<p>Update: I switched the audio files to Soundcloud now so everything should work again.<p>Eigencrisis! It looks like the UCI servers are having trouble. I uploaded the audio files to the following Soundcloud playlist and I am working on embedding the soundcloud player in place of the files.<p><a href="https:&#x2F;&#x2F;soundcloud.com&#x2F;umutisik&#x2F;sets&#x2F;eigentechno-1" rel="nofollow">https:&#x2F;&#x2F;soundcloud.com&#x2F;umutisik&#x2F;sets&#x2F;eigentechno-1</a><p>Sorry for the inconvenience.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336759&amp;goto=item%3Fid%3D14336093%2314336759">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337319'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337319' href='vote?id=14337319&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=corysama" class="hnuser">corysama</a> <span class="age"><a href="item?id=14337319">42 minutes ago</a></span> <span id="unv_14337319"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337319)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is great.  I could totally see &quot;21 Transition 1420 Twm&quot; appearing on an album as a self-deprecating joke.  Mathematically generic techno and it still sound good :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337319&amp;goto=item%3Fid%3D14336093%2314337319">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14336436'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336436' href='vote?id=14336436&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sideshowb" class="hnuser">sideshowb</a> <span class="age"><a href="item?id=14336436">3 hours ago</a></span> <span id="unv_14336436"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336436)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Life imitating parody? <a href="http:&#x2F;&#x2F;archive.museumoftechno.org&#x2F;exhibition_detail.php?id=6" rel="nofollow">http:&#x2F;&#x2F;archive.museumoftechno.org&#x2F;exhibition_detail.php?id=6</a><p>(see also <a href="http:&#x2F;&#x2F;archive.museumoftechno.org&#x2F;exhibition_detail.php?id=4" rel="nofollow">http:&#x2F;&#x2F;archive.museumoftechno.org&#x2F;exhibition_detail.php?id=4</a> )<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336436&amp;goto=item%3Fid%3D14336093%2314336436">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336668'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336668' href='vote?id=14336668&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hammock" class="hnuser">hammock</a> <span class="age"><a href="item?id=14336668">2 hours ago</a></span> <span id="unv_14336668"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 14336668)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I don&#x27;t get it. I guess he is deconstructing music by PCA instead of frequency or time. What is a practical application or interpretation of this? (not being critical, just trying to understand the motivation)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336668&amp;goto=item%3Fid%3D14336093%2314336668">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336989'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336989' href='vote?id=14336989&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bitL" class="hnuser">bitL</a> <span class="age"><a href="item?id=14336989">1 hour ago</a></span> <span id="unv_14336989"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336989)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">IIRC PCA finds the &quot;stochastically optimal&quot; base functions for you, whereas with FFT, DCT etc. you supply base functions yourself and then just do simple linear projections to this base.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336989&amp;goto=item%3Fid%3D14336093%2314336989">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14336977'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336977' href='vote?id=14336977&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=umutisik" class="hnuser">umutisik</a> <span class="age"><a href="item?id=14336977">1 hour ago</a></span> <span id="unv_14336977"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14336977)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thank you for your question. At this point, this is just to see how PCA works on this kind of data-set. Normally, PCA is used to reduce the dimension of the data in a way that loses less information. It can be useful for saving computation on classification tasks for example.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336977&amp;goto=item%3Fid%3D14336093%2314336977">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337243'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337243' href='vote?id=14337243&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=hammock" class="hnuser">hammock</a> <span class="age"><a href="item?id=14337243">1 hour ago</a></span> <span id="unv_14337243"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337243)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Its a cool exploration for curiosity&#x27;s sake. Seems weird to use it vs Fft though because while some have said PCA is supposed to be &quot;more optimal&quot; , we have prior knowledge that the music is actually constructed along the FFT dimensions. So I wouldnt expect PCA to be any better<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337243&amp;goto=item%3Fid%3D14336093%2314337243">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337459'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14337459' href='vote?id=14337459&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=highd" class="hnuser">highd</a> <span class="age"><a href="item?id=14337459">12 minutes ago</a></span> <span id="unv_14337459"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337459)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">FFT and PCA are totally different. FFT is a fixed linear transform - PCA finds the linear projection to k-space that retains the most variance from the original dataset. If you projected to the top k frequencies you&#x27;d just get a couple of tones, while PCA finds linear combinations of the original signal that are most &quot;descriptive&quot; in a sense.<p>Also human hearing is much closer to a wavelet transform or STFT than FFT.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337459&amp;goto=item%3Fid%3D14336093%2314337459">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='14336954'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336954' href='vote?id=14336954&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=adamnemecek" class="hnuser">adamnemecek</a> <span class="age"><a href="item?id=14336954">2 hours ago</a></span> <span id="unv_14336954"></span><span class="par"></span> <a class="togg" n="10" href="javascript:void(0)" onclick="return toggle(event, 14336954)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;m working full time on a new DAW that should make writing music a lot faster and easier. Current DAWs don&#x27;t really understand music theory or the creative process. Also the note input process and experimentation is extremely time consuming and the DAW never helps. Current DAW : my thing = Windows Notepad : IDE. The HN audience is definitely one of my core groups.<p>Sign up here <a href="https:&#x2F;&#x2F;docs.google.com&#x2F;forms&#x2F;d&#x2F;1-aQzVbkbGwv2BMQsvuoneOUPgyrc6HRl-DjVwHZxKvo" rel="nofollow">https:&#x2F;&#x2F;docs.google.com&#x2F;forms&#x2F;d&#x2F;1-aQzVbkbGwv2BMQsvuoneOUPgyr...</a><p>And ill ping you when it&#x27;s released.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336954&amp;goto=item%3Fid%3D14336093%2314336954">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337442'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337442' href='vote?id=14337442&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=still_grokking" class="hnuser">still_grokking</a> <span class="age"><a href="item?id=14337442">14 minutes ago</a></span> <span id="unv_14337442"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337442)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Current DAWs don&#x27;t really understand music theory, that&#x27;s right.<p>But there are such things as Synfire Pro by cognitone for example, which on the other hand is unusable as DAW exactly like all the other software for music composition.<p>I would love to see an usable combination of both software categories eventually.<p>One question left: Your software won&#x27;t be FOSS, or will it?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337442&amp;goto=item%3Fid%3D14336093%2314337442">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14337074'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337074' href='vote?id=14337074&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=thelsdj" class="hnuser">thelsdj</a> <span class="age"><a href="item?id=14337074">1 hour ago</a></span> <span id="unv_14337074"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 14337074)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I definitely think that current DAWs are terrible at the composition stage of things, but I wouldn&#x27;t really want to give up the ease of arrangement &#x2F; sound design &#x2F; mixing that they provide. Something that could be used for composition that fed MIDI into my existing DAW would be great.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337074&amp;goto=item%3Fid%3D14336093%2314337074">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337257'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337257' href='vote?id=14337257&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dharma1" class="hnuser">dharma1</a> <span class="age"><a href="item?id=14337257">56 minutes ago</a></span> <span id="unv_14337257"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337257)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You can do a lot in Logic&#x27;s environment. And also many DAW&#x27;s have support for MIDI FX plugins<p>Not saying compositional aids couldn&#x27;t be easier or have different UX paradigms, but there are tools in today&#x27;s DAW&#x27;s.<p>Would be pretty cool if Jacob Collier got together with a developer to write a compositional aid tool for harmonising.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337257&amp;goto=item%3Fid%3D14336093%2314337257">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14337093'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337093' href='vote?id=14337093&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=adamnemecek" class="hnuser">adamnemecek</a> <span class="age"><a href="item?id=14337093">1 hour ago</a></span> <span id="unv_14337093"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 14337093)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;m definily targeting that workflow. What&#x27;s your current mixing workflow?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337093&amp;goto=item%3Fid%3D14336093%2314337093">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337236'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14337236' href='vote?id=14337236&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=thelsdj" class="hnuser">thelsdj</a> <span class="age"><a href="item?id=14337236">1 hour ago</a></span> <span id="unv_14337236"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337236)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thinking about this even more, I feel like the composition could be represented as a series of transformations that go from simple to complex. So you start out with:<p><pre><code>  * Track in C#Maj, 124BPM, 4&#x2F;4
+  * Chord progression I–V–vi–IV over 4 bars.
+  * OK but rhythm is that current chord repeats on every beat like a stab
+  * Timing should be early by half beat so it would be | I I I V| V V V vi| vi vi vi IV| IV IV IV I|
+  * another transformation to adjust the voicing, etc
+  * Then you can create a bass track from this that mirrors the lowest note but changes the rhythm, etc, etc etc,.
+</code></pre>
+Any change along the way doesn&#x27;t affect something else unless it should and then you&#x27;re given a notice that you should check what was affected.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337236&amp;goto=item%3Fid%3D14336093%2314337236">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337455'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_14337455' href='vote?id=14337455&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=adamnemecek" class="hnuser">adamnemecek</a> <span class="age"><a href="item?id=14337455">12 minutes ago</a></span> <span id="unv_14337455"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337455)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Haha this is a central part of the app.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337455&amp;goto=item%3Fid%3D14336093%2314337455">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='14337151'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14337151' href='vote?id=14337151&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=thelsdj" class="hnuser">thelsdj</a> <span class="age"><a href="item?id=14337151">1 hour ago</a></span> <span id="unv_14337151"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337151)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I tend to mix (and do everything as I go) in Ableton. I just got a Push 2 so I&#x27;ve been building out some templates and racks to try to skip some of the tedium of trying to explore chord&#x2F;melodic ideas quickly.<p>I was reminded of this behemoth: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ndb339l81pU" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ndb339l81pU</a> like the interface is terrible, but the DAW should basically know what kind of chord your playing and be able to make transformations to them.<p>I&#x27;m relatively new to producing in general, but one of my main issues with composing in Ableton is just not having easy way to reference the rest of my MIDI clips working on one of them. Or if I decide I want to change my chord progression or my voicing I then have to go and check every other clip to make sure they all match or at least work with the change.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337151&amp;goto=item%3Fid%3D14336093%2314337151">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337032'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337032' href='vote?id=14337032&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=adimitrov" class="hnuser">adimitrov</a> <span class="age"><a href="item?id=14337032">1 hour ago</a></span> <span id="unv_14337032"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14337032)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Sounds fascinating. Will it be cross-platform? (in other words: will you support Linux?)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337032&amp;goto=item%3Fid%3D14336093%2314337032">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337046'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14337046' href='vote?id=14337046&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=adamnemecek" class="hnuser">adamnemecek</a> <span class="age"><a href="item?id=14337046">1 hour ago</a></span> <span id="unv_14337046"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337046)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Unfortunately not for v1 but linux support its high priority going forward.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337046&amp;goto=item%3Fid%3D14336093%2314337046">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='14336385'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336385' href='vote?id=14336385&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gtani" class="hnuser">gtani</a> <span class="age"><a href="item?id=14336385">3 hours ago</a></span> <span id="unv_14336385"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336385)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I was starting on the opposite tack, tho haven&#x27;t got far, synthesizing&#x2F;sampling kicks, snares and bass lines from scratch, which is prett tricky, like a kick is a sine wave swept down, play with ADSR envelope, saturate&#x2F;compress, then you typically layer 3 separate kick tracks by phase aligning and more post processing.  There&#x27;s a lot to getting a good sounding kick with presence, attack, body.<p>The reference on this is Rick Snoman&#x27;s Dance Music Manual, 3rd ed.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336385&amp;goto=item%3Fid%3D14336093%2314336385">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336280'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336280' href='vote?id=14336280&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=empath75" class="hnuser">empath75</a> <span class="age"><a href="item?id=14336280">4 hours ago</a></span> <span id="unv_14336280"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336280)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Beautiful work and I think he should probably make a vst or something out of. Producers are always looking for new ways to break sounds apart and put them back together.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336280&amp;goto=item%3Fid%3D14336093%2314336280">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14336830'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14336830' href='vote?id=14336830&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=anigbrowl" class="hnuser">anigbrowl</a> <span class="age"><a href="item?id=14336830">2 hours ago</a></span> <span id="unv_14336830"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336830)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">FFT filters and the like are already a thing, I&#x27;m not sure what extra practical benefit you think this would bring. Nevertheless it&#x27;s a good start and well-documented.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336830&amp;goto=item%3Fid%3D14336093%2314336830">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14336377'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336377' href='vote?id=14336377&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nom" class="hnuser">nom</a> <span class="age"><a href="item?id=14336377">3 hours ago</a></span> <span id="unv_14336377"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14336377)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">down for me. Here is a copy, albeit useless because the audio files don&#x27;t work: <a href="https:&#x2F;&#x2F;webcache.googleusercontent.com&#x2F;search?q=cache:https%3A%2F%2Fwww.math.uci.edu%2F~isik%2Fposts%2FEigentechno.html" rel="nofollow">https:&#x2F;&#x2F;webcache.googleusercontent.com&#x2F;search?q=cache:https%...</a><p>Edit: audiofiles suddenly work, but still can&#x27;t access the website<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336377&amp;goto=item%3Fid%3D14336093%2314336377">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14336553'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14336553' href='vote?id=14336553&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Kenji" class="hnuser">Kenji</a> <span class="age"><a href="item?id=14336553">3 hours ago</a></span> <span id="unv_14336553"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14336553)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><i>Even though the sampling loses information about the wave; from the sampled data, your computer’s digital-to-analog converter can perfectly reconstruct the portion of the sound that contains all the frequencies up to half of the sampling frequency. This is the Nyquist Theorem. So we are O.K.</i><p>Pedantic note: This is only true in a theoretical setting where you have infinitely precise samples. Since each sample has only so-and-so many bits, and calculations also are lossy, you cannot reconstruct the wave perfectly. But it&#x27;s good enough. There are also formats with more bits per sample to increase quality.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14336553&amp;goto=item%3Fid%3D14336093%2314336553">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14337006'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14337006' href='vote?id=14337006&amp;how=up&amp;goto=item%3Fid%3D14336093'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=umutisik" class="hnuser">umutisik</a> <span class="age"><a href="item?id=14337006">1 hour ago</a></span> <span id="unv_14337006"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14337006)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thank you. That&#x27;s a good point which was not clear at all in my sentence.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14337006&amp;goto=item%3Fid%3D14336093%2314337006">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                        </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?fyxv2vIgGFuCYQwrlukp'></script></html>

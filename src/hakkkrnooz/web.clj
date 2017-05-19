@@ -1,10 +1,11 @@
 (ns hakkkrnooz.web
-  (:use (ring.adapter [jetty :only  [run-jetty]])
-        (compojure [core :only [defroutes GET]])
-        (hiccup [core :only [html resolve-uri]]
-                [page-helpers :only [html5 include-js include-css link-to]]))
-  (:require (compojure [route :as route])
-            (hakkkrnooz [data :as data])))
+  (:require [compojure.core :refer [defroutes GET]]
+            [compojure.route :as route]
+            [hakkkrnooz.data :as data]
+            [hiccup.core :refer [html]]
+            [hiccup.page :refer [include-js include-css]]
+            [immutant.web :as web]
+            [prone.middleware]))
 
 
 ;; serve from files in test/offline instead of scraping the real HN
@@ -13,7 +14,7 @@
 
 (defn include-less [& styles]
   (for [style styles]
-    [:link {:type "text/css", :href (resolve-uri style), :rel "stylesheet/less"}]))
+    [:link {:type "text/css", :href style, :rel "stylesheet/less"}]))
 
 (defn- url-for [name]
   ({:jquery (if *offline* "js/jquery.js"
@@ -89,7 +90,14 @@
   (GET "/stories" [] (stories))
   (GET "/comments/:id" [id] (comments id)))
 
-(defn -main [port]
-  (run-jetty app-routes
-             {:port (Integer. port)}))
+(def handler
+  (-> app-routes
+      ;prone.middleware/wrap-exceptions
+      ))
+
+(defn start
+  ([]
+   (start 4000))
+  ([port]
+   (web/run #'handler {:port  (Integer. port)})))
 

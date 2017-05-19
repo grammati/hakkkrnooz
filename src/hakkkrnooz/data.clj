@@ -1,12 +1,8 @@
 (ns hakkkrnooz.data
-  (:require (hakkkrnooz [scrape :as scrape])
-            (cheshire [core :as ches]))
-  (:use     (hakkkrnooz [core :only [HN]]))
-  (:import (org.jsoup Jsoup)
-           (java.net URL)))
-
-
-(def UA "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/20100101 Firefox/11.0")
+  (:require [cheshire.core :as json]
+            [hakkkrnooz.config :refer [HN UA]]
+            [hakkkrnooz.scrape :as scrape])
+  (:import org.jsoup.Jsoup))
 
 (defn comments-url [id]
   (str HN "/item?id=" id))
@@ -46,7 +42,9 @@
 
 
 (def cache (atom nil))
-(def cache-ttl (* 1000 60 3))
+(def cache-ttl (if-let [ttl (System/getProperty "CACHE_TTL")]
+                 (Long/valueOf ttl)
+                 (* 1000 60 3)))
 
 (defn get-cached* [key delayed-value & [force]]
   @(locking cache
@@ -77,7 +75,7 @@
   (get-cached id (load-comments id)))
 
 (defn to-json [o]
-  (ches/generate-string o))
+  (json/generate-string o))
 
 (defn stories-json []
   (to-json (stories)))

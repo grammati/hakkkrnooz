@@ -70,7 +70,10 @@ positionItem = (elt) ->
     column = $(elt.parent())
     isFirst = elt.prev().size() == 0
     targetTop = (isFirst ? 0 : 25) - pos.top
-    column.stop().animate({'top': targetTop}, 'fast')
+    try {
+      column.stop()
+      } catch (e) {}
+    column.animate({'top': targetTop}, 'fast')
 
 
 showStories = () ->
@@ -87,7 +90,7 @@ showStories = () ->
 openCurrent = (item) ->
     switch item?.attr('type')
         when 'story' then window.open(item.data('story').href)
-        when 'comment' then expandComment
+        when 'comment' then showChildren
 
 showChildren = (item) ->
     switch item?.attr('type')

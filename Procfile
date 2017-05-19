@@ -1,1 +1,1 @@
-web: lein trampoline run -m hakkkrnooz.web $PORT
+web: lein trampoline run -m hakkkrnooz.main $PORT
