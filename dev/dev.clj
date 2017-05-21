@@ -63,7 +63,14 @@
 
 (defn run-dev []
   (alter-var-root #'config/HN (constantly "http://localhost:8080"))
-  ;; (immutant.web/run #'web/handler {:port 4000})
-  ;; (immutant.web/run #'mock-hn-handler {:port 8080})
   {:hn  (ring.adapter.jetty/run-jetty #'mock-hn-handler {:port 8080 :join? false})
    :web (ring.adapter.jetty/run-jetty #'web/handler {:port 4000 :join? false})})
+
+(defonce servers (atom nil))
+
+(defn go []
+  (when @servers
+    ((:web @servers))
+    ((:hn @servers))
+    (reset! servers nil))
+  (reset! servers (run-dev)))

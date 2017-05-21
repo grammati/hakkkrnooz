@@ -4,12 +4,8 @@
             [hakkkrnooz.data :as data]
             [hiccup.core :refer [html]]
             [hiccup.page :refer [include-js include-css]]
-            [immutant.web :as web]
-            [prone.middleware]))
-
-
-;; serve from files in test/offline instead of scraping the real HN
-(def ^:dynamic *offline* false)
+            [prone.middleware]
+            ring.adapter.jetty))
 
 
 (defn include-less [& styles]
@@ -17,12 +13,9 @@
     [:link {:type "text/css", :href style, :rel "stylesheet/less"}]))
 
 (defn- url-for [name]
-  ({:jquery (if *offline* "js/jquery.js"
-                "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
-    :less   (if *offline* "js/less.js"
-                "http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js")
-    :underscore (if *offline* "js/underscore.js"
-                    "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js")
+  ({:jquery     "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    :less       "https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"
+    :underscore "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
     } name))
 
 (defn story-template []
@@ -88,7 +81,8 @@
   (GET "/" [] (main-page))
   (route/resources "/")
   (GET "/stories" [] (stories))
-  (GET "/comments/:id" [id] (comments id)))
+  (GET "/comments/:id" [id] (comments id))
+  (route/not-found "<h1>¯\\_(ツ)_/¯</h1>"))
 
 (def handler
   (-> app-routes
@@ -99,5 +93,4 @@
   ([]
    (start 4000))
   ([port]
-   (web/run #'handler {:port  (Integer. port)})))
-
+   (ring.adapter.jetty/run-jetty #'handler {:port (Integer. port)})))

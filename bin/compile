@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+coffee -o resources/public/js -c src-cs/hakkkrnooz.coffee

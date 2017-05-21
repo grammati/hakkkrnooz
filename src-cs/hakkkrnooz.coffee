@@ -70,9 +70,9 @@ positionItem = (elt) ->
     column = $(elt.parent())
     isFirst = elt.prev().size() == 0
     targetTop = (isFirst ? 0 : 25) - pos.top
-    try {
+    try
       column.stop()
-      } catch (e) {}
+    catch e
     column.animate({'top': targetTop}, 'fast')
 
 
