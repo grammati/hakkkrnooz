@@ -1,3 +1,4 @@
+/resources/public/js/compiled
 /pom.xml
 *jar
 /lib
@@ -7,3 +8,6 @@
 /checkouts
 /.lein-deps-sum
 \#*
+/target
+/.nrepl-port
+/figwheel_server.log

@@ -31,25 +31,36 @@
     (rmr-dir dir)
     (ensure-dir dir)
     (ensure-dir (str dir "/comments"))
-    (spit (str dir "/stories") stories-page)
+    (spit (str dir "/stories.html") stories-page)
     (doseq [story (->> stories-page
                        Jsoup/parse
                        scrape/parse-stories)]
       (let [id            (:id story)
             comments-page (-> id data/comments-url http/get :body)]
         (try
-          (spit (str dir "/comments/" id) comments-page)
+          (spit (str dir "/comments/" id ".html") comments-page)
           (println "Wrote:" (:title story))
           (catch Exception e
             (println "Error:" (.getMessage e))
             (prn story)))))))
 
+;;; Dev server, for mocking out HN by serving static HTML pages from files
+;;; Remember that this handler is called only by server-side code that scrapes
+;;; the data from HN pages, and that the URL that the scraper calls to is
+;;; controlled by the var `config/HN`, so we just need to alter its root binding
+;;; to load our data from local files.
+
 (defn wrap-hn-routing [handler]
   (fn [request]
-    (prn request)
+    ;; This middleware converts real HN-style paths into paths that will match a
+    ;; file path in "dev-resources/mock-hn":
+    ;;   "/" becomes "/stories.html"
+    ;;   "item?id=12345" becomes "/comments/12345.html"
+    ;; Then the `route/resources` handler will server the right HTML file.
+    (println "Mocked HN: " (:uri request))
     (if-let [id (get-in request [:params "id"])]
-      (handler (assoc request :uri (str "/comments/" id)))
-      (handler (assoc request :uri "/stories")))))
+      (handler (assoc request :uri (str "/comments/" id ".html")))
+      (handler (assoc request :uri "/stories.html")))))
 
 (defroutes mock-hn-routes
   (route/resources "/" {:root "mock-hn"})
@@ -61,12 +72,23 @@
       ring.middleware.params/wrap-params
       prone.middleware/wrap-exceptions))
 
-(defn run-dev []
-  (alter-var-root #'config/HN (constantly "http://localhost:8080"))
-  {:hn  (ring.adapter.jetty/run-jetty #'mock-hn-handler {:port 8080 :join? false})
-   :web (ring.adapter.jetty/run-jetty #'web/handler {:port 4000 :join? false})})
-
 (defonce servers (atom nil))
+
+(defn run-mock-hn []
+  (alter-var-root #'config/HN (constantly "http://localhost:8080"))
+  (when-let [server-stop-fn (:hn @servers)]
+    (server-stop-fn)
+    (swap! servers dissoc :hn ))
+  (let [server (ring.adapter.jetty/run-jetty #'mock-hn-handler {:port 8080 :join? false})]
+    (swap! servers assoc :hn server)))
+
+
+;;; Dev helper to run both mock HN and the normal hakkkrnooz server. Don't use
+;;; this if you are doing front-end dev - instead, run figwheel as the server,
+;;; and call `(run-mock-hn)` in the clojure repl.
+(defn run-dev []
+  {:hn  (run-mock-hn)
+   :web (ring.adapter.jetty/run-jetty #'web/handler {:port 4000 :join? false})})
 
 (defn go []
   (when @servers

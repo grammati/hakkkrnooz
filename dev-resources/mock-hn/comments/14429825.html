@@ -1,0 +1,185 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?gR6Qb2lTHRpCq5mLHBib">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Gollvm from Google | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D14429825">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table border="0">
+        <tr class='athing' id='14429825'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_14429825' href='vote?id=14429825&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://go.googlesource.com/gollvm/" class="storylink">Gollvm from Google</a><span class="sitebit comhead"> (<a href="from?site=googlesource.com"><span class="sitestr">googlesource.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_14429825">60 points</span> by <a href="user?id=aleksi" class="hnuser">aleksi</a> <span class="age"><a href="item?id=14429825">5 hours ago</a></span> <span id="unv_14429825"></span> | <a href="hide?id=14429825&amp;goto=item%3Fid%3D14429825">hide</a> | <a href="https://hn.algolia.com/?query=Gollvm%20from%20Google&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Gollvm%20from%20Google">web</a> | <a href="item?id=14429825">15&nbsp;comments</a> | <a href="fave?id=14429825&amp;auth=90615ca82063d440d86a9fe28b11b148024a802e">favorite</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="14429825"><input type="hidden" name="goto" value="item?id=14429825"><input type="hidden" name="hmac" value="ac999cfc284c064abf2a74384944dd8db0dc33b7"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='14430541'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14430541' href='vote?id=14430541&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pm90" class="hnuser">pm90</a> <span class="age"><a href="item?id=14430541">1 hour ago</a></span> <span id="unv_14430541"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 14430541)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">So question for llvm devs here: what benefit does this provide? How does it enhance go? Does it make go programs compile into more efficient binaries targeted to specific cpu architectures?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430541&amp;goto=item%3Fid%3D14429825%2314430541">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430767'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430767' href='vote?id=14430767&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zeusk" class="hnuser">zeusk</a> <span class="age"><a href="item?id=14430767">1 hour ago</a></span> <span id="unv_14430767"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14430767)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">A big problem intermediate code solves is that, you don&#x27;t need a big monolithic compiler for both front-end language parsing and back-end architecture instructions. They call it MxN problem, so instead of MxN combinations of architectures and languages in a monolithic compiler - you get M+N components where M handle the language parsing etc.. while 
+N handle the conversion from the single intermediate language&#x2F;instructions to the target architecture&#x27;s instructions.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430767&amp;goto=item%3Fid%3D14429825%2314430767">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430945'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_14430945' href='vote?id=14430945&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=weberc2" class="hnuser">weberc2</a> <span class="age"><a href="item?id=14430945">21 minutes ago</a></span> <span id="unv_14430945"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14430945)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Go already has its own intermediate representation to solve this problem, so this project must solve some other problem.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430945&amp;goto=item%3Fid%3D14429825%2314430945">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430998'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_14430998' href='vote?id=14430998&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=krylon" class="hnuser">krylon</a> <span class="age"><a href="item?id=14430998">7 minutes ago</a></span> <span id="unv_14430998"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430998)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Better optimizations? AFAIR, the go compiler does <i>some</i> optimizations, but it does not bend over backwards, exactly. Maybe hooking up to llvm can help with that, if it is a goal. (Mmmh, does LLVM optmize at all, or does it just provide a framework for people trying to build optimizing compilers? I don&#x27;t really know.)<p>Also, llvm by now reaches far more platforms than the current go compiler. I think that this is the most likely explanation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430998&amp;goto=item%3Fid%3D14429825%2314430998">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='14430741'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14430741' href='vote?id=14430741&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zeusk" class="hnuser">zeusk</a> <span class="age"><a href="item?id=14430741">1 hour ago</a></span> <span id="unv_14430741"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14430741)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; define hidden i64 @foo.bar() {<p>&gt; entry:<p>&gt;   %&quot;$ret0&quot; = alloca i64<p>&gt;   store i64 0, i64* %&quot;$ret0&quot;<p>&gt;   store i64 1, i64* %&quot;$ret0&quot;<p>&gt;   %&quot;$ret0.ld.0&quot; = load i64, i64* %&quot;$ret0&quot;<p>&gt;   ret i64 %&quot;$ret0.ld.0&quot;<p>&gt; }<p>Can someone knowledgeable with Go, explain what&#x27;s happening here? Why does it store a 0 and then a 1 in &quot;$ret0&quot;? Why does it allocate a single integer on the stack? (is it because this is just intermediate code for a virtual machine?) and all of that just to return a 1.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430741&amp;goto=item%3Fid%3D14429825%2314430741">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430934'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430934' href='vote?id=14430934&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=barrkel" class="hnuser">barrkel</a> <span class="age"><a href="item?id=14430934">23 minutes ago</a></span> <span id="unv_14430934"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430934)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why zero first, that&#x27;s already been explained. Why alloca from the stack: this is because there is a pass in LLVM which converts alloca locations into SSA form[1], and SSA is what many of the other optimizations in LLVM are built around. The rules around SSA mean that variables are renamed rather than modified (every assignment is final, except for phi nodes where control flow merges), so producing SSA output from an imperative language is a bit more difficult. Since LLVM comes with something that converts mutable stack allocations into SSA, it&#x27;s easier to just leverage it.<p>The pass is called mem2reg:<p><a href="http:&#x2F;&#x2F;llvm.org&#x2F;docs&#x2F;Passes.html#mem2reg-promote-memory-to-register" rel="nofollow">http:&#x2F;&#x2F;llvm.org&#x2F;docs&#x2F;Passes.html#mem2reg-promote-memory-to-r...</a><p>[1] <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Static_single_assignment_form" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Static_single_assignment_form</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430934&amp;goto=item%3Fid%3D14429825%2314430934">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14430828'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430828' href='vote?id=14430828&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=loeg" class="hnuser">loeg</a> <span class="age"><a href="item?id=14430828">48 minutes ago</a></span> <span id="unv_14430828"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430828)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Why does it store a 0<p>Go language semantics define that variables receive a zero initialization.[0]<p>&gt; and then a 1 in &quot;$ret0&quot;?<p>The 1 is because the code explicitly stores a 1 :-).<p>Clearly the output code has not been through an optimization pass.<p>[0]: <a href="https:&#x2F;&#x2F;gobyexample.com&#x2F;variables" rel="nofollow">https:&#x2F;&#x2F;gobyexample.com&#x2F;variables</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430828&amp;goto=item%3Fid%3D14429825%2314430828">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14430734'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14430734' href='vote?id=14430734&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=akavel" class="hnuser">akavel</a> <span class="age"><a href="item?id=14430734">1 hour ago</a></span> <span id="unv_14430734"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 14430734)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><i>&quot;At the moment llvm-goparse is not capable of building the Go libraries + runtime (libgo), which makes it difficult&#x2F;unwieldy to use for running actual Go programs. As an interim workaround, I&#x27;ve written a shim&#x2F;wrapper script that allows you to use llvm-goparse in combination with an existing GCCGO installation, using gccgo for the runtime&#x2F;libraries and the linking step, but llvm-goparse for any compilation.&quot;</i><p>Not sure I get it: so Gollvm (=llvm-goparse?) can be used as compiler, but not as a linker (yet?), so gccgo&#x27;s linker can be used? Also, Go runtime and standard libraries can&#x27;t be compiled with Gollvm? If standard libs can&#x27;t be compiled, then how can I know if my app can be compiled?<p>I know a project named &quot;llvm-go&quot; was started quite long ago, and had somewhat slow (compared to gccgo) progress because of few, non-Google contributors (probably hobbyists); is this the same work? is it just still in progress, but somewhat more (how much?) advanced now?<p>Some additional googling shows a similarly named project (<a href="https:&#x2F;&#x2F;github.com&#x2F;go-llvm&#x2F;llvm" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;go-llvm&#x2F;llvm</a>), which from its readme seems absorbed by LLVM proper, and is subtitled &quot;LLVM bindings for [Go]&quot; (<a href="http:&#x2F;&#x2F;llvm.org&#x2F;svn&#x2F;llvm-project&#x2F;llvm&#x2F;trunk&#x2F;bindings&#x2F;go&#x2F;README.txt" rel="nofollow">http:&#x2F;&#x2F;llvm.org&#x2F;svn&#x2F;llvm-project&#x2F;llvm&#x2F;trunk&#x2F;bindings&#x2F;go&#x2F;READ...</a>). Is this the same project, or something more, or something else? <i>[EDIT:]</i> Ok, based on the CONTRIBUTORS file, it&#x27;s a totally different project, at least one question cleared. (<a href="https:&#x2F;&#x2F;go.googlesource.com&#x2F;gollvm&#x2F;+&#x2F;master&#x2F;CONTRIBUTORS" rel="nofollow">https:&#x2F;&#x2F;go.googlesource.com&#x2F;gollvm&#x2F;+&#x2F;master&#x2F;CONTRIBUTORS</a>)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430734&amp;goto=item%3Fid%3D14429825%2314430734">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430765'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430765' href='vote?id=14430765&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mseepgood" class="hnuser">mseepgood</a> <span class="age"><a href="item?id=14430765">1 hour ago</a></span> <span id="unv_14430765"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430765)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Is this the same project, or something more, or something else?<p>Compare the source code:<p><a href="http:&#x2F;&#x2F;llvm.org&#x2F;svn&#x2F;llvm-project&#x2F;llvm&#x2F;trunk&#x2F;bindings&#x2F;go&#x2F;llvm&#x2F;" rel="nofollow">http:&#x2F;&#x2F;llvm.org&#x2F;svn&#x2F;llvm-project&#x2F;llvm&#x2F;trunk&#x2F;bindings&#x2F;go&#x2F;llvm...</a><p><a href="https:&#x2F;&#x2F;go.googlesource.com&#x2F;gollvm&#x2F;+&#x2F;master&#x2F;llvm-gofrontend&#x2F;" rel="nofollow">https:&#x2F;&#x2F;go.googlesource.com&#x2F;gollvm&#x2F;+&#x2F;master&#x2F;llvm-gofrontend&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430765&amp;goto=item%3Fid%3D14429825%2314430765">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='14430798'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430798' href='vote?id=14430798&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=geofft" class="hnuser">geofft</a> <span class="age"><a href="item?id=14430798">54 minutes ago</a></span> <span id="unv_14430798"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430798)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">go-llvm&#x2F;llvm appears to be a set of Go bindings <i>to</i> LLVM, i.e., the ability to access libllvm (embed LLVM and use it programatically) from a normal Go program. That is, you&#x27;re using Go to drive LLVM, not LLVM to compile Go.<p>See the factorial example, where they build up some LLVM IR (in memory) for computing factorials: <a href="https:&#x2F;&#x2F;github.com&#x2F;go-llvm&#x2F;llvm&#x2F;blob&#x2F;master&#x2F;examples&#x2F;factorial&#x2F;factorial.go" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;go-llvm&#x2F;llvm&#x2F;blob&#x2F;master&#x2F;examples&#x2F;factori...</a><p>I&#x27;d guess the advantage of this is using LLVM&#x27;s JIT at runtime.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430798&amp;goto=item%3Fid%3D14429825%2314430798">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14430721'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14430721' href='vote?id=14430721&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=weberc2" class="hnuser">weberc2</a> <span class="age"><a href="item?id=14430721">1 hour ago</a></span> <span id="unv_14430721"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14430721)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I thought this project was very old and perhaps even abandoned? I wonder if I&#x27;m confusing it with a similar project, or perhaps this project was revived? Maybe I&#x27;m just mistaken...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430721&amp;goto=item%3Fid%3D14429825%2314430721">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430739'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430739' href='vote?id=14430739&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mseepgood" class="hnuser">mseepgood</a> <span class="age"><a href="item?id=14430739">1 hour ago</a></span> <span id="unv_14430739"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430739)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; I wonder if I&#x27;m confusing it with a similar project<p>Yes, you&#x27;re confusing it with this project: <a href="https:&#x2F;&#x2F;github.com&#x2F;go-llvm&#x2F;llvm" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;go-llvm&#x2F;llvm</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430739&amp;goto=item%3Fid%3D14429825%2314430739">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='14430262'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14430262' href='vote?id=14430262&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=marmaduke" class="hnuser">marmaduke</a> <span class="age"><a href="item?id=14430262">2 hours ago</a></span> <span id="unv_14430262"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430262)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This means we could write numerical code in Go and get auotvectorized assembly and use GPUs via the nvptx backend. Neat!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430262&amp;goto=item%3Fid%3D14429825%2314430262">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='14430382'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_14430382' href='vote?id=14430382&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=whatnotests" class="hnuser">whatnotests</a> <span class="age"><a href="item?id=14430382">2 hours ago</a></span> <span id="unv_14430382"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 14430382)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Super great name!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430382&amp;goto=item%3Fid%3D14429825%2314430382">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='14430520'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_14430520' href='vote?id=14430520&amp;how=up&amp;goto=item%3Fid%3D14429825'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=roryisok" class="hnuser">roryisok</a> <span class="age"><a href="item?id=14430520">2 hours ago</a></span> <span id="unv_14430520"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 14430520)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Makes me think they came up with the name first and then decided to build it<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=14430520&amp;goto=item%3Fid%3D14429825%2314430520">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?gR6Qb2lTHRpCq5mLHBib'></script></html>
