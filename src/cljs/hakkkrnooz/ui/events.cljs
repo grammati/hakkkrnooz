@@ -17,12 +17,14 @@
               :handler (fn [stories]
                          (println "GOT STORIES!!!!")
                          (re-frame/dispatch [:stories-received stories])
-                         (re-frame/dispatch [:item-focused (first stories)]))})
+                         (re-frame/dispatch [:focus-item (first stories)]))})
    (assoc-in db [:ui :stories :loading?] true)))
 
 (re-frame/reg-event-db
- :item-focused
+ :focus-item
  (fn [db [_ item]]
+   (when-let [d (.getElementById js/document (:id item))]
+     (.focus d))
    (assoc-in db [:ui :focused-item] (:id item))))
 
 (re-frame/reg-event-db

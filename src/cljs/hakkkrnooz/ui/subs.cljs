@@ -18,3 +18,5 @@
    (get-in db [:ui :focused-item])))
 
 (re-frame/reg-sub :ui :ui)
+
+(def dummy 42)

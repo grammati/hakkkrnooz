@@ -1,11 +1,11 @@
 (ns hakkkrnooz.ui.core
-    (:require [reagent.core :as reagent]
-              [re-frame.core :as re-frame]
-              [re-frisk.core :refer [enable-re-frisk!]]
-              [hakkkrnooz.ui.events]
-              [hakkkrnooz.ui.subs]
-              [hakkkrnooz.ui.views :as views]
-              [hakkkrnooz.ui.config :as config]))
+  (:require [reagent.core :as reagent]
+            [re-frame.core :as re-frame]
+            [re-frisk.core :refer [enable-re-frisk!]]
+            [hakkkrnooz.ui.subs :as subs]
+            [hakkkrnooz.ui.views :as views]
+            [hakkkrnooz.ui.config :as config]
+            [hakkkrnooz.ui.events :as events]))
 
 
 (defn dev-setup []
@@ -24,3 +24,8 @@
   (re-frame/dispatch-sync [:initialize-db])
   (dev-setup)
   (mount-root))
+
+(defn- dummy []
+  ;; Trick cider into keeping our requires, for side-effect
+  subs/dummy
+  config/dummy)
