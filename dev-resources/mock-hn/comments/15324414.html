@@ -1,0 +1,171 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?iwl6iJIkqJVJhYLXqo1u">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Why undefined behavior may call a never-called function | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D15324414">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='15324414'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_15324414' href='vote?id=15324414&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://kristerw.blogspot.com/2017/09/why-undefined-behavior-may-call-never.html" class="storylink">Why undefined behavior may call a never-called function</a><span class="sitebit comhead"> (<a href="from?site=kristerw.blogspot.com"><span class="sitestr">kristerw.blogspot.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_15324414">43 points</span> by <a href="user?id=pavel_lishin" class="hnuser">pavel_lishin</a> <span class="age"><a href="item?id=15324414">3 hours ago</a></span> <span id="unv_15324414"></span> | <a href="hide?id=15324414&amp;goto=item%3Fid%3D15324414">hide</a> | <a href="https://hn.algolia.com/?query=Why%20undefined%20behavior%20may%20call%20a%20never-called%20function&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Why%20undefined%20behavior%20may%20call%20a%20never-called%20function">web</a> | <a href="item?id=15324414">13&nbsp;comments</a> | <a href="fave?id=15324414&amp;auth=f8ec1d889996addde335e110f1af2eb98088b308">favorite</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="15324414"><input type="hidden" name="goto" value="item?id=15324414"><input type="hidden" name="hmac" value="61f17fa29b29e2bf64eb058fe9639adcc37a0ecf"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='15325158'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_15325158' href='vote?id=15325158&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kps" class="hnuser">kps</a> <span class="age"><a href="item?id=15325158">20 minutes ago</a></span> <span id="unv_15325158"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 15325158)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I have become convinced that the current screw-the-programmer interpretation of ‘undefined behaviour’ was not intended, or even imagined, by the original ANSI C committee. Within the committee&#x27;s mandate to ‘standardize existing practice’, it was simply an acknowledgement that C compilers translated straightforward C code into straightforward machine code without adding safety checks, and that simple code might —​ in some circumstances on some machines — do very strange things.<p>In the Rationale, the committee listed places where they intentionally diverged from existing practice. They considered “the most serious semantic change” to be requiring value-preserving (vs unsigned-preserving) integer promotion. They didn&#x27;t mention ‘undefined behaviour&#x27; at all.<p>During the standards process, Dennis Ritchie described the ‘noalias’ proposal as “a license for the compiler to undertake aggressive optimizations that are completely legal by the committee&#x27;s rules, but make hash of apparently safe programs”. That&#x27;s exactly what ‘undefined behavior’ has turned into. If anyone had foreseen that at the time, the reaction would have been the same: “Noalias must go.  This is non-negotiable.”<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325158&amp;goto=item%3Fid%3D15324414%2315325158">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='15325078'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_15325078' href='vote?id=15325078&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=beatbrokedown" class="hnuser">beatbrokedown</a> <span class="age"><a href="item?id=15325078">37 minutes ago</a></span> <span id="unv_15325078"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 15325078)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">If you make one small change to this file you can cause clang and gcc to both prevent this from compiling if you are using warnings.<p><pre><code>  namespace {
+    void NeverCalled() { Do = EraseAll; }
+  }
+</code></pre>
+or marking NeverCalled as static itself.<p>Results in warning: unused function NeverCalled.<p>In general this is best practice for functions defined and used in a single translation unit.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325078&amp;goto=item%3Fid%3D15324414%2315325078">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='15325083'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_15325083' href='vote?id=15325083&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=XCSme" class="hnuser">XCSme</a> <span class="age"><a href="item?id=15325083">36 minutes ago</a></span> <span id="unv_15325083"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 15325083)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Very interesting, to me seems like a &quot;compiler bug&quot;. The compiler should not automatically set the static pointer value if the function that sets it is never called.<p>Anyway, I guess &quot;undefined behavior&quot; is really undefined and it means anything can happen, so as per specs it&#x27;s not a bug. Ultimately it&#x27;s the programmer&#x27;s mistake for having undefined behavior in his code.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325083&amp;goto=item%3Fid%3D15324414%2315325083">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325108'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_15325108' href='vote?id=15325108&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=electrograv" class="hnuser">electrograv</a> <span class="age"><a href="item?id=15325108">30 minutes ago</a></span> <span id="unv_15325108"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 15325108)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a">Unfortunately, &quot;it&#x27;s not a bug, it&#x27;s a feature!&quot; -- there are long-standing design choices in C&#x2F;C++ where various circumstances are explicitly designed to yield &quot;undefined&quot; behavior where literally anything goes. I believe the original intent of these are to give the compiler&#x2F;optimizer more room to speed up the executable.<p>Edit: The &#x27;undefined&#x27; clause here is due to invoking a function at address 0, rather than any lack of variable initialization (since global variables are automatically initialized to 0, as the poster below points out).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325108&amp;goto=item%3Fid%3D15324414%2315325108">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325130'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_15325130' href='vote?id=15325130&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mikeash" class="hnuser">mikeash</a> <span class="age"><a href="item?id=15325130">26 minutes ago</a></span> <span id="unv_15325130"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 15325130)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Globals are always initialized. If no initial value is specified, they’re initialized to zero.<p>What’s undefined here is calling a function pointer that contains zero. Thus the compiler assumes that it <i>must</i> have been set before being called, and since there’s only one value it could possibly be set to, it must be that value.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325130&amp;goto=item%3Fid%3D15324414%2315325130">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='15324987'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_15324987' href='vote?id=15324987&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tyingq" class="hnuser">tyingq</a> <span class="age"><a href="item?id=15324987">1 hour ago</a></span> <span id="unv_15324987"></span><span class="par"></span> <a class="togg" n="8" href="javascript:void(0)" onclick="return toggle(event, 15324987)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Interesting choice of code for a demo.  I wonder if anyone hosed themselves running this.<p>It seems gnu rm has &quot;-preserve-root&quot; as a default, but that&#x27;s not guaranteed to be on every rm.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15324987&amp;goto=item%3Fid%3D15324414%2315324987">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325233'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_15325233' href='vote?id=15325233&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ramshorns" class="hnuser">ramshorns</a> <span class="age"><a href="item?id=15325233">7 minutes ago</a></span> <span id="unv_15325233"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 15325233)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">If it&#x27;s run as an unprivileged user rather than root, it won&#x27;t be able to delete the whole system. I&#x27;m pretty sure that means it won&#x27;t do anything, but I don&#x27;t feel like trying it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325233&amp;goto=item%3Fid%3D15324414%2315325233">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325260'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_15325260' href='vote?id=15325260&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tyingq" class="hnuser">tyingq</a> <span class="age"><a href="item?id=15325260">2 minutes ago</a></span> <span id="unv_15325260"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 15325260)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;I&#x27;m pretty sure that means it won&#x27;t do anything<p>Assuming an rm without the &quot;-preserve-root&quot; default, it would remove everything that it had permission to.  So, eventually, for example, it would wipe your home directory.<p>I suspect this to be the case for OSX, Alpine Linux (or other distros that use busybox), probably some of the BSD distributions, etc.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325260&amp;goto=item%3Fid%3D15324414%2315325260">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='15325013'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_15325013' href='vote?id=15325013&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=csomar" class="hnuser">csomar</a> <span class="age"><a href="item?id=15325013">54 minutes ago</a></span> <span id="unv_15325013"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 15325013)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a">One of the advantages of using Docker! You can safely run this code multiple times and play with it without affecting your machine.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325013&amp;goto=item%3Fid%3D15324414%2315325013">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325047'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_15325047' href='vote?id=15325047&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tyingq" class="hnuser">tyingq</a> <span class="age"><a href="item?id=15325047">45 minutes ago</a></span> <span id="unv_15325047"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 15325047)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Sure, but you could also replace &quot;rm -rf &#x2F;&quot; with &quot;id&quot; or something else non destructive.  Somebody is going to copy paste that snippet and have a bad day.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325047&amp;goto=item%3Fid%3D15324414%2315325047">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325138'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_15325138' href='vote?id=15325138&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dmix" class="hnuser">dmix</a> <span class="age"><a href="item?id=15325138">24 minutes ago</a></span> <span id="unv_15325138"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 15325138)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I believe &quot;rm -rf &#x2F;&quot; illustrates the point quite well, better than id. I&#x27;m more in the common sense is more common than people give credit and in the situations where that is not the case then rm has built-in protections.<p>It literally says:<p>&gt; That is, the compiled program executes “rm -rf &#x2F;”<p>The next line following the code. It&#x27;s not tricking anyone.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325138&amp;goto=item%3Fid%3D15324414%2315325138">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325225'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_15325225' href='vote?id=15325225&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tyingq" class="hnuser">tyingq</a> <span class="age"><a href="item?id=15325225">8 minutes ago</a></span> <span id="unv_15325225"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 15325225)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Gnu rm has built in protections.  Not sure that&#x27;s the case on OSX,  Linux distributions that use busybox, etc.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325225&amp;goto=item%3Fid%3D15324414%2315325225">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='15325062'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_15325062' href='vote?id=15325062&amp;how=up&amp;goto=item%3Fid%3D15324414'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nv-vn" class="hnuser">nv-vn</a> <span class="age"><a href="item?id=15325062">41 minutes ago</a></span> <span id="unv_15325062"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 15325062)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Do you use Docker to run literally every piece of code though?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=15325062&amp;goto=item%3Fid%3D15324414%2315325062">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Winter 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?iwl6iJIkqJVJhYLXqo1u'></script>
+  </html>
