@@ -32,11 +32,15 @@
                              [re-frame "0.9.3"]
                              [reanimated "0.5.1"]
                              [cljs-ajax "0.6.0"]]}
-   :cljs-dev {:plugins      [[lein-figwheel "0.5.10"]]
+   :cljs-dev {:plugins      [[lein-figwheel "0.5.10"]
+                             [lein-less "1.7.5"]]
               :dependencies [[com.cemerick/piggieback "0.2.1"]
                              [figwheel-sidecar "0.5.10"]
                              [binaryage/devtools "0.9.4"]
-                             [re-frisk "0.4.5"]] }
+                             [re-frisk "0.4.5"]]
+              :less {:source-paths ["resources/less"]
+                     :target-path "resources/public/css"}
+              }
    :dev      [:cljs
               :cljs-dev
               {:source-paths ["dev"]

@@ -1,0 +1,129 @@
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* possibly a trademarked color ;) */
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Helvetica';
+}
+pre {
+  font-family: monospace;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ff6600;
+  z-index: 2;
+  padding: 2px 10px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #803300;
+}
+.header h1 {
+  font: 140% bold Verdana;
+}
+.content {
+  overflow: hidden;
+}
+.column {
+  position: absolute;
+  top: 0;
+  margin-top: 38px;
+  width: 550px;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+.stories {
+  left: 0;
+}
+.loading {
+  background: url(/images/loading.gif) no-repeat center center;
+  height: 200px;
+}
+.item {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid gray;
+  padding: 4px 4px 4px 12px;
+  margin: 3px;
+}
+.item p,
+.item pre {
+  margin: 0.5em 0em;
+}
+.item:focus {
+  outline: none;
+  border: 2px solid #ff6600;
+  padding: 3px 3px 3px 11px;
+  background-color: #ddd;
+}
+.active-parent {
+  border: 2px solid #803300;
+  padding: 3px 3px 3px 11px;
+}
+.story a {
+  text-decoration: none;
+  padding: 2px 4px;
+}
+.comment {
+  overflow-x: hidden;
+}
+.comment-inner {
+  width: 510px;
+  margin: 0 auto;
+}
+.info {
+  width: 100%;
+  font-size: smaller;
+}
+.info td {
+  padding: 2px 4px;
+}
+.info .points {
+  width: 30%;
+}
+.info .user {
+  width: 45%;
+}
+.info .cc {
+  width: 25%;
+}
+.comment-text {
+  border-top: 1px solid #dddddd;
+}
+.whitey {
+  background-color: #ffffff;
+  color: #000000;
+}
+.whitey .item a {
+  color: #000000;
+}
+.blackboard {
+  background-color: #0c1021;
+  color: #f8f8f8;
+}
+.blackboard .item a {
+  color: #f8f8f8;
+}
+.solarized-light {
+  background-color: #fdf6e3;
+  color: #657b83;
+}
+.solarized-light .item a {
+  color: #657b83;
+}
+.solarized-dark {
+  background-color: #657b83;
+  color: #fdf6e3;
+}
+.solarized-dark .item a {
+  color: #fdf6e3;
+}

@@ -57,6 +57,7 @@
     ;;   "/" becomes "/stories.html"
     ;;   "item?id=12345" becomes "/comments/12345.html"
     ;; Then the `route/resources` handler will server the right HTML file.
+    (Thread/sleep 2000)
     (println "Mocked HN: " (:uri request))
     (if-let [id (get-in request [:params "id"])]
       (handler (assoc request :uri (str "/comments/" id ".html")))

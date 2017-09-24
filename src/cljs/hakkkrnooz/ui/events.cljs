@@ -16,18 +16,28 @@
               :keywords? true
               :handler (fn [stories]
                          (println "GOT STORIES!!!!")
-                         (re-frame/dispatch [:stories-received stories])
-                         (re-frame/dispatch [:focus-item (first stories)]))})
+                         (re-frame/dispatch [:stories-received stories]))})
    (assoc-in db [:ui :stories :loading?] true)))
 
 (re-frame/reg-event-db
  :focus-item
  (fn [db [_ item]]
-   (when-let [d (.getElementById js/document (:id item))]
-     (.focus d))
+   (if-let [elt (.getElementById js/document (:id item))]
+     (do
+       (println "found: " elt)
+       (.focus elt))
+     (println "not found: " (:id item)))
    (assoc-in db [:ui :focused-item] (:id item))))
+
+(re-frame/reg-event-db
+ :focus-first
+ (fn [db _]
+   (re-frame/dispatch [:focus-item (-> db :data :stories first)])
+   db))
 
 (re-frame/reg-event-db
  :stories-received
  (fn [db [_ stories]]
-   (assoc-in db [:data :stories] stories)))
+   (-> db
+       (assoc-in [:data :stories] stories)
+       (assoc :ready? true))))

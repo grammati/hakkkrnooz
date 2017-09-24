@@ -19,4 +19,6 @@
 
 (re-frame/reg-sub :ui :ui)
 
+(re-frame/reg-sub :ready? :ready?)
+
 (def dummy 42)
