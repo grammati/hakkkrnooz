@@ -68,7 +68,7 @@ positionItem = (elt) ->
     elt = $(elt)
     pos = elt.position()
     column = $(elt.parent())
-    isFirst = elt.prev().size() == 0
+    isFirst = elt.prev().length == 0
     targetTop = (isFirst ? 0 : 25) - pos.top
     try
       column.stop()
@@ -79,7 +79,7 @@ positionItem = (elt) ->
 showStories = () ->
     div = $('#stories')
     div.css('width', columnWidth)
-    div.attr('data-column-number', 1)
+    div.data('column-number', 1)
     div.addClass('loading')
     $.getJSON "/stories", (stories) ->
         div.removeClass('loading')
@@ -88,12 +88,12 @@ showStories = () ->
         $('.story:first-child', div).focus()
 
 openCurrent = (item) ->
-    switch item?.attr('type')
+    switch item?.data('type')
         when 'story' then window.open(item.data('story').href)
         when 'comment' then showChildren
 
 showChildren = (item) ->
-    switch item?.attr('type')
+    switch item?.data('type')
         when 'story' then showComments(item)
         when 'comment' then showReplies(item)
 
@@ -102,14 +102,14 @@ addColumn = () ->
     ncols = columns.length
     newCol = $('<div/>').addClass('column')
                         .css('left', ncols * columnWidth)
-                        .attr('data-column-number', 1 + ncols)
+                        .data('column-number', 1 + ncols)
     $('#content').append(newCol)
     newCol
 
 removeFollowingColumns = (elt) ->
     $(elt).parent().nextAll('.column')
         .stop()
-        .animate {width: 0}, 'fast', () -> $(this).remove()
+        .animate {width: 0}, 'fast', 'linear', () -> $(this).remove()
 
 # yeah, it's global variable - but it's OK, it's coffeescript :)
 commentCache = {}
@@ -122,7 +122,7 @@ scrollH = () ->
 loading = null
 
 showComments = (story) ->
-    id = story?.attr('id')
+    id = story?.prop('id')
     return if not /^\d+$/.exec(id)
     return if loading == id # already loading it
     loading = id
@@ -143,7 +143,7 @@ showComments = (story) ->
             loading = null if loading == id
 
 showReplies = (commentDiv) ->
-    id = $(commentDiv).attr('id')
+    id = $(commentDiv).prop('id')
     comment = commentCache[id]
     replies = comment?.replies
     if not comment or replies.length == 0
@@ -153,21 +153,21 @@ showReplies = (commentDiv) ->
     commentDiv.addClass('active-parent')
     $('.comment:first-child', div).focus()
     scrollH()
-    div.animate({width: ['0px', '550px']}, 'fast');
+    div.animate({width: '550px'}, 'fast');
 
 appendComments = (comments, div, parentid) ->
     for c in comments
         commentCache[c.id] = c
         e = htmlFor(c)
-        e.attr('parentid', parentid)
+        e.data('parentid', parentid)
         div.append e
 
 getParent = (item) ->
-    parentid = item.attr('parentid')
+    parentid = item.data('parentid')
     $('#' + parentid) if parentid
 
 upToParent = (item) ->
-    return if item.attr('type') != 'comment'
+    return if item.data('type') != 'comment'
     # Get the parent comment or story (not DOM parent)
     parent = getParent(item)
     if parent
@@ -180,7 +180,7 @@ htmlFor = (obj) ->
         when 'job-ad' then jobAdHtml(obj)
         when 'comment' then commentHtml(obj)
         else $('<div/>').html('??????')
-    e.attr('type', obj.type)
+    e.data('type', obj.type)
     e
 
 # Templates

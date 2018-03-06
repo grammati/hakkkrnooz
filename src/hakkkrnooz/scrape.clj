@@ -52,19 +52,20 @@
   ;;        -p or pre or text or ...? (0..n)
   ;;      - second-to-last p
   ;;      - reply-link
-  (let [[font extra-p] (remove empty-text-node? (.childNodes span))
-        items (if (instance? Element font)
-                (concat (.childNodes ^Element font) (if extra-p (list extra-p)))
-                (list font)             ;"deleted" comment
-                )]
-    (loop [[item & items :as all] items
-           blocks []]
-      (if-not item
-        blocks
-        (if (block? item)
-          (recur items (conj blocks (str item)))
-          (let [[inl more] (split-with inline? all)]
-            (recur more (conj blocks (str "<p>" (apply str inl) "</p>")))))))))
+  (when span
+    (let [[font extra-p] (remove empty-text-node? (.childNodes span))
+          items (if (instance? Element font)
+                  (concat (.childNodes ^Element font) (if extra-p (list extra-p)))
+                  (list font)           ;"deleted" comment
+                  )]
+      (loop [[item & items :as all] items
+             blocks []]
+        (if-not item
+          blocks
+          (if (block? item)
+            (recur items (conj blocks (str item)))
+            (let [[inl more] (split-with inline? all)]
+              (recur more (conj blocks (str "<p>" (apply str inl) "</p>"))))))))))
 
 (defn parse-comment
   "Parse the data out of the markup for a single comment on HN."
@@ -111,8 +112,9 @@
         age    nil                      ;FIXME
         id     (if-not del
                  (-> header
-                     ($ "> a")
-                     (->> (filter #(.startsWith (or (attr % "href") "") "item?id=")))
+                     ($ "a")
+                     (->> (map #(attr % "href"))
+                          (filter #(.startsWith % "item?id=")))
                      first
                      (or "xxxxxxxx")
                      (subs #=(count "item?id="))))

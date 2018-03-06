@@ -17,7 +17,7 @@
 
 (deftest parse-comments
   (let [{:keys [comments more-link]}
-        (-> "dev-resources/mock-hn/comments/14330547"
+        (-> "dev-resources/mock-hn/comments/16525735"
             io/file
             (Jsoup/parse "utf-8")
             s/parse-comments)]
