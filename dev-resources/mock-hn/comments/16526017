@@ -1,0 +1,228 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Get specific (2008) | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16526017">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16526017'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16526017' href='vote?id=16526017&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://sivers.org/get-specific" class="storylink">Get specific (2008)</a><span class="sitebit comhead"> (<a href="from?site=sivers.org"><span class="sitestr">sivers.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16526017">76 points</span> by <a href="user?id=duck" class="hnuser">duck</a> <span class="age"><a href="item?id=16526017">10 hours ago</a></span> <span id="unv_16526017"></span> | <a href="hide?id=16526017&amp;goto=item%3Fid%3D16526017">hide</a> | <a href="https://hn.algolia.com/?query=Get%20specific&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Get%20specific">web</a> | <a href="fave?id=16526017&amp;auth=2dc3daacd6a5d2e4ef37101f5e30e8264d58bb18">favorite</a> | <a href="item?id=16526017">19&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16526017"><input type="hidden" name="goto" value="item?id=16526017"><input type="hidden" name="hmac" value="7ee4a3fcc41818085f1b9945f9698a0cded66c71"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16526440'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526440' href='vote?id=16526440&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sivers" class="hnuser">sivers</a> <span class="age"><a href="item?id=16526440">8 hours ago</a></span> <span id="unv_16526440"></span><span class="par"></span> <a class="togg" n="7" href="javascript:void(0)" onclick="return toggle(event, 16526440)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">No need for the (2008) thing in the title.  This is actually a new article from February 2018.  I had an old post there, but completely re-wrote it last week, keeping only the title and URL.<p>Thought you guys might like a programming example that I edited out of the article:<p>Back in 2004, I wanted to be a great Ruby programmer.  I had dabbled, but wanted to accelerate my learning to the expert level.<p>So I called Tony Robbins&#x27; company, and signed up for a personal coach.  We had a phone call once per week,  to help me stay on track achieve my goals.<p>On the very first call, when I said I wanted to be a great Ruby programmer, he asked, “What does that look like?  How will you know you&#x27;re great?”<p>Whoa. Hmm. I had never actually defined it. He was waiting for an answer, so I picked something.  I said, “If I have read all of these six Ruby books, completed all of the exercises in them, and memorized what I&#x27;ve learned.”<p>He said, “How many chapters in all?”  So he had me go add up the total numbers of chapters across all six books.<p>Then he had me predict how many chapters I could do per week.  I said 6.<p>Then he said, “OK so now you&#x27;ve got your plan.  One chapter per day, six days per week, including doing the exercises, saving what you&#x27;ve learned in flash cards and quizzing yourself later, and in 12 weeks you&#x27;ll be a great Ruby programmer, by this definition.  If by then you don&#x27;t feel great, we&#x27;ll pick a new goal.”<p>And just like that - a year of vague procrastination was now a specific list of goals to be achieved  each day.  It helped me more than anything.<p>It&#x27;s tough to talk about because it sounds so simple, but man, it&#x27;s effective!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526440&amp;goto=item%3Fid%3D16526017%2316526440">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526512'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526512' href='vote?id=16526512&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ronilan" class="hnuser">ronilan</a> <span class="age"><a href="item?id=16526512">8 hours ago</a></span> <span id="unv_16526512"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526512)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I like the premise but...<p>Football analogy: run your playbook, keep moving the chains. This works for most games, but sometimes QB needs a read option.<p>Music analogy: if you got all the notes down how will you play the jazz?<p>;)<p>Ps - thanks for writing through the years and especially for this: <a href="https:&#x2F;&#x2F;sivers.org&#x2F;kimo" rel="nofollow">https:&#x2F;&#x2F;sivers.org&#x2F;kimo</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526512&amp;goto=item%3Fid%3D16526017%2316526512">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526523'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526523' href='vote?id=16526523&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sivers" class="hnuser">sivers</a> <span class="age"><a href="item?id=16526523">8 hours ago</a></span> <span id="unv_16526523"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526523)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thanks Ron!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526523&amp;goto=item%3Fid%3D16526017%2316526523">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526497'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526497' href='vote?id=16526497&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=duck" class="hnuser">duck</a> <span class="age"><a href="item?id=16526497">8 hours ago</a></span> <span id="unv_16526497"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526497)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Loved this advise and thanks for the example! And I&#x27;m guessing a mod added that year as I didn&#x27;t when I posted it... but it is too late for me to edit it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526497&amp;goto=item%3Fid%3D16526017%2316526497">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526520'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526520' href='vote?id=16526520&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=arry" class="hnuser">arry</a> <span class="age"><a href="item?id=16526520">8 hours ago</a></span> <span id="unv_16526520"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526520)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Did you feel great?  Did you become a great Ruby programmer?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526520&amp;goto=item%3Fid%3D16526017%2316526520">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526528'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526528' href='vote?id=16526528&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sivers" class="hnuser">sivers</a> <span class="age"><a href="item?id=16526528">8 hours ago</a></span> <span id="unv_16526528"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526528)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes and yes, I think.  Now I think it’s better to describe it as “fluent” instead of “great”, but yeah this approach made me completely fluent in Ruby.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526528&amp;goto=item%3Fid%3D16526017%2316526528">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526542'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526542' href='vote?id=16526542&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sivers" class="hnuser">sivers</a> <span class="age"><a href="item?id=16526542">8 hours ago</a></span> <span id="unv_16526542"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526542)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">P.S.  Using Anki spaced repetition flash cards helped a lot : <a href="https:&#x2F;&#x2F;sivers.org&#x2F;srs" rel="nofollow">https:&#x2F;&#x2F;sivers.org&#x2F;srs</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526542&amp;goto=item%3Fid%3D16526017%2316526542">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16526755'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526755' href='vote?id=16526755&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Kuiper" class="hnuser">Kuiper</a> <span class="age"><a href="item?id=16526755">7 hours ago</a></span> <span id="unv_16526755"></span><span class="par"></span> <a class="togg" n="9" href="javascript:void(0)" onclick="return toggle(event, 16526755)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The example Derek uses in this post about looking for a booking agent reminds me of an anecdote he told several years ago (as I recall, it was part of a speech or a Q&amp;A he did at Berklee College of Music) about how he went about reverse engineering the process for getting into Rolling Stone -- he phoned Rolling Stone masquerading as someone working for a label trying to find a new publicist, and asked if they had any recommendations.  From this he got a list of publicists that Rolling Stone liked, which were the publicists who were most likely to be capable of getting him written up in Rolling Stone.<p>I actually put a version of this into practice several years ago when I was a looking at how to break into the world of trade publishing -- I had a manuscript for a fantasy novel, and decided my ideal outcome was to get published by Tor (a name that appeared on the spine of many of my favorite fantasy novels growing up).  I went to the bookstore and compiled a list of books that had Tor&#x27;s name on the spine, then went through the books and identified the ones that were most similar to my own manuscript in terms of subject matter&#x2F;tone, length, and target demographic.  Then I opened each book, flipped to the &quot;acknowledgments&quot; section, where most authors take the time to thank their agent.  This game me a list of agents who A) represented books similar to mine, and B) had successfully sold books to Tor.<p>I think the lesson is that if you don&#x27;t know the specific way forward, it&#x27;s often as simple as starting at the goal and working your way backward -- want to know which publicists are on good terms with Rolling Stone?  Ask Rolling Stone.  Want to find out which agents have sold books to a specific publisher?  Grab some books by that publisher and open them up.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526755&amp;goto=item%3Fid%3D16526017%2316526755">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526861'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526861' href='vote?id=16526861&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sivers" class="hnuser">sivers</a> <span class="age"><a href="item?id=16526861">6 hours ago</a></span> <span id="unv_16526861"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526861)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great example, reading the acknowledgements.<p>The Rolling Stone story is here at “Call the destination, and ask for directions” :<p><a href="https:&#x2F;&#x2F;sivers.org&#x2F;destdir" rel="nofollow">https:&#x2F;&#x2F;sivers.org&#x2F;destdir</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526861&amp;goto=item%3Fid%3D16526017%2316526861">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527837'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527837' href='vote?id=16527837&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=crdoconnor" class="hnuser">crdoconnor</a> <span class="age"><a href="item?id=16527837">1 hour ago</a></span> <span id="unv_16527837"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527837)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;I think the lesson is that if you don&#x27;t know the specific way forward, it&#x27;s often as simple as starting at the goal and working your way backward<p>This is kind of how behavior and test driven development works too.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527837&amp;goto=item%3Fid%3D16526017%2316527837">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526880'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526880' href='vote?id=16526880&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=aidenn0" class="hnuser">aidenn0</a> <span class="age"><a href="item?id=16526880">6 hours ago</a></span> <span id="unv_16526880"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16526880)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Did you ever get the novel published?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526880&amp;goto=item%3Fid%3D16526017%2316526880">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527112'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527112' href='vote?id=16527112&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Kuiper" class="hnuser">Kuiper</a> <span class="age"><a href="item?id=16527112">5 hours ago</a></span> <span id="unv_16527112"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16527112)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That book remains unsold, mainly for lack of trying on my part -- around the time that I was ready to start sending out query letters, I landed some contract work working on visual novels.  Getting my first contract involved spending a week or so assembling a writing portfolio to satisfy the company I was applying to, and once I had that portfolio, I started sending it off to any visual novel company that posted a classified seeking contract writers, with a pretty high success rate. (My portfolio started as a collection of ~5 writing samples; with each opening that I applied to, I would pick out the 3-4 writing samples which seemed most relevant to the position I was applying for and just send those.  Each job I completed gave me another writing sample to add to the portfolio, and the longer I kept working in the visual novel space, the more specific I could get with tailoring my writing samples to the positions I was applying for, so the result was sort of this &quot;snowball&quot; effect where success beget more success.) Once I had my foot in the door, my inertia continued to carry me forward from gig to gig, and visual novel work eventually became my main source of income (I quit my &quot;day job&quot; back in 2016).<p>Having a steady supply of contract work kind of sapped my motivation to continue doing any writing on spec; the appeal of toiling away privately on a novel with the hopes that it will one day get published becomes a lot less attractive when you have offers from people who are willing to pay you to write <i>right now</i>.  Once the contract work started, I also sort of rationalized procrastinating on sending out query letters for my unsold novel with the reasoning that my query letters would be a lot more impressive when I could start them with a paragraph listing the visual novels I&#x27;d worked on as a contractor, along with information about the number of copies they&#x27;d sold.<p>That being said, although I never sold that novel, the time I spent working on it certainly wasn&#x27;t wasted -- most of my early gigs in the visual novel space came as a direct result of the strength of my portfolio, which included parts of the original manuscript.  So, while I didn&#x27;t sell the manuscript, it did help with the first few critical steps of my writing career.<p>In an interesting quirk of fate, the editor that I&#x27;m working with for one of my current visual novel projects is also a senior editor at Tor, so despite never sending out those query letters, I somehow managed to stumble my way into a working relationship with someone at the publisher.  Perhaps the moral of this story is that all roads lead to Tor.  :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527112&amp;goto=item%3Fid%3D16526017%2316527112">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527177'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527177' href='vote?id=16527177&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sudouser" class="hnuser">sudouser</a> <span class="age"><a href="item?id=16527177">5 hours ago</a></span> <span id="unv_16527177"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16527177)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">great writeup, got a website or portfolio?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527177&amp;goto=item%3Fid%3D16526017%2316527177">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527352'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527352' href='vote?id=16527352&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Kuiper" class="hnuser">Kuiper</a> <span class="age"><a href="item?id=16527352">4 hours ago</a></span> <span id="unv_16527352"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527352)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s not a complete portfolio, but I keep a list of projects I&#x27;m currently working on at <a href="http:&#x2F;&#x2F;kineticliterature.com&#x2F;now&#x2F;" rel="nofollow">http:&#x2F;&#x2F;kineticliterature.com&#x2F;now&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527352&amp;goto=item%3Fid%3D16526017%2316527352">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527636'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527636' href='vote?id=16527636&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=aidenn0" class="hnuser">aidenn0</a> <span class="age"><a href="item?id=16527636">2 hours ago</a></span> <span id="unv_16527636"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527636)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Oh, you&#x27;re working on Necrobarista?  I remember seeing the trailer a while ago and it intrigued me.<p>[edit]<p>I realized this comment was relatively vacuous, so I suppose I should say what it is that intrigued me.  I had trouble putting my finger on it, until I realized that it&#x27;s mainly the fact that while it is clearly a VN, it has its own distinct aesthetic.  Too often I feel like VNs made outside of Japan try way too hard to look Japanese.  This can work well, or poorly, but it constrains things both in terms of style and target audience.<p>Obviously the production values don&#x27;t hurt either :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527636&amp;goto=item%3Fid%3D16526017%2316527636">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527393'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527393' href='vote?id=16527393&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sudouser" class="hnuser">sudouser</a> <span class="age"><a href="item?id=16527393">3 hours ago</a></span> <span id="unv_16527393"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527393)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">thanks!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527393&amp;goto=item%3Fid%3D16526017%2316527393">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                        <tr class='athing comtr ' id='16527906'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527906' href='vote?id=16527906&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=d--b" class="hnuser">d--b</a> <span class="age"><a href="item?id=16527906">1 hour ago</a></span> <span id="unv_16527906"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527906)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Well, it is sort of obvious that you need to get specific at some point to get anything done.<p>The problem is we tend to resist the work needed to get specific, because:<p>1. it kills the dream. Dreaming about being a successful actor is nice. Getting specific about working as a waiter while taking acting classes for years is not exactly the fun part. Yes, maybe it&#x27;s stupid to dream about stuff that won&#x27;t happen ever, but it&#x27;s completely human, and it should be totally fine.<p>2. sometimes it&#x27;s good not to dive into specifics too early. You may have your goals wrong, or you may have multiple specific ways to get there, but need to carefully mature your thoughts about the problem so that you take the right decision. To take the same example as the article: if a musician comes to you saying: &quot;I need a booking agent&quot;, well perhaps the first question to ask is &quot;why?&quot; rather than &quot;who?&quot;.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527906&amp;goto=item%3Fid%3D16526017%2316527906">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16526377'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526377' href='vote?id=16526377&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=abhiminator" class="hnuser">abhiminator</a> <span class="age"><a href="item?id=16526377">8 hours ago</a></span> <span id="unv_16526377"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526377)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Interesting article.<p>As the saying goes, the first step is always the hardest; and from my personal experience, I can attest that writing (especially through the old school &#x27;pen and paper&#x27; way [0]) can serve as a very effective tool in de-cluttering the mental muddle that comes with formulating anything new.<p>Think of writing as an extension of the brain&#x27;s working memory -- by offloading cognitively taxing task of keeping track of nitty-gritty details of task at hand, the prefrontal cortex gets a bigger pie of the mental energy -- which helps one to focus on the stuff that actually matters.<p>[0] <a href="https:&#x2F;&#x2F;www.nytimes.com&#x2F;2014&#x2F;06&#x2F;19&#x2F;science&#x2F;researching-the-brain-of-writers.html" rel="nofollow">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2014&#x2F;06&#x2F;19&#x2F;science&#x2F;researching-the-b...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526377&amp;goto=item%3Fid%3D16526017%2316526377">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16526602'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526602' href='vote?id=16526602&amp;how=up&amp;goto=item%3Fid%3D16526017'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=0xCMP" class="hnuser">0xCMP</a> <span class="age"><a href="item?id=16526602">7 hours ago</a></span> <span id="unv_16526602"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526602)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think something that usually keeps me from doing this is that I don&#x27;t want to accidentally set the wrong specific goal and make myself go off in a tangent.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526602&amp;goto=item%3Fid%3D16526017%2316526602">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+            </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

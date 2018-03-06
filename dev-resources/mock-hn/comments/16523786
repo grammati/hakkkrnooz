@@ -1,0 +1,566 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Counterintuitive Properties of High Dimensional Space | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16523786">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16523786'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16523786' href='vote?id=16523786&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://marckhoury.github.io/counterintuitive-properties-of-high-dimensional-space/" class="storylink">Counterintuitive Properties of High Dimensional Space</a><span class="sitebit comhead"> (<a href="from?site=marckhoury.github.io"><span class="sitestr">marckhoury.github.io</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16523786">316 points</span> by <a href="user?id=marckhoury" class="hnuser">marckhoury</a> <span class="age"><a href="item?id=16523786">14 hours ago</a></span> <span id="unv_16523786"></span> | <a href="hide?id=16523786&amp;goto=item%3Fid%3D16523786">hide</a> | <a href="https://hn.algolia.com/?query=Counterintuitive%20Properties%20of%20High%20Dimensional%20Space&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Counterintuitive%20Properties%20of%20High%20Dimensional%20Space">web</a> | <a href="fave?id=16523786&amp;auth=9e903258c55a7a4e860a24f0d73b3de4e3775521">favorite</a> | <a href="item?id=16523786">52&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16523786"><input type="hidden" name="goto" value="item?id=16523786"><input type="hidden" name="hmac" value="9033d03c98d7f77f7ad668144e0e91d446b3f90b"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16524130'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524130' href='vote?id=16524130&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dvh" class="hnuser">dvh</a> <span class="age"><a href="item?id=16524130">14 hours ago</a></span> <span id="unv_16524130"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16524130)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Just today on numberphile channel they showed how to pass circle through smaller square hole by bending it in higher (3rd) dimension: <a href="https:&#x2F;&#x2F;m.youtube.com&#x2F;watch?v=AvFNCNOyZeE" rel="nofollow">https:&#x2F;&#x2F;m.youtube.com&#x2F;watch?v=AvFNCNOyZeE</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524130&amp;goto=item%3Fid%3D16523786%2316524130">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527684'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527684' href='vote?id=16527684&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ilitirit" class="hnuser">ilitirit</a> <span class="age"><a href="item?id=16527684">2 hours ago</a></span> <span id="unv_16527684"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527684)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There&#x27;s a (sort of) intuitive way of understanding why things like these are possible without even seeing it visually.<p>How can you make two solid 2D squares occupy the space?  They can&#x27;t travel through each other, so...?  Easy.  Lift one of the squares into the 3rd Dimension, move it to the same X,Y coords, then drop it on the other (think of putting stacking 2 pieces of paper).<p>Similarly, you can have two 3D objects occupy the same space by &quot;lifting&quot; one into the 4th dimension, moving it to the same X,Y,Z coords as the other, and then &quot;dropping it&quot;.  You can &quot;cheat&quot; by thinking of the 4th dimension as time - one object travels through time, places itself at the same position of where the other object is, then returns.  But as I said, that&#x27;s &quot;cheating&quot;.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527684&amp;goto=item%3Fid%3D16523786%2316527684">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524204'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524204' href='vote?id=16524204&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dhimes" class="hnuser">dhimes</a> <span class="age"><a href="item?id=16524204">14 hours ago</a></span> <span id="unv_16524204"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524204)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That short little video gave me a lot of pleasure!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524204&amp;goto=item%3Fid%3D16523786%2316524204">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524430'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524430' href='vote?id=16524430&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=empath75" class="hnuser">empath75</a> <span class="age"><a href="item?id=16524430">13 hours ago</a></span> <span id="unv_16524430"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524430)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The did a numberphile video on this exact topic a few months ago:
+<a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=mceaM2_zQd8" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=mceaM2_zQd8</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524430&amp;goto=item%3Fid%3D16523786%2316524430">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524896'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524896' href='vote?id=16524896&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ghusbands" class="hnuser">ghusbands</a> <span class="age"><a href="item?id=16524896">13 hours ago</a></span> <span id="unv_16524896"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524896)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The video you linked to has nothing at all to do with the parent one. You probably meant to reply to the topic, rather than the comment you actually replied to.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524896&amp;goto=item%3Fid%3D16523786%2316524896">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525016'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525016' href='vote?id=16525016&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=itp" class="hnuser">itp</a> <span class="age"><a href="item?id=16525016">12 hours ago</a></span> <span id="unv_16525016"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525016)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I suspect you&#x27;re wrong, and that the connection between video and parent was that they were both Numberphile videos. An expanded comment might have read something like:<p>&quot;Not only is today&#x27;s Numberphile video potentially relevant, Numberphile actually directly addressed the article&#x27;s exact topic several months ago.&quot;<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525016&amp;goto=item%3Fid%3D16523786%2316525016">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16524592'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524592' href='vote?id=16524592&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=btilly" class="hnuser">btilly</a> <span class="age"><a href="item?id=16524592">13 hours ago</a></span> <span id="unv_16524592"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524592)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Anyone interested in practical consequences of these counterintuitive properties should look up <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Curse_of_dimensionality" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Curse_of_dimensionality</a> for how it impacts things like machine learning where we naturally are working with many dimensions.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524592&amp;goto=item%3Fid%3D16523786%2316524592">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525924'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525924' href='vote?id=16525924&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=signa11" class="hnuser">signa11</a> <span class="age"><a href="item?id=16525924">10 hours ago</a></span> <span id="unv_16525924"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525924)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">indeed ! the &#x27;neural networks for pattern recognition&#x27; book (bishop) has exercises in chapter-01 on the same subject.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525924&amp;goto=item%3Fid%3D16523786%2316525924">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16525063'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525063' href='vote?id=16525063&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sevensor" class="hnuser">sevensor</a> <span class="age"><a href="item?id=16525063">12 hours ago</a></span> <span id="unv_16525063"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525063)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">If you&#x27;re interested in related problems, try improving on the performance of the wfg algorithm for computing the volume enclosed by a set of n-dimensional points.  I spent a good 3 months convinced that I could, but I couldn&#x27;t.  The reason I couldn&#x27;t is that I thought I could reason by analogy with 3D space, and it turns out that this is foolhardy.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525063&amp;goto=item%3Fid%3D16523786%2316525063">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16524452'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524452' href='vote?id=16524452&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=resource0x" class="hnuser">resource0x</a> <span class="age"><a href="item?id=16524452">13 hours ago</a></span> <span id="unv_16524452"></span><span class="par"></span> <a class="togg" n="22" href="javascript:void(0)" onclick="return toggle(event, 16524452)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">from the article:
+The volume of the unit d-sphere goes to 0 as d grows! A high dimensional unit sphere encloses almost no volume!<p>Maybe I&#x27;m nitpicking, but this interpretation is not accurate IMO. Volume of N-dimensional sphere is measured is different units than that of (N-1)-dimensional sphere. E.g. one is m^5, and another is m^4. Comparing values measured in different units is not the best idea. It would be better worded as : the ratio of volume of N-dimensional sphere to the volume of same-dimensional cube approaches zero when N goes to infinity. But this is not a counter-intuitive statement.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524452&amp;goto=item%3Fid%3D16523786%2316524452">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525361'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525361' href='vote?id=16525361&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cvoss" class="hnuser">cvoss</a> <span class="age"><a href="item?id=16525361">12 hours ago</a></span> <span id="unv_16525361"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525361)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">A more precise, unit-respecting result is to plot the ratio of the unit sphere&#x27;s volume to the unit cube&#x27;s volume. This is a dimensionless quantity, so it makes sense to compare them, but happily the numeric values are unchanged because the unit cube always has volume 1 m^N in dimension N.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525361&amp;goto=item%3Fid%3D16523786%2316525361">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524630'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524630' href='vote?id=16524630&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mattkrause" class="hnuser">mattkrause</a> <span class="age"><a href="item?id=16524630">13 hours ago</a></span> <span id="unv_16524630"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524630)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The ‘pithy’ version of this idea is that most of a high-dimensional orange is the peel.<p>It’s from this excellent article by Pedro Domingos: <a href="https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~pedrod&#x2F;papers&#x2F;cacm12.pdf" rel="nofollow">https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~pedrod&#x2F;papers&#x2F;cacm12.pdf</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524630&amp;goto=item%3Fid%3D16523786%2316524630">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524831'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524831' href='vote?id=16524831&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=xyzzyz" class="hnuser">xyzzyz</a> <span class="age"><a href="item?id=16524831">13 hours ago</a></span> <span id="unv_16524831"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524831)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is actually slightly different issue.<p>Regardless of the dimension, the volume of n-ball is V_n(r) = c_n * r^n, where r is radius, and c_n is a constant depending on n. The grandparent observation is that surprisingly enough, c_n goes (rather quickly) to 0 as n goes to infinity, so for unit n-ball, that is, a ball of radius 1, the volume is exactly c_n, which is very small. This is surprising to us, because in familiar case of n = 3, c_3 = 4&#x2F;3 pi, which is moderately large.<p>As for the mass being concentrated around the peel, suppose we have an orange of radius R+e, and its peel has thickness of e. Then, the ratio of volume of the peel to the volume of the whole orange is exactly:<p>(V_n(R+e) - V_n(R))&#x2F;V_n(R+e) = 1 - V_n(R)&#x2F;V_n(R+e) = 1 - c_n R^n &#x2F; c_n (R+e)^n = 1 - R^n&#x2F;(R+e)^n = 1 - (R&#x2F;(R+e))^n<p>Now, since R&#x2F;(R+e) &lt; 1, for large n, (R&#x2F;(R+e))^n will be very small, and so the ratio of the volume of the peel to the volume of the whole orange will be 1 minus something very small, so close to 1.<p>Note that the peel argument works just as well with &quot;square&quot; oranges -- they also have most of their mass concentrated around the peel, but contrary to round oranges, their whole mass <i>does not</i> go to 0 as the dimension increases. To see that, note that the volume of n-dimensional square with side of R is exactly R^n, and if you do the above computation, it&#x27;s exactly the same (note that the constant c_n cancelled out anyway).<p>In this sense, your comment and the grandparent ones are about two different phenomenons -- grandparent is talking specificly about the geometry of the sphere in L_2 norm, while you are talking generally about n-dimensional volumes.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524831&amp;goto=item%3Fid%3D16523786%2316524831">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16524776'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524776' href='vote?id=16524776&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ttoinou" class="hnuser">ttoinou</a> <span class="age"><a href="item?id=16524776">13 hours ago</a></span> <span id="unv_16524776"></span><span class="par"></span> <a class="togg" n="12" href="javascript:void(0)" onclick="return toggle(event, 16524776)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That&#x27;s what I thought reading that too. In general I don&#x27;t think it&#x27;s a good idea for maths people to just forget about units (&quot;because it is for physics&quot;)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524776&amp;goto=item%3Fid%3D16523786%2316524776">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524927'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524927' href='vote?id=16524927&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=resource0x" class="hnuser">resource0x</a> <span class="age"><a href="item?id=16524927">12 hours ago</a></span> <span id="unv_16524927"></span><span class="par"></span> <a class="togg" n="11" href="javascript:void(0)" onclick="return toggle(event, 16524927)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Speaking about math: I&#x27;m not even sure what the meaning of polynomial is. E.g. x^2+3x+1. Each component is measured in different units. Is it intuitive?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524927&amp;goto=item%3Fid%3D16523786%2316524927">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525516'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525516' href='vote?id=16525516&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=codeflo" class="hnuser">codeflo</a> <span class="age"><a href="item?id=16525516">11 hours ago</a></span> <span id="unv_16525516"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525516)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">But such polynomials do turn up in physics, e.g. accelerated motion: x(t) = 1&#x2F;2 a t^2 + v t + x0. The trick is that the coefficients aren&#x27;t unitless either.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525516&amp;goto=item%3Fid%3D16523786%2316525516">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524983'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16524983' href='vote?id=16524983&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=DavidSJ" class="hnuser">DavidSJ</a> <span class="age"><a href="item?id=16524983">12 hours ago</a></span> <span id="unv_16524983"></span><span class="par"></span> <a class="togg" n="9" href="javascript:void(0)" onclick="return toggle(event, 16524983)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Such a polynomial only makes sense when x is a dimensionless quantity, or alternatively when the coefficients have appropriate dimensions to compensate.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524983&amp;goto=item%3Fid%3D16523786%2316524983">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525152'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16525152' href='vote?id=16525152&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=resource0x" class="hnuser">resource0x</a> <span class="age"><a href="item?id=16525152">12 hours ago</a></span> <span id="unv_16525152"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525152)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I admit that I have no intuition of a product of 2 dimensionless quantities :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525152&amp;goto=item%3Fid%3D16523786%2316525152">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525524'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16525524' href='vote?id=16525524&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Retra" class="hnuser">Retra</a> <span class="age"><a href="item?id=16525524">11 hours ago</a></span> <span id="unv_16525524"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525524)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That would just be like a double-rescaling. Like &quot;a meter is now twice as long as double a normal meter.&quot;<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525524&amp;goto=item%3Fid%3D16523786%2316525524">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525141'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16525141' href='vote?id=16525141&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yequalsx" class="hnuser">yequalsx</a> <span class="age"><a href="item?id=16525141">12 hours ago</a></span> <span id="unv_16525141"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16525141)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The definition of a polynomial has nothing to do with units of measurement.  The coefficients come from a ring and a ring has nothing g to do with units of measurement.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525141&amp;goto=item%3Fid%3D16523786%2316525141">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525232'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16525232' href='vote?id=16525232&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=DavidSJ" class="hnuser">DavidSJ</a> <span class="age"><a href="item?id=16525232">12 hours ago</a></span> <span id="unv_16525232"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16525232)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That’s fine as a pure mathematics perspective, but in physics dimensions come into play often, and one often has polynomials whose domain and coefficients come “tagged” with particular dimensions.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525232&amp;goto=item%3Fid%3D16523786%2316525232">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525278'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks"><center><a id='up_16525278' href='vote?id=16525278&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yequalsx" class="hnuser">yequalsx</a> <span class="age"><a href="item?id=16525278">12 hours ago</a></span> <span id="unv_16525278"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525278)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">OP did say, “speaking about math...”. The operations on polynomials and dealing with polynomials doesn’t have anything to do with units of measurement.  It may be the case that when used in some areas and in some contexts that the units matter but I think it clouds issues to bring them up.<p>The intuition for operating with polynomials is best obtained by not worrying about units.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525278&amp;goto=item%3Fid%3D16523786%2316525278">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525391'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="280"></td><td valign="top" class="votelinks"><center><a id='up_16525391' href='vote?id=16525391&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=DavidSJ" class="hnuser">DavidSJ</a> <span class="age"><a href="item?id=16525391">12 hours ago</a></span> <span id="unv_16525391"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525391)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think we’re not really disagreeing about anything. In a pure math context, x would be, as you say, a quantity in which dimensions play no role.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525391&amp;goto=item%3Fid%3D16523786%2316525391">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525550'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="320"></td><td valign="top" class="votelinks"><center><a id='up_16525550' href='vote?id=16525550&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ttoinou" class="hnuser">ttoinou</a> <span class="age"><a href="item?id=16525550">11 hours ago</a></span> <span id="unv_16525550"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525550)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">As he said, x is part of a ring. In physics the multiplication of two elements from the same ring end up on another ring (meters^2 for example) in which, for example, you cannot do addition with elements from the original ring (meters)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525550&amp;goto=item%3Fid%3D16523786%2316525550">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525674'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="360"></td><td valign="top" class="votelinks"><center><a id='up_16525674' href='vote?id=16525674&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yequalsx" class="hnuser">yequalsx</a> <span class="age"><a href="item?id=16525674">11 hours ago</a></span> <span id="unv_16525674"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525674)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The mathematical definition of a ring precludes this from happening.  By definition, in a ring when you multiply 2 elements from the ring you get another element of the ring.  Perhaps you are referring tensor products (geometric algebra for physicists).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525674&amp;goto=item%3Fid%3D16523786%2316525674">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16524482'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524482' href='vote?id=16524482&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gameswithgo" class="hnuser">gameswithgo</a> <span class="age"><a href="item?id=16524482">13 hours ago</a></span> <span id="unv_16524482"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16524482)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Would it be counter intuitive though, that the ratio increases until dimension 5 (I think) then starts decreasing?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524482&amp;goto=item%3Fid%3D16523786%2316524482">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524595'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524595' href='vote?id=16524595&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=resource0x" class="hnuser">resource0x</a> <span class="age"><a href="item?id=16524595">13 hours ago</a></span> <span id="unv_16524595"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524595)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s a matter of one&#x27;s individual intuition, but said ratio is a non-linear function, and non-linear functions most often are non-monotonous.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524595&amp;goto=item%3Fid%3D16523786%2316524595">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524654'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16524654' href='vote?id=16524654&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=throwaway080383" class="hnuser">throwaway080383</a> <span class="age"><a href="item?id=16524654">13 hours ago</a></span> <span id="unv_16524654"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524654)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Except exponential, log, log-linear, sqrt, the time or space complexity of pretty much every problem in CS...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524654&amp;goto=item%3Fid%3D16523786%2316524654">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524855'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16524855' href='vote?id=16524855&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=newen" class="hnuser">newen</a> <span class="age"><a href="item?id=16524855">13 hours ago</a></span> <span id="unv_16524855"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524855)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">And all cumulative distribution functions, x^k where k is odd, all functions F(x) = integral(f(x&#x27;) dx&#x27;, -inf, x) where f(x) is continuous..<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524855&amp;goto=item%3Fid%3D16523786%2316524855">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16526228'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526228' href='vote?id=16526228&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=John_KZ" class="hnuser">John_KZ</a> <span class="age"><a href="item?id=16526228">9 hours ago</a></span> <span id="unv_16526228"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526228)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">Exactly. The article is really bad and serves only to confuse those with no experience in high-dimensional mathematics.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526228&amp;goto=item%3Fid%3D16523786%2316526228">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526576'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526576' href='vote?id=16526576&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=adrianratnapala" class="hnuser">adrianratnapala</a> <span class="age"><a href="item?id=16526576">7 hours ago</a></span> <span id="unv_16526576"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526576)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c88">Yes.  But I&#x27;ve learned from bitter experience that mathematicians don&#x27;t believe in units.  At least not in their gut.  To them, it&#x27;s all just numbers.<p>(Even more infuriating is that physicists <i>do</i> believe in units, except when writing code).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526576&amp;goto=item%3Fid%3D16523786%2316526576">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527816'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527816' href='vote?id=16527816&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=coinerone" class="hnuser">coinerone</a> <span class="age"><a href="item?id=16527816">1 hour ago</a></span> <span id="unv_16527816"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527816)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&quot;You may be used to using the word “circle” in two dimensions and “sphere” in three dimensions. However, in higher dimensions we generally just use the word sphere, or d-sphere when the dimension of the sphere is not clear from context. With this terminology, a circle is also called a 1-sphere, for a 1-dimensional sphere. A standard sphere in three dimensions is called a 2-sphere, and so on. &quot;<p>So, what is a 2-dimensional Sphere called if the 3-dimensional one is a 2-sphere?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527816&amp;goto=item%3Fid%3D16523786%2316527816">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527963'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527963' href='vote?id=16527963&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=OscarCunningham" class="hnuser">OscarCunningham</a> <span class="age"><a href="item?id=16527963">53 minutes ago</a></span> <span id="unv_16527963"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527963)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The convention is to name things for their inherent dimensionalitly, not the space they live in.<p>A sphere in three dimensional space is a two dimensional object, in the sense that it&#x27;s a surface on which the points can be described by two coordinates (say longitude and latitude).<p>Similarly a point on a circle can be described by a single coordinate (distance around the circle).<p>So the 1-sphere is a circle, and normally lives in 2 dimensional space, while the ordinary sphere is called a 2-sphere, and lives in three dimensional space.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527963&amp;goto=item%3Fid%3D16523786%2316527963">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527856'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527856' href='vote?id=16527856&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jgtrosh" class="hnuser">jgtrosh</a> <span class="age"><a href="item?id=16527856">1 hour ago</a></span> <span id="unv_16527856"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527856)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think it should be “in three-dimensional space”. The sphere is two dimensional.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527856&amp;goto=item%3Fid%3D16523786%2316527856">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527898'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527898' href='vote?id=16527898&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=IngoBlechschmid" class="hnuser">IngoBlechschmid</a> <span class="age"><a href="item?id=16527898">1 hour ago</a></span> <span id="unv_16527898"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527898)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I love Matt Parker&#x27;s take on the fourth dimension: see for instance this one-hour long but very enjoyable talk for general audiences at the Royal Institution:
+<a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=1wAaI_6b9JE" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=1wAaI_6b9JE</a> (Things to See and Hear in the Fourth Dimension)<p>If you know German, then you might like this talk as well:
+<a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=d19zmiVBLS8" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=d19zmiVBLS8</a> (The curious world of four-dimensional geometry)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527898&amp;goto=item%3Fid%3D16523786%2316527898">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16527129'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527129' href='vote?id=16527129&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=visarga" class="hnuser">visarga</a> <span class="age"><a href="item?id=16527129">5 hours ago</a></span> <span id="unv_16527129"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527129)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">An interesting property of word vectors (which are usually 300-600 dimensional vectors) is that most are quasi-orthogonal. That means when you sum them up, they compose well representing all the meanings of the component parts, and strangely, multi-sense words such as &quot;bank&quot; contain all the senses overlapped, yet distinct.<p>Another interesting property is that high dimensional space has many shortcuts, or that at any point there are many paths. It&#x27;s like a kaleidoscope with infinite reflections or like a mirror house. Or it&#x27;s like any point has many close neighbours which can, paradoxically, be far apart between them.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527129&amp;goto=item%3Fid%3D16523786%2316527129">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16527373'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527373' href='vote?id=16527373&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=arketyp" class="hnuser">arketyp</a> <span class="age"><a href="item?id=16527373">3 hours ago</a></span> <span id="unv_16527373"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527373)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&quot;Sparse Distributed Memory&quot; is a lovely book by Pentti Kanerva in which he hypothesizes that high dimensional binary vectors (hypervectors) is key to understanding human memory and cognition. To a large part Kanerva is concerned with constructing the theory for a feasible implementation of hypervector storage and arithmetics in modern hardware. (While the book is some decades old the main strokes and ideas still hold relevant.) As a fun fact, and quite telling of what kind of book it is, Douglas Hofstadter has written the foreword.<p>The book is quite hard to get hold of, but here is a recent talk: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=zUCoxhExe0o" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=zUCoxhExe0o</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527373&amp;goto=item%3Fid%3D16523786%2316527373">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16524119'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524119' href='vote?id=16524119&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gilbetron" class="hnuser">gilbetron</a> <span class="age"><a href="item?id=16524119">14 hours ago</a></span> <span id="unv_16524119"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524119)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great article!  I&#x27;ve been thinking about this on and off recently, as I wonder if we might be having intuitive issues when it comes to gradient descent optimization.<p>3 Blue,1 Brown had a video recently that kicked off my head scratching and is a great complement to your article:  <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=zwAD6dRSVyI" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=zwAD6dRSVyI</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524119&amp;goto=item%3Fid%3D16523786%2316524119">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524421'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524421' href='vote?id=16524421&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=marckhoury" class="hnuser">marckhoury</a> <span class="age"><a href="item?id=16524421">13 hours ago</a></span> <span id="unv_16524421"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524421)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thank you! It&#x27;s funny you should mention that because I&#x27;ve been thinking about continuous optimization a lot lately.<p>That&#x27;s a great video, I really like his slider method for understanding the coordinates. Thanks for linking it!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524421&amp;goto=item%3Fid%3D16523786%2316524421">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16524449'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524449' href='vote?id=16524449&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Maybestring" class="hnuser">Maybestring</a> <span class="age"><a href="item?id=16524449">13 hours ago</a></span> <span id="unv_16524449"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524449)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The sphere drawing in figure 7... 
+People seem to miss this subtelty, the spikeness is an artifact of the coordinate system. Rotate the basis vectors and the spikes move with them.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524449&amp;goto=item%3Fid%3D16523786%2316524449">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525257'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525257' href='vote?id=16525257&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bacon_waffle" class="hnuser">bacon_waffle</a> <span class="age"><a href="item?id=16525257">12 hours ago</a></span> <span id="unv_16525257"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525257)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Richard Hamming did a neat lecture on N-Dimensional Space, in the context of engineering: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=uU_Q2a0S0zI" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=uU_Q2a0S0zI</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525257&amp;goto=item%3Fid%3D16523786%2316525257">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526080'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526080' href='vote?id=16526080&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sbensu" class="hnuser">sbensu</a> <span class="age"><a href="item?id=16526080">9 hours ago</a></span> <span id="unv_16526080"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526080)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">One of the first chapters of The Art of Science and Engineering (Hamming) covers this beautifully.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526080&amp;goto=item%3Fid%3D16523786%2316526080">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16524617'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524617' href='vote?id=16524617&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=chatmasta" class="hnuser">chatmasta</a> <span class="age"><a href="item?id=16524617">13 hours ago</a></span> <span id="unv_16524617"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16524617)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why do we extrapolate 4d based on 3D volume, and not surface area? For 2D-&gt;3D we use area. Why would we then use volume in 3D-&gt;4D when surface area is an option?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524617&amp;goto=item%3Fid%3D16523786%2316524617">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524665'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524665' href='vote?id=16524665&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=antognini" class="hnuser">antognini</a> <span class="age"><a href="item?id=16524665">13 hours ago</a></span> <span id="unv_16524665"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524665)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We&#x27;re using volume the whole time.  Area is just the two-dimensional equivalent of volume.  The two-dimensional equivalent of surface area would be perimeter, which is relatively rarely used.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524665&amp;goto=item%3Fid%3D16523786%2316524665">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527040'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527040' href='vote?id=16527040&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=qubex" class="hnuser">qubex</a> <span class="age"><a href="item?id=16527040">5 hours ago</a></span> <span id="unv_16527040"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527040)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The more general term for ’area’ and ’volume’ in higher dimensions is ’content’: area is the content of a 2D item, volume is the content of a 3D  item, hypervolume is the content of a 4D item, <i>et cetera</i>.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527040&amp;goto=item%3Fid%3D16523786%2316527040">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525237'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525237' href='vote?id=16525237&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yequalsx" class="hnuser">yequalsx</a> <span class="age"><a href="item?id=16525237">12 hours ago</a></span> <span id="unv_16525237"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525237)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The space that is enclosed by a unit sphere in dimension 1 is the interval (-1, 1).   In physics this is measured in meters. This is referred to as length.  The space enclosed by the unit sphere in dimension 2 is measured in meters squared.  This is referred to as area.  In dimension 3 we call it volume and measure it in meters cubed.<p>In dimensions 4 through infinity we quickly come to a problem.  Do we come up with unique names to refer to amount of space enclosed by a unit sphere?  Mathematicians have decided to just use the word volume.  We rely on context to make it clear what the dimension is.  Similarly we use the word n-sphere to refer to the collection of points in n-dimensional space that are exactly 1 unit from the origin.<p>Surface area of an n-sphere is used and studied.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525237&amp;goto=item%3Fid%3D16523786%2316525237">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527049'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527049' href='vote?id=16527049&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=qubex" class="hnuser">qubex</a> <span class="age"><a href="item?id=16527049">5 hours ago</a></span> <span id="unv_16527049"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527049)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">In my applied mathematics education the highest-dimensional unit of measurement of a given dimensionality was referred to generally as ‘content’: length is the content of 1D objects, area is the content of 2D objects, volume is the content of 3D objects, hypervolume is the content of 4D objects, and henceforth you just start numbering them...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527049&amp;goto=item%3Fid%3D16523786%2316527049">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16524687'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524687' href='vote?id=16524687&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=function_seven" class="hnuser">function_seven</a> <span class="age"><a href="item?id=16524687">13 hours ago</a></span> <span id="unv_16524687"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524687)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Same reason we don&#x27;t extrapolate 2D-&gt;3D based on circumference. You need all the information of the (n)D thing, plus a new length, to get to the (n+1)D thing.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524687&amp;goto=item%3Fid%3D16523786%2316524687">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16526327'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526327' href='vote?id=16526327&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=philee" class="hnuser">philee</a> <span class="age"><a href="item?id=16526327">9 hours ago</a></span> <span id="unv_16526327"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526327)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great 3blue1brown video to accompany this – Thinking Visually about Higher Dimensions:<p><a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=zwAD6dRSVyI" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=zwAD6dRSVyI</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526327&amp;goto=item%3Fid%3D16523786%2316526327">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16524129'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524129' href='vote?id=16524129&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Florin_Andrei" class="hnuser">Florin_Andrei</a> <span class="age"><a href="item?id=16524129">14 hours ago</a></span> <span id="unv_16524129"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524129)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This was the first application of the Monte Carlo numerical method I&#x27;ve done in college. Take an N-dimensional cube with volume = 1. Inscribe an N-sphere in it. Calculate the volume of the N-sphere as a function of N.<p>I was too lazy to do the strict proof, so I sprayed it with lots of Monte Carlo bullets. It&#x27;s like a page of code in any language. It turns out, as the article says, the volume of the N-sphere keeps getting smaller and smaller as N increases. In higher dimensions, there&#x27;s a lot more volume in the corners of the N-cube. It did seem like the N-sphere was shrinking down to nothing in spaces with lots of dimensions.<p>Seems obvious after you read the article and look at the diagrams, but back then I had to think about it for a while. I thought my implementation was wrong somehow, but eventually I realized what was going on. Pretty amazing stuff.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524129&amp;goto=item%3Fid%3D16523786%2316524129">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524729'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524729' href='vote?id=16524729&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wenc" class="hnuser">wenc</a> <span class="age"><a href="item?id=16524729">13 hours ago</a></span> <span id="unv_16524729"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524729)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">John D. Cook has a couple of blog posts about non-intuitiveness of high-dimension geometry [1][2] and this article [3] expands on the very observation that you described.<p>Quote:
+&quot;In his article “An Adventure in the Nth Dimension,” Brian Hayes explores how in high dimensions, balls have surprisingly little volume. As the dimension n increases, the volume of a ball of radius 1 increases until n = 5. Then for larger n the volume steadily decreases.&quot;<p>[1] <a href="https:&#x2F;&#x2F;www.johndcook.com&#x2F;blog&#x2F;2017&#x2F;07&#x2F;13&#x2F;concentration_of_measure&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.johndcook.com&#x2F;blog&#x2F;2017&#x2F;07&#x2F;13&#x2F;concentration_of_m...</a><p>[2] <a href="https:&#x2F;&#x2F;www.johndcook.com&#x2F;blog&#x2F;2017&#x2F;07&#x2F;19&#x2F;corners-stick-out-more-in-high-dimensions&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.johndcook.com&#x2F;blog&#x2F;2017&#x2F;07&#x2F;19&#x2F;corners-stick-out-...</a><p>[3] <a href="https:&#x2F;&#x2F;www.johndcook.com&#x2F;blog&#x2F;2012&#x2F;10&#x2F;23&#x2F;dimension-5-isnt-so-special&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.johndcook.com&#x2F;blog&#x2F;2012&#x2F;10&#x2F;23&#x2F;dimension-5-isnt-s...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524729&amp;goto=item%3Fid%3D16523786%2316524729">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524384'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524384' href='vote?id=16524384&amp;how=up&amp;goto=item%3Fid%3D16523786'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gameswithgo" class="hnuser">gameswithgo</a> <span class="age"><a href="item?id=16524384">14 hours ago</a></span> <span id="unv_16524384"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524384)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I was reminded of this:
+<a href="https:&#x2F;&#x2F;mikesmathpage.wordpress.com&#x2F;2016&#x2F;04&#x2F;29&#x2F;a-strange-problem-i-overheard-bjorn-poonen-discussing&#x2F;" rel="nofollow">https:&#x2F;&#x2F;mikesmathpage.wordpress.com&#x2F;2016&#x2F;04&#x2F;29&#x2F;a-strange-pro...</a><p>which I solved with this F# script, while learning F#
+<a href="https:&#x2F;&#x2F;gist.github.com&#x2F;jackmott&#x2F;bec1e4c7e84904702bac1dae97c25ae8" rel="nofollow">https:&#x2F;&#x2F;gist.github.com&#x2F;jackmott&#x2F;bec1e4c7e84904702bac1dae97c...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524384&amp;goto=item%3Fid%3D16523786%2316524384">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

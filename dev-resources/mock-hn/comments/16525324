@@ -1,0 +1,610 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>The Mystery of the Slow Downloads | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16525324">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16525324'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16525324' href='vote?id=16525324&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://panic.com/blog/mystery-of-the-slow-downloads/" class="storylink">The Mystery of the Slow Downloads</a><span class="sitebit comhead"> (<a href="from?site=panic.com"><span class="sitestr">panic.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16525324">286 points</span> by <a href="user?id=Doubleguitars" class="hnuser">Doubleguitars</a> <span class="age"><a href="item?id=16525324">12 hours ago</a></span> <span id="unv_16525324"></span> | <a href="hide?id=16525324&amp;goto=item%3Fid%3D16525324">hide</a> | <a href="https://hn.algolia.com/?query=The%20Mystery%20of%20the%20Slow%20Downloads&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=The%20Mystery%20of%20the%20Slow%20Downloads">web</a> | <a href="fave?id=16525324&amp;auth=db86cd2d2a1e5162e8c744ced1b13190abdffeda">favorite</a> | <a href="item?id=16525324">57&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16525324"><input type="hidden" name="goto" value="item?id=16525324"><input type="hidden" name="hmac" value="46ec370f6f7ee78e14cf2706ae725f643530b014"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16527010'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527010' href='vote?id=16527010&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mrbill" class="hnuser">mrbill</a> <span class="age"><a href="item?id=16527010">5 hours ago</a></span> <span id="unv_16527010"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16527010)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">As a lifelong sysadmin and former ISP person, I would have never thought that I would be impressed with Comcast.  However, after I lost a sweet free colo deal (company I used to work for, got sold) a few years ago, I decided to move my main system back to the house.  I signed up for Comcast Business, because AT&amp;T&#x27;s only &quot;business&quot; option with static IPs involved 1:1 NAT through their crappy 2Wire-brand gateway.<p>Anyway, years later - I&#x27;d give Comcast Biz a score of 95&#x2F;100.  When I called to get PTR records added for my five static IPs, I ended up on the phone with the guy who was typing them in.  For the very few times I&#x27;ve had to call them (less than once a year), I&#x27;ve never had a tech try to run me through a &quot;script&quot;, or argue that I didn&#x27;t know what I was talking about when I tell them I&#x27;ve already done all the debugging and the problem was on their end.<p>Had upstream issues once (even to their own speedtest server, so it wasn&#x27;t going outside of the Comcast network), and after a couple of calls I woke up one Saturday morning to two techs and a manager on my front porch.  &quot;We brought an unlocked modem and everything we might need, not leaving until this is fixed.&quot;  They were at my place for about an hour, then went down the road to fix something on a junction box, and I had full speeds back.<p>Couldn&#x27;t get them to leave that uncapped modem, though...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527010&amp;goto=item%3Fid%3D16525324%2316527010">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527044'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527044' href='vote?id=16527044&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=taspeotis" class="hnuser">taspeotis</a> <span class="age"><a href="item?id=16527044">5 hours ago</a></span> <span id="unv_16527044"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527044)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The service you get from a business tier is nothing like the service you get from residential. In Australia I managed a thousand or so ADSL connections with TID [1] and the support was excellent. Telstra is much maligned in Australia, but it&#x27;s not like they <i>can&#x27;t</i> provide good service.<p>[1] <a href="https:&#x2F;&#x2F;www.telstra.com.au&#x2F;business-enterprise&#x2F;solutions&#x2F;network-services&#x2F;connectivity&#x2F;internet-services" rel="nofollow">https:&#x2F;&#x2F;www.telstra.com.au&#x2F;business-enterprise&#x2F;solutions&#x2F;net...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527044&amp;goto=item%3Fid%3D16525324%2316527044">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527361'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527361' href='vote?id=16527361&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=joecool1029" class="hnuser">joecool1029</a> <span class="age"><a href="item?id=16527361">4 hours ago</a></span> <span id="unv_16527361"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527361)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Comcast Business Tier support had been decent. However, now they threaten a $99 service call charge if they can&#x27;t replicate the issue or it goes away by the time the tech shows up. Response time is usually within a day but for something up the network a bit they&#x27;ll just throw blame at the customer and bill them.<p>Otherwise, I will say that lately their commitment to keeping equipment up on the east coast has been admirable. My house has been without power since Friday but they threw generators on all the fiber nodes&#x27; power supplies to keep things up. pic: <a href="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;media&#x2F;DXjUdljXUAElsRX.jpg" rel="nofollow">https:&#x2F;&#x2F;pbs.twimg.com&#x2F;media&#x2F;DXjUdljXUAElsRX.jpg</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527361&amp;goto=item%3Fid%3D16525324%2316527361">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527970'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527970' href='vote?id=16527970&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=thinkloop" class="hnuser">thinkloop</a> <span class="age"><a href="item?id=16527970">52 minutes ago</a></span> <span id="unv_16527970"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527970)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Were you able to make use of it despite your house not having power?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527970&amp;goto=item%3Fid%3D16525324%2316527970">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527366'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527366' href='vote?id=16527366&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobush" class="hnuser">jacobush</a> <span class="age"><a href="item?id=16527366">4 hours ago</a></span> <span id="unv_16527366"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527366)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That is incredible!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527366&amp;goto=item%3Fid%3D16525324%2316527366">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527266'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527266' href='vote?id=16527266&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=deathanatos" class="hnuser">deathanatos</a> <span class="age"><a href="item?id=16527266">4 hours ago</a></span> <span id="unv_16527266"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527266)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I also have Comcast Business, but I&#x27;d give them a 40&#x2F;100. (But most of that score is because the service <i>usually</i> works.)<p>&gt; <i>I&#x27;ve never had a tech try to run me through a &quot;script&quot;, or argue that I didn&#x27;t know what I was talking about when I tell them I&#x27;ve already done all the debugging and the problem was on their end.</i><p>I&#x27;ve had two major outages:<p>* One outage where IPv6 connectivity was completely lost, and IPv4 connectivity was completely unaffected. I noticed this immediately, because I don&#x27;t use Comcast&#x27;s DNS servers; instead I use Google&#x27;s, over IPv6 exclusively, so it was immediately apparent.<p>* One outage where IPv4 SYN packets would go unanswered, however, once answered, the connection was quite stable. IPv6 was completely unaffected.<p>In <i>both</i> instances, the tech on the phone insisted that &quot;my signal strength&quot; was &quot;very weak&quot;, and that they&#x27;d send a tech out to fix that right away. The representatives both time were unable to <i>comprehend</i> — let alone answer — my question of &quot;how would signal strength only affect <i>one</i> of IPv4&#x2F;v6? Do you think the copper can somehow discriminate which protocol is in use?&quot; In the end, the representative adjusted by strength until it was supposedly awesome, and in neither case did the problem get resolved at that point, of course.<p>It took much insisting to get them to look at their own network in the first case, and to replace my modem in the latter case. (I have no <i>idea</i> what went wrong in the latter case, but my guess is &quot;something with NAT&quot; and&#x2F;or the IPv4 hardware. Regardless, replacing the modem <i>did</i> fix the issue.)<p>I&#x27;ve also tried — and have yet to convince them of this: every single one of their black Comcast-branded modems will forget the 2 GHz WiFi WPA-PSK key on any sort of power cycle or reset, and revert back to the default, but <i>only</i> for the key. (All other settings, such as port forwardings or the SSID for the AP remain intact.) This, I believe, <i>only</i> happens if you use an actual key; if you use a password from which a key is derived, you won&#x27;t be affected.<p>They&#x27;ve also tried to upsell me during outages … which, really? Why do companies <i>do</i> that?<p>I did at least finally get a representative that was human enough to laugh when I told them that the modem was doing the &quot;blinken light dance&quot;. (The LEDs on the front panel go through a sequence as the device boots and acquires a connection.)<p>&gt; <i>When I called to get PTR records added for my five static IPs,</i><p>I would love to have this … I just didn&#x27;t think I could request such a thing without the hell of trying to explain what a PTR record is.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527266&amp;goto=item%3Fid%3D16525324%2316527266">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527815'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527815' href='vote?id=16527815&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ngrilly" class="hnuser">ngrilly</a> <span class="age"><a href="item?id=16527815">1 hour ago</a></span> <span id="unv_16527815"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527815)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I have a similar issue - very slow download - with my ADSL access provided by SFR in France.<p>I did similar tests, by downloading the same file from servers hosted at different providers, and the bandwidth was always very slow, except when I changed the HTTP port from 80 (the standard) to an arbitrary chosen number! This change alone made me able to use the full bandwidth provided by my physical link! It was the proof that my ISP was running some kind of traffic shaping, which is a shame.<p>More information if you read French: <a href="https:&#x2F;&#x2F;twitter.com&#x2F;ngrilly&#x2F;status&#x2F;756453318113783809?s=19" rel="nofollow">https:&#x2F;&#x2F;twitter.com&#x2F;ngrilly&#x2F;status&#x2F;756453318113783809?s=19</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527815&amp;goto=item%3Fid%3D16525324%2316527815">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528015'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16528015' href='vote?id=16528015&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=lloeki" class="hnuser">lloeki</a> <span class="age"><a href="item?id=16528015">38 minutes ago</a></span> <span id="unv_16528015"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528015)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">No such issue over here (SFR FTTH), bandwidth is extremely stable and through the roof.<p><i>Free SAS</i> is absolutely <i>terrible</i> in that regard. I ran a few experiments (at home - when I was still a customer - and at friends&#x27;) over the years similar to that blog post, and starting 17:00 things get throttled down to death due to clogged pipes. It&#x27;s almost on the clock. The behaviour is immediately obvious to anyone having some background in network engineering, and support is tone deaf to the issue.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528015&amp;goto=item%3Fid%3D16525324%2316528015">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527845'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527845' href='vote?id=16527845&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jlgaddis" class="hnuser">jlgaddis</a> <span class="age"><a href="item?id=16527845">1 hour ago</a></span> <span id="unv_16527845"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527845)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">To any of my fellow network engineers:<p>Although you very well might be, do not be tempted to stop reading after you get to the sentence, &quot;<i>The Panic web servers have a single connection to the internet via Cogent.</i>&quot;<p>Believe it or not, it&#x27;s not (just) Cogent this time. It&#x27;s Comcast, too. Or, more specifically, saturated peering links between them.<p>To the others: this will likely not come as a surprise to any neteng who has had to deal with either of them.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527845&amp;goto=item%3Fid%3D16525324%2316527845">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525815'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525815' href='vote?id=16525815&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Maultasche" class="hnuser">Maultasche</a> <span class="age"><a href="item?id=16525815">10 hours ago</a></span> <span id="unv_16525815"></span><span class="par"></span> <a class="togg" n="12" href="javascript:void(0)" onclick="return toggle(event, 16525815)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That was interesting. I do believe that&#x27;s the first time I&#x27;ve heard a positive story about Comcast. It&#x27;s amazing how much cooperation has to happen to make the Internet work.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525815&amp;goto=item%3Fid%3D16525324%2316525815">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525823'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525823' href='vote?id=16525823&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=e40" class="hnuser">e40</a> <span class="age"><a href="item?id=16525823">10 hours ago</a></span> <span id="unv_16525823"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525823)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I believe there are lots of engineers there that want to do the right thing.  It&#x27;s all the layers of executives that mess it up.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525823&amp;goto=item%3Fid%3D16525324%2316525823">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526620'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526620' href='vote?id=16526620&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=markbnj" class="hnuser">markbnj</a> <span class="age"><a href="item?id=16526620">7 hours ago</a></span> <span id="unv_16526620"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526620)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Years ago when Comcast first put in service to our neighborhood the link was plagued by packet loss, to the extent that the connection was highly unreliable. I tried getting help through customer support and got nowhere for two weeks. Eventually I found a number for their local office, called, and authoritatively requested to be put through to &quot;network engineering.&quot; Surprisingly that worked, and I ended up on the phone with a really nice guy who took me seriously from the moment I explained what I did for a living. He asked me to email him my tracerts and ping tests, which I did. A day or so later there were three trucks in the court and after that the service was flawless. I think most engineers, at heart, are like that guy.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526620&amp;goto=item%3Fid%3D16525324%2316526620">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525835'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525835' href='vote?id=16525835&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=supergarfield" class="hnuser">supergarfield</a> <span class="age"><a href="item?id=16525835">10 hours ago</a></span> <span id="unv_16525835"></span><span class="par"></span> <a class="togg" n="9" href="javascript:void(0)" onclick="return toggle(event, 16525835)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I know it&#x27;s completely anecdotal, but I&#x27;ve been with Comcast for two years now and I&#x27;ve always had a good customer service experience with them. That said, I&#x27;m in an area with a fair amount of ISP competition, so it&#x27;s possible they&#x27;re more careful here.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525835&amp;goto=item%3Fid%3D16525324%2316525835">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526888'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526888' href='vote?id=16526888&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=csydas" class="hnuser">csydas</a> <span class="age"><a href="item?id=16526888">6 hours ago</a></span> <span id="unv_16526888"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526888)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Entirely possible it&#x27;s just a roll of the dice. My friend and I both had Comcast at our places only .5 miles from one another and the experiences were polar opposite.<p>She never got the information for logging into the website to pay and missed bills (I was at the set up so it wasn&#x27;t that she just forgot, neither of us knew then about it), at my setup the tech made sure I could login before they left.<p>When she had a bum modem Comcast sent several folk out to investigate by turning the modem off and on; when I had an issue, I spent 30 minutes on chat and they sent a new one next day delivery.<p>When she returned both our modems for us when we left the area, they lost hers and tried to charge her saying she never turned it in, never an issue with mine.<p>Even leaving Comcast was a world of difference as she was sent to customer retention despite leaving the state to one without Comcast, but I was just allowed to cancel peacefully. (granted I told them I was moving abroad...)<p>So more anecdata, but ymmv and will always vary imo with Comcast. I would not call their support good. Just never too bad.<p>(The local isp, however, had fantastic service, both network and human)<p>Edit: fixed Android&#x27;s &quot;awesome&quot; autocorrect which changed were to we&#x27;re<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526888&amp;goto=item%3Fid%3D16525324%2316526888">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525941'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525941' href='vote?id=16525941&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zwily" class="hnuser">zwily</a> <span class="age"><a href="item?id=16525941">10 hours ago</a></span> <span id="unv_16525941"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16525941)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Same here... All my friends complain about Comcast all the time and I’m thinking there must be something wrong with me cause all my interactions with them have been positive, and my service and price are decent.<p>(I promise I’m not a paid comcast shill...)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525941&amp;goto=item%3Fid%3D16525324%2316525941">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526029'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526029' href='vote?id=16526029&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=grzm" class="hnuser">grzm</a> <span class="age"><a href="item?id=16526029">10 hours ago</a></span> <span id="unv_16526029"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526029)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">My experience with Comcast has been decidedly split. I know a few people who work on the engineering side at Comcast and they—to an individual—have been great. Comcast also has sponsored engineering meet ups in Philadelphia. The three or four people who have come out to work on issues with my service have likewise been great.<p>At the same time, every one of my tens of interactions with customer service at Comcast have been a disaster. Unfortunately, the customer service experience can be the one that overshadows the rest, and I&#x27;m sure there are plenty of customers who don&#x27;t have the positive in-person experiences to balance out the poor customer service experiences. Tough to keep it all in perspective. Also important to note that I haven&#x27;t been using Comcast since early 2017, so things could have changed in the interim.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526029&amp;goto=item%3Fid%3D16525324%2316526029">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526101'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16526101' href='vote?id=16526101&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=DrScump" class="hnuser">DrScump</a> <span class="age"><a href="item?id=16526101">9 hours ago</a></span> <span id="unv_16526101"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526101)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Since Comcast offshored its support call centers, every single contact I&#x27;ve had with anybody there (including &quot;supervisors&quot;) has been excruciatingly, um, unhelpful.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526101&amp;goto=item%3Fid%3D16525324%2316526101">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526934'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526934' href='vote?id=16526934&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brightball" class="hnuser">brightball</a> <span class="age"><a href="item?id=16526934">6 hours ago</a></span> <span id="unv_16526934"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526934)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That’s been my experience with Charter. Near perfect service from them yet I see other friends in my area who complain about them constantly.<p>One somehow managed to turn a free upgrade from 60gb to 100gb internet service into a complaint because he had to call to ask...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526934&amp;goto=item%3Fid%3D16525324%2316526934">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527525'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527525' href='vote?id=16527525&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ergothus" class="hnuser">ergothus</a> <span class="age"><a href="item?id=16527525">3 hours ago</a></span> <span id="unv_16527525"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527525)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I envy your luck.  I&#x27;ve had non-problematic experiences, but also several negative ones, including one that I (hopefully) resolved after many months.<p>Most of their support staff are friendly, but rarely helpful.  One or two have been actively horrible, but that&#x27;s not the norm.<p>To date the big events  are:<p>1.  I started having some lag spikes, and after the normal troubleshooting, they scheduled a tech to visit as the issue was probably my cable modem.  Want to guess what the tech DIDN&#x27;T HAVE WITH HIM?  (And not a &quot;I swear i loaded one I&#x27;m so sorry&quot; but just a &quot;yeah, I can&#x27;t even say if it&#x27;s your modem since I have nothing to test with.  Do you have another we can use?&quot;<p>2.  The problem was the modem, so I bought a replacement.  After a while a modem rental fee appeared on my bill.  I called, they apologized and removed the fee.  It silently reappeared the next month.  I called again, and they said the serial number was in their inventory as theirs, so reality didn&#x27;t matter. 
+After a couple of more tries (never assume anything the person says is accurate.  Even &quot;there are no notes about that on your account&quot;) I was fed up enough that when fios became available I jumped on it.  While cancelling the service the guy was apologetic about the modem mix up, removed the last months fee and I wasn&#x27;t required to send them my modem, even though it was clear I wasn&#x27;t going to change my mind. <i>headdesk</i><p>3. Now on a new coast,  I go to cancel my rental service when I buy a house.    Friendly rep said it was taken care of.  2 months later they are calling me about a bill because the service was never cancelled.  So I pay, but I&#x27;m very thorough in making sure they say it&#x27;s done.  Another month, another bill, and the account still isn&#x27;t cancelled.  This guy was an ass, and it was a waste of precious time repeating myself to him, so I asked what it would cost to be completely rid of them. I paid that money, confirmed very explicitly that there was no other reason to interact with them ever again, and verified online a few times that my account was indeed cancelled.  That was the end of October.  Last week I get a call from a bill collection agency, Comcast says I owe MORE money.<p>First call is a waste of time - no sign on my account that I had previously called, says that I owe for the month OF my cancellation, refuses to transfer me to anyone and offered me the phone number FOR VERIZON!.<p>Second call was much the same, but I demanded they make a note that I said I had previously cancelled. But the reason I &quot;owed&quot; the money was suddenly different.<p>Third chat was online.  Absolutely no difference other than not having to deal with their infuriating voice system.  (Pet peeve: systems that ask for account numbers, but don&#x27;t give them to the support person.)<p>Fourth call I just explained repeatedly that I would have to be transferred to someone because I wouldn&#x27;t even pay to get rid of them, since that doesn&#x27;t work.  I also mentioned that I had the complaint forms for the FCC and BBB along with Twitter all open in my browser, ready for use.  No idea if it was the threat or just my persistence, but she had her supervisor &quot;pull my account&quot; (which at least one prior call had said they had done) - she saw my list of angry calls, but as she tried to walk me through why I owed money, she noticed a request for cancellation on Sep 1.  Service was actually Nov 5.  Suddenly I don&#x27;t owe anything.<p>Tomorrow I check to see if the bill collector has been called off, then to see if anything has made it to my credit report either way.<p>Whole thing consumed several hours of my life, but it&#x27;s not worth my time or the blood pressure to pursue further correction.<p>I vowed that if monopoly ever required I work with Comcast again, I would record every piece of data - dates, times, confirmation numbers, and I&#x27;d also callback immediately to confirm the notes on my account.  Basically don&#x27;t just assume stupidity, assume malice.  Assume that anything they said was a lie until you prove otherwise, because that is the level of prep needed, regardless of whether it is malice or incompetence.  With luck I will never have to.<p>Comcast heard Time Warner had displaced them as having the worst customer service as was all &quot;hold my beer&quot;.  Ugh.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527525&amp;goto=item%3Fid%3D16525324%2316527525">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527680'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527680' href='vote?id=16527680&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=paulie_a" class="hnuser">paulie_a</a> <span class="age"><a href="item?id=16527680">2 hours ago</a></span> <span id="unv_16527680"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527680)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I have found the phrase &quot;I will be contacting my state attorney general office, consumer fraud division&quot; to be effective in resolving issues like that. I&#x27;ve had to follow up and actually do that once, they were quite helpful and the issue went away pretty quickly<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527680&amp;goto=item%3Fid%3D16525324%2316527680">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527339'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527339' href='vote?id=16527339&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=DrScump" class="hnuser">DrScump</a> <span class="age"><a href="item?id=16527339">4 hours ago</a></span> <span id="unv_16527339"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527339)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You can glean a lot of upset-customer anecdata just by hanging around your local Comcast office&#x2F;storefront and listening in.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527339&amp;goto=item%3Fid%3D16525324%2316527339">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16525844'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525844' href='vote?id=16525844&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jerkstate" class="hnuser">jerkstate</a> <span class="age"><a href="item?id=16525844">10 hours ago</a></span> <span id="unv_16525844"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525844)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; The Panic web servers have a single connection to the internet via Cogent.<p>Say no more. Hope this company gives their NetOps department the requested budget next time. Would have been extra credit if they started monitoring their download servers for TCP retransmits and grouping it by netblock to look for trends (or just move it to the cloud where it&#x27;s someone else&#x27;s problem)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525844&amp;goto=item%3Fid%3D16525324%2316525844">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526110'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526110' href='vote?id=16526110&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=culturestate" class="hnuser">culturestate</a> <span class="age"><a href="item?id=16526110">9 hours ago</a></span> <span id="unv_16526110"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526110)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Panic has something like 20 employees; I would be mildly surprised if there’s <i>anyone</i> dedicated to this area full-time.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526110&amp;goto=item%3Fid%3D16525324%2316526110">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527258'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527258' href='vote?id=16527258&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=scurvy" class="hnuser">scurvy</a> <span class="age"><a href="item?id=16527258">4 hours ago</a></span> <span id="unv_16527258"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527258)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">That&#x27;s a shame. They should have picked up someone for this around employee number 8-10.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527258&amp;goto=item%3Fid%3D16525324%2316527258">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527437'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527437' href='vote?id=16527437&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wtallis" class="hnuser">wtallis</a> <span class="age"><a href="item?id=16527437">3 hours ago</a></span> <span id="unv_16527437"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527437)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Panic&#x27;s business is making apps that run on your local machine. Most of their functionality isn&#x27;t cloud-based. There&#x27;s no way a full-time server admin should be one of the first ten employees; it&#x27;s not even obvious that they have enough work to keep a sysadmin busy full-time doing stuff that isn&#x27;t contributing directly to the development of their apps. When you only have ten employees, you don&#x27;t pay one of them to spend all day watching log files.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527437&amp;goto=item%3Fid%3D16525324%2316527437">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16527741'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527741' href='vote?id=16527741&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=amelius" class="hnuser">amelius</a> <span class="age"><a href="item?id=16527741">2 hours ago</a></span> <span id="unv_16527741"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527741)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Speaking of slow downloads, when I save a webpage in Chromium, it seems as if it downloads the page byte by byte, reporting progress after every byte. And another quirky thing is that if I close the tab during a download, then the download is cancelled. Did anyone else notice this?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527741&amp;goto=item%3Fid%3D16525324%2316527741">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527965'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527965' href='vote?id=16527965&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mynewtb" class="hnuser">mynewtb</a> <span class="age"><a href="item?id=16527965">53 minutes ago</a></span> <span id="unv_16527965"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527965)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Same here, I think it is due to ublock origin or some other extension.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527965&amp;goto=item%3Fid%3D16525324%2316527965">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527835'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527835' href='vote?id=16527835&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sirtel" class="hnuser">sirtel</a> <span class="age"><a href="item?id=16527835">1 hour ago</a></span> <span id="unv_16527835"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527835)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s common. Is it because of the protocols the website&#x2F;connection is using? If it is like stream, the total size won&#x27;t be known until the end.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527835&amp;goto=item%3Fid%3D16525324%2316527835">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527431'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527431' href='vote?id=16527431&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=NKCSS" class="hnuser">NKCSS</a> <span class="age"><a href="item?id=16527431">3 hours ago</a></span> <span id="unv_16527431"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527431)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The TLDR as video (have not watched it; at work) is a great idea :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527431&amp;goto=item%3Fid%3D16525324%2316527431">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16526121'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526121' href='vote?id=16526121&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=stevoski" class="hnuser">stevoski</a> <span class="age"><a href="item?id=16526121">9 hours ago</a></span> <span id="unv_16526121"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16526121)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">FTA:<p>&gt; We colocate our own servers, rather than using AWS or any other PaaS, and we also don’t currently use a CDN or any other cloud distribution platform.<p>I wonder if Panic would never have encountered this slow download problem if they did use AWS or another PaaS.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526121&amp;goto=item%3Fid%3D16525324%2316526121">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526819'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526819' href='vote?id=16526819&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=toomuchtodo" class="hnuser">toomuchtodo</a> <span class="age"><a href="item?id=16526819">6 hours ago</a></span> <span id="unv_16526819"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526819)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Their bandwidth costs would skyrocket. AWS and other cloud providers overcharge considerably on outbound transfer.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526819&amp;goto=item%3Fid%3D16525324%2316526819">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527301'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527301' href='vote?id=16527301&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=stevoski" class="hnuser">stevoski</a> <span class="age"><a href="item?id=16527301">4 hours ago</a></span> <span id="unv_16527301"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527301)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;Their bandwidth costs would skyrocket.<p>I don&#x27;t think they would. Or at least, the costs would still be tiny.<p>Like Panic, my company mostly sells desktop apps. We&#x27;re smaller than Panic, but we still have a considerable quantity of downloads each day. We use AWS S3 + AWS CloudFront to host our app downloads, and the cost is so small as to be irrelevant to my business.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527301&amp;goto=item%3Fid%3D16525324%2316527301">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527335'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527335' href='vote?id=16527335&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=toomuchtodo" class="hnuser">toomuchtodo</a> <span class="age"><a href="item?id=16527335">4 hours ago</a></span> <span id="unv_16527335"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527335)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It’s possible I’m over exaggerating. Some of the AWS service price gouging grinds my gears.<p>S3 and Fastly (or some other very inexpensive CDN) would be fine.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527335&amp;goto=item%3Fid%3D16525324%2316527335">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527689'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527689' href='vote?id=16527689&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mfjordvald" class="hnuser">mfjordvald</a> <span class="age"><a href="item?id=16527689">2 hours ago</a></span> <span id="unv_16527689"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527689)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You&#x27;re not really.<p>My costs: $799 dedicated on 1gbps connection (overkill)<p>AWS Costs: $6000+<p>AWS is simply impossible for me.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527689&amp;goto=item%3Fid%3D16525324%2316527689">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                      <tr class='athing comtr ' id='16526164'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526164' href='vote?id=16526164&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=darkengine" class="hnuser">darkengine</a> <span class="age"><a href="item?id=16526164">9 hours ago</a></span> <span id="unv_16526164"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526164)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve been fighting dreadful peering between CenturyLink and a variety of endpoints. I can saturate my gigabit connection on speedtest.net with a directly-peered test host, but YouTube videos at peak times of day buffer at 720p, and downloading from any USA OpenBSD mirror (of which there are only a few, and none in Seattle) nets me about 4mbps, compared to 450mbps or so I can get on a Comcast connection.<p>What&#x27;s funny is that using a VPN or tunnel to which CL has a good connection resolves the issue, because the VPN&#x2F;tunnel host has better peering than CL does.<p>The difference between Panic&#x27;s anecdote and mine, is that CenturyLink support won&#x27;t even acknowledge the issue exists.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526164&amp;goto=item%3Fid%3D16525324%2316526164">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526286'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526286' href='vote?id=16526286&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tkone" class="hnuser">tkone</a> <span class="age"><a href="item?id=16526286">9 hours ago</a></span> <span id="unv_16526286"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526286)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I live in Seattle and use Centurylink and experience none of this. My children watch youtube all evening with no degradation of quality, even while my wife and I watch netflix. I have never experienced slowness with centurylink -- I wonder if there is some bad hop that the vpn is avoiding?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526286&amp;goto=item%3Fid%3D16525324%2316526286">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526333'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526333' href='vote?id=16526333&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=darkengine" class="hnuser">darkengine</a> <span class="age"><a href="item?id=16526333">9 hours ago</a></span> <span id="unv_16526333"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526333)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I notice some videos play fine at 1080p60, while others auto-throttle down to 360p. I wonder if this indicates that YouTube videos can be stored on a variety of datacenters (with a variety of paths between them and CenturyLink). Google&#x27;s video quality report also rates CenturyLink in Seattle as &quot;standard definition&quot; [1]. I don&#x27;t have Netflix, but I just scored 910 Mbps on fast.com (Netflix&#x27;s speed test), so I think their connection to Netflix must be good.<p>A quick Google search reveals a thread of similar stories: <a href="https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;centurylink&#x2F;comments&#x2F;5y1jzy&#x2F;does_centurylink_have_peering_issues_with&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;centurylink&#x2F;comments&#x2F;5y1jzy&#x2F;does_ce...</a><p>[1] <a href="https:&#x2F;&#x2F;www.google.com&#x2F;get&#x2F;videoqualityreport&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.google.com&#x2F;get&#x2F;videoqualityreport&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526333&amp;goto=item%3Fid%3D16525324%2316526333">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526823'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526823' href='vote?id=16526823&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ohf" class="hnuser">ohf</a> <span class="age"><a href="item?id=16526823">6 hours ago</a></span> <span id="unv_16526823"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526823)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Try restructuring your body as a corporation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526823&amp;goto=item%3Fid%3D16525324%2316526823">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527042'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527042' href='vote?id=16527042&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=voltagex_" class="hnuser">voltagex_</a> <span class="age"><a href="item?id=16527042">5 hours ago</a></span> <span id="unv_16527042"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16527042)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Isn&#x27;t Cogent a &quot;low tier&quot; bandwidth provider?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527042&amp;goto=item%3Fid%3D16525324%2316527042">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527241'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527241' href='vote?id=16527241&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=scurvy" class="hnuser">scurvy</a> <span class="age"><a href="item?id=16527241">4 hours ago</a></span> <span id="unv_16527241"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527241)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">They are, but even the larger players get into peering disputes with eyeball networks. Level3 and Comcast had a huge peering spat a few years ago (via Netflix). Everyone&#x27;s ports run hot with China Telecom and China Unicom.<p>It&#x27;s almost always political (revenue) problems and rarely technical.<p>That said, I wouldn&#x27;t pick up Cogent with their negative attitudes towards IPv6.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527241&amp;goto=item%3Fid%3D16525324%2316527241">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527453'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527453' href='vote?id=16527453&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ancarda" class="hnuser">ancarda</a> <span class="age"><a href="item?id=16527453">3 hours ago</a></span> <span id="unv_16527453"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527453)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;I wouldn&#x27;t pick up Cogent with their negative attitudes towards IPv6.<p>Ignoring and not adopting IPv6 is bad enough, but being negative about it? What did they say?<p>Sometimes I think we’re never going to fully adopt IPv6. It’ll just be layers of CGNAT.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527453&amp;goto=item%3Fid%3D16525324%2316527453">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527925'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527925' href='vote?id=16527925&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pilif" class="hnuser">pilif</a> <span class="age"><a href="item?id=16527925">1 hour ago</a></span> <span id="unv_16527925"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527925)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It’s my understanding that doing NAT at the scale becomes very expensive due to state tracking and syncing between gateways to the point that ipv6 is getting to be the cheaper option.<p>There might yet be hope.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527925&amp;goto=item%3Fid%3D16525324%2316527925">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16526369'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526369' href='vote?id=16526369&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=drefanzor" class="hnuser">drefanzor</a> <span class="age"><a href="item?id=16526369">8 hours ago</a></span> <span id="unv_16526369"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526369)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve worked with Comcast for quite a few years though Contingent Technology Solutions, and I have noticed a change in their quality lately. It&#x27;s almost like they care a little bit more. Don&#x27;t quote me on that, though.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526369&amp;goto=item%3Fid%3D16525324%2316526369">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525749'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525749' href='vote?id=16525749&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Pilfer" class="hnuser">Pilfer</a> <span class="age"><a href="item?id=16525749">11 hours ago</a></span> <span id="unv_16525749"></span><span class="par"></span> <a class="togg" n="9" href="javascript:void(0)" onclick="return toggle(event, 16525749)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The real takeaway is that Cogent over-promises and under-delivers. If you want reliable transit, switch providers.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525749&amp;goto=item%3Fid%3D16525324%2316525749">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525829'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525829' href='vote?id=16525829&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=chuckgreenman" class="hnuser">chuckgreenman</a> <span class="age"><a href="item?id=16525829">10 hours ago</a></span> <span id="unv_16525829"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16525829)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;m not sure that&#x27;s something that you can take away from the article, Cogent was performing well on other ISPs, Comcast was not providing enough bandwidth for Cogent due to a disput external to Panic.<p>While we can&#x27;t know I&#x27;d be willing to be the &quot;unspecified&quot; traffic re-engineering was to prioritize Cogent&#x27;s Panic traffic specifically.  Comcast is still the bad guy.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525829&amp;goto=item%3Fid%3D16525324%2316525829">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526370'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526370' href='vote?id=16526370&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=michaelmcdonald" class="hnuser">michaelmcdonald</a> <span class="age"><a href="item?id=16526370">8 hours ago</a></span> <span id="unv_16526370"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526370)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Working in the field of networking I can say it&#x27;s highly unlikely that Cogent is performing traffic shaping specific to Panic traffic. That&#x27;s a ton of changes to a ton of hardware with a risk for screwing things up that just isn&#x27;t worth it. Cogent isn&#x27;t going to go to those lengths for a client that has a single connection and hosts a small &#x2F; moderate site. Beyond that: the connection that Panic has to Cogent is most likely through the data center they&#x27;re colocating with, not a direct connection to Panic equipment. That&#x27;s not for certain, it&#x27;s entirely possible that Panic paid for a drop from Cogent; however I&#x27;m guessing that&#x27;s not the case.<p>What I find odd is that they would colocate their hardware in a DC with only a single provider. The company I work for has four transit providers so as to ensure uptime &#x2F; reliability (don&#x27;t get me started on how often we experience unplanned maintenances from our upstream providers). Seems like Panic may want to consider a different host for their colocation or examine (provided they&#x27;re dealing with Cogent directly) a secondary ISP.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526370&amp;goto=item%3Fid%3D16525324%2316526370">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527012'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527012' href='vote?id=16527012&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tw04" class="hnuser">tw04</a> <span class="age"><a href="item?id=16527012">5 hours ago</a></span> <span id="unv_16527012"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527012)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;What I find odd is that they would colocate their hardware in a DC with only a single provider.<p>I think it&#x27;s extremely unlikely the provider only has cogent.  More likely is the fact that the link between the provider and comcast preferred cogent - which panic would have no way to change.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527012&amp;goto=item%3Fid%3D16525324%2316527012">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527786'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527786' href='vote?id=16527786&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gcbirzan" class="hnuser">gcbirzan</a> <span class="age"><a href="item?id=16527786">1 hour ago</a></span> <span id="unv_16527786"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527786)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That&#x27;s not true. panic.com has an A record (and www is a CNAME to @) that points to an IP address that&#x27;s not PI and advertised only as part of 38.0.0.0&#x2F;8, obviously, only from Cogent.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527786&amp;goto=item%3Fid%3D16525324%2316527786">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526456'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526456' href='vote?id=16526456&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Pilfer" class="hnuser">Pilfer</a> <span class="age"><a href="item?id=16526456">8 hours ago</a></span> <span id="unv_16526456"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526456)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It is. In my experience, Cogent has more peering problems than other transit providers do (e.g. L3). The submitted article is 
+a clear example of this. I don&#x27;t find these peering problems surprising, given Cogent is much cheaper vs the competition.<p>&gt;<i>prioritize Cogent&#x27;s Panic traffic specifically. Comcast is still the bad guy.</i><p>No, from the article it really sounds like Comcast added more capacity to their Cogent-Comcast peering links, at their expense. Comcast was not obligated to do this for Panic in any way. How does that make Comcast &#x27;the bad guy&#x27;? Cogent should have worked with Comcast to fix this issue in the first place. Panic is paying Cogent for transit, Cogent should be the one getting Comcast to increase their peering bandwidth. If Panic has to go around the company they&#x27;re are paying to get their problem fixed, that&#x27;s terrible service.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526456&amp;goto=item%3Fid%3D16525324%2316526456">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526825'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526825' href='vote?id=16526825&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jasongill" class="hnuser">jasongill</a> <span class="age"><a href="item?id=16526825">6 hours ago</a></span> <span id="unv_16526825"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526825)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The people downvoting you don&#x27;t have experience with transit or Cogent - they are literally the worst peer. Their company motto is to undercut everyone else on price and oversaturate their peers as much as possible. They are a horrible provider. They have been de-peered by large providers like Layer3 many times due to flagrant abuse.<p>That said the price is great and I had a large presence at Cogent&#x27;s Herndon location for the better part of a decade. Terrible service but price was so great, couldn&#x27;t resist.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526825&amp;goto=item%3Fid%3D16525324%2316526825">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527002'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527002' href='vote?id=16527002&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tw04" class="hnuser">tw04</a> <span class="age"><a href="item?id=16527002">5 hours ago</a></span> <span id="unv_16527002"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527002)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think you mean level3,, not layer3.  And where did that get them?<p><a href="http:&#x2F;&#x2F;news.level3.com&#x2F;2017-11-01-CenturyLink-completes-acquisition-of-Level-3" rel="nofollow">http:&#x2F;&#x2F;news.level3.com&#x2F;2017-11-01-CenturyLink-completes-acqu...</a><p>Ahh, right.  After being literally the best backbone provider in the world, they were destroyed by last-mile ISPs in the US who choked them out of the game.  Speaking of a shining example of why we need stronger anti-monopoly laws in the US...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527002&amp;goto=item%3Fid%3D16525324%2316527002">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527250'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527250' href='vote?id=16527250&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=scurvy" class="hnuser">scurvy</a> <span class="age"><a href="item?id=16527250">4 hours ago</a></span> <span id="unv_16527250"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527250)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Eh, I was never impressed with Level3. Their network was huge, and they generally had zero clue what was happening on it. Big networks aren&#x27;t always better. Level3 got to be huge by running up massive amounts of debt and pricing services uncompetitively. People buying Level3 transit were those in the &quot;you never get fired for buying IBM&quot; mindset.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527250&amp;goto=item%3Fid%3D16525324%2316527250">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16525851'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525851' href='vote?id=16525851&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=rsre" class="hnuser">rsre</a> <span class="age"><a href="item?id=16525851">10 hours ago</a></span> <span id="unv_16525851"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525851)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Surprising to see an ISP listening to its clients for once.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525851&amp;goto=item%3Fid%3D16525324%2316525851">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525876'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525876' href='vote?id=16525876&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Hello71" class="hnuser">Hello71</a> <span class="age"><a href="item?id=16525876">10 hours ago</a></span> <span id="unv_16525876"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525876)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; why me? Why was I able to get this corrected with an e-mail when Cogent couldn’t?<p>Because Panic doesn&#x27;t compete with Xfinity.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525876&amp;goto=item%3Fid%3D16525324%2316525876">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16526867'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526867' href='vote?id=16526867&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=shmerl" class="hnuser">shmerl</a> <span class="age"><a href="item?id=16526867">6 hours ago</a></span> <span id="unv_16526867"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526867)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a"><i>&gt; And then, the craziest thing happened… They wrote back quickly.</i><p>Now they are responsive, because of the whole Net Neutrality repeal backlash. They are scared to provide factual evidence of foul play - it will help the courts to blast FCC for their decision.<p>But if they win in courts, Comcast and other crooks will definitely double down on starving peering, as expected to extort money. And obviously, they won&#x27;t ever write back on this topic or will write that there is nothing wrong on their side.<p>The only way to prevent that peering extortion by Comcast and the like, is to have explicit rules that forbid it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526867&amp;goto=item%3Fid%3D16525324%2316526867">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                        <tr class='athing comtr ' id='16526265'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526265' href='vote?id=16526265&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dkuebric" class="hnuser">dkuebric</a> <span class="age"><a href="item?id=16526265">9 hours ago</a></span> <span id="unv_16526265"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526265)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">I&#x27;d be surprised if it was an issue related to real capacity as opposed to traffic shaping. This reads like the exact kind of thing that net neutrality is meant to prevent.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526265&amp;goto=item%3Fid%3D16525324%2316526265">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526574'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526574' href='vote?id=16526574&amp;how=up&amp;goto=item%3Fid%3D16525324'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=toast0" class="hnuser">toast0</a> <span class="age"><a href="item?id=16526574">8 hours ago</a></span> <span id="unv_16526574"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526574)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There&#x27;s no reason to use traffic shaping to get the before situation, when you can simply not upgrade peering connections.<p>The real question is why Comcast decided to upgrade the connections?  Not upgrading Cogent peering is a pretty defensible position [1], although maybe they didn&#x27;t want to look that much worse than their competition.<p>[1] See the previous results of Cogent peering disputes, which is about half of all the highly publicized peering disputes.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526574&amp;goto=item%3Fid%3D16525324%2316526574">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

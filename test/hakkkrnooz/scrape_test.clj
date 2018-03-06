@@ -22,7 +22,7 @@
             (Jsoup/parse "utf-8")
             s/parse-comments)]
     (is (nil? more-link))
-    (is (= 37 (count comments)))
-    (is (= 9 (->> comments first :replies count)))
+    (is (= 16 (count comments)))
+    (is (= 4 (->> comments second :replies count)))
     (let [{:keys [id user]} (first comments)]
-      (is (= "dis-sys" user)))))
+      (is (= "feep" user)))))

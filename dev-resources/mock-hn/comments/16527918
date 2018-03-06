@@ -1,0 +1,58 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>How a database leak was discovered in one of the biggest swiss hosting provider | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16527918">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16527918'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16527918' href='vote?id=16527918&amp;how=up&amp;goto=item%3Fid%3D16527918'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://security.infoteam.ch/en/blog/posts/how-we-discovered-a-database-leak-in-one-of-the-biggest-swiss-hosting-provider.html" class="storylink">How a database leak was discovered in one of the biggest swiss hosting provider</a><span class="sitebit comhead"> (<a href="from?site=infoteam.ch"><span class="sitestr">infoteam.ch</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16527918">13 points</span> by <a href="user?id=redsec" class="hnuser">redsec</a> <span class="age"><a href="item?id=16527918">32 minutes ago</a></span> <span id="unv_16527918"></span> | <a href="hide?id=16527918&amp;goto=item%3Fid%3D16527918">hide</a> | <a href="https://hn.algolia.com/?query=How%20a%20database%20leak%20was%20discovered%20in%20one%20of%20the%20biggest%20swiss%20hosting%20provider&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=How%20a%20database%20leak%20was%20discovered%20in%20one%20of%20the%20biggest%20swiss%20hosting%20provider">web</a> | <a href="fave?id=16527918&amp;auth=f0d2c66b5faae862ca157d1a9851854b5e28318f">favorite</a> | <a href="item?id=16527918">2&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16527918"><input type="hidden" name="goto" value="item?id=16527918"><input type="hidden" name="hmac" value="024d76d1bf2c7801cdf89b8d3f118ea413560ea0"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16528099'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16528099' href='vote?id=16528099&amp;how=up&amp;goto=item%3Fid%3D16527918'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=raducu" class="hnuser">raducu</a> <span class="age"><a href="item?id=16528099">6 minutes ago</a></span> <span id="unv_16528099"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528099)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The moral of the story should have been -- change your hosting provider the minute they commit such a blunder.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528099&amp;goto=item%3Fid%3D16527918%2316528099">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16528104'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16528104' href='vote?id=16528104&amp;how=up&amp;goto=item%3Fid%3D16527918'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=willvarfar" class="hnuser">willvarfar</a> <span class="age"><a href="item?id=16528104">5 minutes ago</a></span> <span id="unv_16528104"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528104)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is a nice anecdote to promote their new Guardian service.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528104&amp;goto=item%3Fid%3D16527918%2316528104">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+            </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

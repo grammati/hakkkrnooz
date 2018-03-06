@@ -1,0 +1,833 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Notes for new Make users | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16523037">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16523037'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16523037' href='vote?id=16523037&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="http://gromnitsky.users.sourceforge.net/articles/notes-for-new-make-users/" class="storylink">Notes for new Make users</a><span class="sitebit comhead"> (<a href="from?site=sourceforge.net"><span class="sitestr">sourceforge.net</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16523037">285 points</span> by <a href="user?id=henry_flower" class="hnuser">henry_flower</a> <span class="age"><a href="item?id=16523037">16 hours ago</a></span> <span id="unv_16523037"></span> | <a href="hide?id=16523037&amp;goto=item%3Fid%3D16523037">hide</a> | <a href="https://hn.algolia.com/?query=Notes%20for%20new%20Make%20users&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Notes%20for%20new%20Make%20users">web</a> | <a href="fave?id=16523037&amp;auth=2dc4599664a1d8048dbfc6d4dc6597217c88ebc6">favorite</a> | <a href="item?id=16523037">75&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16523037"><input type="hidden" name="goto" value="item?id=16523037"><input type="hidden" name="hmac" value="08522ada9dd4a0ed44b3ffeae794e9de57cc056e"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16525293'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525293' href='vote?id=16525293&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dahart" class="hnuser">dahart</a> <span class="age"><a href="item?id=16525293">12 hours ago</a></span> <span id="unv_16525293"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525293)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; or you use special pattern rules<p>I used make for years before I understood pattern rules, even though they&#x27;re pretty simple. I kept trying to use foreach loops all over the place. If you&#x27;re using foreach loops, check whether a pattern rule can do the job.<p>&gt; The popular clamour is that the autovars are too short &amp; confusing.<p>I finally realized, after years of using make and then learning pattern rules, that the three autovars listed here are visual mnemonics. $@ looks like a target, a ring with a bullseye. $&lt; is pointing left, so it&#x27;s the first prereq. $^ is like a horizontal bracket that groups all prereqs.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525293&amp;goto=item%3Fid%3D16523037%2316525293">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525769'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525769' href='vote?id=16525769&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gkya" class="hnuser">gkya</a> <span class="age"><a href="item?id=16525769">11 hours ago</a></span> <span id="unv_16525769"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525769)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; I finally realized, after years of using make and then learning pattern rules, that the three autovars listed here are visual mnemonics. $@ looks like a target, a ring with a bullseye. $&lt; is pointing left, so it&#x27;s the first prereq. $^ is like a horizontal bracket that groups all prereqs.<p>I&#x27;ve been illuminated, sincerely!  Meanwhile, bmake has some more memorable synonyms for them like &quot;.TARGET&quot; and &quot;.ALLSRC&quot;.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525769&amp;goto=item%3Fid%3D16523037%2316525769">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527625'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527625' href='vote?id=16527625&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sjmulder" class="hnuser">sjmulder</a> <span class="age"><a href="item?id=16527625">2 hours ago</a></span> <span id="unv_16527625"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527625)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s a shame that there is no name for .ALLSRC shared between bmake and gmake. An alternative is to use a variable, but then you lose VPATH compatibility:<p><pre><code>    foo: foo.o bar.o
+        $(LD) foo.o bar.o ...
+</code></pre>
+My other gripe with bmake is that this rule is needed as there is no implicit rule for linking multiple object files, or so it seems.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527625&amp;goto=item%3Fid%3D16523037%2316527625">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527481'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527481' href='vote?id=16527481&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=buserror" class="hnuser">buserror</a> <span class="age"><a href="item?id=16527481">3 hours ago</a></span> <span id="unv_16527481"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527481)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Ahah funny I always seen these as ... these! Really I always thought it was quite elegant, in a nerdy way ;-)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527481&amp;goto=item%3Fid%3D16523037%2316527481">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527494'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527494' href='vote?id=16527494&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=buserror" class="hnuser">buserror</a> <span class="age"><a href="item?id=16527494">3 hours ago</a></span> <span id="unv_16527494"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527494)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The thing people miss a lot about makefile, apart from what has already been mentioned is the fact you can have &quot;local&quot; version of the &quot;global&quot; variables, per rules.<p>It&#x27;s very very powerfull, clear to read, and simplify all these if&#x2F;else&#x2F;end no end...<p>For example:<p><pre><code>  CFLAGS = -std=gnu99 -Werror
+
+  release&#x2F;%.elf: CFLAGS += -DRELEASE
+
+  debug&#x2F;%.elf: CFLAGS += -DDEBUG
+</code></pre>
+Basically you can add your own context flags and variables for each individual targets, and they are &#x27;inherited&#x27; by any of their &#x2F;sub&#x2F; targets...<p>Oh, people also need to learn about VPATH or course [0]!<p>[0]: <a href="https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;make&#x2F;manual&#x2F;html_node&#x2F;General-Search.html" rel="nofollow">https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;make&#x2F;manual&#x2F;html_node&#x2F;General-S...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527494&amp;goto=item%3Fid%3D16523037%2316527494">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16523880'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16523880' href='vote?id=16523880&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gengen" class="hnuser">gengen</a> <span class="age"><a href="item?id=16523880">15 hours ago</a></span> <span id="unv_16523880"></span><span class="par"></span> <a class="togg" n="10" href="javascript:void(0)" onclick="return toggle(event, 16523880)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">What I&#x27;ve always loved about Make and related tools is how directly they expose their fundamental concept in building artefacts: the DAG. I don&#x27;t do that much JS, but I&#x27;ve not found this kind of clarity in any of the JS frontend build tools I&#x27;ve used.<p>Honest question for the webpack power-users here.<p>What are some important webpack features that you lose by using a Makefile like this? Because it seems like pretty much every part of a regular webpack buildchain has a command-line equivalent that you could potentially use in a Makefile.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523880&amp;goto=item%3Fid%3D16523037%2316523880">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524903'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524903' href='vote?id=16524903&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bpicolo" class="hnuser">bpicolo</a> <span class="age"><a href="item?id=16524903">13 hours ago</a></span> <span id="unv_16524903"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524903)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You wouldn&#x27;t want to use it as a replacement for webpack, you&#x27;d use it alongside webpack. Webpack does a ton of stuff for Javascript compilation - heavily cached and optimized recompilation, module rolling, hot reloading, etc.<p>Make is for performing any variety of commands, most of which don&#x27;t fit into webpack - deploy scripts, git scripts, whatever. It&#x27;s a unified entrypoint for scripts project-wide. It&#x27;s not a great resolver for JS dependencies, but it&#x27;s a great resolver for &quot;I need freshly-compiled JS baked into a docker container and uploaded to my docker repo&quot;.<p>Having something like Make is especially important in large teams in my experience. Under-the-hood tooling can often change (NPM -&gt; Yarn, needing different test suite arguments, new docker commands, whatever) and having a single expected API for developers across your teams is particularly useful when you&#x27;re the person working on dev tooling. Knowing `make test` should prepare and run a test suite or `make run` should run an app no matter which repo you&#x27;re working on gives devs a consistent development workflow.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524903&amp;goto=item%3Fid%3D16523037%2316524903">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526724'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526724' href='vote?id=16526724&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mnutt" class="hnuser">mnutt</a> <span class="age"><a href="item?id=16526724">7 hours ago</a></span> <span id="unv_16526724"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526724)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">While not nearly as popular as Webpack, Broccoli.js (used by Ember, among others) exposes the DAG concept. Webpack is fine if your task roughly matches the purpose Webpack was built for, but when using it I miss the composability of Broccoli. There&#x27;s a good architecture overview here:<p><a href="https:&#x2F;&#x2F;www.solitr.com&#x2F;blog&#x2F;2014&#x2F;02&#x2F;broccoli-first-release&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.solitr.com&#x2F;blog&#x2F;2014&#x2F;02&#x2F;broccoli-first-release&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526724&amp;goto=item%3Fid%3D16523037%2316526724">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527272'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527272' href='vote?id=16527272&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=grimgrin" class="hnuser">grimgrin</a> <span class="age"><a href="item?id=16527272">4 hours ago</a></span> <span id="unv_16527272"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527272)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is arguably not a great reason to use make at all but like another user replied, you’d use it alongside webpack<p>I originally did think about forgoing webpack but it does it’s job nice enough<p><a href="https:&#x2F;&#x2F;github.com&#x2F;shmup&#x2F;react-makefile&#x2F;blob&#x2F;master&#x2F;Makefile" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;shmup&#x2F;react-makefile&#x2F;blob&#x2F;master&#x2F;Makefile</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527272&amp;goto=item%3Fid%3D16523037%2316527272">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524837'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524837' href='vote?id=16524837&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=markmark" class="hnuser">markmark</a> <span class="age"><a href="item?id=16524837">13 hours ago</a></span> <span id="unv_16524837"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524837)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I don&#x27;t know enough about make to know if this is correct, but the post last week on using make for js started of by saying &quot;If you are writing a frontend app and you need code bundling you should absolutely use Webpack&quot; which, aren&#x27;t the majority of people using webpack writing frontend apps and need bundling?<p>The other issue is that essentially no one uses make in frontend development. So you go and convert to make from something that was working fine and is the standard in that part of the industry and what&#x27;s the pay off? Now no one in your team or who you hire knows how to change the build chain? Great.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524837&amp;goto=item%3Fid%3D16523037%2316524837">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525595'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525595' href='vote?id=16525595&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dahart" class="hnuser">dahart</a> <span class="age"><a href="item?id=16525595">11 hours ago</a></span> <span id="unv_16525595"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525595)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; aren&#x27;t the majority of people using webpack writing frontend apps and need bundling?<p>Webpack is pretty new. Lots and lots of websites were developed before webpack existed, and some of them still use make for builds. The majority of new web projects are probably webpack now.<p>&gt; The other issue is that essentially no one uses make in frontend development.<p>I don&#x27;t know how many people do or don&#x27;t use make, but I&#x27;ve had two web jobs that did. One was my own company and I wrote the makefiles, so that&#x27;s not exactly fair. :P The other was an established web app. In both cases, the biggest reason for the makefile was to integrate the Google Closure Compiler into the build. Last time I checked, Webpack didn&#x27;t have support for the Closure compiler. I am aware that the Closure compiler isn&#x27;t exactly the most popular js minification tool today, and isn&#x27;t generally necessary with webpack.<p>&gt; So you go and convert to make from something that was working fine and is the standard in that part of the industry and what&#x27;s the pay off?<p>I agree with you generally, but I&#x27;m old enough that this also makes me chuckle a little. make was working fine and was the industry standard for decades before webpack or npm.<p>Just before Webpack there was Gulp, and Gulp is essentially a re-invention of unix pipes and lots of the unix tools. Build systems made with gulpfiles have to bend over backwards to get right make&#x27;s basic concepts like dependency evaluation, building a target only once, and skipping already built targets.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525595&amp;goto=item%3Fid%3D16523037%2316525595">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526774'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526774' href='vote?id=16526774&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=markmark" class="hnuser">markmark</a> <span class="age"><a href="item?id=16526774">7 hours ago</a></span> <span id="unv_16526774"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526774)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">There&#x27;s a reasonable chance I&#x27;m older than you for what it&#x27;s worth.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526774&amp;goto=item%3Fid%3D16523037%2316526774">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524761'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524761' href='vote?id=16524761&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sillysaurus3" class="hnuser">sillysaurus3</a> <span class="age"><a href="item?id=16524761">13 hours ago</a></span> <span id="unv_16524761"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524761)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">You lose the simplicity of copy-pasting someone else&#x27;s webpack config and then morphing it into something that works for your project.<p>There are tens of thousands of examples to choose from. For a makefile-based webpack, there are zero.<p>Unfortunately concerns like this matter.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524761&amp;goto=item%3Fid%3D16523037%2316524761">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525797'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525797' href='vote?id=16525797&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gkya" class="hnuser">gkya</a> <span class="age"><a href="item?id=16525797">10 hours ago</a></span> <span id="unv_16525797"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525797)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">What does building a JS app take?  Linting maybe, then concatenating files, minifying them.  Then there should be some maintaining tasks, like updating dependencies, testing, deploying.  Am I missing anything (serious question, I&#x27;m rather unfamiliar)?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525797&amp;goto=item%3Fid%3D16523037%2316525797">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526390'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526390' href='vote?id=16526390&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ino" class="hnuser">ino</a> <span class="age"><a href="item?id=16526390">8 hours ago</a></span> <span id="unv_16526390"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526390)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Minifiers can remove dead and unaccessible code.<p>They can also rename function and variable names with shorter ones, and compile code to be shorter (marginal gains since it&#x27;s all going to be served compressed).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526390&amp;goto=item%3Fid%3D16523037%2316526390">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16524236'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524236' href='vote?id=16524236&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vortico" class="hnuser">vortico</a> <span class="age"><a href="item?id=16524236">14 hours ago</a></span> <span id="unv_16524236"></span><span class="par"></span> <a class="togg" n="7" href="javascript:void(0)" onclick="return toggle(event, 16524236)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Pretty spot on. I use a pretty similar dependency system for all of my C and C++ projects.<p><pre><code>    FLAGS += -MMD
+    CFLAGS += $(FLAGS)
+    CXXFLAGS += $(FLAGS)
+
+    OBJECTS += $(patsubst %, build&#x2F;%.o, $(SOURCES))
+    DEPS = $(patsubst %, build&#x2F;%.d, $(SOURCES))
+
+    $(TARGET): $(OBJECTS)
+    	$(CXX) -o $@ $^ $(LDFLAGS)
+
+    -include $(DEPS)
+
+    build&#x2F;%.c.o: %.c
+    	@mkdir -p $(@D)
+    	$(CC) $(CFLAGS) -c -o $@ $&lt;
+
+    build&#x2F;%.cpp.o: %.cpp
+    	@mkdir -p $(@D)
+    	$(CXX) $(CXXFLAGS) -c -o $@ $&lt;</code></pre><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524236&amp;goto=item%3Fid%3D16523037%2316524236">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527798'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527798' href='vote?id=16527798&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=abainbridge" class="hnuser">abainbridge</a> <span class="age"><a href="item?id=16527798">1 hour ago</a></span> <span id="unv_16527798"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527798)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">For all these years I&#x27;ve been _replacing_ the .c and .cpp extension with .o in the object file name. How could I have been so wrong?!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527798&amp;goto=item%3Fid%3D16523037%2316527798">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527316'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527316' href='vote?id=16527316&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cozzyd" class="hnuser">cozzyd</a> <span class="age"><a href="item?id=16527316">4 hours ago</a></span> <span id="unv_16527316"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527316)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Wow, that -MMD flag is very handy. Can&#x27;t believe I didn&#x27;t know about it until now.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527316&amp;goto=item%3Fid%3D16523037%2316527316">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525442'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525442' href='vote?id=16525442&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=babuskov" class="hnuser">babuskov</a> <span class="age"><a href="item?id=16525442">11 hours ago</a></span> <span id="unv_16525442"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525442)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This looks very similar to the Makefile I&#x27;m using except that beside -MMD I also have -MP flag. I created this Makefile a couple years back and I&#x27;m reusing it for every new project, but I cannot recall really why I needed to add -MP.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525442&amp;goto=item%3Fid%3D16523037%2316525442">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525727'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525727' href='vote?id=16525727&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vortico" class="hnuser">vortico</a> <span class="age"><a href="item?id=16525727">11 hours ago</a></span> <span id="unv_16525727"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525727)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><a href="https:&#x2F;&#x2F;gcc.gnu.org&#x2F;onlinedocs&#x2F;gcc-4.8.0&#x2F;gcc&#x2F;Preprocessor-Options.html" rel="nofollow">https:&#x2F;&#x2F;gcc.gnu.org&#x2F;onlinedocs&#x2F;gcc-4.8.0&#x2F;gcc&#x2F;Preprocessor-Op...</a>
+Looks useful, I&#x27;ll add it to my configs.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525727&amp;goto=item%3Fid%3D16523037%2316525727">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527956'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527956' href='vote?id=16527956&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=babuskov" class="hnuser">babuskov</a> <span class="age"><a href="item?id=16527956">54 minutes ago</a></span> <span id="unv_16527956"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527956)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes, that&#x27;s it. Removing a .h file from your project would trigger errors without that switch.<p>I looked at clang manual when I searched for it, but unlike GCC it does not explain it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527956&amp;goto=item%3Fid%3D16523037%2316527956">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527701'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527701' href='vote?id=16527701&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=v_lisivka" class="hnuser">v_lisivka</a> <span class="age"><a href="item?id=16527701">2 hours ago</a></span> <span id="unv_16527701"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527701)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">How to use it?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527701&amp;goto=item%3Fid%3D16523037%2316527701">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16524265'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524265' href='vote?id=16524265&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=elsherbini" class="hnuser">elsherbini</a> <span class="age"><a href="item?id=16524265">14 hours ago</a></span> <span id="unv_16524265"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16524265)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I use snakemake[0] as a replacement for make. The debugging tools in snakemake are really good - it can output the DAG of your workflow as a dotfile, and you can add breakpoints and use pdb to debug your workflow. It also integrates really nicely with conda, so you can have different environments for different rules.<p>The killer feature of snakemake for me is that it can run a workflow on a single core or as many as you give it, or in the case of a cluster it can actually submit jobs to a queue and wait for them to finish before submitting more.<p>The tradeoff is that you need to install it (conda install -c bioconda snakemake), and that it can be very slow if you have thousands of target files. But for most workflows it&#x27;s the right tool for me.<p>[0] <a href="http:&#x2F;&#x2F;snakemake.readthedocs.io&#x2F;en&#x2F;stable&#x2F;" rel="nofollow">http:&#x2F;&#x2F;snakemake.readthedocs.io&#x2F;en&#x2F;stable&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524265&amp;goto=item%3Fid%3D16523037%2316524265">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524773'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524773' href='vote?id=16524773&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=blcArmadillo" class="hnuser">blcArmadillo</a> <span class="age"><a href="item?id=16524773">13 hours ago</a></span> <span id="unv_16524773"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524773)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00"><i>&gt; The killer feature of snakemake for me is that it can run a workflow on a single core or as many as you give it, or in the case of a cluster it can actually submit jobs to a queue and wait for them to finish before submitting more.</i><p>Other than your cluster example isn&#x27;t this the same as passing -j to make to run jobs in parallel?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524773&amp;goto=item%3Fid%3D16523037%2316524773">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524944'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524944' href='vote?id=16524944&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=rflrob" class="hnuser">rflrob</a> <span class="age"><a href="item?id=16524944">12 hours ago</a></span> <span id="unv_16524944"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524944)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yeah, -j just about does it, though with Snakemake you can also specify other resources (memory, I&#x2F;o, etc) for each task, and it will keep all of them under quota. So if you tell snakemake that task A takes six cores, but B-K take only one each, it will solve the knapsack problem to come up with some kind of optimal order for them, and on your 8-core machine you could have A, B, and C running, or B-K.<p>For a while, I muddled through with Make and a custom cluster job-submitter script, but the real Snakemake killer feature for me was multiple, independent wildcards. So I can, in one rule, have dir&#x2F;{databasename}&#x2F;{query}.tsv and rapidly hit multiple databases at once. If you are very clever (and rule one of Make is don’t be clever), you can have a GNUMake wildcard get parsed into multiple wildcards with the wimpy pattern substitution rules, but this is not a fun way to relax.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524944&amp;goto=item%3Fid%3D16523037%2316524944">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526246'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526246' href='vote?id=16526246&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jschwartzi" class="hnuser">jschwartzi</a> <span class="age"><a href="item?id=16526246">9 hours ago</a></span> <span id="unv_16526246"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526246)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Oh, cool, so I can finally run make -j target without worrying about the LMK in Linux killing my window manager!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526246&amp;goto=item%3Fid%3D16523037%2316526246">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16523515'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16523515' href='vote?id=16523515&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ISL" class="hnuser">ISL</a> <span class="age"><a href="item?id=16523515">15 hours ago</a></span> <span id="unv_16523515"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16523515)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The point about the manual is a good one. It is well done.<p>When I made extensive use of Make for my graduate thesis, I bought the book and read the majority of the text.<p>The cover illustration brings me joy every time I see or think about it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523515&amp;goto=item%3Fid%3D16523037%2316523515">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524233'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524233' href='vote?id=16524233&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nwellnhof" class="hnuser">nwellnhof</a> <span class="age"><a href="item?id=16524233">14 hours ago</a></span> <span id="unv_16524233"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524233)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;d suggest to read the POSIX man page first: <a href="http:&#x2F;&#x2F;pubs.opengroup.org&#x2F;onlinepubs&#x2F;9699919799&#x2F;utilities&#x2F;make.html" rel="nofollow">http:&#x2F;&#x2F;pubs.opengroup.org&#x2F;onlinepubs&#x2F;9699919799&#x2F;utilities&#x2F;ma...</a><p>POSIX make is rather limited but if you start to rely on GNU make features, you&#x27;ll end up bound to a single implementation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524233&amp;goto=item%3Fid%3D16523037%2316524233">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525162'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525162' href='vote?id=16525162&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=EpicEng" class="hnuser">EpicEng</a> <span class="age"><a href="item?id=16525162">12 hours ago</a></span> <span id="unv_16525162"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525162)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;you&#x27;ll end up bound to a single implementation.<p>Which will be just fine for something like 99% of us.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525162&amp;goto=item%3Fid%3D16523037%2316525162">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525816'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525816' href='vote?id=16525816&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wahern" class="hnuser">wahern</a> <span class="age"><a href="item?id=16525816">10 hours ago</a></span> <span id="unv_16525816"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525816)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">POSIX make has the virtue of simplicity. GNU make : POSIX make :: C++ : C. It&#x27;s even worse than that because the way GNU make extends the syntax is completely at odds with core make syntax. It&#x27;s why to write a looping construct in GNU make you need the contortion of using eval, whereas a loop in the BSD family of makes is much more simple and concise.<p>I&#x27;m not advocating to use a BSD make, nor saying <i>not</i> to use GNU make. But appreciating GNU make&#x27;s points of departure from POSIX make helps keep your makefiles simple and to the point. Which is important because another virtue of make generally (GNU make included) is that it&#x27;ll likely still be around long after all these alternatives have been long forgotten. But time is never kind to complexity.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525816&amp;goto=item%3Fid%3D16523037%2316525816">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                    <tr class='athing comtr ' id='16523593'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16523593' href='vote?id=16523593&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dblotsky" class="hnuser">dblotsky</a> <span class="age"><a href="item?id=16523593">15 hours ago</a></span> <span id="unv_16523593"></span><span class="par"></span> <a class="togg" n="15" href="javascript:void(0)" onclick="return toggle(event, 16523593)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is so excellent. I was smiling as I read it. Thank you.<p>My personal favourite &quot;watcher&quot; implementation is this:<p><pre><code>    while true; do make; sleep 0.5; done</code></pre><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523593&amp;goto=item%3Fid%3D16523037%2316523593">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16523739'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16523739' href='vote?id=16523739&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=FrenchyJiby" class="hnuser">FrenchyJiby</a> <span class="age"><a href="item?id=16523739">15 hours ago</a></span> <span id="unv_16523739"></span><span class="par"></span> <a class="togg" n="12" href="javascript:void(0)" onclick="return toggle(event, 16523739)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I don&#x27;t understand: why not the classic `watch make` (watch defaults to 2 seconds)?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523739&amp;goto=item%3Fid%3D16523037%2316523739">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16523870'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16523870' href='vote?id=16523870&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dblotsky" class="hnuser">dblotsky</a> <span class="age"><a href="item?id=16523870">15 hours ago</a></span> <span id="unv_16523870"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16523870)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Because it&#x27;s my favourite. You&#x27;re 100% free to have a different favourite. Also, indeed, watch isn&#x27;t available on all systems (e.g. macOS).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523870&amp;goto=item%3Fid%3D16523037%2316523870">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524089'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16524089' href='vote?id=16524089&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=FrenchyJiby" class="hnuser">FrenchyJiby</a> <span class="age"><a href="item?id=16524089">14 hours ago</a></span> <span id="unv_16524089"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524089)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That&#x27;s fair.
+I didn&#x27;t realise it was not available everywhere, it&#x27;s one of those things I keep thinking are in coreutils until it&#x27;s not there on an OS (funny enough, I keep thinking half the commands I use are like that ... until it breaks)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524089&amp;goto=item%3Fid%3D16523037%2316524089">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16523751'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16523751' href='vote?id=16523751&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cdancette" class="hnuser">cdancette</a> <span class="age"><a href="item?id=16523751">15 hours ago</a></span> <span id="unv_16523751"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16523751)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why waste 1.5s of your life?<p>Or watch -n 0.5 make does the job too<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523751&amp;goto=item%3Fid%3D16523037%2316523751">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528059'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16528059' href='vote?id=16528059&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cesarb" class="hnuser">cesarb</a> <span class="age"><a href="item?id=16528059">18 minutes ago</a></span> <span id="unv_16528059"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528059)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Or watch -n 0.5 make does the job too<p>Not always:<p><pre><code>    $ echo $LANG
+    pt_BR.UTF-8
+    $ watch -n 0.5 false
+    watch: failed to parse argument: &#x27;0.5&#x27;
+</code></pre>
+(but &quot;watch -n 0,5 ...&quot; works for me)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528059&amp;goto=item%3Fid%3D16523037%2316528059">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524611'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16524611' href='vote?id=16524611&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=lloeki" class="hnuser">lloeki</a> <span class="age"><a href="item?id=16524611">13 hours ago</a></span> <span id="unv_16524611"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524611)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why waste 2s&#x2F;0.5s of your life? Use fswatch instead ;)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524611&amp;goto=item%3Fid%3D16523037%2316524611">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16523771'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16523771' href='vote?id=16523771&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teamhappy" class="hnuser">teamhappy</a> <span class="age"><a href="item?id=16523771">15 hours ago</a></span> <span id="unv_16523771"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16523771)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Watch is Linux-only.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523771&amp;goto=item%3Fid%3D16523037%2316523771">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16523901'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16523901' href='vote?id=16523901&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=khedoros1" class="hnuser">khedoros1</a> <span class="age"><a href="item?id=16523901">15 hours ago</a></span> <span id="unv_16523901"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16523901)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I see it in Cygwin, in the procps-ng package, and available on OSX through Brew. Doesn&#x27;t seem Linux-only.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523901&amp;goto=item%3Fid%3D16523037%2316523901">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524234'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16524234' href='vote?id=16524234&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teamhappy" class="hnuser">teamhappy</a> <span class="age"><a href="item?id=16524234">14 hours ago</a></span> <span id="unv_16524234"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524234)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">My bad. I figured it needs &#x2F;proc since it&#x27;s part of the procps package.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524234&amp;goto=item%3Fid%3D16523037%2316524234">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524842'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16524842' href='vote?id=16524842&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pantalaimon" class="hnuser">pantalaimon</a> <span class="age"><a href="item?id=16524842">13 hours ago</a></span> <span id="unv_16524842"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524842)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why would it?<p>You can literally write it as a shell script<p><pre><code>  #!&#x2F;bin&#x2F;bash
+  
+  N=2
+  
+  while true; do
+          clear
+          echo Every $N\s: $*
+          $*
+          sleep $N
+  done</code></pre><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524842&amp;goto=item%3Fid%3D16523037%2316524842">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527535'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks"><center><a id='up_16527535' href='vote?id=16527535&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=teamhappy" class="hnuser">teamhappy</a> <span class="age"><a href="item?id=16527535">3 hours ago</a></span> <span id="unv_16527535"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527535)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I though maybe it had some flag that makes it display process information or something. Anything that would justify it being part of procps really.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527535&amp;goto=item%3Fid%3D16523037%2316527535">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16524152'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16524152' href='vote?id=16524152&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=orf" class="hnuser">orf</a> <span class="age"><a href="item?id=16524152">14 hours ago</a></span> <span id="unv_16524152"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524152)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s not<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524152&amp;goto=item%3Fid%3D16523037%2316524152">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526496'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526496' href='vote?id=16526496&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Groxx" class="hnuser">Groxx</a> <span class="age"><a href="item?id=16526496">8 hours ago</a></span> <span id="unv_16526496"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526496)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;m an `entr` fan, personally.  Super easy to compose with other tools, steps around common minor mistakes (backs off when there are rapid changes, can abort running processes when changes occur <i>or</i> ignore, etc).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526496&amp;goto=item%3Fid%3D16523037%2316526496">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524714'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524714' href='vote?id=16524714&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pvtmert" class="hnuser">pvtmert</a> <span class="age"><a href="item?id=16524714">13 hours ago</a></span> <span id="unv_16524714"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524714)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">i personally use inodenotify (linux) and fswatch (osx)<p>works well while running on battery :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524714&amp;goto=item%3Fid%3D16523037%2316524714">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527406'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527406' href='vote?id=16527406&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ejholmes" class="hnuser">ejholmes</a> <span class="age"><a href="item?id=16527406">3 hours ago</a></span> <span id="unv_16527406"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527406)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Most important concept #1: DAG<p>Yes! Thank you! This needs to be banged into peoples heads when talking about build systems. Every time you add an edge, you&#x27;re automating an otherwise manual task. Very important realization.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527406&amp;goto=item%3Fid%3D16523037%2316527406">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525002'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525002' href='vote?id=16525002&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=LinXitoW" class="hnuser">LinXitoW</a> <span class="age"><a href="item?id=16525002">12 hours ago</a></span> <span id="unv_16525002"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525002)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">In all these discussions about make, everyone argues about using it for everything. Personally, I don&#x27;t know another tool that makes it straight forward to glue together all kinds of different build tools (for example webpack for frontend and maven&#x2F;sbt for the backend).<p>Even if you don&#x27;t directly use make, it makes for great, verifiable documentation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525002&amp;goto=item%3Fid%3D16523037%2316525002">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525154'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525154' href='vote?id=16525154&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=abhishekjha" class="hnuser">abhishekjha</a> <span class="age"><a href="item?id=16525154">12 hours ago</a></span> <span id="unv_16525154"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525154)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Wait. Did I read it wrong or didn&#x27;t an article a few days back say that we <i>can</i> use make with file names consisting of spaces, its just that we shouldn&#x27;t? Although that article talked about using a non-breaking space as a hack.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525154&amp;goto=item%3Fid%3D16523037%2316525154">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527084'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527084' href='vote?id=16527084&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=spc476" class="hnuser">spc476</a> <span class="age"><a href="item?id=16527084">5 hours ago</a></span> <span id="unv_16527084"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527084)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Make doesn&#x27;t handle filenames with spaces (ASCII 32) at all!  I wrote the article (<a href="http:&#x2F;&#x2F;boston.conman.org&#x2F;2018&#x2F;02&#x2F;28.2" rel="nofollow">http:&#x2F;&#x2F;boston.conman.org&#x2F;2018&#x2F;02&#x2F;28.2</a>) about using the non-breaking space (NBSP, Unicode 160) in filenames, and make (as well as nearly everything else I tried) accepted it just fine.<p>But popular consensus (from here and Lobsters) seemed to be &quot;avoid any type of space at all cost and do not speak of it again!&quot;.  Pity.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527084&amp;goto=item%3Fid%3D16523037%2316527084">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527387'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527387' href='vote?id=16527387&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=abhishekjha" class="hnuser">abhishekjha</a> <span class="age"><a href="item?id=16527387">3 hours ago</a></span> <span id="unv_16527387"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527387)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Oh yes. I got so pumped up by your article(and partially by losters&#x27; comments of never using it again) that I went on my own to replicate the scenario. Only then I was able to understand what you meant by :<p>&gt; <i>It also requires a filesystem that can support Unicode (or in my case, UTF-8) and a command line that also supports Unicode (or again in my case, UTF-8).</i><p>&gt; <i>And it was also not that easy to create the filename and Makefile with the non-breaking space.</i>.<p>Looks like setting up the compose key on linux did the trick.<p>I posted my own recipe for naming files using non-breaking spaces[0] after someone asked for it. A beginner here so the steps may look a little too primitive but it gets the work done. Thanks for introducing me to a hack. Now I can have a folder with two files whose name look exactly the same(ASCII 32, NBSP).<p>[0]<a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=16494394" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=16494394</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527387&amp;goto=item%3Fid%3D16523037%2316527387">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16523484'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16523484' href='vote?id=16523484&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=setheron" class="hnuser">setheron</a> <span class="age"><a href="item?id=16523484">15 hours ago</a></span> <span id="unv_16523484"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16523484)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great guide. 
+The variable portion was the first time it was explained succinctly and simply to me.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523484&amp;goto=item%3Fid%3D16523037%2316523484">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16524445'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524445' href='vote?id=16524445&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jstimpfle" class="hnuser">jstimpfle</a> <span class="age"><a href="item?id=16524445">13 hours ago</a></span> <span id="unv_16524445"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524445)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve been working on a small custom build system (of the &quot;re-editable&quot; kind) for my own software project, and have been working on a little writeup. It&#x27;s not finished, and I think there was something in the implementation that I was still unhappy about. But I&#x27;ll take this opportunity to jump on the bandwagon. I think for larger project it is worth it to just make your own system, so here are my notes: <a href="http:&#x2F;&#x2F;jstimpfle.de&#x2F;blah&#x2F;buildsystem.html" rel="nofollow">http:&#x2F;&#x2F;jstimpfle.de&#x2F;blah&#x2F;buildsystem.html</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524445&amp;goto=item%3Fid%3D16523037%2316524445">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525103'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525103' href='vote?id=16525103&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mahoro" class="hnuser">mahoro</a> <span class="age"><a href="item?id=16525103">12 hours ago</a></span> <span id="unv_16525103"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525103)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great article.<p>Also, author prepared a surprice for all coming to his blog from russian IP addresses. That was the first time I came across such thing.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525103&amp;goto=item%3Fid%3D16523037%2316525103">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525479'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525479' href='vote?id=16525479&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=confounded" class="hnuser">confounded</a> <span class="age"><a href="item?id=16525479">11 hours ago</a></span> <span id="unv_16525479"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525479)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Can you explain it for us?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525479&amp;goto=item%3Fid%3D16523037%2316525479">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527936'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527936' href='vote?id=16527936&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Igor_kh" class="hnuser">Igor_kh</a> <span class="age"><a href="item?id=16527936">1 hour ago</a></span> <span id="unv_16527936"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527936)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The author has put an offensive banner (<a href="https:&#x2F;&#x2F;imgur.com&#x2F;a&#x2F;84cuN" rel="nofollow">https:&#x2F;&#x2F;imgur.com&#x2F;a&#x2F;84cuN</a>) in front of his blog page for Russian IP addresses. I just wonder why there is no such thing in the article above<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527936&amp;goto=item%3Fid%3D16523037%2316527936">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16524174'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524174' href='vote?id=16524174&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pspeter3" class="hnuser">pspeter3</a> <span class="age"><a href="item?id=16524174">14 hours ago</a></span> <span id="unv_16524174"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16524174)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Is it possible to have make use file hashes instead of timestamps?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524174&amp;goto=item%3Fid%3D16523037%2316524174">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525821'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525821' href='vote?id=16525821&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gkya" class="hnuser">gkya</a> <span class="age"><a href="item?id=16525821">10 hours ago</a></span> <span id="unv_16525821"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525821)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There is DJB&#x27;s redo[1], which has some implementations.  Also, one could probably modify make to use hashes.  But personally I think that mtime is a nice compromise, as it&#x27;s often a correct heuristic, and hashing files is not cheap, especially for big projects that&#x27;d have a performance penalty.<p>[1] <a href="https:&#x2F;&#x2F;cr.yp.to&#x2F;redo.html" rel="nofollow">https:&#x2F;&#x2F;cr.yp.to&#x2F;redo.html</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525821&amp;goto=item%3Fid%3D16523037%2316525821">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16525120'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525120' href='vote?id=16525120&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vorotato" class="hnuser">vorotato</a> <span class="age"><a href="item?id=16525120">12 hours ago</a></span> <span id="unv_16525120"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525120)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a">The only reason I don&#x27;t use it is because I use windows. While you can theoretically use it on windows, nobody does.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525120&amp;goto=item%3Fid%3D16523037%2316525120">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525373'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525373' href='vote?id=16525373&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dahart" class="hnuser">dahart</a> <span class="age"><a href="item?id=16525373">12 hours ago</a></span> <span id="unv_16525373"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525373)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; While you can theoretically use it on windows, nobody does.<p>What do you use instead?<p>I think a lot of people use make on Windows. I&#x27;ve had several jobs with a Windows dev environment, and they&#x27;ve all used make. My current dev env is cmake on Windows, so I don&#x27;t touch the makefiles, but it&#x27;s still using make on Windows.<p>There aren&#x27;t that many options for cross-platform projects. A lot of people use cygwin or the Windows Subsystem for Linux with make and&#x2F;or cmake native.<p>I also go directly to make on either cygwin or unix for one-off builds all the time, in non-C&#x2F;C++ projects. make is super handy for resizing images or running a batch of tests on a program generating graphs. Anything where you need to generate files that only update when another file is touched is a good job for make.<p>make -j is extra handy on windows for some situations since it&#x27;s hard to get gnu parallel to run in cygwin and the parallel perf wasn&#x27;t very good last time I checked.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525373&amp;goto=item%3Fid%3D16523037%2316525373">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527724'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527724' href='vote?id=16527724&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=skocznymroczny" class="hnuser">skocznymroczny</a> <span class="age"><a href="item?id=16527724">2 hours ago</a></span> <span id="unv_16527724"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527724)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Most Windows projects that I&#x27;ve seen in the open use CMake to create VS solutions which usually just work.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527724&amp;goto=item%3Fid%3D16523037%2316527724">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526329'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526329' href='vote?id=16526329&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=orthecreedence" class="hnuser">orthecreedence</a> <span class="age"><a href="item?id=16526329">9 hours ago</a></span> <span id="unv_16526329"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526329)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I do. I live in MSYS2 on Windows. Can&#x27;t stand VS or powershell, and I&#x27;ve invested so heavily in the GNU toolchain over the years that having the option on Windows is a no-brainer for me.<p>I use Make for everything from frontend builds (don&#x27;t like grunt&#x2F;gulp) to rust apps. The better I get at Make, the more I love it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526329&amp;goto=item%3Fid%3D16523037%2316526329">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                          <tr class='athing comtr ' id='16523992'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16523992' href='vote?id=16523992&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=andrewmcwatters" class="hnuser">andrewmcwatters</a> <span class="age"><a href="item?id=16523992">14 hours ago</a></span> <span id="unv_16523992"></span><span class="par"></span> <a class="togg" n="12" href="javascript:void(0)" onclick="return toggle(event, 16523992)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c9c">The first point is &quot;Don’t try to be clever,&quot; and using Make in the JavaScript ecosystem defies exactly that to begin with.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16523992&amp;goto=item%3Fid%3D16523037%2316523992">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524124'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524124' href='vote?id=16524124&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bringtheaction" class="hnuser">bringtheaction</a> <span class="age"><a href="item?id=16524124">14 hours ago</a></span> <span id="unv_16524124"></span><span class="par"></span> <a class="togg" n="8" href="javascript:void(0)" onclick="return toggle(event, 16524124)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">No it doesn’t. Makefiles define inputs, outputs and the commands that transform input to output. Make then compares the last modified timestamp of inputs with outputs on each run and reruns the commands for the targets that are out of date.<p>Make is in no way limited to C or C++ projects and there is absolutely nothing wrong in using Make for a JavaScript project.<p>The only thing that sucks a bit is maintaining the list of inputs and outputs if you have a lot of files.<p>Well, that and the fact that Makefiles are not generally portable between GNU and BSD Make so if you use both Linux and a BSD you need to install either gmake on BSD or bmake on Linux and then remember to invoke that rather than just make for your project. Of course you could have a bash function that will look and pick GNU make if there is a GNUmakefile in your directory and BSD make if there is a BSDmakefile, but maintaining such things is a hassle as well.<p>It always comes down to picking the right tool and sometimes Make will be it and sometimes it won’t but whether the output is JavaScript or a PDF (e.g. from LaTeX documents) or JPEGs or whatever has very little to do with it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524124&amp;goto=item%3Fid%3D16523037%2316524124">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524551'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524551' href='vote?id=16524551&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bambataa" class="hnuser">bambataa</a> <span class="age"><a href="item?id=16524551">13 hours ago</a></span> <span id="unv_16524551"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524551)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Perhaps if it&#x27;s a project that only you and maybe a few other people will work on. But I think there&#x27;s value in using tooling that other contributors from that ecosystem will be comfortable using.<p>I say this as someone who doesn&#x27;t really like the JS ecosystem and its churn. I suppose you could argue the JS community itself has valued novelty over using tooling others will be familiar with. But if you have two tools that do roughly the same thing, one known to a majority of contributors and one known to a minority, I would go with the more popular.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524551&amp;goto=item%3Fid%3D16523037%2316524551">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16524237'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16524237' href='vote?id=16524237&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=andrewmcwatters" class="hnuser">andrewmcwatters</a> <span class="age"><a href="item?id=16524237">14 hours ago</a></span> <span id="unv_16524237"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16524237)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c9c">&gt; Make is in no way limited to C or C++ projects and there is absolutely nothing wrong in using Make for a JavaScript project.<p>The fact that you have to acknowledge this proves how unorthodox it is, and ignores team concerns. So no, there is something wrong with using Make for a JavaScript project: people don&#x27;t normally do it.<p>&gt; It always comes down to picking the right tool<p>You&#x27;re right, stick to the ones people actively use and don&#x27;t pretend features exist in bubbles.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524237&amp;goto=item%3Fid%3D16523037%2316524237">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524856'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16524856' href='vote?id=16524856&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=markmark" class="hnuser">markmark</a> <span class="age"><a href="item?id=16524856">13 hours ago</a></span> <span id="unv_16524856"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16524856)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I can&#x27;t believe you&#x27;ve been down-voted for these two posts. If you convert your js projects to make you are going to be the only person on your team who ever touches them again for no pay off.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524856&amp;goto=item%3Fid%3D16523037%2316524856">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527658'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527658' href='vote?id=16527658&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=detaro" class="hnuser">detaro</a> <span class="age"><a href="item?id=16527658">2 hours ago</a></span> <span id="unv_16527658"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527658)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Notably though how bambataa hasn&#x27;t been downvoted with pretty much the same point, except conceding that that they are limited situations where it might work instead of blanket-declaring it always bad.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527658&amp;goto=item%3Fid%3D16523037%2316527658">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525110'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16525110' href='vote?id=16525110&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=andrewmcwatters" class="hnuser">andrewmcwatters</a> <span class="age"><a href="item?id=16525110">12 hours ago</a></span> <span id="unv_16525110"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525110)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c9c">I&#x27;ve generally found that criticism, even if a reasonable sentiment, on Hacker News trends downwards. It seems to be more favorable to support something or stay silent, than to give critical commentary. It could also just be my tone.<p>I&#x27;m sure my comments would be more popular if I ignored the realities of software development and only praised the novelties of it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525110&amp;goto=item%3Fid%3D16523037%2316525110">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527583'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527583' href='vote?id=16527583&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wruza" class="hnuser">wruza</a> <span class="age"><a href="item?id=16527583">2 hours ago</a></span> <span id="unv_16527583"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527583)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">“there is something wrong with using xxx for a yyy: people don&#x27;t normally do it” seems like a logical fallacy even without considering the details, which even more people are not interested in.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527583&amp;goto=item%3Fid%3D16523037%2316527583">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525142'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525142' href='vote?id=16525142&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vorotato" class="hnuser">vorotato</a> <span class="age"><a href="item?id=16525142">12 hours ago</a></span> <span id="unv_16525142"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525142)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c88">Drive by down votes, presumably because they thought you were incorrect but didn&#x27;t even have the dignity to tell anyone why.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525142&amp;goto=item%3Fid%3D16523037%2316525142">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524795'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524795' href='vote?id=16524795&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pvtmert" class="hnuser">pvtmert</a> <span class="age"><a href="item?id=16524795">13 hours ago</a></span> <span id="unv_16524795"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524795)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">it is called &#x27;build system&#x27;<p>so is gradle, maven, xcode, it does not matter what target is or what source is (as language, file etc)<p>they have tasks&#x2F;recipes and dependencies&#x2F;prerequistes
+imho JS&#x27;s stack of build system still not good at all. changing to new system every 2-3 years. (note that i am not a js-dev, just outside point of view)<p>which is kind of a not-stable-ecosystem feeling. I see small agencies spending days maybe weeks to port their &#x27;themes&#x27; to new stacks (long ago jquery, then gulp, now webpack) where as haven&#x27;t encountered single &quot;porting to new makefile format&quot; case, because, of course solid history&#x2F;background of make.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524795&amp;goto=item%3Fid%3D16523037%2316524795">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525562'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525562' href='vote?id=16525562&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=vorg" class="hnuser">vorg</a> <span class="age"><a href="item?id=16525562">11 hours ago</a></span> <span id="unv_16525562"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525562)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a">&gt; gradle, maven, xcode, it does not matter what target is or what source is (as language<p>But it <i>does</i> matter what the language is for the build script for each build system, e.g. Apache Groovy for Gradle, XML for Maven.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525562&amp;goto=item%3Fid%3D16523037%2316525562">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525197'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525197' href='vote?id=16525197&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=andrewmcwatters" class="hnuser">andrewmcwatters</a> <span class="age"><a href="item?id=16525197">12 hours ago</a></span> <span id="unv_16525197"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525197)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c9c">yeah what&#x27;s an even better idea is not to introduce a new build system, but to introduce an old one primarily used by an entirely different language ecosystem<p>brilliant<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525197&amp;goto=item%3Fid%3D16523037%2316525197">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16526898'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526898' href='vote?id=16526898&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ghettoimp" class="hnuser">ghettoimp</a> <span class="age"><a href="item?id=16526898">6 hours ago</a></span> <span id="unv_16526898"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526898)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">The writing is so awful.  “Some ppl will get overexcited &amp; start...”?  “2fold”?  Are we teenagers texting each other?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526898&amp;goto=item%3Fid%3D16523037%2316526898">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527818'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527818' href='vote?id=16527818&amp;how=up&amp;goto=item%3Fid%3D16523037'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=abainbridge" class="hnuser">abainbridge</a> <span class="age"><a href="item?id=16527818">1 hour ago</a></span> <span id="unv_16527818"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527818)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I thought the same thing. However, I&#x27;d say the writing is mostly good. The short comings are mostly superficial.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527818&amp;goto=item%3Fid%3D16523037%2316527818">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

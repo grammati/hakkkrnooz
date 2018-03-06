@@ -1,0 +1,131 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Tile38 – Realtime geofencing and geospatial index, v1.11.0 | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16526929">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16526929'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16526929' href='vote?id=16526929&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="http://github.com/tidwall/tile38" class="storylink">Tile38 – Realtime geofencing and geospatial index, v1.11.0</a><span class="sitebit comhead"> (<a href="from?site=github.com"><span class="sitestr">github.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16526929">74 points</span> by <a href="user?id=tidwall" class="hnuser">tidwall</a> <span class="age"><a href="item?id=16526929">6 hours ago</a></span> <span id="unv_16526929"></span> | <a href="hide?id=16526929&amp;goto=item%3Fid%3D16526929">hide</a> | <a href="https://hn.algolia.com/?query=Tile38%20%E2%80%93%20Realtime%20geofencing%20and%20geospatial%20index%2C%20v1.11.0&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Tile38%20%E2%80%93%20Realtime%20geofencing%20and%20geospatial%20index%2C%20v1.11.0">web</a> | <a href="fave?id=16526929&amp;auth=b46ed1a5fd9d5e3b3e0672c79f9c8093dd593356">favorite</a> | <a href="item?id=16526929">9&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16526929"><input type="hidden" name="goto" value="item?id=16526929"><input type="hidden" name="hmac" value="ac7be5cd2c0e96cf67b5785dda6b8bb89e9bc3fd"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16528071'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16528071' href='vote?id=16528071&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=johneth" class="hnuser">johneth</a> <span class="age"><a href="item?id=16528071">14 minutes ago</a></span> <span id="unv_16528071"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528071)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This looks really useful.<p>I&#x27;ve been using a similar geometry library &#x27;S2&#x27;[1], by Google. It&#x27;s mainly used for fast spatial indexing and comparison functionality, albeit more &#x27;approximate&#x27;[2] than Tile38 seems to be.<p>[1] <a href="http:&#x2F;&#x2F;s2geometry.io&#x2F;" rel="nofollow">http:&#x2F;&#x2F;s2geometry.io&#x2F;</a><p>[2] Approximate = not absolutely exact shapes when geofencing, for example.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528071&amp;goto=item%3Fid%3D16526929%2316528071">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16527220'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527220' href='vote?id=16527220&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=guessmyname" class="hnuser">guessmyname</a> <span class="age"><a href="item?id=16527220">4 hours ago</a></span> <span id="unv_16527220"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527220)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Some people may not read the link because it appears grayed out in some browsers <i>(the link has been posted before and so it appears in the browser history as visited)</i>. Maybe it&#x27;s better to link to the changelog page, since this was reposted because a new version has been released [1].<p>[1] <a href="https:&#x2F;&#x2F;github.com&#x2F;tidwall&#x2F;tile38&#x2F;releases&#x2F;tag&#x2F;1.11.0" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;tidwall&#x2F;tile38&#x2F;releases&#x2F;tag&#x2F;1.11.0</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527220&amp;goto=item%3Fid%3D16526929%2316527220">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16527860'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527860' href='vote?id=16527860&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ldng" class="hnuser">ldng</a> <span class="age"><a href="item?id=16527860">1 hour ago</a></span> <span id="unv_16527860"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527860)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Inevitably this will be compared to PostGIS so maybe you could put a paragraph in the README on how it compares to it what is the usecase where Tile38 would serve you better. I must admit I don&#x27;t see one for my own needs.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527860&amp;goto=item%3Fid%3D16526929%2316527860">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16527046'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527046' href='vote?id=16527046&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=billylindeman" class="hnuser">billylindeman</a> <span class="age"><a href="item?id=16527046">5 hours ago</a></span> <span id="unv_16527046"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16527046)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve been following tile38 on github for quite awhile and it looks pretty awesome, but I haven&#x27;t had a chance to build anything with it.<p>Has anyone here built any user-facing applications on top of it?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527046&amp;goto=item%3Fid%3D16526929%2316527046">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528042'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16528042' href='vote?id=16528042&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=larsvegas_" class="hnuser">larsvegas_</a> <span class="age"><a href="item?id=16528042">24 minutes ago</a></span> <span id="unv_16528042"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528042)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I had been following tidwall&#x2F;tile38 for a while already, too without a clear use case for actually using it. When we refactored a main part of our code base the use case finally arose;-)<p>At this point we&#x27;re about to release tile38 to our staging environment. We opted for it basically for its capability to cache and spatially query geojson directly. Plus this can be done without the serialisation&#x2F;deserialisation overhead. Another advantage for us is the ability to use the python-redis bindings. This let&#x27;s us execute commands like this to retrieve data for a tile x,y,z request:<p>res = client.execute_command(
+    &quot;INTERSECTS&quot;, our_key, &quot;WHERE&quot;, &quot;minzval&quot;, 1, z,
+    &quot;LIMIT&quot;, LIMIT, &quot;TILE&quot;, x, y, z
+)<p>Very straightforward and very fast.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528042&amp;goto=item%3Fid%3D16526929%2316528042">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527564'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527564' href='vote?id=16527564&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=allan_s" class="hnuser">allan_s</a> <span class="age"><a href="item?id=16527564">3 hours ago</a></span> <span id="unv_16527564"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527564)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">shameless plug<p>at <a href="https:&#x2F;&#x2F;www.weenect.com" rel="nofollow">https:&#x2F;&#x2F;www.weenect.com</a> we&#x27;re currently experimenting with it in order to replace our mongodb, I think I will go with this and a mix of postgresql for historical data.<p>the realtime geofencing capabilities will be a very good plus for us, as that&#x27;s one of the main feature of our products, i.e being able to know when your cats or dog is going too far.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527564&amp;goto=item%3Fid%3D16526929%2316527564">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527165'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527165' href='vote?id=16527165&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=petre" class="hnuser">petre</a> <span class="age"><a href="item?id=16527165">5 hours ago</a></span> <span id="unv_16527165"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527165)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s nice but it&#x27;s kind of limited to simple apps. No polygon or geocorridor points of interest and you&#x27;d need a database anyway to store historic data. For anything more complex tgan point on map apps, I&#x27;d use PostgreSQL + PostGIS.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527165&amp;goto=item%3Fid%3D16526929%2316527165">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527243'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527243' href='vote?id=16527243&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=billylindeman" class="hnuser">billylindeman</a> <span class="age"><a href="item?id=16527243">4 hours ago</a></span> <span id="unv_16527243"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527243)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;d love to see something that makes use of realtime geofence hooks <a href="http:&#x2F;&#x2F;tile38.com&#x2F;commands&#x2F;sethook&#x2F;" rel="nofollow">http:&#x2F;&#x2F;tile38.com&#x2F;commands&#x2F;sethook&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527243&amp;goto=item%3Fid%3D16526929%2316527243">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527745'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527745' href='vote?id=16527745&amp;how=up&amp;goto=item%3Fid%3D16526929'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=petre" class="hnuser">petre</a> <span class="age"><a href="item?id=16527745">2 hours ago</a></span> <span id="unv_16527745"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527745)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think you can write a trigger procedure and use the listen&#x2F;notify mechanism for notifications. Both exist since 9.3.<p><a href="https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;static&#x2F;plpgsql-trigger.html" rel="nofollow">https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;static&#x2F;plpgsql-trigg...</a><p><a href="https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;static&#x2F;sql-listen.html" rel="nofollow">https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;static&#x2F;sql-listen.ht...</a><p>Web-based notification is pretty much trivial after that since you need a database client written in a language of your choice that forwards the notification via HTTP to some endpoint. It&#x27;s not as trivial as the tile38 but it can be more powerful since you can add any type of geometry to your POI. For instance you want to be notified when a vehicle crosses state borders.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527745&amp;goto=item%3Fid%3D16526929%2316527745">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

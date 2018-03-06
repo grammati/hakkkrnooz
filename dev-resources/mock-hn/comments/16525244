@@ -1,0 +1,869 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>How generics were added to .NET | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16525244">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16525244'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16525244' href='vote?id=16525244&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="http://www.mattwarren.org/2018/03/02/How-generics-were-added-to-.NET/" class="storylink">How generics were added to .NET</a><span class="sitebit comhead"> (<a href="from?site=mattwarren.org"><span class="sitestr">mattwarren.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16525244">168 points</span> by <a href="user?id=matthewwarren" class="hnuser">matthewwarren</a> <span class="age"><a href="item?id=16525244">12 hours ago</a></span> <span id="unv_16525244"></span> | <a href="hide?id=16525244&amp;goto=item%3Fid%3D16525244">hide</a> | <a href="https://hn.algolia.com/?query=How%20generics%20were%20added%20to%20.NET&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=How%20generics%20were%20added%20to%20.NET">web</a> | <a href="fave?id=16525244&amp;auth=7ccabdc05b6e60fe3d3f8da6406fee88749e7e9c">favorite</a> | <a href="item?id=16525244">81&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16525244"><input type="hidden" name="goto" value="item?id=16525244"><input type="hidden" name="hmac" value="81fe0fe8c8520aaee4c57e678330ef503d57dff2"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16526074'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526074' href='vote?id=16526074&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ChicagoDave" class="hnuser">ChicagoDave</a> <span class="age"><a href="item?id=16526074">10 hours ago</a></span> <span id="unv_16526074"></span><span class="par"></span> <a class="togg" n="14" href="javascript:void(0)" onclick="return toggle(event, 16526074)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I started looking at the source diffs and it triggers a panic attack. That&#x27;s a ton of work.<p>All the more reason to admire and appreciate MS Research and the development of C# generics. Really amazing accomplishment.<p>And Linq is one of the single greatest inventions in modern day programming.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526074&amp;goto=item%3Fid%3D16525244%2316526074">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527921'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527921' href='vote?id=16527921&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=EnderMB" class="hnuser">EnderMB</a> <span class="age"><a href="item?id=16527921">1 hour ago</a></span> <span id="unv_16527921"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527921)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">LINQ is the reason I became a .NET developer after leaving university.<p>I was bored of Java at university, and as the project I was basing my dissertation on was a web-based search engine I decided to use C# and ASP.NET. The professor helping me was fine with it, since he didn&#x27;t know PHP or Ruby, and he felt he could read C#.<p>I came across some stumbling blocks with some logic, so I remember posting on a forum somewhere asking for help with setting up a data structure. Someone sent me some LINQ, and I thanked them for the pseudocode. When they pointed out that it was real functioning code, I plopped it into Visual Studio and the whole thing worked. From that moment, I fell in love with the language - ASP.NET WebForms less so, but shortly after this MVC became a thing in the .NET world and I jumped on the bandwagon.<p>A decade later, and while I&#x27;ve moved onto other languages I still fight C#&#x27;s corner, and LINQ&#x2F;the lambda syntax is one of the first points I raise when people bitch about Micro$oft. The only negatives about working as a .NET developer is being locking into an ecosystem, so if Microsoft and the .NET Foundation can get .NET Core to be feature compatible with .NET Standard then they&#x27;ve got a winner on their hands.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527921&amp;goto=item%3Fid%3D16525244%2316527921">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528036'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16528036' href='vote?id=16528036&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ozim" class="hnuser">ozim</a> <span class="age"><a href="item?id=16528036">28 minutes ago</a></span> <span id="unv_16528036"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528036)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I am .NET developer, I thought I will be Java dev or whatever else web backend brings. But years are showing .NET is getting well. Msft has skin in the game with .NET ecosystem and it is &quot;developers, developers, developers&quot;. Other ecosystems don&#x27;t have huge company living off it. Oracle for Java also does not have skin in the game, they will just take over next big thing and milk it away.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528036&amp;goto=item%3Fid%3D16525244%2316528036">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527374'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527374' href='vote?id=16527374&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=btschaegg" class="hnuser">btschaegg</a> <span class="age"><a href="item?id=16527374">3 hours ago</a></span> <span id="unv_16527374"></span><span class="par"></span> <a class="togg" n="10" href="javascript:void(0)" onclick="return toggle(event, 16527374)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Regarding LINQ: I really like certain parts of it, dislike others (mainly inline Select-statements and the EntityFramework built on top of it), but I&#x27;d be hard-pressed to call it the greatest invention of any time. PEP 255 laid the ground work for similar language features in 2001, and I doubt that the python guys &quot;invented&quot; all of that out of thin air (cf. Reference #4 in the PEP).<p>What you can argue is that LINQ made this stuff available to more developers (with useful syntax and in a statically typed language, which also must have taken a lot of work), but filter&#x2F;map&#x2F;reduce have been around for quite a while.<p>That obviously doesn&#x27;t make it less useful or the underlying tech less impressive though.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527374&amp;goto=item%3Fid%3D16525244%2316527374">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528111'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16528111' href='vote?id=16528111&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=coldtea" class="hnuser">coldtea</a> <span class="age"><a href="item?id=16528111">2 minutes ago</a></span> <span id="unv_16528111"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528111)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;<i>PEP 255 laid the ground work for similar language features in 2001, and I doubt that the python guys &quot;invented&quot; all of that out of thin air (cf. Reference #4 in the PEP).</i><p>LINQ is not about generators...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528111&amp;goto=item%3Fid%3D16525244%2316528111">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527484'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527484' href='vote?id=16527484&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tehlike" class="hnuser">tehlike</a> <span class="age"><a href="item?id=16527484">3 hours ago</a></span> <span id="unv_16527484"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16527484)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The magic behind LINQ is that it&#x27;s a query layer on top of a backing data store. When it first came out, you&#x27;d see data providers written against twitter, file system and everything like that.
+Then entity framework &amp; nhibernate linq provider came out. It was great, hid a lot of details from user, brought static type checking to otherwise very hard to &quot;verify&quot; sql. You&#x27;d now think in terms of objects, and not tables.<p>Linq compiler compiled the whole query into a AST, which you could then convert to a backing query your data store could understand.<p>To date, I still think Linq was great. I was indifferent to the &quot;sqlized linq&quot;, but i liked the lambda quite a lot. It was a nice abstraction and a pretty good language to write queries on.<p>Disclaimer: I worked on NHibernate Linq integration ~10 years ago.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527484&amp;goto=item%3Fid%3D16525244%2316527484">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527559'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527559' href='vote?id=16527559&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brusch64" class="hnuser">brusch64</a> <span class="age"><a href="item?id=16527559">3 hours ago</a></span> <span id="unv_16527559"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16527559)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">What is your opinion on the state of NHibernate ?<p>I&#x27;ve started using it in 2009. I am still using it in my projects, but I am still not sure if NHibernate is functional complete or if the project is nearly dead.<p>It works fine for me (if it is not worth the effort I am using Dapper.net), but it doesn&#x27;t seem that there is much active development going on.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527559&amp;goto=item%3Fid%3D16525244%2316527559">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527581'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527581' href='vote?id=16527581&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tehlike" class="hnuser">tehlike</a> <span class="age"><a href="item?id=16527581">3 hours ago</a></span> <span id="unv_16527581"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527581)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">To my surprise, it seems fairly active:
+<a href="https:&#x2F;&#x2F;github.com&#x2F;nhibernate&#x2F;nhibernate-core" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;nhibernate&#x2F;nhibernate-core</a><p>I stopped working on nhibernate around 2010-2011, when i started masters. I did only keep in touch with one friend - i am not very sociable person. So I guess short answer is, i am not sure to be honest.<p>Back in 2008ish, I was thinking it was going to die because Entity framework provided a great support for linq, and it had a great hype. A bunch of enterprises moved away from NHibernate (we also had a lot of legacy from XML configuration - a bunch of internal data structures were referencing xml), so it was clunky. Fabio, Oren (Ayende) did a bunch of improvements, I worked a bunch of shortening initialization times and so on. I think Ayende did a very good job with Linq initially, but there were plenty of edge cases that i remember having to fix :) It was my first opensource project as a core member (second and last was castle project) - so it has a very special place for me :)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527581&amp;goto=item%3Fid%3D16525244%2316527581">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527729'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527729' href='vote?id=16527729&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brusch64" class="hnuser">brusch64</a> <span class="age"><a href="item?id=16527729">2 hours ago</a></span> <span id="unv_16527729"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527729)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Okay - it really seems to be quite active right now. 
+Thank you for your insight.<p>I&#x27;ve used the Linq queries in one of my projects, but I like the QueryOver statements more (a little bit too much black magic in the Linq queries).<p>But I believe that it was a great effort - so let me thank you for that !<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527729&amp;goto=item%3Fid%3D16525244%2316527729">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527966'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks"><center><a id='up_16527966' href='vote?id=16527966&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mattmanser" class="hnuser">mattmanser</a> <span class="age"><a href="item?id=16527966">52 minutes ago</a></span> <span id="unv_16527966"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527966)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">In my expereince you shouldn&#x27;t even touch the black magic stuff unless you&#x27;re a small org or it&#x27;s a throwaway app.<p>Linq with the EF is great for simple queries and updates, anything else and you&#x27;re in for serious performance problems as soon as the app scales. Better to drop to normal SQL for complicated data loading.<p>Even MS can&#x27;t write decent LINQ queries, their ASP.Net identity provider is now the most &#x27;expensive&#x27; bit of our app now because they used expensive LINQ queries instead of using raw SQL queries. Admittedly our use-case is abnormal as the specific problem we have is that because of the way users are added their password gets reset almost immediately, as they&#x27;re invited by an organiser. It also means new users are constantly being added. When the password reset is saved it completely unnecessarily &quot;verifies&quot; the update by making sure the username and email are unique, which means two UPPER()s and CONTAINS()s on string fields. Unlike the old provider there&#x27;s no usernamelowered field already in the db to avoid this.<p>We can fix it by over-riding these queries, but it&#x27;s annoying that the ASP.Net team took a core framework piece that was very performant with fast performing SQL and made it substandard. At least I can look at the code now ;).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527966&amp;goto=item%3Fid%3D16525244%2316527966">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+            <tr class='athing comtr ' id='16527850'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527850' href='vote?id=16527850&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Guillaume86" class="hnuser">Guillaume86</a> <span class="age"><a href="item?id=16527850">1 hour ago</a></span> <span id="unv_16527850"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527850)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It seems you&#x27;re just thinking of the IEnumerable API and not LINQ at large, which includes the Expression and IQueryable API and enable things like LINQ-to-SQL.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527850&amp;goto=item%3Fid%3D16525244%2316527850">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527497'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527497' href='vote?id=16527497&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=golergka" class="hnuser">golergka</a> <span class="age"><a href="item?id=16527497">3 hours ago</a></span> <span id="unv_16527497"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527497)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I always saw Linq as the iPhone of functional programming: it didn&#x27;t really invent anything, but put existing things into such an appealing package for mass-market that it really finally made all those things popular and usable by people (developers) at large.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527497&amp;goto=item%3Fid%3D16525244%2316527497">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527579'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527579' href='vote?id=16527579&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=btschaegg" class="hnuser">btschaegg</a> <span class="age"><a href="item?id=16527579">3 hours ago</a></span> <span id="unv_16527579"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527579)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes, I think you sum it up pretty nicely.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527579&amp;goto=item%3Fid%3D16525244%2316527579">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527891'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527891' href='vote?id=16527891&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=matthewwarren" class="hnuser">matthewwarren</a> <span class="age"><a href="item?id=16527891">1 hour ago</a></span> <span id="unv_16527891"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527891)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; I started looking at the source diffs and it triggers a panic attack. That&#x27;s a ton of work.<p>Don&#x27;t forget it took several people a few years to do all that! But yeah, I agree, it was an impressive achievement!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527891&amp;goto=item%3Fid%3D16525244%2316527891">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527825'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527825' href='vote?id=16527825&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=enricosada" class="hnuser">enricosada</a> <span class="age"><a href="item?id=16527825">1 hour ago</a></span> <span id="unv_16527825"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527825)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Is already at the beginning of the article, but should be more visibible how MS Research and Don Syme seen the opportunity to add generics (neeeded for F#) and added that. With design already supporting later addition like variance.<p>Not just the design, the real implementation too in the existing already complex CLR codebase. And that include lot of areas like  NGEN, AppDomains, etc, so is no small feat at all, for a production ready framework already used by lot of developers.<p>I am programming in .NET Framework from v1.0, the v2.0 (with generics) was a clear cut, so is not something you can add too late because it become pervasive in the framework who leverage it in the design (generics in v2.0, LINQ in v3.0, TPL and Async v4.0)
+As a note, .NET continue to support non generic collections for backward compatibility, but usage is deprecated.<p>Really interesting piece of .NET history in  
+<a href="https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;dsyme&#x2F;2011&#x2F;03&#x2F;15&#x2F;netc-generics-history-some-photos-from-feb-1999&#x2F;" rel="nofollow">https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;dsyme&#x2F;2011&#x2F;03&#x2F;15&#x2F;netc-gener...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527825&amp;goto=item%3Fid%3D16525244%2316527825">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16525671'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525671' href='vote?id=16525671&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=krat0sprakhar" class="hnuser">krat0sprakhar</a> <span class="age"><a href="item?id=16525671">11 hours ago</a></span> <span id="unv_16525671"></span><span class="par"></span> <a class="togg" n="41" href="javascript:void(0)" onclick="return toggle(event, 16525671)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;  Ultimately, an erasure model of generics would have been adopted, as for Java, since the CLR team would never have pursued a in-the-VM generics design without external help.<p>Can someone explain why &quot;in-the-VM&quot; generics design is better than the erasure model of Java?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525671&amp;goto=item%3Fid%3D16525244%2316525671">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525724'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525724' href='vote?id=16525724&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=rusbus" class="hnuser">rusbus</a> <span class="age"><a href="item?id=16525724">11 hours ago</a></span> <span id="unv_16525724"></span><span class="par"></span> <a class="togg" n="15" href="javascript:void(0)" onclick="return toggle(event, 16525724)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">In Java, you can&#x27;t make runtime decisions based on the generic type of an object. Eg. you can&#x27;t have a List&lt;?&gt; and check to see if it&#x27;s a List&lt;Foo&gt; or a List&lt;Bar&gt; -- that information has been erased.<p>You could look at the head of the list to make that determination, (because the List members still have a concrete type), but that isn&#x27;t a general purpose solution.<p>Languages like Scala use manifests to preserve the information but it&#x27;s a major kludge.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525724&amp;goto=item%3Fid%3D16525244%2316525724">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525875'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525875' href='vote?id=16525875&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yarg" class="hnuser">yarg</a> <span class="age"><a href="item?id=16525875">10 hours ago</a></span> <span id="unv_16525875"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16525875)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Looking at the head of a List does not work.
+The class of that element is within the scope of &lt;? extends ListType&gt;, an is not necessarily not ListType.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525875&amp;goto=item%3Fid%3D16525244%2316525875">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527192'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527192' href='vote?id=16527192&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Groxx" class="hnuser">Groxx</a> <span class="age"><a href="item?id=16527192">5 hours ago</a></span> <span id="unv_16527192"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527192)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">To spell this out so it&#x27;s a bit more obvious, given a Thing at head of a list, you could have:<p><pre><code>    - a List&lt;Thing&gt;
+    - a List&lt;ThingSuperclass&gt;
+    - a List&lt;? extends Thing&gt;
+    - a List&lt;? super ThingSubclass&gt;
+    - a List&lt;IThing&gt;
+    - a List&lt;ILiterallyAnyImplementedIFace&gt;
+    - a List&lt;IHaventForgottenInterfacesCanExtendOthers&gt;
+    - a List&lt;Object&gt;
+    - a List&lt;I&#x27;m probably forgetting some possibilities&gt;
+</code></pre>
+And you have <i>no</i> way of knowing which it is.<p>So yes, it&#x27;s <i>a</i> boundary, which is significantly more than nothing.  But <i>far</i> less useful than it feels like at first.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527192&amp;goto=item%3Fid%3D16525244%2316527192">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526511'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526511' href='vote?id=16526511&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yarg" class="hnuser">yarg</a> <span class="age"><a href="item?id=16526511">8 hours ago</a></span> <span id="unv_16526511"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526511)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">*and is not necessarily ListType.<p>Idiot.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526511&amp;goto=item%3Fid%3D16525244%2316526511">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527052'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527052' href='vote?id=16527052&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Twisol" class="hnuser">Twisol</a> <span class="age"><a href="item?id=16527052">5 hours ago</a></span> <span id="unv_16527052"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527052)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">For the downvoters, the author is correcting themselves after the edit window. It&#x27;s clearly self-deprecating humor, not a personal attack.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527052&amp;goto=item%3Fid%3D16525244%2316527052">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527644'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527644' href='vote?id=16527644&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=rusanu" class="hnuser">rusanu</a> <span class="age"><a href="item?id=16527644">2 hours ago</a></span> <span id="unv_16527644"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527644)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Not to mention that an empty list still has a type...<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527644&amp;goto=item%3Fid%3D16525244%2316527644">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527733'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527733' href='vote?id=16527733&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cm2187" class="hnuser">cm2187</a> <span class="age"><a href="item?id=16527733">2 hours ago</a></span> <span id="unv_16527733"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16527733)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">But then what is the difference between a a collection of type object and a errasure model generic collection?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527733&amp;goto=item%3Fid%3D16525244%2316527733">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528006'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16528006' href='vote?id=16528006&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=masklinn" class="hnuser">masklinn</a> <span class="age"><a href="item?id=16528006">39 minutes ago</a></span> <span id="unv_16528006"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528006)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">At runtime? None, it&#x27;s a static (compile-time) feature, though the compiler does add some type assertions &amp; casts automatically.<p>Note that this is not necessarily an issue for very statically-typed languages e.g. if I remember correctly GHC uses erased generics (they don&#x27;t exist at runtime) which works fine because Haskell has neither pervasive RTTI nor specialisation, so the type erasure has ~no runtime visibility or impact.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528006&amp;goto=item%3Fid%3D16525244%2316528006">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527770'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527770' href='vote?id=16527770&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kelnos" class="hnuser">kelnos</a> <span class="age"><a href="item?id=16527770">1 hour ago</a></span> <span id="unv_16527770"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16527770)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">At the VM&#x2F;bytecode level, not much (if anything?).  The benefit comes at compile-time, where the compiler can verify that you&#x27;re putting the correct types into a collection, and that you&#x27;re expecting the correct types out.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527770&amp;goto=item%3Fid%3D16525244%2316527770">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528014'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16528014' href='vote?id=16528014&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=shellac" class="hnuser">shellac</a> <span class="age"><a href="item?id=16528014">37 minutes ago</a></span> <span id="unv_16528014"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528014)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You&#x27;ve got that completely the wrong way around. An erasing compiler has full access to the type (obviously - it&#x27;s doing the erasing) and so can verify whether you&#x27;re putting the correct types in or out of a collection.<p>Where erasure can cause issues is at runtime. For example:<p><pre><code>    X isa List&lt;Int&gt;
+</code></pre>
+Even if X is indeed a list of ints that information isn&#x27;t held at runtime, so the test can&#x27;t be supported.<p>Having said that in some respects this is a C# &#x2F; Java ecumenical matter. Haskell, for example, doesn&#x27;t bake types  into output code so I suppose it erases even more that java, but it supports very rich polymorphic behaviour.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528014&amp;goto=item%3Fid%3D16525244%2316528014">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527833'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527833' href='vote?id=16527833&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=SideburnsOfDoom" class="hnuser">SideburnsOfDoom</a> <span class="age"><a href="item?id=16527833">1 hour ago</a></span> <span id="unv_16527833"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527833)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; At the VM&#x2F;bytecode level, not much (if anything?).<p>I don&#x27;t think this is correct. In C# code at runtime, and in the bytecode, you can inspect types for metadata about their generic type params. It is present in the .Net bytecode.<p>See <a href="https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;dotnet&#x2F;csharp&#x2F;programming-guide&#x2F;generics&#x2F;generics-and-reflection" rel="nofollow">https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;dotnet&#x2F;csharp&#x2F;programming-g...</a><p>&gt; When a generic type or method is compiled into (bytecode), it contains metadata that identifies it as having type parameters.<p>from <a href="https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;dotnet&#x2F;csharp&#x2F;programming-guide&#x2F;generics&#x2F;generics-in-the-run-time" rel="nofollow">https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;dotnet&#x2F;csharp&#x2F;programming-g...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527833&amp;goto=item%3Fid%3D16525244%2316527833">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527909'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527909' href='vote?id=16527909&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cm2187" class="hnuser">cm2187</a> <span class="age"><a href="item?id=16527909">1 hour ago</a></span> <span id="unv_16527909"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527909)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">But C# generics aren&#x27;t erasure model collections are they?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527909&amp;goto=item%3Fid%3D16525244%2316527909">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16525936'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525936' href='vote?id=16525936&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Gibbon1" class="hnuser">Gibbon1</a> <span class="age"><a href="item?id=16525936">10 hours ago</a></span> <span id="unv_16525936"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525936)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">One the way to looking at other things(tm) I found a blog post by a CS language researcher talking about type erasure.<p>His two points.<p>Being able to do type erasure is great because it means your language is coherent. (Don&#x27;t need to do any nasty kluges in the run time)<p>And then everyone ratfucks themselves by actually implementing type erasure, and now your language will never have good tooling and thus will die a lonely unmourned death.<p>He commented that C&#x2F;C++ has type erasure and it&#x27;s also a massive kludge (via the elf format). No one will invest that much effort into a new language.<p>tl;dr: Type erasure, it&#x27;s great, don&#x27;t do it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525936&amp;goto=item%3Fid%3D16525244%2316525936">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526055'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526055' href='vote?id=16526055&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=eeperson" class="hnuser">eeperson</a> <span class="age"><a href="item?id=16526055">10 hours ago</a></span> <span id="unv_16526055"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526055)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">What tooling do you think is missing due to erasure?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526055&amp;goto=item%3Fid%3D16525244%2316526055">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527100'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527100' href='vote?id=16527100&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Gibbon1" class="hnuser">Gibbon1</a> <span class="age"><a href="item?id=16527100">5 hours ago</a></span> <span id="unv_16527100"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527100)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Not a CS person, but I think if you keep the type information pined to the object in memory then a debugger can use the object type information in memory to match it with the object&#x27;s definition in the program. That makes creating a debugger easy.<p>Imagine wanting to know what the object at address 0x34199920 is. If you have type info[1] you can cross reference the type info with &#x27;generic array&#x27; and then do the same with element 2, address 0x34199920 and know it&#x27;s a &#x27;foo object&#x27;.<p>[1] Say the first 4 bytes is _always_ a type index that the compiler or interpreter generates.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527100&amp;goto=item%3Fid%3D16525244%2316527100">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16526309'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526309' href='vote?id=16526309&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=seanmcdirmid" class="hnuser">seanmcdirmid</a> <span class="age"><a href="item?id=16526309">9 hours ago</a></span> <span id="unv_16526309"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16526309)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Performance: you can get rid of all those bridge casts without the need for an inter-procedural analysis. However, since C# also supports structs, generic instances of structs can be (and most of the time are) inlined to realize struct performance benefits.<p>Ease of programming: your generic type bindings don&#x27;t disappear at run-time and can be used run-time logic decisions, basically violating Bracha&#x27;s law (types shouldn&#x27;t influence run-time behavior), but I found it incredibly useful for meta-programming reasons.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526309&amp;goto=item%3Fid%3D16525244%2316526309">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526513'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526513' href='vote?id=16526513&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=quickthrower2" class="hnuser">quickthrower2</a> <span class="age"><a href="item?id=16526513">8 hours ago</a></span> <span id="unv_16526513"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16526513)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">As a Haskell aficionado I can appreciate type erasure and the idea that you don&#x27;t need to know shit at runtime. However yes when using hybrid languages like C# you have to cheat sometimes. Although anything that uses reflection makes me cringe and there is the practical concern that analysis tools such as find all references etc. are of less use when there is stuff going round and reflecting on shit.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526513&amp;goto=item%3Fid%3D16525244%2316526513">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526607'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526607' href='vote?id=16526607&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=seanmcdirmid" class="hnuser">seanmcdirmid</a> <span class="age"><a href="item?id=16526607">7 hours ago</a></span> <span id="unv_16526607"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526607)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">If you admit dynamic casts&#x2F;tests in your language, then why go only half way? Such inconsistency leads to bad usability. Haskell is at the other extreme (no dynamic casts) but then it is consistent about it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526607&amp;goto=item%3Fid%3D16525244%2316526607">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527685'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527685' href='vote?id=16527685&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=daxfohl" class="hnuser">daxfohl</a> <span class="age"><a href="item?id=16527685">2 hours ago</a></span> <span id="unv_16527685"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527685)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This seems orthogonal though.  Just because a runtime uses reified generics, doesn&#x27;t mean that it has to provide reflection on them.<p>Is there something special that type erasure adds, that you couldn&#x27;t have Haskell without it? From a layman&#x27;s perspective it seems that Haskell could be implemented with either an erased or a reified generics model under the hood, without changing the public surface of the language. But is there something that type erasure enables that reified generics does not?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527685&amp;goto=item%3Fid%3D16525244%2316527685">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526683'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526683' href='vote?id=16526683&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=paulddraper" class="hnuser">paulddraper</a> <span class="age"><a href="item?id=16526683">7 hours ago</a></span> <span id="unv_16526683"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526683)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yeah. People complain about Java type erasure, but the problem is not that they have type ensure, it&#x27;s that they did it only halfway.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526683&amp;goto=item%3Fid%3D16525244%2316526683">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527204'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527204' href='vote?id=16527204&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=orclev" class="hnuser">orclev</a> <span class="age"><a href="item?id=16527204">4 hours ago</a></span> <span id="unv_16527204"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527204)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yeah, I can see that. Basically you&#x27;ve got two options, go the Haskell way and have zero runtime reflection support and full type erasure, or go the C# way and have full reflection support and no type erasure. Java it&#x27;s just painful because you get runtime reflection except it&#x27;s incomplete because half the type info was erased at compile time.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527204&amp;goto=item%3Fid%3D16525244%2316527204">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16525737'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525737' href='vote?id=16525737&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kllrnohj" class="hnuser">kllrnohj</a> <span class="age"><a href="item?id=16525737">11 hours ago</a></span> <span id="unv_16525737"></span><span class="par"></span> <a class="togg" n="13" href="javascript:void(0)" onclick="return toggle(event, 16525737)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Think of all the places where you need to pass in an explicit type to a Java class to workaround the fact that the types are erased (list.toArray() being the canonical example, but reflection uses hit this a lot as well). That&#x27;s the downside.<p>The only benefit to the erasure model is it&#x27;s easier to implement for the runtime.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525737&amp;goto=item%3Fid%3D16525244%2316525737">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526317'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526317' href='vote?id=16526317&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=seanmcdirmid" class="hnuser">seanmcdirmid</a> <span class="age"><a href="item?id=16526317">9 hours ago</a></span> <span id="unv_16526317"></span><span class="par"></span> <a class="togg" n="9" href="javascript:void(0)" onclick="return toggle(event, 16526317)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Interop is another advantage of the erasure model. Getting a version of Scala to run with reified generics on the CLR is a huge, perhaps impossible, undertaking. And if you can&#x27;t do that, interoping with generic C# code becomes really hard. On the other hand, Scala interoping with Java code, generic or otherwise, is much easier.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526317&amp;goto=item%3Fid%3D16525244%2316526317">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527900'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527900' href='vote?id=16527900&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=matthewwarren" class="hnuser">matthewwarren</a> <span class="age"><a href="item?id=16527900">1 hour ago</a></span> <span id="unv_16527900"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527900)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve heard this argument a few times now, it&#x27;s an interesting point, having &#x27;reified generics&#x27; imposes a tax on any language that wants to use that runtime.<p>Here&#x27;s a few other examples of the same point, <a href="https:&#x2F;&#x2F;twitter.com&#x2F;jon_cham&#x2F;status&#x2F;969929683587432450" rel="nofollow">https:&#x2F;&#x2F;twitter.com&#x2F;jon_cham&#x2F;status&#x2F;969929683587432450</a> and <a href="https:&#x2F;&#x2F;twitter.com&#x2F;headius&#x2F;status&#x2F;958371298975080448" rel="nofollow">https:&#x2F;&#x2F;twitter.com&#x2F;headius&#x2F;status&#x2F;958371298975080448</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527900&amp;goto=item%3Fid%3D16525244%2316527900">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526381'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526381' href='vote?id=16526381&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=noblethrasher" class="hnuser">noblethrasher</a> <span class="age"><a href="item?id=16526381">8 hours ago</a></span> <span id="unv_16526381"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16526381)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Interop is another advantage of the erasure model<p>And, in the case of F#&#x27;s type providers, it means not having to generate zillions of types when coding against some huge schema. But, on the other hand, it does give you the option to do so.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526381&amp;goto=item%3Fid%3D16525244%2316526381">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526470'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16526470' href='vote?id=16526470&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=seanmcdirmid" class="hnuser">seanmcdirmid</a> <span class="age"><a href="item?id=16526470">8 hours ago</a></span> <span id="unv_16526470"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526470)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">If the bindings are reference types, the CLR will economize their representations as long as they don&#x27;t have any static state, I think.<p>I&#x27;m not sure if F# is leveraging the DLR, but there is a lot of fun that can be had there in generating types on the fly, on par with the most dynamic languages out there. It is too bad that it has been nerfed with the UWP&#x2F;AOT compilation push.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526470&amp;goto=item%3Fid%3D16525244%2316526470">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526658'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16526658' href='vote?id=16526658&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=noblethrasher" class="hnuser">noblethrasher</a> <span class="age"><a href="item?id=16526658">7 hours ago</a></span> <span id="unv_16526658"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526658)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;  If the bindings are reference types, the CLR will economize their representations as long as they don&#x27;t have any static state, I think.<p>Yep, I knew about that, but type providers don&#x27;t necessarily generate generic types. So, I meant something a bit different.<p>As you know, If Foo&lt;T&gt; is an ordinary generic, then T must be a CLR type, which is to say that it must be code that was somehow turned into a CLR type (usually by a compiler such as C#). But, if Foo&lt;&gt; is a type provider, then arbitrary code of an arbitrary language can go in between the angle brackets (which is why type providers can accept strings). Essentially, each type provider is a compiler, but the code that is generated must be expressed (or &quot;wrapped&quot;, if you will) as a CLR type. But these types need not be generic (and usually aren&#x27;t, I think). So, not having erased types in F# is akin to having a compiler that can&#x27;t generate loops or subroutines†.<p>†(Perhaps a better analogy is a compiler that can&#x27;t eliminate tail-calls, since erasing everything to a certain base type (that F# lets you choose) is kind of like reusing stack frames vis-à-vis the analogy)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526658&amp;goto=item%3Fid%3D16525244%2316526658">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526854'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="240"></td><td valign="top" class="votelinks"><center><a id='up_16526854' href='vote?id=16526854&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=seanmcdirmid" class="hnuser">seanmcdirmid</a> <span class="age"><a href="item?id=16526854">6 hours ago</a></span> <span id="unv_16526854"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526854)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It is possible to generate interface definitions in C# on the fly (at run-time), but unfortunately it requires going outside of the CLR or even the DLR. Resource usage also becomes a problem since you have to generate it in a new assembly.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526854&amp;goto=item%3Fid%3D16525244%2316526854">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527924'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="280"></td><td valign="top" class="votelinks"><center><a id='up_16527924' href='vote?id=16527924&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=matthewwarren" class="hnuser">matthewwarren</a> <span class="age"><a href="item?id=16527924">1 hour ago</a></span> <span id="unv_16527924"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527924)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; It is possible to generate interface definitions in C# on the fly (at run-time),<p>Huh, I never thought about this restriction, so you can&#x27;t add a new interface with &#x27;Reflection.Emit&#x27;, you can only add a class that implements an existing Interface, is that right?<p>&gt; but unfortunately it requires going outside of the CLR or even the DLR.<p>By this do you mean writing raw CLR metadata yourself and then somehow injecting it into the running process or something else? Either way, its sounds like an interesting technique, any links to how it&#x27;s done?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527924&amp;goto=item%3Fid%3D16525244%2316527924">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+            <tr class='athing comtr ' id='16526705'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526705' href='vote?id=16526705&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=paulddraper" class="hnuser">paulddraper</a> <span class="age"><a href="item?id=16526705">7 hours ago</a></span> <span id="unv_16526705"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526705)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Scala used to target CLR.<p>It was abandoned because interop was hard, and interop was Scala&#x27;s strategy for success<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526705&amp;goto=item%3Fid%3D16525244%2316526705">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526858'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16526858' href='vote?id=16526858&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=seanmcdirmid" class="hnuser">seanmcdirmid</a> <span class="age"><a href="item?id=16526858">6 hours ago</a></span> <span id="unv_16526858"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526858)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Scala used erasure to target the CLR.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526858&amp;goto=item%3Fid%3D16525244%2316526858">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525966'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525966' href='vote?id=16525966&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=KMag" class="hnuser">KMag</a> <span class="age"><a href="item?id=16525966">10 hours ago</a></span> <span id="unv_16525966"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525966)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Note also that Java does have reified generics, but only for arrays.  The designers of the JVM from early on did realize the advantages of reified generics.  Type erasure is not some principled stand being made by the JVM.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525966&amp;goto=item%3Fid%3D16525244%2316525966">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526150'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526150' href='vote?id=16526150&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kbsletten" class="hnuser">kbsletten</a> <span class="age"><a href="item?id=16526150">9 hours ago</a></span> <span id="unv_16526150"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526150)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Well, really their hand was forced because they needed to be able to specialize all of the array-of-primative types. It&#x27;s not as much they saw the advantage as they couldn&#x27;t imagine a language where you can&#x27;t express `byte []`. But the point stands that they could have realized that `ArrayList &lt;byte&gt;` is almost as fundamental and created  refied generics for user-defined types as well.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526150&amp;goto=item%3Fid%3D16525244%2316526150">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527429'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527429' href='vote?id=16527429&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=KMag" class="hnuser">KMag</a> <span class="age"><a href="item?id=16527429">3 hours ago</a></span> <span id="unv_16527429"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527429)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">They could have had type erasure for all arrays of non-primitives.  Their hand was not forced.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527429&amp;goto=item%3Fid%3D16525244%2316527429">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16527499'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527499' href='vote?id=16527499&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tehlike" class="hnuser">tehlike</a> <span class="age"><a href="item?id=16527499">3 hours ago</a></span> <span id="unv_16527499"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16527499)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">2 main things:<p>- Boxing&#x2F;unboxing would not be an issue anymore, so you gain performance.<p>- Runtime types are enforced:
+List myList = new List&lt;String&gt;();
+myList.add(new Object());<p>In JAVA, this is ok. In c#, it throws.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527499&amp;goto=item%3Fid%3D16525244%2316527499">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528002'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16528002' href='vote?id=16528002&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=eterm" class="hnuser">eterm</a> <span class="age"><a href="item?id=16528002">40 minutes ago</a></span> <span id="unv_16528002"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528002)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Testing this, it doesn&#x27;t throw in C#, it just doesn&#x27;t compile because you can&#x27;t declare a variable to be a List without declaring the type with it. If you specify myList as List&lt;String&gt; then it still doesn&#x27;t compile.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528002&amp;goto=item%3Fid%3D16525244%2316528002">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527725'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527725' href='vote?id=16527725&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tybit" class="hnuser">tybit</a> <span class="age"><a href="item?id=16527725">2 hours ago</a></span> <span id="unv_16527725"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527725)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I would say java and c# have both failed on your second point, separate to their respective VMs issues.<p>It would be nice if mistakes like that were deprecated then eventually fixed, even if over many years&#x2F;versions.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527725&amp;goto=item%3Fid%3D16525244%2316527725">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527551'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527551' href='vote?id=16527551&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ygra" class="hnuser">ygra</a> <span class="age"><a href="item?id=16527551">3 hours ago</a></span> <span id="unv_16527551"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527551)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You&#x27;d have to call the Java variant via reflection to show the difference at runtime, as the compiler would already enforce that myList.add(new Object()) won&#x27;t compile. The point stands, though.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527551&amp;goto=item%3Fid%3D16525244%2316527551">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527562'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527562' href='vote?id=16527562&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tehlike" class="hnuser">tehlike</a> <span class="age"><a href="item?id=16527562">3 hours ago</a></span> <span id="unv_16527562"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527562)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Reflection is not required. I actually had the code, somehow got deleted<p>List myList = new ArrayList&lt;String&gt;();
+myList.add(new Object());<p>this would compile.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527562&amp;goto=item%3Fid%3D16525244%2316527562">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527654'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527654' href='vote?id=16527654&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ygra" class="hnuser">ygra</a> <span class="age"><a href="item?id=16527654">2 hours ago</a></span> <span id="unv_16527654"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527654)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Ah, I missed the missing generics on the declaration. Sorry.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527654&amp;goto=item%3Fid%3D16525244%2316527654">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                      <tr class='athing comtr ' id='16525606'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525606' href='vote?id=16525606&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zastrowm" class="hnuser">zastrowm</a> <span class="age"><a href="item?id=16525606">11 hours ago</a></span> <span id="unv_16525606"></span><span class="par"></span> <a class="togg" n="9" href="javascript:void(0)" onclick="return toggle(event, 16525606)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This surprised me:<p>&gt; It was only through the total dedication of Microsoft Research, Cambridge during 1998-2004, to doing a complete, high quality implementation in both the CLR (including NGEN, debugging, JIT, AppDomains, concurrent loading and many other aspects), and the C# compiler, that the project proceeded.<p>I didn&#x27;t realize that it was less a &quot;must-have&quot; and more of a &quot;research and if-possible&quot; task. I wonder how the .NET framework&#x2F;languages would have changed if they went with type erasure.  Would we even still talking about .NET today?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525606&amp;goto=item%3Fid%3D16525244%2316525606">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525633'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525633' href='vote?id=16525633&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nikanj" class="hnuser">nikanj</a> <span class="age"><a href="item?id=16525633">11 hours ago</a></span> <span id="unv_16525633"></span><span class="par"></span> <a class="togg" n="8" href="javascript:void(0)" onclick="return toggle(event, 16525633)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We&#x27;re still talking about Java, which does type erasure. Oracle has really been phoning it in for many years, and despite that the platform is still going strong. Killing large, entrenched platforms is not easy.<p>Windows remains 800lb gorilla on the desktop, and C# is Microsoft&#x27;s recommended environment on it. It&#x27;s hardly surprising that .NET remains relevant.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525633&amp;goto=item%3Fid%3D16525244%2316525633">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525670'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525670' href='vote?id=16525670&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nathanaldensr" class="hnuser">nathanaldensr</a> <span class="age"><a href="item?id=16525670">11 hours ago</a></span> <span id="unv_16525670"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525670)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve been working with .NET since it was in beta in 2001, and I&#x27;ve never considered .NET&#x27;s strength to be its desktop story. .NET (and now .NET Core) are awesome because of C# and the BCL&#x27;s generally excellent design. .NET is an excellent choice for building server-side applications of all kinds. .NET Core removed that last complaint I had about .NET: it wasn&#x27;t cross-platform.<p>It&#x27;s a great time to be a .NET developer.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525670&amp;goto=item%3Fid%3D16525244%2316525670">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526545'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526545' href='vote?id=16526545&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zamalek" class="hnuser">zamalek</a> <span class="age"><a href="item?id=16526545">8 hours ago</a></span> <span id="unv_16526545"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526545)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">.Net is also well designed. Some of the most subtle design choices drastically exaggerate poor choices in other languages - one example that has always stuck with me is how well C# namespaces are designed. Not only because they are frictionless, but also because of the lack of global namespace types in the standard library. It&#x27;s a tiny detail, but .Net is just that: hundreds of well-executed small details.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526545&amp;goto=item%3Fid%3D16525244%2316526545">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527037'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527037' href='vote?id=16527037&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=guelo" class="hnuser">guelo</a> <span class="age"><a href="item?id=16527037">5 hours ago</a></span> <span id="unv_16527037"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527037)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I disagree with you about namespaces. I find Java&#x27;s packages more useful since they give you access control which increases encapsulation. If I want a factory method guarding the instantiation of a class in java I can make the factory <i>public</i> and the class <i>package private</i>. In C# the only answer for this type of encapsulation are assemblies but they&#x27;re much heavier weight and it is recommended not to have too many of them in a project.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527037&amp;goto=item%3Fid%3D16525244%2316527037">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527737'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527737' href='vote?id=16527737&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=BitterAmethyst" class="hnuser">BitterAmethyst</a> <span class="age"><a href="item?id=16527737">2 hours ago</a></span> <span id="unv_16527737"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527737)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You can make the constructors on the class private and have a public static method on the class that does the instantiation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527737&amp;goto=item%3Fid%3D16525244%2316527737">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16525789'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525789' href='vote?id=16525789&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cm2187" class="hnuser">cm2187</a> <span class="age"><a href="item?id=16525789">10 hours ago</a></span> <span id="unv_16525789"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525789)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">On large platforms, I am going to piss off people but I&#x27;ll do it anyway. It&#x27;s not because a language is widely used that it is a well designed language. Javascript, VBA and php immediatly come to my mind. There are many other reasons for a language to be a heavy weight other than its own merit.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525789&amp;goto=item%3Fid%3D16525244%2316525789">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526723'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526723' href='vote?id=16526723&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=candiodari" class="hnuser">candiodari</a> <span class="age"><a href="item?id=16526723">7 hours ago</a></span> <span id="unv_16526723"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526723)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There are many metrics to judge a programming language by, and even different &quot;axes&quot;. Going from theoretical correctness, consistency, type system soundness all the way to ease of development, &quot;batteries included&quot;, empowerment, developer productivity (on small and very large programs, as that is not the same), and more recently &quot;forcing&quot; good practices.<p>Even popularity is a value, as it automatically provides a community, but it&#x27;s also a pitfall, as massive popularity inevitably means the average programmer of language X becomes as smart, careful and reliable as the average programmer irrespective of language. And, to put it mildly, that&#x27;s not a positive evolution. That, above all others, was VB and Delphi&#x27;s downfall.<p>On three axes, I would argue VB, Javascript and Delphi did&#x2F;do incredibly well: ease of development (of small-ish programs), and the deployment story, as well as the empowerment they provided.<p>On things like consistency, developer productivity, batteries included (Delphi was better on the batteries included front), type system soundness, ... they were somewhat sub-par.<p>It&#x27;s just what people value at the time. And of course, it is critical during a career in development to distinguish yourself from the average programmer.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526723&amp;goto=item%3Fid%3D16525244%2316526723">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525996'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525996' href='vote?id=16525996&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zastrowm" class="hnuser">zastrowm</a> <span class="age"><a href="item?id=16525996">10 hours ago</a></span> <span id="unv_16525996"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525996)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yeah, but I wonder if .NET wouldn&#x27;t have succeeded until .NET Core without generics as a distinguishing feature.  I feel like generics + some of the features built on them (LINQ+TPL+etc.) is what let .NET&#x2F;C# stand apart from Java.<p>I&#x27;m not necessarily saying it would have failed, but I do wonder :: )<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525996&amp;goto=item%3Fid%3D16525244%2316525996">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16525635'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525635' href='vote?id=16525635&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=forinti" class="hnuser">forinti</a> <span class="age"><a href="item?id=16525635">11 hours ago</a></span> <span id="unv_16525635"></span><span class="par"></span> <a class="togg" n="11" href="javascript:void(0)" onclick="return toggle(event, 16525635)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a">Did they really have to split the library into generic&#x2F;non generic? I think Java handled that much better.<p>It&#x27;s been more than a decade since I last used C#, so excuse me if I recall incorrectly.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525635&amp;goto=item%3Fid%3D16525244%2316525635">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525792'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525792' href='vote?id=16525792&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Maultasche" class="hnuser">Maultasche</a> <span class="age"><a href="item?id=16525792">10 hours ago</a></span> <span id="unv_16525792"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525792)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I disagree. I think that C# generics are way better. The C# generics are supported at the virtual machine level, whereas Java just pretends to do generics. Java generic types are unknown to the virtual machine since the compiler just compiles a List&lt;Foo&gt; to a list of objects, leaving the VM ignorant of what it really is.<p>I thought the Java implementation was almost a workaround to avoid the hard work of a true generics implementation.<p>The fact that C# generics are understood by all parts of the .NET ecosystem makes it so much better and boosts the language to a much higher level than Java.<p>C# and Java always seemed to be roughly the same to me until C# got generics, and that boosted C# to a much better plane of existence, which was followed by a great deal of innovation such as LINQ, async-await, lambdas, etc, all of which benefit from C# generics.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525792&amp;goto=item%3Fid%3D16525244%2316525792">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525956'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525956' href='vote?id=16525956&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=xenadu02" class="hnuser">xenadu02</a> <span class="age"><a href="item?id=16525956">10 hours ago</a></span> <span id="unv_16525956"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525956)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">To answer the parent&#x27;s question: Yes, it was necessary. Doing it the way they did allowed source compatibility with pre-generic or non-generic-aware code. Passing a List&lt;string&gt; to something that expects an IEnumerable works just fine and effectively gives you the Java solution (at a source level) when talking to older APIs! This is why interface IEnumerable&lt;T&gt;: IEnumerable.<p>&gt;I disagree. I think that C# generics are way better. The C# generics are supported at the virtual machine level, whereas Java just pretends to do generics. Java generic types are unknown to the virtual machine since the compiler just compiles a List&lt;Foo&gt; to a list of objects, leaving the VM ignorant of what it really is.<p>It is worse than that. Java generics don&#x27;t work with value types at all thanks to this. A C# List&lt;int&gt; is much closer to a zero-overhead abstraction. It does not box the primitive int values. If Java ever adopts primitive generic types it will break compatibility or introduce massive performance overhead, as touching any non-generic API forces a boxing conversion. Either it negates the reason for type-erasing originally or it eliminates the main benefit of non-boxing value type support (performance).<p>(I should clarify that Java doesn&#x27;t have first-class value type support either so this really only applies to primitives)<p>&gt;I thought the Java implementation was almost a workaround to avoid the hard work of a true generics implementation.<p>It was a deliberate design decision to retain compatibility between pre-generic and post-generic Java code.<p>Personally I think that was the wrong tradeoff; there is never a better time to make a breaking change than <i>right now</i>. The cost only ever increases with time. It was also clear back then that Java would exist for far longer with generics than without and that far more code would be written in Java post-generics than pre-generics. The result is everyone who uses Java is stuck with limitations and negative performance impacts forever, rather than accepting some short-term pain.<p>It is also my personal opinion that source compatibility is what developers actually cared about and Sun should have told the stodgy risk-averse big Java houses to suck it up and get ready for JVM v2. It would have been a good opportunity to fix a few other things in the JVM.<p>C# had the benefit of hindsight in some ways. I&#x27;m not sure if Java demonstrates how open delivers inferior results, how bad leadership can impact a project, or just what happens if you pay attention to what &quot;enterprise&quot; customers claim they want.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525956&amp;goto=item%3Fid%3D16525244%2316525956">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526805'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526805' href='vote?id=16526805&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sebazzz" class="hnuser">sebazzz</a> <span class="age"><a href="item?id=16526805">6 hours ago</a></span> <span id="unv_16526805"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526805)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Personally I think that was the wrong tradeoff; there is never a better time to make a breaking change than right now. The cost only ever increases with time.<p>Yes, but from a marketing perspective breaking with the past is usually not desired. Especially if your product is currently being adopted and is already partially adopted in both hardware and software (which might have been the case when they implemented generics?).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526805&amp;goto=item%3Fid%3D16525244%2316526805">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525960'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525960' href='vote?id=16525960&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kevin_thibedeau" class="hnuser">kevin_thibedeau</a> <span class="age"><a href="item?id=16525960">10 hours ago</a></span> <span id="unv_16525960"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525960)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">The Java implementation is a workaround to avoid breaking processors that executed Java bytecode. ARM Cortex can still theoretically do it, though it now just traps into a soft VM.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525960&amp;goto=item%3Fid%3D16525244%2316525960">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525658'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525658' href='vote?id=16525658&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=enitihas" class="hnuser">enitihas</a> <span class="age"><a href="item?id=16525658">11 hours ago</a></span> <span id="unv_16525658"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16525658)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Java didn&#x27;t handle it much better, they simply chose a different tradeoff. They chose to implement generics via type erasure, which basically means List&lt;String&gt; and List are the exact same classes at runtime.<p>.NET chose to implement specialised generics. Many people think that is a better tradeoff.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525658&amp;goto=item%3Fid%3D16525244%2316525658">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526058'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526058' href='vote?id=16526058&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=KMag" class="hnuser">KMag</a> <span class="age"><a href="item?id=16526058">10 hours ago</a></span> <span id="unv_16526058"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526058)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Note that Java&#x27;s originally only generic type, the array, has C#-style reified generics.  The early JVM implementors should have felt a bit dirty in providing reified generics support for arrays at the VM-level without at least having a forward-compatible VM-level provision for general reified generics.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526058&amp;goto=item%3Fid%3D16525244%2316526058">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526890'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526890' href='vote?id=16526890&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mwkaufma" class="hnuser">mwkaufma</a> <span class="age"><a href="item?id=16526890">6 hours ago</a></span> <span id="unv_16526890"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526890)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">See also: syntax-baked reified arrays, slices, maps, and channels in go (but &quot;no generics&quot; right?)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526890&amp;goto=item%3Fid%3D16525244%2316526890">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526331'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526331' href='vote?id=16526331&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Someone" class="hnuser">Someone</a> <span class="age"><a href="item?id=16526331">9 hours ago</a></span> <span id="unv_16526331"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526331)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think they made the right choice at the time. Targeting devices smaller than desktop computers about 5 years before C# (in a time when Moore’s law was in full swing), they had to cram the jvm in much smaller systems than C# targeted.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526331&amp;goto=item%3Fid%3D16525244%2316526331">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526405'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526405' href='vote?id=16526405&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=int_19h" class="hnuser">int_19h</a> <span class="age"><a href="item?id=16526405">8 hours ago</a></span> <span id="unv_16526405"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526405)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">C# did the same exact trade-off in 1.0.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526405&amp;goto=item%3Fid%3D16525244%2316526405">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525657'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525657' href='vote?id=16525657&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nathanaldensr" class="hnuser">nathanaldensr</a> <span class="age"><a href="item?id=16525657">11 hours ago</a></span> <span id="unv_16525657"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525657)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;m not sure what you mean by &quot;split the library,&quot; but what Microsoft <i>did</i> do is introduce generic versions of many popular and essential classes. For example, the untyped ArrayList became Collection&lt;T&gt;, List&lt;T&gt;, etc. Microsoft did this to retain backward compatibility with existing code.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525657&amp;goto=item%3Fid%3D16525244%2316525657">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16526675'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526675' href='vote?id=16526675&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=candiodari" class="hnuser">candiodari</a> <span class="age"><a href="item?id=16526675">7 hours ago</a></span> <span id="unv_16526675"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526675)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Does anybody remember the article about their generics implementation in assembly ? How they basically were able to reduce the cost of generics by observing they needed only 3 implementations, by writing specialized versions, one for 8-64 bit values (just one version), and then one for 64 bit pointers, and one for structs (struct passed in by having length and value).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526675&amp;goto=item%3Fid%3D16525244%2316526675">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527934'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527934' href='vote?id=16527934&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=matthewwarren" class="hnuser">matthewwarren</a> <span class="age"><a href="item?id=16527934">1 hour ago</a></span> <span id="unv_16527934"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527934)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Does anybody remember the article about their generics implementation in assembly ?<p>Do you mean <a href="http:&#x2F;&#x2F;joeduffyblog.com&#x2F;2011&#x2F;10&#x2F;23&#x2F;on-generics-and-some-of-the-associated-overheads&#x2F;" rel="nofollow">http:&#x2F;&#x2F;joeduffyblog.com&#x2F;2011&#x2F;10&#x2F;23&#x2F;on-generics-and-some-of-t...</a> or <a href="https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;joelpob&#x2F;2004&#x2F;11&#x2F;17&#x2F;clr-generics-and-code-sharing&#x2F;" rel="nofollow">https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;joelpob&#x2F;2004&#x2F;11&#x2F;17&#x2F;clr-gene...</a><p>They&#x27;re 2 articles I came across that covered the low-level details of the generic impl.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527934&amp;goto=item%3Fid%3D16525244%2316527934">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527363'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527363' href='vote?id=16527363&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=msie" class="hnuser">msie</a> <span class="age"><a href="item?id=16527363">4 hours ago</a></span> <span id="unv_16527363"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527363)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">If it took 6 years to get generics into .NET, we can&#x27;t fault the Golang guys for taking their time too.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527363&amp;goto=item%3Fid%3D16525244%2316527363">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527501'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527501' href='vote?id=16527501&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tehlike" class="hnuser">tehlike</a> <span class="age"><a href="item?id=16527501">3 hours ago</a></span> <span id="unv_16527501"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527501)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">golang generics is templates, or is it not?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527501&amp;goto=item%3Fid%3D16525244%2316527501">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528011'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16528011' href='vote?id=16528011&amp;how=up&amp;goto=item%3Fid%3D16525244'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=masklinn" class="hnuser">masklinn</a> <span class="age"><a href="item?id=16528011">38 minutes ago</a></span> <span id="unv_16528011"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528011)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Golang doesn&#x27;t have user-defined generics (parametric polymorphism).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528011&amp;goto=item%3Fid%3D16525244%2316528011">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

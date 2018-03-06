@@ -1,0 +1,891 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Clang Is Now Used to Build Chrome for Windows | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16524313">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16524313'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16524313' href='vote?id=16524313&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="http://blog.llvm.org/2018/03/clang-is-now-used-to-build-chrome-for.html" class="storylink">Clang Is Now Used to Build Chrome for Windows</a><span class="sitebit comhead"> (<a href="from?site=llvm.org"><span class="sitestr">llvm.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16524313">324 points</span> by <a href="user?id=janvdberg" class="hnuser">janvdberg</a> <span class="age"><a href="item?id=16524313">14 hours ago</a></span> <span id="unv_16524313"></span> | <a href="hide?id=16524313&amp;goto=item%3Fid%3D16524313">hide</a> | <a href="https://hn.algolia.com/?query=Clang%20Is%20Now%20Used%20to%20Build%20Chrome%20for%20Windows&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=Clang%20Is%20Now%20Used%20to%20Build%20Chrome%20for%20Windows">web</a> | <a href="fave?id=16524313&amp;auth=39b9a73505e8a622723aeab4051b5bde12c342f7">favorite</a> | <a href="item?id=16524313">84&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16524313"><input type="hidden" name="goto" value="item?id=16524313"><input type="hidden" name="hmac" value="0fc81fff9ddd42b01043dfb0d803ccb6bfda41d0"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16524641'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524641' href='vote?id=16524641&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=equalunique" class="hnuser">equalunique</a> <span class="age"><a href="item?id=16524641">13 hours ago</a></span> <span id="unv_16524641"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16524641)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Have seen a couple interesting articles[0][1] highlighting the weirdness of building Chromium on Windows, so hopefully this LLVM improvement will be a step towards a smoother process.<p>[0] <a href="https:&#x2F;&#x2F;randomascii.wordpress.com&#x2F;2018&#x2F;02&#x2F;25&#x2F;compiler-bug-linker-bug-windows-kernel-bug&#x2F;" rel="nofollow">https:&#x2F;&#x2F;randomascii.wordpress.com&#x2F;2018&#x2F;02&#x2F;25&#x2F;compiler-bug-li...</a><p>[1] <a href="https:&#x2F;&#x2F;randomascii.wordpress.com&#x2F;2017&#x2F;07&#x2F;09&#x2F;24-core-cpu-and-i-cant-move-my-mouse&#x2F;" rel="nofollow">https:&#x2F;&#x2F;randomascii.wordpress.com&#x2F;2017&#x2F;07&#x2F;09&#x2F;24-core-cpu-and...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524641&amp;goto=item%3Fid%3D16524313%2316524641">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525174'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525174' href='vote?id=16525174&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brucedawson" class="hnuser">brucedawson</a> <span class="age"><a href="item?id=16525174">12 hours ago</a></span> <span id="unv_16525174"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525174)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Hey, those are mine! Those two issues (and this one: <a href="https:&#x2F;&#x2F;randomascii.wordpress.com&#x2F;2018&#x2F;02&#x2F;11&#x2F;zombie-processes-are-eating-your-memory&#x2F;" rel="nofollow">https:&#x2F;&#x2F;randomascii.wordpress.com&#x2F;2018&#x2F;02&#x2F;11&#x2F;zombie-processe...</a>) are equally problematic with clang. Two of them were problems with Windows, and one was a flaw in a Microsoft system management component.<p>Luckily they are all mitigated, fixed, or being fixed, so my Chrome builds run much more smoothly now.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525174&amp;goto=item%3Fid%3D16524313%2316525174">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526822'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526822' href='vote?id=16526822&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=equalunique" class="hnuser">equalunique</a> <span class="age"><a href="item?id=16526822">6 hours ago</a></span> <span id="unv_16526822"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526822)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thank you for chiming in! Your articles are wonderful!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526822&amp;goto=item%3Fid%3D16524313%2316526822">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526926'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526926' href='vote?id=16526926&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zamalek" class="hnuser">zamalek</a> <span class="age"><a href="item?id=16526926">6 hours ago</a></span> <span id="unv_16526926"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526926)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Did you guys ever reverse-spec the name mangling?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526926&amp;goto=item%3Fid%3D16524313%2316526926">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16524993'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524993' href='vote?id=16524993&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jwilk" class="hnuser">jwilk</a> <span class="age"><a href="item?id=16524993">12 hours ago</a></span> <span id="unv_16524993"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524993)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">On HN:<p>[0] <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=16463572" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=16463572</a><p>[1] <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=14733829" rel="nofollow">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=14733829</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524993&amp;goto=item%3Fid%3D16524313%2316524993">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16525649'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525649' href='vote?id=16525649&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=evmar" class="hnuser">evmar</a> <span class="age"><a href="item?id=16525649">11 hours ago</a></span> <span id="unv_16525649"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525649)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We first started fiddling with Clang for Chrome in late 2010:
+<a href="http:&#x2F;&#x2F;neugierig.org&#x2F;software&#x2F;chromium&#x2F;notes&#x2F;2011&#x2F;01&#x2F;clang.html" rel="nofollow">http:&#x2F;&#x2F;neugierig.org&#x2F;software&#x2F;chromium&#x2F;notes&#x2F;2011&#x2F;01&#x2F;clang.h...</a><p>The original work was just finding bugs in the codebase and compiler.  It&#x27;s gone so far!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525649&amp;goto=item%3Fid%3D16524313%2316525649">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16524876'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524876' href='vote?id=16524876&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tavert" class="hnuser">tavert</a> <span class="age"><a href="item?id=16524876">13 hours ago</a></span> <span id="unv_16524876"></span><span class="par"></span> <a class="togg" n="21" href="javascript:void(0)" onclick="return toggle(event, 16524876)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; if your project is Windows-only, you can get a second compiler’s opinion on your code, and Clang’s warnings might find bugs<p>GCC (mingw.org and mingw-w64 triples) has existed and been able to do this, including and especially cross-compiling, for a long time. No need to manually download a Windows SDK either.<p>edited to add: to be fair, it&#x27;s not ABI compatible with MSVC. But it deserves a mention and it&#x27;s an easier option than MSVC-style build systems for many open source projects.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524876&amp;goto=item%3Fid%3D16524313%2316524876">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525513'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525513' href='vote?id=16525513&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=martell" class="hnuser">martell</a> <span class="age"><a href="item?id=16525513">11 hours ago</a></span> <span id="unv_16525513"></span><span class="par"></span> <a class="togg" n="10" href="javascript:void(0)" onclick="return toggle(event, 16525513)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">mingw-w64 llvm maintainer&#x2F;developer here.<p>Over the past 2-3 years, with great help from a few other LLVM devs I have slowly pushed for native clang support for mingw-w64. With the current in tree HEAD you can now build and bootstrap mingw-w64 with a llvm-only toolchain (no binutils or gcc, thus no disregard of the PECOFF SPEC)<p>The stack is as follows. LLVM+CLANG+LLD+COMPILER-RT+LIBCXX+LIBCXXABI+LIBUNWIND+MINGW-W64.<p>The libraries and executables built this way can be dropped into visual studio quite easily, the two environments are now basically interchangeable. This also means we can borrow the PDB debugging work by Zachary Turner and&#x2F;or any msvc features added to llvm for free that was done by the various googlers working on chrome. See a talk from Reid on the most recent LLVM developer meetup for more info on PDB and how it works.
+There has been no formal release of this environment yet but you should see something in the coming weeks&#x2F;months.
+I keep build scripts here for those interested.<p><a href="https:&#x2F;&#x2F;github.com&#x2F;martell&#x2F;mingw-w64-clang" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;martell&#x2F;mingw-w64-clang</a><p>I&#x27;m due another cleanup of the repo now that wine 3.0 is out so I can actually run x64 tests within a linux docker container.
+I&#x27;m going to be doing some blogging to make this more visible with various partners that want to support this.<p>The most interesting part of this for me was implementing a llvm-dlltool alternative to binutils dlltool that actually works within the PECOFF spec so msvc lib.exe and link.exe likes what it produces.<p><a href="https:&#x2F;&#x2F;reviews.llvm.org&#x2F;rL308379" rel="nofollow">https:&#x2F;&#x2F;reviews.llvm.org&#x2F;rL308379</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525513&amp;goto=item%3Fid%3D16524313%2316525513">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525571'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525571' href='vote?id=16525571&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zturner" class="hnuser">zturner</a> <span class="age"><a href="item?id=16525571">11 hours ago</a></span> <span id="unv_16525571"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525571)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This sounds great, it&#x27;s been a long time coming and I&#x27;m sure many people will appreciate being able to debug their mingw generated executables in Visual Studio.<p>I did all of the PDB stuff in LLVM, happy to help if you need it (ping me on the mailing list or IRC)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525571&amp;goto=item%3Fid%3D16524313%2316525571">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525622'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525622' href='vote?id=16525622&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=martell" class="hnuser">martell</a> <span class="age"><a href="item?id=16525622">11 hours ago</a></span> <span id="unv_16525622"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525622)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Updated the comment to reflect this. :)
+Thanks for all the good work.
+Will ping you when I move onto that stage for support.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525622&amp;goto=item%3Fid%3D16524313%2316525622">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525857'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525857' href='vote?id=16525857&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tavert" class="hnuser">tavert</a> <span class="age"><a href="item?id=16525857">10 hours ago</a></span> <span id="unv_16525857"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525857)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Excellent work. I like to ignore visual studio completely and pretend it doesn&#x27;t exist, but that&#x27;s just me :)
+I&#x27;ve used cygwin&#x27;s cross-compiler x86_64-w64-mingw32-clang package once in a while, though I find more projects&#x27; build systems choke on it and do the wrong thing (libgmp as a notable example) than with x86_64-w64-mingw32-gcc.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525857&amp;goto=item%3Fid%3D16524313%2316525857">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526447'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526447' href='vote?id=16526447&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=martell" class="hnuser">martell</a> <span class="age"><a href="item?id=16526447">8 hours ago</a></span> <span id="unv_16526447"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526447)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I tend to ignore both gcc and MSVC. Clang is really good at bootstrapping itself with this setup even when cross compiling without any real complexity. Without diverting into a cmake vs autotools battle I like that llvm and clang just work and bootstrap so easily. Gone are the days of messing around with gmp isl and co to bootstrap a toolchain.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526447&amp;goto=item%3Fid%3D16524313%2316526447">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526857'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16526857' href='vote?id=16526857&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tavert" class="hnuser">tavert</a> <span class="age"><a href="item?id=16526857">6 hours ago</a></span> <span id="unv_16526857"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526857)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Fair enough, but I actually need gmp more for runtime math, plus fortran deps like lapack and more obscure things. Maybe flang will be production-worthy some day - do you know if they&#x27;re still outputting a textual representation of IR into string buffers?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526857&amp;goto=item%3Fid%3D16524313%2316526857">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525772'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525772' href='vote?id=16525772&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brucedawson" class="hnuser">brucedawson</a> <span class="age"><a href="item?id=16525772">11 hours ago</a></span> <span id="unv_16525772"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525772)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I&#x27;ve been watching the process of getting git to build with VS, but it&#x27;s sounding like mingw-w64 will gain PDB output faster than the VS version will happen. Either way, if I can debug (and profile) git.exe then I&#x27;m happy.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525772&amp;goto=item%3Fid%3D16524313%2316525772">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526553'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526553' href='vote?id=16526553&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=amedvednikov" class="hnuser">amedvednikov</a> <span class="age"><a href="item?id=16526553">8 hours ago</a></span> <span id="unv_16526553"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526553)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thanks for your work. mingw-w64 is amazing!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526553&amp;goto=item%3Fid%3D16524313%2316526553">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526551'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526551' href='vote?id=16526551&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Ericson2314" class="hnuser">Ericson2314</a> <span class="age"><a href="item?id=16526551">8 hours ago</a></span> <span id="unv_16526551"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526551)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great work! We with Nixpkgs&#x2F;NixOS have over the past year overhauled cross compilation, culminating recently with a bunch of parallel efforts recently including Windows cross compilation. People have built Nix with cygwin in the past, it would be nice to get it working in MSYS2&#x2F;mingw-w64 too.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526551&amp;goto=item%3Fid%3D16524313%2316526551">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527802'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527802' href='vote?id=16527802&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobush" class="hnuser">jacobush</a> <span class="age"><a href="item?id=16527802">1 hour ago</a></span> <span id="unv_16527802"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527802)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Are you targeting Linux, building on Windows?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527802&amp;goto=item%3Fid%3D16524313%2316527802">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525230'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525230' href='vote?id=16525230&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mappu" class="hnuser">mappu</a> <span class="age"><a href="item?id=16525230">12 hours ago</a></span> <span id="unv_16525230"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525230)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">One of mingw{,-w64}&#x27;s major contributions is a gcc-compatible replacement set of headers and import libraries, instead of using the Windows SDK or MSVC versions.<p>These work great most of the time, but if you start hooking deeply into windows, you realise they are a little bit outdated or incompatible. e.g. I get a lot of errors like<p><pre><code>    #warning COM interfaces layout in this header has not been verified.
+    #warning COM interfaces with incorrect layout may not work at all.
+    #pragma message: Interface Ifoo has unverified layout.
+</code></pre>
+in COM code, and some ATL things it is unable to build at all.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525230&amp;goto=item%3Fid%3D16524313%2316525230">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525039'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525039' href='vote?id=16525039&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bedros" class="hnuser">bedros</a> <span class="age"><a href="item?id=16525039">12 hours ago</a></span> <span id="unv_16525039"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525039)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Apple hired developers of Clang and started supporting Clang around the time GPLv3 was being pushed by FSF, Apple at the time was using GCC in their development and feared that GPLv3 would taint their code.<p>other than technical merits, permissible license of Clang is attractive for some developers&#x2F;businesses<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525039&amp;goto=item%3Fid%3D16524313%2316525039">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525085'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525085' href='vote?id=16525085&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=kccqzy" class="hnuser">kccqzy</a> <span class="age"><a href="item?id=16525085">12 hours ago</a></span> <span id="unv_16525085"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525085)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I thought Apple didn’t just “hire” the developers of clang. They started the clang project in-house before eventually open sourcing it.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525085&amp;goto=item%3Fid%3D16524313%2316525085">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525160'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525160' href='vote?id=16525160&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gsnedders" class="hnuser">gsnedders</a> <span class="age"><a href="item?id=16525160">12 hours ago</a></span> <span id="unv_16525160"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525160)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes; Clang was started internally to Apple. They did &quot;just hire&quot; the developer of LLVM.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525160&amp;goto=item%3Fid%3D16524313%2316525160">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525166'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525166' href='vote?id=16525166&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gsnedders" class="hnuser">gsnedders</a> <span class="age"><a href="item?id=16525166">12 hours ago</a></span> <span id="unv_16525166"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525166)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; edited to add: to be fair, it&#x27;s not ABI compatible with MSVC. But it deserves a mention and it&#x27;s an easier option than MSVC-style build systems for many open source projects.<p>Pretty sure this is significant in Chrome&#x27;s case.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525166&amp;goto=item%3Fid%3D16524313%2316525166">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527276'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527276' href='vote?id=16527276&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=saurik" class="hnuser">saurik</a> <span class="age"><a href="item?id=16527276">4 hours ago</a></span> <span id="unv_16527276"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527276)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why, though? What does Chrome do that calls into C++ code compiled by anyone but Google?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527276&amp;goto=item%3Fid%3D16524313%2316527276">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16528025'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16528025' href='vote?id=16528025&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=gsnedders" class="hnuser">gsnedders</a> <span class="age"><a href="item?id=16528025">33 minutes ago</a></span> <span id="unv_16528025"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16528025)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">File dialogs (to save&#x2F;load web pages, to upload files), print support, TCP sockets… all of these involve calling into system code.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16528025&amp;goto=item%3Fid%3D16524313%2316528025">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527597'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527597' href='vote?id=16527597&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=valarauca1" class="hnuser">valarauca1</a> <span class="age"><a href="item?id=16527597">2 hours ago</a></span> <span id="unv_16527597"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527597)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">on Windows the native ABI (or the default ABI I should say) explicitly reserves space for C++ stack unwinding on a per call basis.<p>A lot of the windows API can (ab)use this so it’s best to follow it, despite it being C (ish).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527597&amp;goto=item%3Fid%3D16524313%2316527597">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525192'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525192' href='vote?id=16525192&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brucedawson" class="hnuser">brucedawson</a> <span class="age"><a href="item?id=16525192">12 hours ago</a></span> <span id="unv_16525192"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525192)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Does this option give you full debug information? My impression was that it does not. I require full debug information for debugging and profiling, and with clang-cl I get that (context: I work on Chromium)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525192&amp;goto=item%3Fid%3D16524313%2316525192">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525423'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525423' href='vote?id=16525423&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=chandlerc1024" class="hnuser">chandlerc1024</a> <span class="age"><a href="item?id=16525423">11 hours ago</a></span> <span id="unv_16525423"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525423)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">My memory is that it supports DWARF debug info. So you get full debug info in DWARF and can use the mingw port of GDB on Windows.<p>Still, this is very different from the first-class support for compatible debug info that Clang provides.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525423&amp;goto=item%3Fid%3D16524313%2316525423">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16527054'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527054' href='vote?id=16527054&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=GeekyBear" class="hnuser">GeekyBear</a> <span class="age"><a href="item?id=16527054">5 hours ago</a></span> <span id="unv_16527054"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527054)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">For those interested in Clang history, here&#x27;s Chris Lattner giving a tech talk at Google introducing LLVM and Clang.<p><a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=029YXzHtRy0" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=029YXzHtRy0</a><p>The Clang discussion begins at 18:53<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527054&amp;goto=item%3Fid%3D16524313%2316527054">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16524696'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524696' href='vote?id=16524696&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tsomctl" class="hnuser">tsomctl</a> <span class="age"><a href="item?id=16524696">13 hours ago</a></span> <span id="unv_16524696"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16524696)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I didn&#x27;t realize that clang is mostly a drop in replacement for cl, and matches the C++ abi. That in of itself is awesome.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524696&amp;goto=item%3Fid%3D16524313%2316524696">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525185'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525185' href='vote?id=16525185&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brucedawson" class="hnuser">brucedawson</a> <span class="age"><a href="item?id=16525185">12 hours ago</a></span> <span id="unv_16525185"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525185)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">clang isn&#x27;t. clang-cl is (after years of work by the clang-cl team at Google). They had to do a lot of work, especially around PDB (symbol-file) generation.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525185&amp;goto=item%3Fid%3D16524313%2316525185">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525591'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525591' href='vote?id=16525591&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zturner" class="hnuser">zturner</a> <span class="age"><a href="item?id=16525591">11 hours ago</a></span> <span id="unv_16525591"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525591)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">More precisely:<p>clang-cl is a drop-in replacement for cl (even the command lines are the same).<p>But clang-cl is just a driver for clang, and it&#x27;s still possible to get the ABI compatibility without clang-cl, but you have to know what you&#x27;re doing and get the flags right.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525591&amp;goto=item%3Fid%3D16524313%2316525591">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                  <tr class='athing comtr ' id='16525843'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525843' href='vote?id=16525843&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Ono-Sendai" class="hnuser">Ono-Sendai</a> <span class="age"><a href="item?id=16525843">10 hours ago</a></span> <span id="unv_16525843"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525843)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Great work by the Clang team, well done!<p>I&#x27;m a bit surprised to see that build times in Clang are worse, and that resulting binary performance is comparable.<p>Maybe that will change when the Clang build starts to use LTCG, as the article mentions.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525843&amp;goto=item%3Fid%3D16524313%2316525843">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16526355'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526355' href='vote?id=16526355&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=xvilka" class="hnuser">xvilka</a> <span class="age"><a href="item?id=16526355">8 hours ago</a></span> <span id="unv_16526355"></span><span class="par"></span> <a class="togg" n="13" href="javascript:void(0)" onclick="return toggle(event, 16526355)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">With Microsoft producing MSVC&#x2F;C2 compiler with Clang frontend, I am surprised they did not abandon the MSVC at all - they have a hard times even at supporting C99, not to mention modern C++ technologies. And all those tools and plugins built around Clang&#x2F;LLVM. MSVC is a legacy of XX century and should be abandoned for good.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526355&amp;goto=item%3Fid%3D16524313%2316526355">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527355'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527355' href='vote?id=16527355&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pjmlp" class="hnuser">pjmlp</a> <span class="age"><a href="item?id=16527355">4 hours ago</a></span> <span id="unv_16527355"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16527355)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">They don&#x27;t have any hard time supporting C99, from Microsoft point of view C is done, time to move on to C++.<p>&gt; We do not plan to support ISO C features that are not part of either C90 or ISO C++.<p><a href="https:&#x2F;&#x2F;herbsutter.com&#x2F;2012&#x2F;05&#x2F;03&#x2F;reader-qa-what-about-vc-and-c99&#x2F;" rel="nofollow">https:&#x2F;&#x2F;herbsutter.com&#x2F;2012&#x2F;05&#x2F;03&#x2F;reader-qa-what-about-vc-an...</a><p>All the updates regarding C99 and C11 in Visual C++ are related to ANSI&#x2F;ISO C++ requirements regarding C compatibility, as Herb states.<p>Regarding legacy, Visual C++ is one of the top C++ compilers doing incremental compilation and linking, which still beats Rust compilation times on Windows.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527355&amp;goto=item%3Fid%3D16524313%2316527355">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527787'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527787' href='vote?id=16527787&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=geezerjay" class="hnuser">geezerjay</a> <span class="age"><a href="item?id=16527787">1 hour ago</a></span> <span id="unv_16527787"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527787)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; They don&#x27;t have any hard time supporting C99, from Microsoft point of view C is done, time to move on to C++.<p>If that&#x27;s the case then Microsoft should get its corporate ass out of C&#x27;s standardization committee. It makes no sense to waste their time forcing requirements onto a standard that they refuse to comply with.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527787&amp;goto=item%3Fid%3D16524313%2316527787">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527841'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527841' href='vote?id=16527841&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pjmlp" class="hnuser">pjmlp</a> <span class="age"><a href="item?id=16527841">1 hour ago</a></span> <span id="unv_16527841"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527841)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">They don&#x27;t have anyone on JTC1&#x2F;SC22&#x2F;WG14, where did you imagine that?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527841&amp;goto=item%3Fid%3D16524313%2316527841">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527893'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527893' href='vote?id=16527893&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobush" class="hnuser">jacobush</a> <span class="age"><a href="item?id=16527893">1 hour ago</a></span> <span id="unv_16527893"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527893)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I’m sure you won’t like this comment, but doesn’t Microsoft have a vested interest in keeping C as unchanged as possible? If C were to run away in unorthodox directions, that would hurt compatibility with C++ and hence Visual Studio. So from their perspective it may make perfect sense to stay on the committee to keep it as conservative as possible. Why voluntarily give up soft power?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527893&amp;goto=item%3Fid%3D16524313%2316527893">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527405'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527405' href='vote?id=16527405&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wahern" class="hnuser">wahern</a> <span class="age"><a href="item?id=16527405">3 hours ago</a></span> <span id="unv_16527405"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527405)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Microsoft backpedaled not longer afterwards. See, e.g.,<p><a href="https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;vcblog&#x2F;2013&#x2F;06&#x2F;28&#x2F;c1114-stl-features-fixes-and-breaking-changes-in-vs-2013&#x2F;" rel="nofollow">https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;vcblog&#x2F;2013&#x2F;06&#x2F;28&#x2F;c1114-stl...</a><p>and<p><a href="https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;vcblog&#x2F;2013&#x2F;07&#x2F;19&#x2F;c99-library-support-in-visual-studio-2013&#x2F;" rel="nofollow">https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;vcblog&#x2F;2013&#x2F;07&#x2F;19&#x2F;c99-libra...</a><p>They even added C99 compound literals and designated initializers:<p><a href="https:&#x2F;&#x2F;msdn.microsoft.com&#x2F;en-us&#x2F;library&#x2F;hh409293(v=vs.120).aspx" rel="nofollow">https:&#x2F;&#x2F;msdn.microsoft.com&#x2F;en-us&#x2F;library&#x2F;hh409293(v=vs.120)....</a><p>Compound literals could <i>never</i> be added to C++ because the syntax and semantics conflict with existing C++ constructs.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527405&amp;goto=item%3Fid%3D16524313%2316527405">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527524'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527524' href='vote?id=16527524&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pjmlp" class="hnuser">pjmlp</a> <span class="age"><a href="item?id=16527524">3 hours ago</a></span> <span id="unv_16527524"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527524)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">C99 and C11 library support is required by ANSI&#x2F;ISO C++.<p>As for the minor language changes, there was a blog post that I cannot locate now, stating it was to the extent required for porting well known projects to Windows, the remaining features would depend on key customers feedback.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527524&amp;goto=item%3Fid%3D16524313%2316527524">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526701'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526701' href='vote?id=16526701&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sanxiyn" class="hnuser">sanxiyn</a> <span class="age"><a href="item?id=16526701">7 hours ago</a></span> <span id="unv_16526701"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526701)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">My impression was that problem with C99 support was that Microsoft was not willing, not that Microsoft was not capable.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526701&amp;goto=item%3Fid%3D16524313%2316526701">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526883'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526883' href='vote?id=16526883&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tavert" class="hnuser">tavert</a> <span class="age"><a href="item?id=16526883">6 hours ago</a></span> <span id="unv_16526883"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526883)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There&#x27;s a link in the article here, but sadly it sounds like they&#x27;ve abandoned Clang&#x2F;C2. I guess they got normal MSVC up to speed on the C++1y&#x2F;z they wanted to support, and Clang&#x2F;LLVM was always better than both at complex numbers, inline assembly, and other C features.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526883&amp;goto=item%3Fid%3D16524313%2316526883">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527359'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527359' href='vote?id=16527359&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pjmlp" class="hnuser">pjmlp</a> <span class="age"><a href="item?id=16527359">4 hours ago</a></span> <span id="unv_16527359"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527359)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">They have officially abandoned Clang&#x2F;C2.<p><a href="https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;vcblog&#x2F;2017&#x2F;05&#x2F;10&#x2F;c17-features-in-vs-2017-3&#x2F;" rel="nofollow">https:&#x2F;&#x2F;blogs.msdn.microsoft.com&#x2F;vcblog&#x2F;2017&#x2F;05&#x2F;10&#x2F;c17-featu...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527359&amp;goto=item%3Fid%3D16524313%2316527359">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527423'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527423' href='vote?id=16527423&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tavert" class="hnuser">tavert</a> <span class="age"><a href="item?id=16527423">3 hours ago</a></span> <span id="unv_16527423"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527423)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">if a comment on a blog post counts as official<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527423&amp;goto=item%3Fid%3D16524313%2316527423">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527455'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527455' href='vote?id=16527455&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pjmlp" class="hnuser">pjmlp</a> <span class="age"><a href="item?id=16527455">3 hours ago</a></span> <span id="unv_16527455"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527455)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Do you know who Andrew Pardoe is?<p>It is as official as Google and Apple devs doing blog posts on Medium.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527455&amp;goto=item%3Fid%3D16524313%2316527455">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16526738'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526738' href='vote?id=16526738&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=criddell" class="hnuser">criddell</a> <span class="age"><a href="item?id=16526738">7 hours ago</a></span> <span id="unv_16526738"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526738)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">IMHO, Microsoft has been doing a pretty good job. I don&#x27;t think it&#x27;s as bad as you make it out to be:<p><a href="https:&#x2F;&#x2F;msdn.microsoft.com&#x2F;en-us&#x2F;library&#x2F;hh567368.aspx" rel="nofollow">https:&#x2F;&#x2F;msdn.microsoft.com&#x2F;en-us&#x2F;library&#x2F;hh567368.aspx</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526738&amp;goto=item%3Fid%3D16524313%2316526738">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16525143'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525143' href='vote?id=16525143&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=quickben" class="hnuser">quickben</a> <span class="age"><a href="item?id=16525143">12 hours ago</a></span> <span id="unv_16525143"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16525143)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Interesting. It seems Google is moving away from anything gpl&#x2F;gnu lately (fuchsia, etc...)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525143&amp;goto=item%3Fid%3D16524313%2316525143">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526785'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526785' href='vote?id=16526785&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=slrz" class="hnuser">slrz</a> <span class="age"><a href="item?id=16526785">6 hours ago</a></span> <span id="unv_16526785"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526785)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I doubt this is very relevant in the case of Chrome compilers. It&#x27;s more about the huge investment&#x2F;expertise in Clang- or LLVM-based dynamic analysis and development tooling.<p>It&#x27;s just the better platform for writing these things. Heck, this is what is was built for in the first place. GCC is a solid, but also a very traditional compiler.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526785&amp;goto=item%3Fid%3D16524313%2316526785">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527304'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527304' href='vote?id=16527304&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=saurik" class="hnuser">saurik</a> <span class="age"><a href="item?id=16527304">4 hours ago</a></span> <span id="unv_16527304"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527304)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Heck, this is what is was built for in the first place.<p>LLVM was supposed to be a virtual machine environment (hence the name); I remember when it came out and I was in college doing program language research. It entirely dropped that history and got twisted into a compiler platform much later. And clang only came into existence because the developers of g c (in particular, Richard Stallman) did not want to work with Apple on maintaining LLVM as a gdc backend (which was a stupid stupid decision: Apple said they would be willing to give the copyright of LLVM to the FSF, which would have kept all compiler tech under GPL), which was all well after Apple had been switching to LLVM for their compiler stack (in order to obtain weird optimizations).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527304&amp;goto=item%3Fid%3D16524313%2316527304">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525834'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525834' href='vote?id=16525834&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=wongmjane" class="hnuser">wongmjane</a> <span class="age"><a href="item?id=16525834">10 hours ago</a></span> <span id="unv_16525834"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525834)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I think it is mainly due to their concerns over the Tivoization clause which is added to GPLv3<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525834&amp;goto=item%3Fid%3D16524313%2316525834">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526409'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526409' href='vote?id=16526409&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=chocolatebunny" class="hnuser">chocolatebunny</a> <span class="age"><a href="item?id=16526409">8 hours ago</a></span> <span id="unv_16526409"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526409)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">That&#x27;s true for any developer of embedded software.  Any one who makes hardware of any kind will avoid trying to put any GPLv3 licensed code on their hardware.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526409&amp;goto=item%3Fid%3D16524313%2316526409">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525418'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525418' href='vote?id=16525418&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pjmlp" class="hnuser">pjmlp</a> <span class="age"><a href="item?id=16525418">11 hours ago</a></span> <span id="unv_16525418"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525418)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yep, GCC is no longer supported on Android.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525418&amp;goto=item%3Fid%3D16524313%2316525418">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16524895'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524895' href='vote?id=16524895&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=anfilt" class="hnuser">anfilt</a> <span class="age"><a href="item?id=16524895">13 hours ago</a></span> <span id="unv_16524895"></span><span class="par"></span> <a class="togg" n="12" href="javascript:void(0)" onclick="return toggle(event, 16524895)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">And why not use mingw gcc? Do they find somthing wrong with it?<p>Edit
+Mingw-w64 its quite nice and includes gcc without all stuff cgwin does.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524895&amp;goto=item%3Fid%3D16524313%2316524895">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525523'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525523' href='vote?id=16525523&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=zturner" class="hnuser">zturner</a> <span class="age"><a href="item?id=16525523">11 hours ago</a></span> <span id="unv_16525523"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525523)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">1) ABI compatibility is not present.  With clang-cl you can compile half of your object files with MSVC and half with clang-cl, and link them together.  That&#x27;s very powerful.  You might be thinking &quot;but who is really gonna do that anyway?&quot;  However, there is more to the ABI than just this.  For example, consider what happens if you need to use Structured Exception Handling.  Well, with GCC, you can&#x27;t.<p>2) Debug Information.  GCC does not emit PDBs, it emits DWARF.  This means you cannot use Visual Studio to debug, you cannot use vTune or WPA to profile, you cannot use symbol &#x2F; source servers.<p>3) There are licensing implications, GPL != BSD and it&#x27;s easier to use BSD.<p>These are the main reasons.  There are other reasons though, such as if the entire goal is to get down to 1 toolchain and that toolchain is X, then why would you waste your time converting Y to Z?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525523&amp;goto=item%3Fid%3D16524313%2316525523">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525893'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525893' href='vote?id=16525893&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tavert" class="hnuser">tavert</a> <span class="age"><a href="item?id=16525893">10 hours ago</a></span> <span id="unv_16525893"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525893)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; if you need to use Structured Exception Handling. Well, with GCC, you can&#x27;t<p>You can on 64 bit.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525893&amp;goto=item%3Fid%3D16524313%2316525893">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525209'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525209' href='vote?id=16525209&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brucedawson" class="hnuser">brucedawson</a> <span class="age"><a href="item?id=16525209">12 hours ago</a></span> <span id="unv_16525209"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525209)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Lack of PDB support is one reason:<p><a href="https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;19269350&#x2F;how-to-generate-pdb-files-while-building-library-using-mingw" rel="nofollow">https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;19269350&#x2F;how-to-generate...</a><p>Lack of VC++ ABI support would be another reason.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525209&amp;goto=item%3Fid%3D16524313%2316525209">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525150'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525150' href='vote?id=16525150&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nice_byte" class="hnuser">nice_byte</a> <span class="age"><a href="item?id=16525150">12 hours ago</a></span> <span id="unv_16525150"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525150)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Why use it? llvm is the future anyway and lots of players have a stake in it and contribute to it.<p>In fact, there are way too many c++ compilers if you ask me. I would gladly accept a world where clang is the one and only.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525150&amp;goto=item%3Fid%3D16524313%2316525150">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525611'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525611' href='vote?id=16525611&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tzahola" class="hnuser">tzahola</a> <span class="age"><a href="item?id=16525611">11 hours ago</a></span> <span id="unv_16525611"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525611)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt;I would gladly accept a world where clang is the one and only.<p>And luckily you don’t have any saying in such matters.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525611&amp;goto=item%3Fid%3D16524313%2316525611">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525698'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525698' href='vote?id=16525698&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=nice_byte" class="hnuser">nice_byte</a> <span class="age"><a href="item?id=16525698">11 hours ago</a></span> <span id="unv_16525698"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525698)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Sure. I just vote with my feet, like many others.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525698&amp;goto=item%3Fid%3D16524313%2316525698">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525408'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525408' href='vote?id=16525408&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=monocasa" class="hnuser">monocasa</a> <span class="age"><a href="item?id=16525408">12 hours ago</a></span> <span id="unv_16525408"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525408)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; In fact, there are way too many c++ compilers if you ask me. I would gladly accept a world where clang is the one and only.<p>Not me, IMO clang is where it is due to competition.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525408&amp;goto=item%3Fid%3D16524313%2316525408">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525061'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525061' href='vote?id=16525061&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=ChickeNES" class="hnuser">ChickeNES</a> <span class="age"><a href="item?id=16525061">12 hours ago</a></span> <span id="unv_16525061"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525061)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s not ABI compatible with MSVC<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525061&amp;goto=item%3Fid%3D16524313%2316525061">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16525091'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525091' href='vote?id=16525091&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=sverige" class="hnuser">sverige</a> <span class="age"><a href="item?id=16525091">12 hours ago</a></span> <span id="unv_16525091"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525091)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Unfortunately, mingw profiling code and the toolchain is tainted with GPL.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525091&amp;goto=item%3Fid%3D16524313%2316525091">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525583'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525583' href='vote?id=16525583&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jhasse" class="hnuser">jhasse</a> <span class="age"><a href="item?id=16525583">11 hours ago</a></span> <span id="unv_16525583"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525583)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Isn&#x27;t it &quot;GPL + GCC exception&quot;?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525583&amp;goto=item%3Fid%3D16524313%2316525583">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525367'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525367' href='vote?id=16525367&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jopsen" class="hnuser">jopsen</a> <span class="age"><a href="item?id=16525367">12 hours ago</a></span> <span id="unv_16525367"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525367)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Performance of the resulting binary, if I was to guess.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525367&amp;goto=item%3Fid%3D16524313%2316525367">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527020'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527020' href='vote?id=16527020&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=RandomCSGeek" class="hnuser">RandomCSGeek</a> <span class="age"><a href="item?id=16527020">5 hours ago</a></span> <span id="unv_16527020"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527020)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Who are the &quot;we&quot; they refer to in this blog? Are they Google&#x27;s devs who build chrome, or are they clang&#x27;s devs? If they are clang&#x27;s dev, why are they building chrome? I am completely confused on this one.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527020&amp;goto=item%3Fid%3D16524313%2316527020">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527036'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527036' href='vote?id=16527036&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=fooker" class="hnuser">fooker</a> <span class="age"><a href="item?id=16527036">5 hours ago</a></span> <span id="unv_16527036"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527036)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Google employs a large number of clang devs.  
+I would not be surprised if it was close to 50% of all clang (and LLVM) devs.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527036&amp;goto=item%3Fid%3D16524313%2316527036">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527043'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527043' href='vote?id=16527043&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=amaks" class="hnuser">amaks</a> <span class="age"><a href="item?id=16527043">5 hours ago</a></span> <span id="unv_16527043"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527043)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&quot;We&quot; as Google<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527043&amp;goto=item%3Fid%3D16524313%2316527043">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16524670'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16524670' href='vote?id=16524670&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tomc1985" class="hnuser">tomc1985</a> <span class="age"><a href="item?id=16524670">13 hours ago</a></span> <span id="unv_16524670"></span><span class="par"></span> <a class="togg" n="8" href="javascript:void(0)" onclick="return toggle(event, 16524670)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Last time I tried to build Chrome&#x2F;Chromium I had to mess about with this build system called Ninja. (Which worked well it was just awkward to set up on Windows). Is that still in play?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524670&amp;goto=item%3Fid%3D16524313%2316524670">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16524875'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524875' href='vote?id=16524875&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=xyzzyz" class="hnuser">xyzzyz</a> <span class="age"><a href="item?id=16524875">13 hours ago</a></span> <span id="unv_16524875"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16524875)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Ninja is used because it&#x27;s simple, multiplatform and very fast. The mainstream alternatives offer at most 2 out of 3.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524875&amp;goto=item%3Fid%3D16524313%2316524875">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525521'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525521' href='vote?id=16525521&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cjhopman" class="hnuser">cjhopman</a> <span class="age"><a href="item?id=16525521">11 hours ago</a></span> <span id="unv_16525521"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16525521)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&quot;it&#x27;s simple&quot;: yep, so much so that you inevitably need a meta-build system. In the context of Chrome, the build system only offers 2 out of 3.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525521&amp;goto=item%3Fid%3D16524313%2316525521">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525557'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16525557' href='vote?id=16525557&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bigcheesegs" class="hnuser">bigcheesegs</a> <span class="age"><a href="item?id=16525557">11 hours ago</a></span> <span id="unv_16525557"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525557)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It&#x27;s by design that you need a meta-build system.  Ninja build files were not designed to be written by hand, not even ninja itself has hand written ninja files.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525557&amp;goto=item%3Fid%3D16524313%2316525557">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526777'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16526777' href='vote?id=16526777&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=cjhopman" class="hnuser">cjhopman</a> <span class="age"><a href="item?id=16526777">7 hours ago</a></span> <span id="unv_16526777"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526777)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes, I understand that it&#x27;s designed that way.<p>My point was that, in the context of Chrome using ninja, the claim that &quot;Ninja is used because it&#x27;s simple, multiplatform and very fast. The mainstream alternatives offer at most 2 out of 3.&quot; is a bit odd considering that the decision doesn&#x27;t seem to be ninja vs mainstream alternatives but rather ninja+gn(or gyp or whatever else) vs alternatives.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526777&amp;goto=item%3Fid%3D16524313%2316526777">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+          <tr class='athing comtr ' id='16525805'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525805' href='vote?id=16525805&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=evmar" class="hnuser">evmar</a> <span class="age"><a href="item?id=16525805">10 hours ago</a></span> <span id="unv_16525805"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525805)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Can you elaborate on the difficulty on Windows?  If you go to the home page there is a section &quot;Getting Ninja&quot; that links to a page with a zip file... ?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525805&amp;goto=item%3Fid%3D16524313%2316525805">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526608'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526608' href='vote?id=16526608&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=tomc1985" class="hnuser">tomc1985</a> <span class="age"><a href="item?id=16526608">7 hours ago</a></span> <span id="unv_16526608"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526608)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">It was too long ago for me to remember specifics. Once ninja was up and running the build process was pleasant.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526608&amp;goto=item%3Fid%3D16524313%2316526608">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16524710'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16524710' href='vote?id=16524710&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mastax" class="hnuser">mastax</a> <span class="age"><a href="item?id=16524710">13 hours ago</a></span> <span id="unv_16524710"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16524710)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes, ninja is still used.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16524710&amp;goto=item%3Fid%3D16524313%2316524710">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                          <tr class='athing comtr ' id='16525194'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525194' href='vote?id=16525194&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bgussen" class="hnuser">bgussen</a> <span class="age"><a href="item?id=16525194">12 hours ago</a></span> <span id="unv_16525194"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525194)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Did the LLVM folks fix the C++ structured exception handling incompatibility between MSVC compiled DLLs&#x2F;programs and LLVM compiled ones? This was a problem for many years.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525194&amp;goto=item%3Fid%3D16524313%2316525194">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525385'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525385' href='vote?id=16525385&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=chandlerc1024" class="hnuser">chandlerc1024</a> <span class="age"><a href="item?id=16525385">12 hours ago</a></span> <span id="unv_16525385"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16525385)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yes.<p>(To the extent possible. There are some edge cases left, but they&#x27;re <i>very</i> rare. Essentially all the real-world code we&#x27;ve seen works now.)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525385&amp;goto=item%3Fid%3D16524313%2316525385">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525859'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525859' href='vote?id=16525859&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=AlexeyBrin" class="hnuser">AlexeyBrin</a> <span class="age"><a href="item?id=16525859">10 hours ago</a></span> <span id="unv_16525859"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525859)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Tried to install Clang 5.0 Visual Studio integration, unfortunately it seems that I need to install VS 2015 (v140) compiler since it doesn&#x27;t work with VS 2017 (v141).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525859&amp;goto=item%3Fid%3D16524313%2316525859">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16525375'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525375' href='vote?id=16525375&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=dxf" class="hnuser">dxf</a> <span class="age"><a href="item?id=16525375">12 hours ago</a></span> <span id="unv_16525375"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16525375)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Clang 7 documentation has a section on MSVC compatibility, <a href="https:&#x2F;&#x2F;clang.llvm.org&#x2F;docs&#x2F;MSVCCompatibility.html" rel="nofollow">https:&#x2F;&#x2F;clang.llvm.org&#x2F;docs&#x2F;MSVCCompatibility.html</a><p>From that document:<p>Asynchronous Exceptions (SEH): Partial. Structured exceptions (__try &#x2F; __except &#x2F; __finally) mostly work on x86 and x64. LLVM does not model asynchronous exceptions, so it is currently impossible to catch an asynchronous exception generated in the same frame as the catching __try.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525375&amp;goto=item%3Fid%3D16524313%2316525375">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16525492'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16525492' href='vote?id=16525492&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=CyberDildonics" class="hnuser">CyberDildonics</a> <span class="age"><a href="item?id=16525492">11 hours ago</a></span> <span id="unv_16525492"></span><span class="par"></span> <a class="togg" n="6" href="javascript:void(0)" onclick="return toggle(event, 16525492)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c73">I&#x27;ve tried clang for windows twice. Each time the problem hasn&#x27;t been the compiler, which works well, it has been which library to use with it on windows.  Clang 5.0 worked well up until I needed the filesystem library, which isn&#x27;t there. Does anyone know if it still relies on the visual studio C++ library?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525492&amp;goto=item%3Fid%3D16524313%2316525492">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525545'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16525545' href='vote?id=16525545&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=bigcheesegs" class="hnuser">bigcheesegs</a> <span class="age"><a href="item?id=16525545">11 hours ago</a></span> <span id="unv_16525545"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16525545)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">clang-cl is just a compiler.  It relies on VS to provide the C and C++ standard libraries.  VS 2017 has the filesystem library and it should work with clang-cl 6.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525545&amp;goto=item%3Fid%3D16524313%2316525545">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16525819'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16525819' href='vote?id=16525819&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=brucedawson" class="hnuser">brucedawson</a> <span class="age"><a href="item?id=16525819">10 hours ago</a></span> <span id="unv_16525819"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16525819)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">To elaborate on that, if you want to build Chromium for Windows you currently still need to install Visual Studio. We don&#x27;t use its compiler anymore but we use its linker and other tools, its header files, and its libraries. Many Chromium developers also use it for editing code, and for debugging code.<p>Chrome is currently built using VS 2017 15.3 (that&#x27;s update 3). Eventually we will probably upgrade to VS 2017 15.7 in order to get more STL conformance, linker improvements, etc.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16525819&amp;goto=item%3Fid%3D16524313%2316525819">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526162'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526162' href='vote?id=16526162&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=notriddle" class="hnuser">notriddle</a> <span class="age"><a href="item?id=16526162">9 hours ago</a></span> <span id="unv_16526162"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16526162)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">You need the MSVC build tools and the Windows SDK. You don&#x27;t need the entire Visual Studio.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526162&amp;goto=item%3Fid%3D16524313%2316526162">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527004'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527004' href='vote?id=16527004&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=voltagex_" class="hnuser">voltagex_</a> <span class="age"><a href="item?id=16527004">5 hours ago</a></span> <span id="unv_16527004"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527004)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Can you get the VS 2017 build tools separately any more?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527004&amp;goto=item%3Fid%3D16524313%2316527004">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527285'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id='up_16527285' href='vote?id=16527285&amp;how=up&amp;goto=item%3Fid%3D16524313'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=oldmanhorton" class="hnuser">oldmanhorton</a> <span class="age"><a href="item?id=16527285">4 hours ago</a></span> <span id="unv_16527285"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527285)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Yep: <a href="https:&#x2F;&#x2F;www.visualstudio.com&#x2F;downloads&#x2F;#build-tools-for-visual-studio-2017" rel="nofollow">https:&#x2F;&#x2F;www.visualstudio.com&#x2F;downloads&#x2F;#build-tools-for-visu...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527285&amp;goto=item%3Fid%3D16524313%2316527285">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                      </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>

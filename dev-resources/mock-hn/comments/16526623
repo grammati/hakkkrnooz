@@ -1,0 +1,229 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?ZlOjL55sRmhJBqfwi2jb">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>A new storage engine for PostgreSQL to provide better control over bloat | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D16526623">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table class="fatitem" border="0">
+        <tr class='athing' id='16526623'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id='up_16526623' href='vote?id=16526623&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="http://amitkapila16.blogspot.com/2018/03/zheap-storage-engine-to-provide-better.html" class="storylink">A new storage engine for PostgreSQL to provide better control over bloat</a><span class="sitebit comhead"> (<a href="from?site=amitkapila16.blogspot.com"><span class="sitestr">amitkapila16.blogspot.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_16526623">104 points</span> by <a href="user?id=amitkapila" class="hnuser">amitkapila</a> <span class="age"><a href="item?id=16526623">7 hours ago</a></span> <span id="unv_16526623"></span> | <a href="hide?id=16526623&amp;goto=item%3Fid%3D16526623">hide</a> | <a href="https://hn.algolia.com/?query=A%20new%20storage%20engine%20for%20PostgreSQL%20to%20provide%20better%20control%20over%20bloat&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0" class="hnpast">past</a> | <a href="https://www.google.com/search?q=A%20new%20storage%20engine%20for%20PostgreSQL%20to%20provide%20better%20control%20over%20bloat">web</a> | <a href="fave?id=16526623&amp;auth=7c6be77450e7e94beffb220f6f1394d8ade6d62e">favorite</a> | <a href="item?id=16526623">19&nbsp;comments</a>              </td></tr>
+            <tr style="height:10px"></tr><tr><td colspan="2"></td><td>
+          <form method="post" action="comment"><input type="hidden" name="parent" value="16526623"><input type="hidden" name="goto" value="item?id=16526623"><input type="hidden" name="hmac" value="9ee6985bd49a189aa72fa90041c97c56be616c1f"><textarea name="text" rows="6" cols="60"></textarea>
+                <br><br><input type="submit" value="add comment"></form>
+      </td></tr>
+  </table><br><br>
+  <table border="0" class='comment-tree'>
+            <tr class='athing comtr ' id='16526920'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16526920' href='vote?id=16526920&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobkg" class="hnuser">jacobkg</a> <span class="age"><a href="item?id=16526920">6 hours ago</a></span> <span id="unv_16526920"></span><span class="par"></span> <a class="togg" n="14" href="javascript:void(0)" onclick="return toggle(event, 16526920)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This is potentially BIG news. At my last company Postgres bloat was a gigantic problem. We did a lot of data updates and sometimes customer databases (we sharded by schema) would be bloated by as much as 300%. This really hurts when some customers are 50+ GB. Not only does bloat take up more space but it slows down queries.<p>We would occasionally resort to taking the customer offline for scheduled maintenance to do a pg_dump&#x2F;pg_restore to get their DB back in shape.<p>I&#x27;m very curious to hear when this might become available for production use cases.<p>EDIT: Article states this has been proposed for Postgres 12<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526920&amp;goto=item%3Fid%3D16526623%2316526920">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527326'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527326' href='vote?id=16527326&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=grzm" class="hnuser">grzm</a> <span class="age"><a href="item?id=16527326">4 hours ago</a></span> <span id="unv_16527326"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16527326)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">This can indeed be an issue, with both indexes and tables. For tables, I&#x27;ve had success with tuning fillfactor to take into account update patterns. If there&#x27;s a deterministic subset of rows that are updated more frequently, splitting those into a smaller table&#x2F;partition, perhaps with a different fillfactor can help as well. This also makes vacuum faster for this subset. Even if there isn&#x27;t a deterministic subset, partitioning for smaller table size can speed up vacuum regardless.<p>For indexes, using concurrent reindex to create new indexes and dropping the old can make a difference.<p>Yeah, it would be nice if more of this were automated and it&#x27;s good that there&#x27;s work being done. There are some options available in existing that can ameliorate bloat.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527326&amp;goto=item%3Fid%3D16526623%2316527326">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527705'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527705' href='vote?id=16527705&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobkg" class="hnuser">jacobkg</a> <span class="age"><a href="item?id=16527705">2 hours ago</a></span> <span id="unv_16527705"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527705)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Solid advice! I remember reading about fillfactor but didn&#x27;t get a chance to try it out on our workload.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527705&amp;goto=item%3Fid%3D16526623%2316527705">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526957'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526957' href='vote?id=16526957&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=felixge" class="hnuser">felixge</a> <span class="age"><a href="item?id=16526957">6 hours ago</a></span> <span id="unv_16526957"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526957)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Are you aware of pg_repack [1]? I haven&#x27;t had a chance to use it myself yet, but it&#x27;s designed for reclaiming bloated space without downtime.<p>[1] <a href="https:&#x2F;&#x2F;github.com&#x2F;reorg&#x2F;pg_repack&#x2F;" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;reorg&#x2F;pg_repack&#x2F;</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526957&amp;goto=item%3Fid%3D16526623%2316526957">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526973'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526973' href='vote?id=16526973&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobkg" class="hnuser">jacobkg</a> <span class="age"><a href="item?id=16526973">6 hours ago</a></span> <span id="unv_16526973"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526973)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We tested pg_repack early on. Our experience (at least 5 years ago) was it didn&#x27;t reliably clean up after itself in all cases so we were left with random triggers in the database. With thousands of customer databases this was a huge potential hassle.<p>I have heard plenty of people use pg_repack so maybe it got better or we didn&#x27;t test it enough.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526973&amp;goto=item%3Fid%3D16526623%2316526973">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527545'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16527545' href='vote?id=16527545&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=al_james" class="hnuser">al_james</a> <span class="age"><a href="item?id=16527545">3 hours ago</a></span> <span id="unv_16527545"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527545)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We use pg_repack and hit that exact problem (left over triggers etc). In the end we resorted to creating and  dropping the pg_repack extension after each run.<p>(edit: Missed an &quot;and&quot;)<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527545&amp;goto=item%3Fid%3D16526623%2316527545">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527395'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16527395' href='vote?id=16527395&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=danmaz74" class="hnuser">danmaz74</a> <span class="age"><a href="item?id=16527395">3 hours ago</a></span> <span id="unv_16527395"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527395)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">We use pg_repack with automated schedules and it&#x27;s really helpful.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527395&amp;goto=item%3Fid%3D16526623%2316527395">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16527322'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527322' href='vote?id=16527322&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=yardstick" class="hnuser">yardstick</a> <span class="age"><a href="item?id=16527322">4 hours ago</a></span> <span id="unv_16527322"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527322)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Were the tables under your control? Could you set a low fill factor [1] for frequently updated tables (eg 30 or lower)? That would help avoid creating too many db pages.<p>[1] <a href="https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;10&#x2F;static&#x2F;sql-createtable.html" rel="nofollow">https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;10&#x2F;static&#x2F;sql-createtable.ht...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527322&amp;goto=item%3Fid%3D16526623%2316527322">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16526935'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16526935' href='vote?id=16526935&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=deepsun" class="hnuser">deepsun</a> <span class="age"><a href="item?id=16526935">6 hours ago</a></span> <span id="unv_16526935"></span><span class="par"></span> <a class="togg" n="5" href="javascript:void(0)" onclick="return toggle(event, 16526935)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Was it an old version of Postgres? I&#x27;m just curious to know why VACUUM couldn&#x27;t help. Did you try VACUUM FULL?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526935&amp;goto=item%3Fid%3D16526623%2316526935">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526962'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id='up_16526962' href='vote?id=16526962&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobkg" class="hnuser">jacobkg</a> <span class="age"><a href="item?id=16526962">6 hours ago</a></span> <span id="unv_16526962"></span><span class="par"></span> <a class="togg" n="4" href="javascript:void(0)" onclick="return toggle(event, 16526962)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Vacuum helps with deletes but updates create new rows and vacuum never cleans up the old ones.<p>Edit: My statement about updates is not correct, see comments below<p>Vacuum Full works but it requires a full table lock so we could only use it on select tables for smaller customers. For large tables Vacuum Full can take many minutes and once you need to take downtime pg_dump&#x2F;pg_restore becomes an option.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526962&amp;goto=item%3Fid%3D16526623%2316526962">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16526996'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526996' href='vote?id=16526996&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=pritambaral" class="hnuser">pritambaral</a> <span class="age"><a href="item?id=16526996">5 hours ago</a></span> <span id="unv_16526996"></span><span class="par"></span> <a class="togg" n="2" href="javascript:void(0)" onclick="return toggle(event, 16526996)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Vacuum helps with deletes but updates create new rows and vacuum never cleans up the old ones.<p>Only if there are long running transactions older than the updates themselves. When no old transactions are left, vacuum reclaims old tuples.<p>If you&#x27;re talking about vacuum being unable to reclaim pages that still have some live tuples, that problem affects deletes and updates equally.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526996&amp;goto=item%3Fid%3D16526623%2316526996">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527137'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id='up_16527137' href='vote?id=16527137&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jacobkg" class="hnuser">jacobkg</a> <span class="age"><a href="item?id=16527137">5 hours ago</a></span> <span id="unv_16527137"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527137)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Thank you for correcting my misunderstanding!<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527137&amp;goto=item%3Fid%3D16526623%2316527137">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing comtr ' id='16526992'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id='up_16526992' href='vote?id=16526992&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=riku_iki" class="hnuser">riku_iki</a> <span class="age"><a href="item?id=16526992">6 hours ago</a></span> <span id="unv_16526992"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16526992)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">&gt; Vacuum helps with deletes but updates create new rows and vacuum never cleans up the old ones.<p>Where did you read this?..<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16526992&amp;goto=item%3Fid%3D16526623%2316526992">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527296'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527296' href='vote?id=16527296&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=anarazel" class="hnuser">anarazel</a> <span class="age"><a href="item?id=16527296">4 hours ago</a></span> <span id="unv_16527296"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527296)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c5a">I wish people wouldn&#x27;t downvote legitimate postgres criticism for the sake of it. Postgres is great, but there&#x27;s definitely areas that aren&#x27;t so great, and some update heavy workloads are among those. Especially when long running read only queries are also present.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527296&amp;goto=item%3Fid%3D16526623%2316527296">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                <tr class='athing comtr ' id='16527771'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527771' href='vote?id=16527771&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=_pj_" class="hnuser">_pj_</a> <span class="age"><a href="item?id=16527771">1 hour ago</a></span> <span id="unv_16527771"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527771)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I really wish the EDB guys (both Robert Haas and Amit Kapila) would mention in their blog posts about this feature that it&#x27;s meant to use the pluggable storage API which is also slated for PG12. That would make it more clear that we are not abandoning the current storage format, just giving users choice (per table) to use what works best for their use case. It would also alleviate the worries that some comments expressed for both of the blog posts.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527771&amp;goto=item%3Fid%3D16526623%2316527771">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              <tr class='athing comtr ' id='16527091'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527091' href='vote?id=16527091&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=macdice" class="hnuser">macdice</a> <span class="age"><a href="item?id=16527091">5 hours ago</a></span> <span id="unv_16527091"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527091)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">There was an intelligent comment about the extra writes when writing to UNDO and the extra reads when anyone needs to read UNDO and suggesting that it might not always beat the traditional system which just has to write a new tuple.  It was deleted while I was composing my reply, so here, without context, is my reply!<p>Certainly there are complicated trade-offs here.  Some things to consider: (1) unless the pages get flushed to disk due to memory pressure or a checkpoint, the UNDO data won&#x27;t hit the disk so that &#x27;2x write&#x27; isn&#x27;t a disk write, (2) in-place updates don&#x27;t require every index to be updated (only indexes whose key changed), skipping the famous &quot;write amplification&quot; problem (more generally than HOT can), (3) the 2x reads for transactions that need modified rows applies only to transactions running with old snapshots; in the traditional system <i>every</i> transaction pays for reading past the bloat that can&#x27;t be cleaned up (in other words, an old snapshot is a tax on every transaction in the traditional design, but UNDO is only a tax on the transaction that&#x27;s using an old snapshot in this proposed system).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527091&amp;goto=item%3Fid%3D16526623%2316527091">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+                        <tr class='athing comtr ' id='16527570'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id='up_16527570' href='vote?id=16527570&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=garyclarke27" class="hnuser">garyclarke27</a> <span class="age"><a href="item?id=16527570">3 hours ago</a></span> <span id="unv_16527570"></span><span class="par"></span> <a class="togg" n="3" href="javascript:void(0)" onclick="return toggle(event, 16527570)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c88">Considering that: storage costs are falling rapidly - update in place is a poor design, immutable far superior - pg is rock solid because of this architecture including DDL rollback - vacuum can recover dead space anyway! - this does seem to me to be a bit of a wasted (large) effort. Reducing size of headers and padding sounds good though. 
+I would much rather see effort spent on incremental auto refresh of materialized views. NOT IN Foreign Keys,would also be useful to enforce XOR constraints. And Table Input parameters for Functions.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527570&amp;goto=item%3Fid%3D16526623%2316527570">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing comtr ' id='16527686'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527686' href='vote?id=16527686&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=amitkapila" class="hnuser">amitkapila</a> <span class="age"><a href="item?id=16527686">2 hours ago</a></span> <span id="unv_16527686"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527686)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">Vacuum can&#x27;t recover dead space in all cases.  Consider if the dead rows are distributed throughout the table, it won&#x27;t be able to reclaim it, only it can facilitate the future insertions into it.  Also, the work it does to do that is many-a-times quite heavy for many workloads as it can slow down the system.  I think you haven&#x27;t fully looked at all the other benefits of this system which includes reducing write amplification by (a) by avoiding rewrites due to freezing, hint bits (b) making it possible to do an update that touches indexed columns without updating every index.<p>I think there are other benefits too in terms of just raw performance because it avoids a lot of work like HOT pruning.  Yes, it instead needs to discard undo, but that is much cheaper.<p>In general, I think it is an overstatement to say that this is a wasted effort.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527686&amp;goto=item%3Fid%3D16526623%2316527686">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing comtr ' id='16527580'><td>
+            <table border='0'>  <tr>    <td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id='up_16527580' href='vote?id=16527580&amp;how=up&amp;goto=item%3Fid%3D16526623'><div class='votearrow' title='upvote'></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=grzm" class="hnuser">grzm</a> <span class="age"><a href="item?id=16527580">3 hours ago</a></span> <span id="unv_16527580"></span><span class="par"></span> <a class="togg" n="1" href="javascript:void(0)" onclick="return toggle(event, 16527580)"></a>          <span class='storyon'></span>
+                  </span></div><br><div class="comment">
+                  <span class="c00">I agree that a lot of the features you list are desirable. Like many open source projects, contributors work on features they’re interested in or paid to work on. It’s likely that you could find developers who could be motivated to realign their priorities if properly incentivized.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <u><a href="reply?id=16527580&amp;goto=item%3Fid%3D16526623%2316527580">reply</a></u>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+              </table>
+      <br><br>
+  </td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Summer 2018
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </table></center></body><script type='text/javascript' src='hn.js?ZlOjL55sRmhJBqfwi2jb'></script>
+  </html>
