@@ -41,24 +41,14 @@
   (and (instance? TextNode node) (empty? (s/trim (.text ^TextNode node)))))
 
 (defn comment-text [^Element span]
-  ;; see the explanation of parse-comment, below. Briefly, span can be:
-  ;; 1) -span
-  ;;      -font
-  ;;        - single text node  (note: reply-link is not in here)
-  ;; or:
-  ;; 2) -span
-  ;;      -font
-  ;;        -text node (usually?)
-  ;;        -p or pre or text or ...? (0..n)
-  ;;      - second-to-last p
-  ;;      - reply-link
+  ;; see the explanation of parse-comment, below.
+  ;; -span
+  ;;   - text node
+  ;;   - p tags for additional paragraphs
+  ;;   - reply-link
   (when span
-    (let [[font extra-p] (remove empty-text-node? (.childNodes span))
-          items (if (instance? Element font)
-                  (concat (.childNodes ^Element font) (if extra-p (list extra-p)))
-                  (list font)           ;"deleted" comment
-                  )]
-      (loop [[item & items :as all] items
+    (let [items (remove empty-text-node? (.childNodes span))]
+      (loop [[item & items :as all] (butlast items)
              blocks []]
         (if-not item
           blocks
@@ -84,21 +74,11 @@
   ;;      - or - nothing, if the comment has been deleted
   ;;    - then there is a br (which seems to compensate for the -10px
   ;;      bottom-margin on the div above :/)
-  ;;    - then, there are two possibilities:
-  ;;      1) For a single-paragraph comment, there is a span containing a font
-  ;;         tag (really) that contains the text of the comment, and then there
-  ;;         is a p tag containing the reply link.
-  ;;      2) For a multi-paragraph comment, the last paragraph seems to get spit
-  ;;         out of the end of the font tag to become a child of the span, and
-  ;;         the reply-link gets sucked into the span. Someone seems to have
-  ;;         worked around the first of these oddities by wrapping another font
-  ;;         tag around the text of the spat-out paragraph to get the color
-  ;;         right. Furthermore, the first paragraph under the font tag is not
-  ;;         wrapped in a p tag, but all the rest are. And yes, in case you are
-  ;;         wondering, the span that contains all these paragraphs is an inline
-  ;;         element, and it's full of block elements. Good thing browsers are
-  ;;         forgiving :)
-  ;; Note: pg will probably change HN tomorrow and break this whole fucking thing :/
+  ;;    - then, there is a div with class "comment" containing a single span,
+  ;;      which contains:
+  ;;      - some text (the first, and possibly only, paragraph)
+  ;;      - For a multi-paragraph comment, one or more additional p tags
+  ;;      - the reply link (as div with class "reply")
   (let [depth (-> tr
                   ($1 "> td:eq(0) > img")
                   (.attr "width")
